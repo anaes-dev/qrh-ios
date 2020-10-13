@@ -1,0 +1,100 @@
+{
+  "DetailContent": [
+    {
+      "type": 1,
+      "main": "Tachycardia in theatre is often due to inadequate depth of anaesthesia / analgesia or alternatively a reflex to hypotension. Tachycardia should not be treated as an isolated variable: remember to tailor treatment to the patient and the situation. Follow the full steps to exclude a serious underlying problem.",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 2,
+      "main": "START",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 3,
+      "main": "Immediate action",
+      "sub": "Stop any stimulus, Check pulse, rhythm and blood pressure:<li>If no pulse or impending arrest: use <b>Box A</b>.</li><li>If narrow complex AND <u>not</u> hypotensive first increase depth of anaesthesia/analgesia.</li>",
+      "step": "1"
+    },
+    {
+      "type": 5,
+      "main": "Box A: CRITICAL TACHYCARDIA",
+      "sub": "If no pulse, delegate one person (minimum) to chest compressions <b>→2-1 (Cardiac arrest)</b><p>If hypotension worsening or impending arrest, consider electrical cardioversion <b>(Box D)</b>",
+      "step": ""
+    },
+    {
+      "type": 3,
+      "main": "Adequate oxygen delivery",
+      "sub": "<li>Check fresh gas flow for circuit in use AND check measured F<small>i</small>O₂.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li>",
+      "step": "2"
+    },
+    {
+      "type": 3,
+      "main": "Breathing",
+      "sub": "<li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve &lt;3 breaths.</li>",
+      "step": "4"
+    },
+    {
+      "type": 3,
+      "main": "Circulation",
+      "sub": "Check rate, rhythm, perfusion, recheck blood pressure, obtain 12-lead ECG if possible.",
+      "step": "5"
+    },
+    {
+      "type": 4,
+      "main": "Consider underlying problem <b>(Box B)</b>.",
+      "sub": "",
+      "step": "6"
+    },
+    {
+      "type": 9,
+      "main": "Box B: POTENTIAL UNDERLYING PROBLEMS",
+      "sub": "<li>Stimulation with inadequate depth</li><li>Consider drug error</li><li>Also consider: central line/wire; hypovolaemia; primary cardiac arrhythmia; myocardial infarction; electrolyte disturbance; local anaesthetic toxicity <b>→3-10</b>; sepsis <b>→3-14</b>; circulatory embolus, gas/fat/amniotic <b>→3-5</b>; anaphylaxis <b>→3-1</b>; malignant hyperthermia crisis <b>→3-8</b></li>",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Consider rate control <b>(Box C)</b>.",
+      "sub": "",
+      "step": "7"
+    },
+    {
+      "type": 6,
+      "main": "Box C: DRUGS FOR TACHYCARDIA",
+      "sub": "<li>Fluid bolus 10 ml.kg⁻¹ <small>(adult 250 ml)</small></li><li>Magnesium 50 mg.kg⁻¹ <small>(adult 2 g) over >10 min, max conc. 200 mg.ml⁻¹</small></li><li>Amiodarone 5 mg.kg⁻¹ <small>(adult 300 mg) over >3 min, NOT in polymorphic VT</small></li><li>Labetalol 0.5 mg.kg⁻¹ <small>(adult 25-50 mg), repeat when necessary</small></li><li>Esmolol 0.5 mg.kg⁻¹ <small>(adult 25-50 mg)</small></li><li>Adenosine 0.1 to 0.5 mg.kg⁻¹ <small>(Adult 3 to 18 mg) – for SVT</small></li>",
+      "step": ""
+    },
+    {
+      "type": 3,
+      "main": "Call for help",
+      "sub": "Consider electrical cardioversion <b>(Box D)</b> if problem not resolving quickly.",
+      "step": "8"
+    },
+    {
+      "type": 8,
+      "main": "Box D: ELECTRICAL CARDIOVERSION",
+      "sub": "<li>Attach pads and ECG from defibrillator</li><li>Ensure adequate depth / sedation / analgesia for cardioversion</li><li>Engage synchronisation and check for sync spikes on R-waves</li><li>Start with 1 Jkg⁻¹ (adult 50-100 J) biphasic</li><li>Remember to hold shock button until sync shock delivered</li>",
+      "step": ""
+    },
+    {
+      "type": 3,
+      "main": "Depth",
+      "sub": "Consider current depth of anaesthesia AND adequacy of analgesia.",
+      "step": "9"
+    },
+    {
+      "type": 11,
+      "main": "v.1",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 12,
+      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "sub": "",
+      "step": ""
+    }
+  ]
+}

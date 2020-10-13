@@ -1,0 +1,154 @@
+{
+  "DetailContent": [
+    {
+      "type": 1,
+      "main": "Signs and symptoms include: expiratory wheeze, prolonged expiration, increased inflation pressures, desaturation, hypercapnia, upsloping capnograph trace, silent chest. Can occur alone or as part of another problem.",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 2,
+      "main": "START",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Call for help and inform theatre team of problem",
+      "sub": "",
+      "step": "1"
+    },
+    {
+      "type": 4,
+      "main": "Give 100% oxygen",
+      "sub": "",
+      "step": "2"
+    },
+    {
+      "type": 4,
+      "main": "Stop surgery / other stimulation",
+      "sub": "",
+      "step": "3"
+    },
+    {
+      "type": 4,
+      "main": "Fully expose the chest and perform a rapid systematic examination:<li>Inspect, percuss, palpate, auscultate</li><li>Absence of wheeze may indicate severe bronchospasm with no air movement</li>",
+      "sub": "",
+      "step": "4"
+    },
+    {
+      "type": 4,
+      "main": "Deepen anaesthesia:<li>Bronchospasm may be a consequence of light anaesthesia</li><li>Inhalational anaesthetic agents are bronchodilators</li><li>Avoid isoflurane or desflurane if possible – airway irritant if increased rapidly</li>",
+      "sub": "",
+      "step": "5"
+    },
+    {
+      "type": 4,
+      "main": "Exclude malpositioned or obstructed tracheal tube or supraglottic airway. Consider whether there could be endobronchial or oesophageal intubation.",
+      "sub": "",
+      "step": "6"
+    },
+    {
+      "type": 4,
+      "main": "If anaphylaxis suspected <b>→3-1</b>",
+      "sub": "",
+      "step": "7"
+    },
+    {
+      "type": 4,
+      "main": "If airway soiling/aspiration suspected airway see <b>Box A</b>",
+      "sub": "",
+      "step": "8"
+    },
+    {
+      "type": 9,
+      "main": "Box A: ACTIONS IF AIRWAY SOILING/ASPIRATION",
+      "sub": "Consider tracheal intubation and tracheal toilet<br>Use nasogastric tube to aspirate gastric contents<br>Chest X-ray<br>Consider post op level of care and follow-up",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Treat bronchospasm <b>(Box B)</b>. First line is salbutamol by metered dose inhaler or by nebuliser; i.v. route is second line. Other drugs at clinician discretion.",
+      "sub": "",
+      "step": "9"
+    },
+    {
+      "type": 6,
+      "main": "Box B: SALBUTAMOL",
+      "sub": "<b>Salbutamol</b><li>Nebuliser:<br>Child &lt;5 yr, 2.5 mg<br>Adult and &gt;5 yr 5 mg</li><li>IntraVENOUS bolus:<br>Adult 250 µg diluted, slowly<br>Child 1-23 months 5 µg.kg⁻¹ <small>once over 5 mins</small><br>Child 2-17 years 15 µg.kg⁻¹ <small>once over 5 mins (max. 250 µg)</small></li><li>Adult intraVENOUS infusion:<br>5-20 µg.min⁻¹</li><li>Child intraVENOUS infusion:<br>0.5-1 µg.kg⁻¹.min⁻¹ <small>(max. 20 µg.min⁻¹)</small></li>",
+      "step": ""
+    },
+    {
+      "type": 6,
+      "main": "Box B: IPRATROPIUM",
+      "sub": "<b>Ipratropium</b><li>Nebuliser:<br>2-12 yr 0.25 mg<br>Adult 0.5 mg</li>",
+      "step": ""
+    },
+    {
+      "type": 6,
+      "main": "Box B: ADRENALINE",
+      "sub": "<B>Adrenaline</b><li>Nebuliser:<br>Child 0.5 ml of 1:1000<br>Adult 5 ml of 1:1000</li><li>IntraMUSCULAR:<br>&lt;6 mo 50 µg<br>&lt;6 yr 120 µg<br>&lt;12 yr 250 µg<br>Adult 500 µg</li><li>Slow intraVENOUS bolus:<br>0.1 - 1 µg.kg⁻¹ (Adult 10-100 µg) </li>",
+      "step": ""
+    },
+    {
+      "type": 6,
+      "main": "Box B: OTHER DRUG DOSES",
+      "sub": "<li><b>Magnesium</b><br>IntraVENOUS over 20 mins: 50 mg.kg⁻¹ (Adult 2 g)</li><li><b>Ketamine</b><br>IntraVENOUS bolus: Adult 20mg<br>IntraVENOUS infusion: 1-3 mg.kg⁻¹.hr⁻¹</li><li><b>Aminophylline</b><br>IntraVENOUS over 20 mins: 5 mg.kg⁻¹ <small>(omit if already on theophylline)</small><br>IntraVENOUS infusion:<br>&lt;9 yr 1 mg.kg⁻¹.hr⁻¹<br>&lt;16 yr 0.8 mg.kg⁻¹.h⁻¹<br>Adult 0.5 mg.kg⁻¹.h⁻¹</li><li><b>Hydrocortisone:</b><br>IntraVENOUS: 4 mg.kg⁻¹ (Adult 200 mg)</li>",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Consider alternate diagnoses causing or mimicking bronchospasm <b>(Box C)</b>",
+      "sub": "",
+      "step": "10"
+    },
+    {
+      "type": 9,
+      "main": "Box C: ALTERNATES and MIMICS",
+      "sub": "<b>Wheeze:</b> pulmonary oedema; misplaced airway device; ARDS; laryngospasm<p><b>Raised airway pressure:</b> obstruction of larynx, trachea or bronchi; obstruction of breathing\nsystem (any part); decreased lung compliance; pneumothorax",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Use appropriate ventilation strategy <b>(Box D)</b>",
+      "sub": "",
+      "step": "11"
+    },
+    {
+      "type": 8,
+      "main": "Box D: VENTILATION STRATEGIES",
+      "sub": "Increase expiratory time to allow complete expiration<br>Pressure control ventilation may be better<br>Be alert to ‘breath stacking’<br>Permissive hypercapnia may be appropriate",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "If raised airway pressure and/or desaturation persists, consider <b>→2-2 (Hypoxia/desaturation/cyanosis)</b>",
+      "sub": "",
+      "step": "12"
+    },
+    {
+      "type": 4,
+      "main": "Obtain a chest X-ray as soon as clinically safe to do so",
+      "sub": "",
+      "step": "13"
+    },
+    {
+      "type": 4,
+      "main": "Plan appropriate placement for post-procedure care",
+      "sub": "",
+      "step": "14"
+    },
+    {
+      "type": 11,
+      "main": "v.2",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 12,
+      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "sub": "",
+      "step": ""
+    }
+  ]
+}

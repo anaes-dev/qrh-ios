@@ -1,0 +1,118 @@
+{
+  "DetailContent": [
+    {
+      "type": 1,
+      "main": "Anaesthetised or sedated patient requires unplanned transfer because of environmental hazard (e.g. flood, fire, smoke, structural collapse, noxious gas).",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 2,
+      "main": "START",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Consider if patient can be safely moved: if not see <b>Box A</b>.",
+      "sub": "",
+      "step": "1"
+    },
+    {
+      "type": 9,
+      "main": "Box A: UNABLE TO MOVE PATIENT",
+      "sub": "<li>Ensure adequate depth of anaesthesia</li><li>Ensure adequate reserve: 100% oxygen, low flow, fill vaporiser</li><li>Ensure adequate neuromuscular blockade if relevant</li><li>Evacuate all staff, including anaesthetist when indicated</li><li>Inform rescue services and theatre coordinator</li>",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Stop any operative procedure as soon as safe. Pack and cover wounds.",
+      "sub": "",
+      "step": "2"
+    },
+    {
+      "type": 4,
+      "main": "Transfer patient to bed or trolley. Transfer on operating table in extremis.",
+      "sub": "",
+      "step": "3"
+    },
+    {
+      "type": 4,
+      "main": "Evacuate non-essential staff. Consider calling for help but be aware their own safety may preclude their attendance.",
+      "sub": "",
+      "step": "4"
+    },
+    {
+      "type": 3,
+      "main": "Airway",
+      "sub": "Consider tracheal intubation to improve airway security if time allows",
+      "step": "5"
+    },
+    {
+      "type": 3,
+      "main": "Breathing/ventilation options:",
+      "sub": "<li>Minimise oxygen usage: lowest flows possible</li><li>Self-inflating bag +/- supplemental oxygen</li><li>Mechanical ventilator or C-circuit require higher flows</li>",
+      "step": "6"
+    },
+    {
+      "type": 3,
+      "main": "Circulation:",
+      "sub": "<li>Ensure adequacy and security of IV access</li><li>Take adequate supplies of fluid ± infusion sets</li><li>Take vasopressor(s) and/or resuscitation drug box</li>",
+      "step": "7"
+    },
+    {
+      "type": 3,
+      "main": "Maintenance of anaesthesia:",
+      "sub": "<li>Intermittent bolus propofol simplest and quickest</li><li>Infusion if time allows – remember mains cable for pump if available</li><li>Consider taking stocks and pump to make infusion later</li><li>Take blankets and/or warming devices if possible</li>",
+      "step": "8"
+    },
+    {
+      "type": 4,
+      "main": "If time allows, assemble adequate supply of drugs <b>(Box B)</b>.",
+      "sub": "",
+      "step": "9"
+    },
+    {
+      "type": 6,
+      "main": "Box B: DRUGS",
+      "sub": "Drugs may not be readily available at muster point. Aim to take:<li>Oxygen</li><li>Propofol /other hypnotic</li><li>Neuromuscular blockade</li><li>Vasopressor(s)</li><li>Analgesics</li><li>IV fluids</li><li>Neuromuscular reversal if extubation anticipated</li>",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Take existing monitoring and mains cabling.",
+      "sub": "",
+      "step": "19"
+    },
+    {
+      "type": 4,
+      "main": "Agree and communicate staff and patient muster points <b>(Box C)</b>.",
+      "sub": "",
+      "step": "11"
+    },
+    {
+      "type": 9,
+      "main": "Box C: MUSTER POINT",
+      "sub": "<li>Able bodied → adjacent safe zone</li><li>Anaesthetised/sedated patient → area with appropriate access to oxygen and medications, e.g. theatre, recovery or critical care area in a safe zone</li><li>Inform rescue services and relevant coordinator of location</li>",
+      "step": ""
+    },
+    {
+      "type": 9,
+      "main": "Box D: ROUTE",
+      "sub": "Ensure route avoids original hazard and any consequent ones. Caution using lifts, especially in fire.",
+      "step": ""
+    },
+    {
+      "type": 11,
+      "main": "v.1",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 12,
+      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "sub": "",
+      "step": ""
+    }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+  "DetailContent": [
+    {
+      "type": 1,
+      "main": "This Key Basic Plan will detect and identify almost all initial problems, allowing you to fix or temporise. There are specific drills for specific problems later on in the QRH.",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 1,
+      "main": "Using the same systematic approach:<li>Increases the chance of identifying the problem.</li><li>Reduces the risk of missing the problem</li><li>Limits fixing attention inappropriately.</li>",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 5,
+      "main": "Box A: CRITICAL CHANGES",
+      "sub": "If problem worsens significantly or a new problem arises, call for <b>help</b> and go back to <b>START</b> of <b>key basic plan →1-1</b>",
+      "step": ""
+    },
+    {
+      "type": 2,
+      "main": "START",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 3,
+      "main": "Adequate oxygen delivery",
+      "sub": "<li>Pause surgery if possible.</li><li>Check fresh gas flow for circuit in use AND check measured F<small>i</small>O₂ <b>(Box B)</b>.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li>",
+      "step": "1"
+    },
+    {
+      "type": 8,
+      "main": "Box B: ADEQUATE OXYGEN DELIVERY",
+      "sub": "Altering fresh gas flow may require change of vaporiser setting.",
+      "step": ""
+    },
+    {
+      "type": 3,
+      "main": "Airway",
+      "sub": "<li>Check position of airway device and listen for noise (including larynx and stomach). <b>(Box C)</b></li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter).</li><li>Consider whether you need to isolate equipment <b>(Box D)</b>.</li>",
+      "step": "2"
+    },
+    {
+      "type": 8,
+      "main": "Box C: AIRWAY",
+      "sub": "Noise: Listen over the larynx with a stethoscope to get more information (e.g. leak / obstruction).<br />Tracheal tube: You can pass a suction catheter to check patency.",
+      "step": ""
+    },
+    {
+      "type": 8,
+      "main": "Box D: ISOLATE EQUIPMENT",
+      "sub": "Ventilate lungs using self-inflating bag connected <b>DIRECTLY</b> to tracheal tube connector. <b>DO NOT</b> use the HME filter, angle piece or catheter mount.<br /><li>If increased pressure manually confirmed, re-connect machine.</li><li>If increased pressure NOT manually confirmed, assume problem with machine/circuit/HME/filter/angle piece/catheter mount:  check and replace as indicated.</li>",
+      "step": ""
+    },
+    {
+      "type": 3,
+      "main": "Breathing",
+      "sub": "<li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve <b>(Box E)</b> &lt;3 breaths.</li>",
+      "step": "3"
+    },
+    {
+      "type": 8,
+      "main": "Box E: BREATHING",
+      "sub": "Remember that airway ‘feel’ depends on your APL valve setting and fresh gas flow. You can only “feel” a maximum of what the APL valve is set to. Measured expired tidal volume gives additional information.",
+      "step": ""
+    },
+    {
+      "type": 3,
+      "main": "Circulation",
+      "sub": "Check rate, rhythm, perfusion, re-check BP.",
+      "step": "4"
+    },
+    {
+      "type": 3,
+      "main": "Depth",
+      "sub": "Ensure appropriate depth of anaesthesia, analgesia and neuromuscular blockade.",
+      "step": "5"
+    },
+    {
+      "type": 4,
+      "main": "Consider surgical problem.",
+      "sub": "",
+      "step": "6"
+    },
+    {
+      "type": 4,
+      "main": "Call for help if problem not resolving quickly.",
+      "sub": "",
+      "step": "7"
+    },
+    {
+      "type": 11,
+      "main": "v.1",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 12,
+      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "sub": "",
+      "step": ""
+    }
+  ]
+}

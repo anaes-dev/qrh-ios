@@ -1,0 +1,118 @@
+{
+  "DetailContent": [
+    {
+      "type": 1,
+      "main": "If prolonged or ≥ 39°C this is a clinical emergency: permanent organ dysfunction and death can result. Treatment depends on the aetiology.",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 1,
+      "main": "Distinguish early between:<li>Excessive heating (most common)</li><li>Inadequate dissipation of metabolic heat</li><li>Excessive heat production</li><li>Actively maintained fever</li>",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 2,
+      "main": "START",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Call for help. Inform theatre team of problem. Measure and record <u>core</u> temperature.",
+      "sub": "",
+      "step": "1"
+    },
+    {
+      "type": 4,
+      "main": "Remove cause of hyperthermia including any insulation and heating devices.",
+      "sub": "",
+      "step": "2"
+    },
+    {
+      "type": 4,
+      "main": "Make an initial diagnosis of the cause as this affects further management <b>(Box A)</b>:<li>Actively maintained fever (typically cold peripheries, vasoconstricted) OR</li><li>Non-febrile hyperthermia (typically warm peripheries, vasodilated)</li><li>Suspect malignant hyperthermia crisis or neuroleptic malignant syndrome? <b>→3-8</b></li>",
+      "sub": "",
+      "step": "3"
+    },
+    {
+      "type": 9,
+      "main": "Box A: COMMON CAUSES",
+      "sub": "<li>Excessive insulation, high ambient temperature, external warming devices, especially infants and children (most common)</li><li>Surgical devices, e.g. HIFU, diathermy, radiotherapy</li><li>Prolonged epidural anaesthesia</li><li>Sepsis <b>→3-14</b> e.g. during manipulation of a urological device</li><li>Blood transfusion</li><li>Allergic reaction / anaphylaxis <b>→3-1</b></li>",
+      "step": ""
+    },
+    {
+      "type": 9,
+      "main": "Box A: DRUG CAUSES",
+      "sub": "<li>Neuroleptic malignant syndrome (e.g. haloperidol and other antipsychotics)</li><li>Malignant hyperthermia crisis (late sign) <b>→3-8</b></li><li></li><li>Serotonin syndrome (cocaine, amphetamine, phencyclidine, MDMA)</li><li>Anticholinergic syndrome (tricyclic antidepressants, antipsychotics, antihistamines)</li><li>Sympathomimetic syndrome (cocaine, MDMA, amphetamines)</li>",
+      "step": ""
+    },
+    {
+      "type": 9,
+      "main": "Box A: TOXIC CAUSES",
+      "sub": "<li>Radiologic contrast neurotoxicity</li><li>Alcohol withdrawal</li>",
+      "step": ""
+    },
+    {
+      "type": 9,
+      "main": "Box A: ENDOCRINE CAUSES",
+      "sub": "<li>Thyrotoxicosis</li><li>Phaeochromocytoma</li>",
+      "step": ""
+    },
+    {
+      "type": 9,
+      "main": "Box A: NEUROLOGICAL CAUSES",
+      "sub": "<li>Meningitis</li><li>Intracranial blood</li><li>Hypoxic encephalopathy</li><li>Traumatic brain injury</li>",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Start active cooling WITH CAUTION if core temp ≥ 39°C (stop once below):<li>Reduce the operating room ambient temperature.</li><li>Cooling jackets or blankets.</li><li>Ice packing in groin, axillae and anterior neck.</li><li>Bladder, gastric or peritoneal lavage with boluses 10 ml.kg⁻¹ iced water.</li>",
+      "sub": "",
+      "step": "4"
+    },
+    {
+      "type": 4,
+      "main": "Give benzodiazepines to treat shivering and consider tracheal intubation and muscle paralysis if core temperature ≥ 40°C.",
+      "sub": "",
+      "step": "5"
+    },
+    {
+      "type": 4,
+      "main": "If fever, give antipyretics such as paracetamol and treat underlying cause if known.",
+      "sub": "",
+      "step": "6"
+    },
+    {
+      "type": 4,
+      "main": "Give chlorpromazine if serotonin syndrome is suspected <b>(Box B)</b>",
+      "sub": "",
+      "step": "7"
+    },
+    {
+      "type": 6,
+      "main": "Box B: CHLORPROMAZINE DOSE",
+      "sub": "chlorproMAZINE (Largactil) 25-50 mg intraMUSCULAR 6-8 hourly. Caution in elderly.",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Monitor and manage life-threatening complications especially:<li>Hyperkalaemia, hypoglycaemia, acidosis</li><li>Hypotension <b>→2-4</b>, malignant hypertension</li><li>Altered conscious level, convulsions</li><li>Coagulopathy and disseminated intravascular coagulation</li>",
+      "sub": "",
+      "step": "8"
+    },
+    {
+      "type": 11,
+      "main": "v.1",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 12,
+      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "sub": "",
+      "step": ""
+    }
+  ]
+}
