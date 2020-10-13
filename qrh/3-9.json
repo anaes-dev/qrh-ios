@@ -1,0 +1,112 @@
+{
+  "DetailContent": [
+    {
+      "type": 1,
+      "main": "Caused by an accumulation of blood, pus, effusion fluid or air. Most commonly seen in context of cardiothoracic surgery, trauma or iatrogenic causes, e.g. central line placement.",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 2,
+      "main": "START",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Call for help and inform clinical team of problem. Note the time.",
+      "sub": "",
+      "step": "1"
+    },
+    {
+      "type": 4,
+      "main": "If indicated, start CPR immediately.",
+      "sub": "",
+      "step": "2"
+    },
+    {
+      "type": 4,
+      "main": "Give 100% oxygen, ventilate and exclude tension pneumothorax: maintain the airway and, if necessary, secure it with tracheal tube.",
+      "sub": "",
+      "step": "3"
+    },
+    {
+      "type": 4,
+      "main": "Rapid diagnosis and rapid drainage are vital, so:<li>Call for ultrasound machine</li><li>Call for pericardiocentesis kit (eg 18G Luer spinal needle + 3-way tap + 20 ml syringe or a purpose made kit)</li><li>Call for cardiac arrest trolley</li><li>Diagnostic features are shown in <b>Box A</b></li>",
+      "sub": "",
+      "step": "4"
+    },
+    {
+      "type": 9,
+      "main": "Box A: DIAGNOSTIC FEATURES",
+      "sub": "<b>ULTRASOUND IS THE PREFERRED TECHNIQUE</b><li>Unexplained dyspnoea/tachypnoea and agitation if conscious</li><li>At least one of ‘Beck’s Triad’: jugular venous distension; muffled heart sounds; hypotension</li><li>Other signs: Pulsus paradoxus; ECG → low voltage QRS / electrical alternans / pulseless electrical activity; chest X-ray → enlarged cardiac silhouette</li>",
+      "step": "2"
+    },
+    {
+      "type": 4,
+      "main": "Consider whether there is time to wait for someone with expertise in pericaridiocentesis, or whether thoracotomy is a better treatment option.",
+      "sub": "",
+      "step": "5"
+    },
+    {
+      "type": 4,
+      "main": "Consider the following temporising measures:<li>Fluid bolus (Adult: 500 - 1000 ml, Child: 20 ml.kg⁻¹)</li><li>Inotropic drugs</li><li>Low tidal volume, low/no PEEP ventilation strategy</li>",
+      "sub": "",
+      "step": "6"
+    },
+    {
+      "type": 4,
+      "main": "If clinically indicated, perform pericardiocentesis <b>(Box B)</b>.",
+      "sub": "",
+      "step": "7"
+    },
+    {
+      "type": 6,
+      "main": "Box B: EMERGENCY PERICARDIOCENTESIS (sub-xiphoid approach)",
+      "sub": "<b><u>ULTRASOUND IS THE PREFERRED TECHNIQUE</u></b><p><b>WARNING: Myocardial rupture, aortic dissection and severe bleeding disorder are <i>relative</i> contraindications</b><li>Identify tip of xiphoid</li><li>Prep and drape overlying skin</li><li>Infiltrate local anaesthetic (if necessary and if time)</li><li>Ideally use ultrasound to identify pericardial fluid</li><li>Insert pericardiocentesis needle immediately to left of tip of xiphoid</li><li>Attach 3-way tap and 20 ml syringe</li><li>Direct needle generally toward left shoulder but using ultrasound to direct needle toward the largest pericardial collection</li><li>Aspirate and drain – aspiration of a small volume may cause a dramatic clinical improvement</li>",
+      "step": "6"
+    },
+    {
+      "type": 4,
+      "main": "After pericardiocentesis, re-assess using ultrasound examination and vital signs.",
+      "sub": "",
+      "step": "8"
+    },
+    {
+      "type": 4,
+      "main": "Reassess continually in case tamponade recurs.",
+      "sub": "",
+      "step": "9"
+    },
+    {
+      "type": 4,
+      "main": "Plan definitive management of underlying cause, including specialist referral",
+      "sub": "",
+      "step": "10"
+    },
+    {
+      "type": 4,
+      "main": "Plan transfer of the patient to an appropriate critical care area.",
+      "sub": "",
+      "step": "11"
+    },
+    {
+      "type": 5,
+      "main": "Box C: CRITICAL CHANGES",
+      "sub": "<b>CARDIAC ARREST →2-1</b>",
+      "step": ""
+    },
+    {
+      "type": 11,
+      "main": "v.1",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 12,
+      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "sub": "",
+      "step": ""
+    }
+  ]
+}

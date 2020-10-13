@@ -12,12 +12,39 @@
 		820EB95D2535B51100FAEDB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EB95B2535B51100FAEDB0 /* Main.storyboard */; };
 		820EB95F2535B51200FAEDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820EB95E2535B51200FAEDB0 /* Assets.xcassets */; };
 		820EB9622535B51200FAEDB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EB9602535B51200FAEDB0 /* LaunchScreen.storyboard */; };
-		820EB9732535C03400FAEDB0 /* GuidelineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9722535C03400FAEDB0 /* GuidelineList.swift */; };
 		820EB9782535C47600FAEDB0 /* guidelines.json in Resources */ = {isa = PBXBuildFile; fileRef = 820EB9772535C47600FAEDB0 /* guidelines.json */; };
 		820EB9832535CCB300FAEDB0 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 820EB9822535CCB300FAEDB0 /* SwiftyJSON */; };
 		820EB9872535D1EF00FAEDB0 /* GuidelineListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9862535D1EF00FAEDB0 /* GuidelineListCell.swift */; };
 		820EB9922535E96200FAEDB0 /* GuidelinesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9912535E96200FAEDB0 /* GuidelinesCell.swift */; };
 		820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */; };
+		8230586725363D40002118DF /* 0-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8230586625363D40002118DF /* 0-3.json */; };
+		8230586A25363E2C002118DF /* GuidelineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230586925363E2C002118DF /* GuidelineDetail.swift */; };
+		8279AF882536557B003BF303 /* 3-9.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF6E25365579003BF303 /* 3-9.json */; };
+		8279AF892536557B003BF303 /* 1-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF6F25365579003BF303 /* 1-1.json */; };
+		8279AF8A2536557B003BF303 /* 4-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF7025365579003BF303 /* 4-1.json */; };
+		8279AF8B2536557B003BF303 /* 2-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF712536557A003BF303 /* 2-2.json */; };
+		8279AF8C2536557B003BF303 /* 4-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF722536557A003BF303 /* 4-2.json */; };
+		8279AF8D2536557B003BF303 /* 4-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF732536557A003BF303 /* 4-3.json */; };
+		8279AF8E2536557B003BF303 /* 3-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF742536557A003BF303 /* 3-1.json */; };
+		8279AF8F2536557B003BF303 /* 3-11.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF752536557A003BF303 /* 3-11.json */; };
+		8279AF902536557B003BF303 /* 3-7.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF762536557A003BF303 /* 3-7.json */; };
+		8279AF912536557B003BF303 /* 3-6.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF772536557A003BF303 /* 3-6.json */; };
+		8279AF922536557B003BF303 /* 3-8.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF782536557A003BF303 /* 3-8.json */; };
+		8279AF932536557B003BF303 /* 3-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF792536557A003BF303 /* 3-2.json */; };
+		8279AF942536557B003BF303 /* 3-10.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF7A2536557A003BF303 /* 3-10.json */; };
+		8279AF952536557B003BF303 /* 3-4.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF7B2536557A003BF303 /* 3-4.json */; };
+		8279AF962536557B003BF303 /* 2-5.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF7C2536557A003BF303 /* 2-5.json */; };
+		8279AF972536557B003BF303 /* 2-6.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF7D2536557A003BF303 /* 2-6.json */; };
+		8279AF982536557B003BF303 /* 2-4.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF7E2536557A003BF303 /* 2-4.json */; };
+		8279AF992536557B003BF303 /* 3-13.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF7F2536557B003BF303 /* 3-13.json */; };
+		8279AF9A2536557B003BF303 /* 3-14.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF802536557B003BF303 /* 3-14.json */; };
+		8279AF9B2536557B003BF303 /* 2-8.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF812536557B003BF303 /* 2-8.json */; };
+		8279AF9C2536557B003BF303 /* 3-5.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF822536557B003BF303 /* 3-5.json */; };
+		8279AF9D2536557B003BF303 /* 3-12.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF832536557B003BF303 /* 3-12.json */; };
+		8279AF9E2536557B003BF303 /* 2-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF842536557B003BF303 /* 2-1.json */; };
+		8279AF9F2536557B003BF303 /* 2-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF852536557B003BF303 /* 2-3.json */; };
+		8279AFA02536557B003BF303 /* 3-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF862536557B003BF303 /* 3-3.json */; };
+		8279AFA12536557B003BF303 /* 2-7.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF872536557B003BF303 /* 2-7.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,11 +55,38 @@
 		820EB95E2535B51200FAEDB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		820EB9612535B51200FAEDB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		820EB9632535B51200FAEDB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		820EB9722535C03400FAEDB0 /* GuidelineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelineList.swift; sourceTree = "<group>"; };
 		820EB9772535C47600FAEDB0 /* guidelines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guidelines.json; sourceTree = "<group>"; };
 		820EB9862535D1EF00FAEDB0 /* GuidelineListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelineListCell.swift; sourceTree = "<group>"; };
 		820EB9912535E96200FAEDB0 /* GuidelinesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesCell.swift; sourceTree = "<group>"; };
 		820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesController.swift; sourceTree = "<group>"; };
+		8230586625363D40002118DF /* 0-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "0-3.json"; sourceTree = "<group>"; };
+		8230586925363E2C002118DF /* GuidelineDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelineDetail.swift; sourceTree = "<group>"; };
+		8279AF6E25365579003BF303 /* 3-9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-9.json"; sourceTree = "<group>"; };
+		8279AF6F25365579003BF303 /* 1-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1-1.json"; sourceTree = "<group>"; };
+		8279AF7025365579003BF303 /* 4-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4-1.json"; sourceTree = "<group>"; };
+		8279AF712536557A003BF303 /* 2-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-2.json"; sourceTree = "<group>"; };
+		8279AF722536557A003BF303 /* 4-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4-2.json"; sourceTree = "<group>"; };
+		8279AF732536557A003BF303 /* 4-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4-3.json"; sourceTree = "<group>"; };
+		8279AF742536557A003BF303 /* 3-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-1.json"; sourceTree = "<group>"; };
+		8279AF752536557A003BF303 /* 3-11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-11.json"; sourceTree = "<group>"; };
+		8279AF762536557A003BF303 /* 3-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-7.json"; sourceTree = "<group>"; };
+		8279AF772536557A003BF303 /* 3-6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-6.json"; sourceTree = "<group>"; };
+		8279AF782536557A003BF303 /* 3-8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-8.json"; sourceTree = "<group>"; };
+		8279AF792536557A003BF303 /* 3-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-2.json"; sourceTree = "<group>"; };
+		8279AF7A2536557A003BF303 /* 3-10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-10.json"; sourceTree = "<group>"; };
+		8279AF7B2536557A003BF303 /* 3-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-4.json"; sourceTree = "<group>"; };
+		8279AF7C2536557A003BF303 /* 2-5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-5.json"; sourceTree = "<group>"; };
+		8279AF7D2536557A003BF303 /* 2-6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-6.json"; sourceTree = "<group>"; };
+		8279AF7E2536557A003BF303 /* 2-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-4.json"; sourceTree = "<group>"; };
+		8279AF7F2536557B003BF303 /* 3-13.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-13.json"; sourceTree = "<group>"; };
+		8279AF802536557B003BF303 /* 3-14.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-14.json"; sourceTree = "<group>"; };
+		8279AF812536557B003BF303 /* 2-8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-8.json"; sourceTree = "<group>"; };
+		8279AF822536557B003BF303 /* 3-5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-5.json"; sourceTree = "<group>"; };
+		8279AF832536557B003BF303 /* 3-12.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-12.json"; sourceTree = "<group>"; };
+		8279AF842536557B003BF303 /* 2-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-1.json"; sourceTree = "<group>"; };
+		8279AF852536557B003BF303 /* 2-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-3.json"; sourceTree = "<group>"; };
+		8279AF862536557B003BF303 /* 3-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-3.json"; sourceTree = "<group>"; };
+		8279AF872536557B003BF303 /* 2-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-7.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +120,34 @@
 		820EB9542535B51100FAEDB0 /* qrh */ = {
 			isa = PBXGroup;
 			children = (
+				820EB9772535C47600FAEDB0 /* guidelines.json */,
+				8230586625363D40002118DF /* 0-3.json */,
+				8279AF6F25365579003BF303 /* 1-1.json */,
+				8279AF842536557B003BF303 /* 2-1.json */,
+				8279AF712536557A003BF303 /* 2-2.json */,
+				8279AF852536557B003BF303 /* 2-3.json */,
+				8279AF7E2536557A003BF303 /* 2-4.json */,
+				8279AF7C2536557A003BF303 /* 2-5.json */,
+				8279AF7D2536557A003BF303 /* 2-6.json */,
+				8279AF872536557B003BF303 /* 2-7.json */,
+				8279AF812536557B003BF303 /* 2-8.json */,
+				8279AF742536557A003BF303 /* 3-1.json */,
+				8279AF792536557A003BF303 /* 3-2.json */,
+				8279AF862536557B003BF303 /* 3-3.json */,
+				8279AF7B2536557A003BF303 /* 3-4.json */,
+				8279AF822536557B003BF303 /* 3-5.json */,
+				8279AF772536557A003BF303 /* 3-6.json */,
+				8279AF762536557A003BF303 /* 3-7.json */,
+				8279AF782536557A003BF303 /* 3-8.json */,
+				8279AF6E25365579003BF303 /* 3-9.json */,
+				8279AF7A2536557A003BF303 /* 3-10.json */,
+				8279AF752536557A003BF303 /* 3-11.json */,
+				8279AF832536557B003BF303 /* 3-12.json */,
+				8279AF7F2536557B003BF303 /* 3-13.json */,
+				8279AF802536557B003BF303 /* 3-14.json */,
+				8279AF7025365579003BF303 /* 4-1.json */,
+				8279AF722536557A003BF303 /* 4-2.json */,
+				8279AF732536557A003BF303 /* 4-3.json */,
 				820EB9552535B51100FAEDB0 /* AppDelegate.swift */,
 				820EB9572535B51100FAEDB0 /* SceneDelegate.swift */,
 				820EB95B2535B51100FAEDB0 /* Main.storyboard */,
@@ -74,9 +156,8 @@
 				820EB95E2535B51200FAEDB0 /* Assets.xcassets */,
 				820EB9602535B51200FAEDB0 /* LaunchScreen.storyboard */,
 				820EB9632535B51200FAEDB0 /* Info.plist */,
-				820EB9722535C03400FAEDB0 /* GuidelineList.swift */,
+				8230586925363E2C002118DF /* GuidelineDetail.swift */,
 				820EB9862535D1EF00FAEDB0 /* GuidelineListCell.swift */,
-				820EB9772535C47600FAEDB0 /* guidelines.json */,
 			);
 			path = qrh;
 			sourceTree = "<group>";
@@ -144,10 +225,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8279AF9E2536557B003BF303 /* 2-1.json in Resources */,
+				8279AF992536557B003BF303 /* 3-13.json in Resources */,
+				8279AF9C2536557B003BF303 /* 3-5.json in Resources */,
+				8279AF8D2536557B003BF303 /* 4-3.json in Resources */,
+				8279AF982536557B003BF303 /* 2-4.json in Resources */,
+				8279AF8B2536557B003BF303 /* 2-2.json in Resources */,
+				8279AF942536557B003BF303 /* 3-10.json in Resources */,
 				820EB9782535C47600FAEDB0 /* guidelines.json in Resources */,
+				8279AF962536557B003BF303 /* 2-5.json in Resources */,
+				8279AFA02536557B003BF303 /* 3-3.json in Resources */,
 				820EB9622535B51200FAEDB0 /* LaunchScreen.storyboard in Resources */,
+				8279AF8A2536557B003BF303 /* 4-1.json in Resources */,
+				8279AF952536557B003BF303 /* 3-4.json in Resources */,
+				8279AF8F2536557B003BF303 /* 3-11.json in Resources */,
+				8279AF9F2536557B003BF303 /* 2-3.json in Resources */,
+				8279AF972536557B003BF303 /* 2-6.json in Resources */,
 				820EB95F2535B51200FAEDB0 /* Assets.xcassets in Resources */,
+				8279AFA12536557B003BF303 /* 2-7.json in Resources */,
+				8279AF882536557B003BF303 /* 3-9.json in Resources */,
+				8279AF9A2536557B003BF303 /* 3-14.json in Resources */,
+				8279AF922536557B003BF303 /* 3-8.json in Resources */,
+				8279AF892536557B003BF303 /* 1-1.json in Resources */,
+				8279AF912536557B003BF303 /* 3-6.json in Resources */,
 				820EB95D2535B51100FAEDB0 /* Main.storyboard in Resources */,
+				8279AF9D2536557B003BF303 /* 3-12.json in Resources */,
+				8279AF8E2536557B003BF303 /* 3-1.json in Resources */,
+				8279AF902536557B003BF303 /* 3-7.json in Resources */,
+				8230586725363D40002118DF /* 0-3.json in Resources */,
+				8279AF8C2536557B003BF303 /* 4-2.json in Resources */,
+				8279AF932536557B003BF303 /* 3-2.json in Resources */,
+				8279AF9B2536557B003BF303 /* 2-8.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,10 +268,10 @@
 			files = (
 				820EB9872535D1EF00FAEDB0 /* GuidelineListCell.swift in Sources */,
 				820EB9562535B51100FAEDB0 /* AppDelegate.swift in Sources */,
+				8230586A25363E2C002118DF /* GuidelineDetail.swift in Sources */,
 				820EB9582535B51100FAEDB0 /* SceneDelegate.swift in Sources */,
 				820EB9922535E96200FAEDB0 /* GuidelinesCell.swift in Sources */,
 				820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */,
-				820EB9732535C03400FAEDB0 /* GuidelineList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

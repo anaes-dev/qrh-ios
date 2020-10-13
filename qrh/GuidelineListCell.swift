@@ -8,7 +8,7 @@
 import UIKit
 
 class GuidelineListCell: UICollectionViewCell {
-    @IBOutlet weak var TITLE: UILabel!
+    @IBOutlet weak var MAIN: UILabel!
     
 
 }

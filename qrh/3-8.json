@@ -1,0 +1,143 @@
+{
+  "DetailContent": [
+    {
+      "type": 1,
+      "main": "Unexplained increase in ETCO2 AND tachycardia AND increased oxygen requirement. Temperature rise is a late sign.",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 1,
+      "main": "MH is rare. Always consider other, more common causes: <b>→2-8</b> (Peri-operative hyperthermia).",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 2,
+      "main": "START",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Call for help and inform theatre team of problem, note the time.",
+      "sub": "",
+      "step": "1"
+    },{
+      "type": 4,
+      "main": "Allocate tasks as scenario develops <b>(Box A)</b>.",
+      "sub": "",
+      "step": "2"
+    },
+    {
+      "type": 9,
+      "main": "Box A: SUGGESTED TASK ALLOCATION",
+      "sub": "<b>1st nurse/ODP:</b> Collect MH treatment pack/dantrolene and cold saline and insulin. Set up lines (arterial/CVC). Runner forresuscitation drugs/equipment.<p><b>2nd nurse/ODP</b> (ideally two people): Draw up dantrolene as directed, keep notes of times of key events.<p><b>Surgeon:</b> Complete/abandon surgery ASAP, catheterise, commence cooling manoeuvres.<p><b>2nd anaesthetist:</b> Give dantrolene, start TIVA, manage hyperkalaemia, arrhythmias, acidosis. Renal protection (forced alkaline diuresis).<p><b>3rd anaesthetist:</b> Arterial line. Send bloods. Central venous access. Urinary myoglobin. Monitor core and peripheral temperatures.",
+      "step": "2"
+    },
+    {
+      "type": 4,
+      "main": "Aim to abandon or finish surgery as soon as possible.",
+      "sub": "",
+      "step": "3"
+    },
+    {
+      "type": 4,
+      "main": "Call for MH treatment pack/dantrolene and cardiac arrest trolley.",
+      "sub": "",
+      "step": "4"
+    },
+    {
+      "type": 4,
+      "main": "Remove vaporisers from machine.",
+      "sub": "",
+      "step": "5"
+    },
+    {
+      "type": 4,
+      "main": "Give highest possible fresh gas flow and hyperventilate lungs: change breathing system is NOT a priority.",
+      "sub": "",
+      "step": "6"
+    },
+    {
+      "type": 4,
+      "main": "Maintain anaesthesia with intravenous hypnotic agent and muscle relaxation with a nondepolarising neuromuscular blocking agent.",
+      "sub": "",
+      "step": "7"
+    },
+    {
+      "type": 4,
+      "main": "Give dantrolene <b>(Box B)</b>. Delegate mixing – it is time and labour intensive",
+      "sub": "",
+      "step": "8"
+    },
+    {
+      "type": 6,
+      "main": "Box B: DANTROLENE",
+      "sub": "2.5 mg.kg⁻¹ immediate intraVENOUS bolus<br>(Adult approx. 200 mg)<br><small>Repeat 1 mg.kg⁻¹ every 10-15 mins thereafter as required</small><p>Maximum dose 10 mg.kg⁻¹",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Begin active cooling:<li>Reduce the operating room ambient temperature</li><li>Cooling jackets or blankets</li><li>Ice packing in groin, axillae and anterior neck</li><li>Bladder, gastric or peritoneal lavage with boluses 10 ml.kg-1 iced water</li>",
+      "sub": "",
+      "step": "9"
+    }
+  ,
+    {
+      "type": 4,
+      "main": "Begin continuous monitoring of: core and peripheral temperature, invasive BP, CVP.",
+      "sub": "",
+      "step": "10"
+    }
+  ,
+    {
+      "type": 4,
+      "main": "Send urgent blood samples and repeat as indicated <b>(Box C)</b>.",
+      "sub": "",
+      "step": "11"
+    },
+    {
+      "type": 7,
+      "main": "Box C: INVESTIGATIONS",
+      "sub": "Arterial blood gases every 30 mins, U&E, CK, FBC, coagulation screen, group and save/cross-match blood as indicated",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Treat complications <b>(Box D)</b>.",
+      "sub": "",
+      "step": "12"
+    },
+    {
+      "type": 7,
+      "main": "Box D: COMPLICATIONS AND OUTLINE TREATMENTS",
+      "sub": "<b>AVOID calcium channel blockers - interaction with dantrolene</b><p><b>Hyperkalaemia:</b> calcium chloride, glucose/insulin, bicarbonate<p><b>Arrhythmias:</b> magnesium/amiodarone/metoprolol<p><b>Metabolic acidosis:</b> hyperventilate, sodium bicarbonate<p><b>Myoglobinaemia:</b> forced alkaline diuresis (mannitol/furosemide + bicarbonate); may require renal replacement therapy later<p><b>DIC:</b> FFP, cryoprecipitate, platelets",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Plan admission to critical care.",
+      "sub": "",
+      "step": "13"
+    },
+    {
+      "type":9,
+      "main": "EMERGENCY HELP",
+      "sub": "<b>Leeds MH Hotline</b><br>Direct: 01132065270<br>Switchboard: 01132433144<br>Out of hours mobile: 07947609601",
+      "step": ""
+    },
+    {
+      "type": 11,
+      "main": "v.1",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 12,
+      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "sub": "",
+      "step": ""
+    }
+  ]
+}

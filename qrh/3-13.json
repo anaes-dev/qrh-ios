@@ -1,0 +1,100 @@
+{
+  "DetailContent": [
+    {
+      "type": 1,
+      "main": "Outcome from cardiac arrest is determined by the severity of any supervening neurological or cardiac dysfunction / instability which results from poor vital organ perfusion. Following return of spontaneous circulation (ROSC), inability of the patient to obey commands indicates that neuroprotection techniques should be considered.",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 2,
+      "main": "START",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Prepare the cardiac arrest trolley for any further events.",
+      "sub": "",
+      "step": "1"
+    },
+    {
+      "type": 4,
+      "main": "Use positive pressure ventilation, aiming for:<li>S<small>p</small>O₂ &gt; 94% and &lt; 98%.</li><li>PCO₂ &gt; 4.5 kPa and &lt; 5.5 kPa</li>",
+      "sub": "",
+      "step": "2"
+    },
+    {
+      "type": 4,
+      "main": "Give sedation and neuromuscular blocking drugs to reduce thermogenesis from shivering.",
+      "sub": "",
+      "step": "3"
+    },
+    {
+      "type": 4,
+      "main": "Insert intra-arterial blood pressure monitoring. Consider vasopressor/inotrope to maintain systolic blood pressure, target SBP &gt; 100 mmHg.",
+      "sub": "",
+      "step": "4"
+    },
+    {
+      "type": 4,
+      "main": "Obtain 12-lead ECG and discuss with cardiology if percutaneous coronary intervention is possible or appropriate.",
+      "sub": "",
+      "step": "5"
+    },
+    {
+      "type": 4,
+      "main": "Check blood glucose. Start glycaemic control therapies if above 10 mmol.l⁻¹.",
+      "sub": "",
+      "step": "6"
+    },
+    {
+      "type": 3,
+      "main": "Check core temperature",
+      "sub": "Target temperature is a constant temperature in the range of 32 – 36°C (precise target determined by local policy):<li>Temperature usually decreases without intervention in the immediate postarrest period</li><li>Start cooling strategies if indicated <b>(Box A)</b></li><li>Avoid hyperthermia &gt; 37.5°C</li>",
+      "step": "7"
+    },
+    {
+      "type": 8,
+      "main": "Box A: COOLING STRATEGIES",
+      "sub": "<b>Intravenous fluid bolus:</b> if not contraindicated give 30 ml.kg⁻¹ of cold (4°C) non glucose-containing solutions<p><b>External:</b> simple ice packs and/or wet towels; cooling blankets or pads; water or air circulating blankets; water circulating gel-coated pads<p><b>Internal:</b> intravascular heat exchanger; cardiopulmonary bypass",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Give antiepileptic drugs if seizures develop <b>(Box B)</b>.",
+      "sub": "",
+      "step": "8"
+    },
+    {
+      "type": 6,
+      "main": "Box B: DRUGS TO CONTROL/PREVENT SEIZURES",
+      "sub": "<li>Benzodiazepines or propofol are likely to be closest to hand in the operating theatre.</li><li>Sodium valproate, levetiracetam, phenytoin or a barbiturate can also be used.</li>",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Plan further management in critical care area. Call for extra help as necessary.",
+      "sub": "",
+      "step": "9"
+    },
+    {
+      "type": 5,
+      "main": "Box C: CRITICAL CHANGES",
+      "sub": "<b>CARDIAC ARREST →2-1</b>",
+      "step": ""
+    },
+    {
+      "type": 11,
+      "main": "v.1",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 12,
+      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "sub": "",
+      "step": ""
+    }
+  ]
+}

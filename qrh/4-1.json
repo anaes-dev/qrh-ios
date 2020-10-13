@@ -1,0 +1,112 @@
+{
+  "DetailContent": [
+    {
+      "type": 1,
+      "main": "Complete failure of wall or pendant oxygen supply. Failure may be theatre-specific, zone-specific or hospital-wide.",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 2,
+      "main": "START",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Inform the theatre team of the problem, including theatre coordinator <b>(Box A)</b>.",
+      "sub": "",
+      "step": "1"
+    },
+    {
+      "type": 9,
+      "main": "Box A: ORGANISATIONAL ISSUES",
+      "sub": "Theatre coordinator or equivalent should:<li>Ensure no new case is started unless clinical priority absolutely requires it</li><li>Ascertain the extent of the failure throughout the hospital</li><li>Ascertain the reserve supplies of oxygen</li><li>Evaluate implications for ongoing supply</li><li>Ensure any other relevant emergency plans are initiated</li><li>Coordinate delivery of further oxygen cylinders in good time</li><li>Ensure individual theatres are kept informed</li>",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Call for help, but be aware failure may be widespread.",
+      "sub": "",
+      "step": "2"
+    },
+    {
+      "type": 4,
+      "main": "Switch to cylinder oxygen supply.",
+      "sub": "",
+      "step": "3"
+    },
+    {
+      "type": 4,
+      "main": "Check remaining cylinder content <b>(Box B)</b>: ensure at least one further cylinder always available.",
+      "sub": "",
+      "step": "4"
+    },
+    {
+      "type": 10,
+      "main": "file:///android_asset/oxygen.png",
+      "sub": "Box B: OXYGEN CYLINDER REMAINING CONTENTS",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Prolong duration of cylinder oxygen supply:",
+      "sub": "<li>Use circle system</li><li>Use lowest possible fresh gas flow</li>Use lowest possible F<small>i</small>O₂<li></li><li>Check F<small>i</small>O₂ alarms</li>",
+      "step": "5"
+    },
+    {
+      "type": 4,
+      "main": "Minimise auxiliary gas usage:<br>Some ventilator systems are gas-driven. If so, switching to manual ventilation will prolong oxygen cylinder supply.",
+      "sub": "",
+      "step": "6"
+    },
+    {
+      "type": 4,
+      "main": "Evaluate moving to nearby area if oxygen supply there preserved.",
+      "sub": "",
+      "step": "7"
+    },
+    {
+      "type": 4,
+      "main": "Continue to monitor and ensure adequacy of inspired oxygen and volatile agent.",
+      "sub": "",
+      "step": "8"
+    },
+    {
+      "type": 3,
+      "main": "Workflow:",
+      "sub": "<li>Do not start any new case unless clinical priority absolutely requires it</li><li>Expedite conclusion of current case if clinically appropriate</li><li>Consider recovering the patient in theatre if recovery also affected <b>(Box C)</b></li>",
+      "step": "9"
+    },
+    {
+      "type": 9,
+      "main": "Box C: RECOVERY",
+      "sub": "Recovery area must be appropriately supplied with cylinder oxygen if also affected. Identify patients who do not require supplemental oxygen.",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Disconnect from failed outlets and do not re-connect until safe to do so <b>(Box D)</b>.",
+      "sub": "",
+      "step": "10"
+    },
+    {
+      "type": 8,
+      "main": "Box D: RE-ESTABLISHMENT OF SERVICES",
+      "sub": "<li>Disconnect equipment from failed wall/pendant outlets</li><li>When re-established, output may not initially be 100% oxygen</li><li>Do not re-use outlet until gas composition and quality satisfactorily confirmed by a competent authority</li>",
+      "step": ""
+    },
+    {
+      "type": 11,
+      "main": "v.1",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 12,
+      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "sub": "",
+      "step": ""
+    }
+    ]
+}
