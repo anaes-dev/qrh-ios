@@ -6,49 +6,98 @@
 //
 
 import UIKit
-import SwiftyJSON
 
 class GuidelinesController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+ 
+    struct Guideline: Codable {
+        var code: String
+        var title: String
+        var version: Int
+        var url: URL
+    }
     
+    struct GuidelineList: Codable {
+        var guidelines: [Guideline]
+    }
+        
+    var unfilteredGuidelines = [Guideline]()
+    var filteredGuidelines = [Guideline]()
     
-    var guidelines = [[String : AnyObject]]()
-    var filteredGuidelines = [[String : AnyObject]]()
     var passCode: String?
     var passTitle: String?
-
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    
+    var isSearchBarEmpty: Bool {
+      return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    var isFiltering: Bool {
+      return searchController.isActive && !isSearchBarEmpty
+    }
+    
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchGuidelineList()
-        filteredGuidelines = guidelines
+        
+        
+        searchController.searchResultsUpdater = self
+        self.navigationItem.searchController = searchController
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search"
+        definesPresentationContext = true
+        searchController.hidesNavigationBarDuringPresentation = true
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController!.navigationBar.sizeToFit()
+        navigationItem.hidesSearchBarWhenScrolling = false
+
+        let jsonURL = Bundle.main.url(forResource: "guidelines", withExtension: "json")!
+        if let jsonDATA = try? Data(contentsOf: jsonURL) {
+            parseList(json: jsonDATA)
+        }
+        filteredGuidelines = unfilteredGuidelines
+        
     }
+
     
     func numberOfSections(in tableView: UITableView) -> Int {
-      return 1
-   }
+        return 1
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isFiltering {
             return filteredGuidelines.count
+        } else {
+            return unfilteredGuidelines.count
         }
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "GuidelinesCell") as? GuidelinesCell else { return UITableViewCell() }
-            let iP = filteredGuidelines[indexPath.row]
-            let versionText = "v.\(iP["version"]!)"
-            cell.title.text = iP["title"] as? String
-            cell.code.text = iP["code"] as? String
+        if isFiltering {
+            let versionText = "v.\(filteredGuidelines[indexPath.row].version)"
+            cell.title.text = filteredGuidelines[indexPath.row].title
+            cell.code.text = filteredGuidelines[indexPath.row].code
             cell.version.text = versionText
-            return cell
+        } else {
+            let versionText = "v.\(unfilteredGuidelines[indexPath.row].version)"
+            cell.title.text = unfilteredGuidelines[indexPath.row].title
+            cell.code.text = unfilteredGuidelines[indexPath.row].code
+            cell.version.text = versionText
+        }
+        return cell
     }
       
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let iP = filteredGuidelines[indexPath.row]
-        passCode = iP["code"] as? String
-        passTitle = iP["title"] as? String
+        if isFiltering {
+            passCode = filteredGuidelines[indexPath.row].code
+            passTitle = filteredGuidelines[indexPath.row].title
+        } else {
+            passCode = unfilteredGuidelines[indexPath.row].code
+            passTitle = unfilteredGuidelines[indexPath.row].title
+        }
         self.performSegue(withIdentifier: "LoadDetail", sender: self)
     }
     
@@ -60,19 +109,26 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
            
     }
     
-    func fetchGuidelineList() {
-        let url = Bundle.main.url(forResource: "guidelines", withExtension: "json")!
-        let fileContents = try! Data(contentsOf: url)
-        let jsonData1 = try! JSON(data: fileContents)
-        let jsonData2 = jsonData1["guidelines"].arrayObject
-        self.guidelines = jsonData2 as! [[String : AnyObject]]
+    func parseList(json: Data) {
+        let decoder = JSONDecoder()
+        if let jsonGuidelines = try? decoder.decode(GuidelineList.self, from: json) {
+            unfilteredGuidelines = jsonGuidelines.guidelines
+            tableView.reloadData()
+        }
+    }
+    
+    func filterContentForSearchText(_ searchText: String) {
+        filteredGuidelines = unfilteredGuidelines.filter { (guideline: Guideline) -> Bool in
+            return guideline.title.lowercased().contains(searchText.lowercased())
+        }
         tableView.reloadData()
     }
-     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        let searchText = searchText.lowercased()
-        print(searchText)
-
-        tableView.reloadData()
-    }
+    
 }
+
+extension GuidelinesController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchBar = searchController.searchBar
+        filterContentForSearchText(searchBar.text!)
+      }
+    }

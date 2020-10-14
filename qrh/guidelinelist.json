@@ -1,0 +1,166 @@
+{
+  "results": [
+    {
+      "code": "0-3",
+      "title": "Instructions for use",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_0-3_Instructions_for_use_v1.pdf"
+    },
+    {
+      "code": "1-1",
+      "title": "Key basic plan",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_1-1_Key_basic_plan_v1.pdf"
+    },
+    {
+      "code": "2-1",
+      "title": "Cardiac arrest",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-1_Cardiac_arrest_Revised_v1.pdf"
+    },
+    {
+      "code": "2-2",
+      "title": "Hypoxia / desaturation / cyanosis",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-2_Hypoxia-desaturation-cyanosis_v1.pdf"
+    },
+    {
+      "code": "2-3",
+      "title": "Increased airway pressure",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-3_Increased_airway_pressure_v1.pdf"
+    },
+    {
+      "code": "2-4",
+      "title": "Hypotension",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-4_Hypotension_v1.pdf"
+    },
+    {
+      "code": "2-5",
+      "title": "Hypertension",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-5_Hypertension_v1.pdf"
+    },
+    {
+      "code": "2-6",
+      "title": "Bradycardia",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-6_Bradycardia_v1.pdf"
+    },
+    {
+      "code": "2-7",
+      "title": "Tachycardia",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-7_Tachycardia_v1.pdf"
+    },
+    {
+      "code": "2-8",
+      "title": "Peri-operative hyperthermia",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-8_Perioperative_hyperthermia_v1.pdf"
+    },
+    {
+      "code": "3-1",
+      "title": "Anaphylaxis",
+      "version": 3,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-1_Anaphylaxis_v3.pdf"
+    },
+    {
+      "code": "3-2",
+      "title": "Massive blood loss",
+      "version": 2,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-2_Massive_blood_loss_v2.pdf"
+    },
+    {
+      "code": "3-3",
+      "title": "Can't intubate, can't oxygenate (CICO)",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-3_Cant_intubate_cant_oxygenate_CICO_v1.pdf"
+    },
+    {
+      "code": "3-4",
+      "title": "Bronchospasm",
+      "version": 2,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-4_Bronchospasm_v2.pdf"
+    },
+    {
+      "code": "3-5",
+      "title": "Circulatory embolus",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-5_Circulatory_embolus_v1.pdf"
+    },
+    {
+      "code": "3-6",
+      "title": "Laryngospasm and stridor",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-6_Laryngospasm_and_stridor_v1.pdf"
+    },
+    {
+      "code": "3-7",
+      "title": "Patient fire",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-7_Patient_fire_v1.pdf"
+    },
+    {
+      "code": "3-8",
+      "title": "Malignant hyperthermia crisis",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-8_Malignant_hyperthermia_crisis_v1.pdf"
+    },
+    {
+      "code": "3-9",
+      "title": "Cardiac tamponade",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-9_Cardiac_tamponade_v1.pdf"
+    },
+    {
+      "code": "3-10",
+      "title": "Local anaesthetic toxicity",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-10_Local_anaesthetic_toxicity_v1.pdf"
+    },
+    {
+      "code": "3-11",
+      "title": "High central neuraxial block",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-11_High_central_neuraxial_block_v1.pdf"
+    },
+    {
+      "code": "3-12",
+      "title": "Cardiac ischaemia",
+      "version": 2,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-12_Cardiac_ischaemia_v2.pdf"
+    },
+    {
+      "code": "3-13",
+      "title": "Neuroprotection following cardiac arrest",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-13_Neuroprotection_cardiac_arrest_v1.pdf"
+    },
+    {
+      "code": "3-14",
+      "title": "Sepsis",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-14_Sepsis_v1.pdf"
+    },
+    {
+      "code": "4-1",
+      "title": "Mains oxygen failure",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_4-1_Mains_oxygen_failure_v1.pdf"
+    },
+    {
+      "code": "4-2",
+      "title": "Mains electricity failure",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_4-2_Mains_electricity_failure_v1.pdf"
+    },
+    {
+      "code": "4-3",
+      "title": "Emergency evacuation",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_4-3_Emergency_evacuation_v1.pdf"
+    }
+]
+}
