@@ -34,6 +34,10 @@ class GuidelineDetail: UICollectionViewController {
         fetchGuidelineDetail()
         print(passedCode)
         self.navigationItem.title = passedTitle
+        
+        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        }
 
         // Do any additional setup after loading the view.
     }
