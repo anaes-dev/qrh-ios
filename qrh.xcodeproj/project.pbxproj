@@ -46,6 +46,11 @@
 		8279AF9F2536557B003BF303 /* 2-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF852536557B003BF303 /* 2-3.json */; };
 		8279AFA02536557B003BF303 /* 3-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF862536557B003BF303 /* 3-3.json */; };
 		8279AFA12536557B003BF303 /* 2-7.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF872536557B003BF303 /* 2-7.json */; };
+		82A08AAC2538D72400F6BEA9 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AAB2538D72400F6BEA9 /* DetailController.swift */; };
+		82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AB12538E2E000F6BEA9 /* CardCell2.swift */; };
+		82A08AB42538E2E000F6BEA9 /* CardCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB22538E2E000F6BEA9 /* CardCell2.xib */; };
+		82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AB72538E96F00F6BEA9 /* CardCell1.swift */; };
+		82A08ABA2538E96F00F6BEA9 /* CardCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB82538E96F00F6BEA9 /* CardCell1.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +94,11 @@
 		8279AF852536557B003BF303 /* 2-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-3.json"; sourceTree = "<group>"; };
 		8279AF862536557B003BF303 /* 3-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-3.json"; sourceTree = "<group>"; };
 		8279AF872536557B003BF303 /* 2-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-7.json"; sourceTree = "<group>"; };
+		82A08AAB2538D72400F6BEA9 /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		82A08AB12538E2E000F6BEA9 /* CardCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell2.swift; sourceTree = "<group>"; };
+		82A08AB22538E2E000F6BEA9 /* CardCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell2.xib; sourceTree = "<group>"; };
+		82A08AB72538E96F00F6BEA9 /* CardCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell1.swift; sourceTree = "<group>"; };
+		82A08AB82538E96F00F6BEA9 /* CardCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell1.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +164,12 @@
 				820EB9552535B51100FAEDB0 /* AppDelegate.swift */,
 				820EB9572535B51100FAEDB0 /* SceneDelegate.swift */,
 				820EB95B2535B51100FAEDB0 /* Main.storyboard */,
+				82A08AB72538E96F00F6BEA9 /* CardCell1.swift */,
+				82A08AB82538E96F00F6BEA9 /* CardCell1.xib */,
+				82A08AB12538E2E000F6BEA9 /* CardCell2.swift */,
+				82A08AB22538E2E000F6BEA9 /* CardCell2.xib */,
 				820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */,
+				82A08AAB2538D72400F6BEA9 /* DetailController.swift */,
 				820EB9912535E96200FAEDB0 /* GuidelinesCell.swift */,
 				820EB95E2535B51200FAEDB0 /* Assets.xcassets */,
 				820EB9602535B51200FAEDB0 /* LaunchScreen.storyboard */,
@@ -231,12 +246,14 @@
 				8279AF9E2536557B003BF303 /* 2-1.json in Resources */,
 				8279AF992536557B003BF303 /* 3-13.json in Resources */,
 				8279AF9C2536557B003BF303 /* 3-5.json in Resources */,
+				82A08ABA2538E96F00F6BEA9 /* CardCell1.xib in Resources */,
 				8279AF8D2536557B003BF303 /* 4-3.json in Resources */,
 				8279AF982536557B003BF303 /* 2-4.json in Resources */,
 				8279AF8B2536557B003BF303 /* 2-2.json in Resources */,
 				8279AF942536557B003BF303 /* 3-10.json in Resources */,
 				820EB9782535C47600FAEDB0 /* guidelines.json in Resources */,
 				8279AF962536557B003BF303 /* 2-5.json in Resources */,
+				82A08AB42538E2E000F6BEA9 /* CardCell2.xib in Resources */,
 				8279AFA02536557B003BF303 /* 3-3.json in Resources */,
 				820EB9622535B51200FAEDB0 /* LaunchScreen.storyboard in Resources */,
 				8279AF8A2536557B003BF303 /* 4-1.json in Resources */,
@@ -271,9 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				820EB9872535D1EF00FAEDB0 /* GuidelineListCell.swift in Sources */,
+				82A08AAC2538D72400F6BEA9 /* DetailController.swift in Sources */,
 				820EB9562535B51100FAEDB0 /* AppDelegate.swift in Sources */,
 				8230586A25363E2C002118DF /* GuidelineDetail.swift in Sources */,
+				82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */,
 				820EB9582535B51100FAEDB0 /* SceneDelegate.swift in Sources */,
+				82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */,
 				820EB9922535E96200FAEDB0 /* GuidelinesCell.swift in Sources */,
 				820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */,
 			);
