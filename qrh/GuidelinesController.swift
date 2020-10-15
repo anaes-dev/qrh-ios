@@ -102,7 +102,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? GuidelineDetail {
+        if let destination = segue.destination as? DetailController {
             destination.passedCode = passCode!
             destination.passedTitle = passTitle!
         }
