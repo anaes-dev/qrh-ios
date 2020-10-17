@@ -26,6 +26,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     
     var passedCode = String()
     var passedTitle = String()
+    var passedURL = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,18 +35,23 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         tableView.register(UINib(nibName: "CardCell2", bundle: nil), forCellReuseIdentifier: "CardCell2")
         tableView.register(UINib(nibName: "CardCell3", bundle: nil), forCellReuseIdentifier: "CardCell3")
         tableView.register(UINib(nibName: "CardCell4", bundle: nil), forCellReuseIdentifier: "CardCell4")
+        tableView.register(UINib(nibName: "CardCell5", bundle: nil), forCellReuseIdentifier: "CardCell5")
         tableView.register(UINib(nibName: "CardCell11", bundle: nil), forCellReuseIdentifier: "CardCell11")
         tableView.register(UINib(nibName: "CardCell12", bundle: nil), forCellReuseIdentifier: "CardCell12")
 
-        
-        print(passedCode)
-        print(passedTitle)
         
         let jsonURL = Bundle.main.url(forResource: passedCode, withExtension: "json")!
         if let jsonDATA = try? Data(contentsOf: jsonURL) {
            parseCards(json: jsonDATA)
         }
+        
+        
+        let pdfButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.action, target: self, action: #selector(urlTapped))
+        self.navigationItem.rightBarButtonItem = pdfButton
+
         self.navigationItem.title = passedTitle
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Load", style: .plain, target: self, action: #selector(urlTapped))
+
         
     }
 
@@ -59,13 +65,25 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         
     }
     
+    @objc func urlTapped(sender: AnyObject) {
+        self.performSegue(withIdentifier: "LoadPDF", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? PDFNavController {
+            destination.passedURL = passedURL
+        }
+    }
+
+     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch cardContent[indexPath.row].type {
             
             case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
-                cell.main.text = cardContent[indexPath.row].main
+                let mainInput = cardContent[indexPath.row].main
+                cell.main.setHTMLFromString(htmlText: mainInput)
                 return cell
             
             case 2:
@@ -75,15 +93,24 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 
             case 3:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell3") as! CardCell3
+                let subInput = cardContent[indexPath.row].sub
+                cell.sub.setHTMLFromString(htmlText: subInput)
                 cell.main.text = cardContent[indexPath.row].main
-                cell.sub.text = cardContent[indexPath.row].sub
                 cell.step.text = cardContent[indexPath.row].step
                 return cell
                 
             case 4:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell4") as! CardCell4
-                cell.main.text = cardContent[indexPath.row].main
+                let mainInput = cardContent[indexPath.row].main
+                cell.main.setHTMLFromString(htmlText: mainInput)
                 cell.step.text = cardContent[indexPath.row].step
+                return cell
+                
+            case 5,6,7,8,9:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
+                cell.main.text = cardContent[indexPath.row].main
+                let subInput = cardContent[indexPath.row].sub
+                cell.sub.setHTMLFromString(htmlText: subInput)
                 return cell
                 
             case 11:
@@ -115,6 +142,30 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             tableView.reloadData()
         }
     }
-    
 }
+
+
+extension UILabel {
+    func setHTMLFromString(htmlText: String) {
+        let modifiedFont = String(format:"<style type=\"text/css\">html { font-family: '-apple-system', 'HelveticaNeue'; font-size: \(self.font!.pointSize); } ul { padding: 8px 0 0 0; } li { margin: 0 0 8 0; }</style>%@", htmlText)
+
+        let attrStr = try! NSMutableAttributedString(
+            data: modifiedFont.data(using: .unicode, allowLossyConversion: true)!,
+            options: [.documentType: NSMutableAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue],
+            documentAttributes: nil)
+
+        if let lastCharacter = attrStr.string.last, lastCharacter == "\n" {
+            attrStr.deleteCharacters(in: NSRange(location: attrStr.length-1, length: 1))
+        }
+
+        attrStr.addAttribute(.foregroundColor, value: UIColor.label, range: NSRange(location: 0, length:attrStr.length))
+        
+        self.attributedText = attrStr
+    }
+    
+    func processRegexLinks() {
+        
+    }
+}
+
 

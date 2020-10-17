@@ -27,7 +27,7 @@
     {
       "type": 3,
       "main": "Adequate oxygen delivery",
-      "sub": "<li>Pause surgery if possible.</li><li>Check fresh gas flow for circuit in use AND check measured F<small>i</small>O₂ <b>(Box B)</b>.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li>",
+      "sub": "<ul><li>Pause surgery if possible.</li><li>Check fresh gas flow for circuit in use AND check measured F<small>i</small>O₂ <b>(Box B)</b>.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li></ul>",
       "step": "1"
     },
     {
@@ -39,7 +39,7 @@
     {
       "type": 3,
       "main": "Airway",
-      "sub": "<li>Check position of airway device and listen for noise (including larynx and stomach). <b>(Box C)</b></li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter).</li><li>Consider whether you need to isolate equipment <b>(Box D)</b>.</li>",
+      "sub": "<ul><li>Check position of airway device and listen for noise (including larynx and stomach). <b>(Box C)</b></li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter).</li><li>Consider whether you need to isolate equipment <b>(Box D)</b>.</li></ul>",
       "step": "2"
     },
     {
