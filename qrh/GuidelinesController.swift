@@ -13,7 +13,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         var code: String
         var title: String
         var version: Int
-        var url: URL
+        var url: String
     }
     
     struct GuidelineList: Codable {
@@ -25,6 +25,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     
     var passCode: String?
     var passTitle: String?
+    var passURL: String?
     
     let searchController = UISearchController(searchResultsController: nil)
     
@@ -103,9 +104,11 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         if isFiltering {
             passCode = filteredGuidelines[indexPath.row].code
             passTitle = filteredGuidelines[indexPath.row].title
+            passURL = filteredGuidelines[indexPath.row].url
         } else {
             passCode = unfilteredGuidelines[indexPath.row].code
             passTitle = unfilteredGuidelines[indexPath.row].title
+            passURL = filteredGuidelines[indexPath.row].url
         }
         self.performSegue(withIdentifier: "LoadDetail", sender: self)
     }
@@ -114,6 +117,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         if let destination = segue.destination as? DetailController {
             destination.passedCode = passCode!
             destination.passedTitle = passTitle!
+            destination.passedURL = passURL!
         }
            
     }

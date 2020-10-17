@@ -24,6 +24,10 @@
 		8230586725363D40002118DF /* 0-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8230586625363D40002118DF /* 0-3.json */; };
 		8276D047253B14A400243AB3 /* CardCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8276D046253B14A400243AB3 /* CardCell4.xib */; };
 		8276D04A253B14B100243AB3 /* CardCell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276D049253B14B100243AB3 /* CardCell4.swift */; };
+		8277FCDD253B313F00E8158D /* CardCell5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8277FCDC253B313F00E8158D /* CardCell5.xib */; };
+		8277FCE0253B326300E8158D /* CardCell5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8277FCDF253B326300E8158D /* CardCell5.swift */; };
+		8277FCE4253B39D900E8158D /* PDFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8277FCE3253B39D900E8158D /* PDFController.swift */; };
+		8277FCE7253B42C500E8158D /* PDFNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8277FCE6253B42C500E8158D /* PDFNavController.swift */; };
 		8279AF882536557B003BF303 /* 3-9.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF6E25365579003BF303 /* 3-9.json */; };
 		8279AF892536557B003BF303 /* 1-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF6F25365579003BF303 /* 1-1.json */; };
 		8279AF8A2536557B003BF303 /* 4-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF7025365579003BF303 /* 4-1.json */; };
@@ -77,6 +81,10 @@
 		8230586625363D40002118DF /* 0-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "0-3.json"; sourceTree = "<group>"; };
 		8276D046253B14A400243AB3 /* CardCell4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell4.xib; sourceTree = "<group>"; };
 		8276D049253B14B100243AB3 /* CardCell4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell4.swift; sourceTree = "<group>"; };
+		8277FCDC253B313F00E8158D /* CardCell5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell5.xib; sourceTree = "<group>"; };
+		8277FCDF253B326300E8158D /* CardCell5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell5.swift; sourceTree = "<group>"; };
+		8277FCE3253B39D900E8158D /* PDFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFController.swift; sourceTree = "<group>"; };
+		8277FCE6253B42C500E8158D /* PDFNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFNavController.swift; sourceTree = "<group>"; };
 		8279AF6E25365579003BF303 /* 3-9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-9.json"; sourceTree = "<group>"; };
 		8279AF6F25365579003BF303 /* 1-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1-1.json"; sourceTree = "<group>"; };
 		8279AF7025365579003BF303 /* 4-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4-1.json"; sourceTree = "<group>"; };
@@ -140,6 +148,8 @@
 		820EB9542535B51100FAEDB0 /* qrh */ = {
 			isa = PBXGroup;
 			children = (
+				8277FCE6253B42C500E8158D /* PDFNavController.swift */,
+				8277FCE3253B39D900E8158D /* PDFController.swift */,
 				820EB9772535C47600FAEDB0 /* guidelines.json */,
 				8230586625363D40002118DF /* 0-3.json */,
 				8279AF6F25365579003BF303 /* 1-1.json */,
@@ -179,6 +189,8 @@
 				82258AFD253B0DB500E0C180 /* CardCell3.xib */,
 				8276D049253B14B100243AB3 /* CardCell4.swift */,
 				8276D046253B14A400243AB3 /* CardCell4.xib */,
+				8277FCDF253B326300E8158D /* CardCell5.swift */,
+				8277FCDC253B313F00E8158D /* CardCell5.xib */,
 				82011A29253B1685003DCBE2 /* CardCell11.swift */,
 				82011A2A253B1685003DCBE2 /* CardCell11.xib */,
 				82011A30253B1797003DCBE2 /* CardCell12.swift */,
@@ -259,6 +271,7 @@
 				8279AF992536557B003BF303 /* 3-13.json in Resources */,
 				8279AF9C2536557B003BF303 /* 3-5.json in Resources */,
 				82A08ABA2538E96F00F6BEA9 /* CardCell1.xib in Resources */,
+				8277FCDD253B313F00E8158D /* CardCell5.xib in Resources */,
 				8279AF8D2536557B003BF303 /* 4-3.json in Resources */,
 				8279AF982536557B003BF303 /* 2-4.json in Resources */,
 				8279AF8B2536557B003BF303 /* 2-2.json in Resources */,
@@ -301,12 +314,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8277FCE7253B42C500E8158D /* PDFNavController.swift in Sources */,
 				8276D04A253B14B100243AB3 /* CardCell4.swift in Sources */,
 				82A08AAC2538D72400F6BEA9 /* DetailController.swift in Sources */,
 				820EB9562535B51100FAEDB0 /* AppDelegate.swift in Sources */,
 				82011A31253B1797003DCBE2 /* CardCell12.swift in Sources */,
 				82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */,
+				8277FCE0253B326300E8158D /* CardCell5.swift in Sources */,
 				820EB9582535B51100FAEDB0 /* SceneDelegate.swift in Sources */,
+				8277FCE4253B39D900E8158D /* PDFController.swift in Sources */,
 				82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */,
 				820EB9922535E96200FAEDB0 /* GuidelinesCell.swift in Sources */,
 				820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */,
