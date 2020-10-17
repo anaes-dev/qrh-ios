@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,16 +18,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0u-S3-QdV">
-                        <rect key="frame" x="0.0" y="0.0" width="63" height="29"/>
+                        <rect key="frame" x="16" y="8" width="63" height="28"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jz-a3-BGJ">
-                                <rect key="frame" x="4" y="4" width="55" height="21"/>
+                                <rect key="frame" x="4" y="4" width="55" height="20"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="4jz-a3-BGJ" secondAttribute="bottom" constant="4" id="3KM-7j-1Np"/>
                             <constraint firstAttribute="trailing" secondItem="4jz-a3-BGJ" secondAttribute="trailing" constant="4" id="IC8-0y-CQx"/>
@@ -35,16 +36,27 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="k0u-S3-QdV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Cvo-0R-78f"/>
-                    <constraint firstItem="k0u-S3-QdV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qK7-67-Izb"/>
+                    <constraint firstItem="k0u-S3-QdV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Cvo-0R-78f"/>
+                    <constraint firstAttribute="bottom" secondItem="k0u-S3-QdV" secondAttribute="bottom" constant="8" id="Wfh-uc-Mhl"/>
+                    <constraint firstItem="k0u-S3-QdV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="qK7-67-Izb"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="main" destination="4jz-a3-BGJ" id="E4g-0h-zLH"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="153.34821428571428"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
