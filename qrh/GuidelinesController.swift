@@ -37,6 +37,8 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     }
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var noItemsView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +53,8 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController!.navigationBar.sizeToFit()
         navigationItem.hidesSearchBarWhenScrolling = false
+        
+        tableView.tableFooterView = UIView()
 
         let jsonURL = Bundle.main.url(forResource: "guidelines", withExtension: "json")!
         if let jsonDATA = try? Data(contentsOf: jsonURL) {
@@ -67,6 +71,11 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering {
+            if filteredGuidelines.count == 0 {
+                tableView.backgroundView = noItemsView
+            } else {
+                tableView.backgroundView = nil
+            }
             return filteredGuidelines.count
         } else {
             return unfilteredGuidelines.count
