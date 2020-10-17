@@ -32,6 +32,10 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         
         tableView.register(UINib(nibName: "CardCell1", bundle: nil), forCellReuseIdentifier: "CardCell1")
         tableView.register(UINib(nibName: "CardCell2", bundle: nil), forCellReuseIdentifier: "CardCell2")
+        tableView.register(UINib(nibName: "CardCell3", bundle: nil), forCellReuseIdentifier: "CardCell3")
+        tableView.register(UINib(nibName: "CardCell4", bundle: nil), forCellReuseIdentifier: "CardCell4")
+        tableView.register(UINib(nibName: "CardCell11", bundle: nil), forCellReuseIdentifier: "CardCell11")
+        tableView.register(UINib(nibName: "CardCell12", bundle: nil), forCellReuseIdentifier: "CardCell12")
 
         
         print(passedCode)
@@ -60,19 +64,42 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         switch cardContent[indexPath.row].type {
             
             case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
-               cell.main.text = cardContent[indexPath.row].main
-               return cell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
+                cell.main.text = cardContent[indexPath.row].main
+                return cell
             
             case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell2") as! CardCell2
-               cell.main.text = cardContent[indexPath.row].main
-               return cell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell2") as! CardCell2
+                cell.main.text = cardContent[indexPath.row].main
+                return cell
+                
+            case 3:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell3") as! CardCell3
+                cell.main.text = cardContent[indexPath.row].main
+                cell.sub.text = cardContent[indexPath.row].sub
+                cell.step.text = cardContent[indexPath.row].step
+                return cell
+                
+            case 4:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell4") as! CardCell4
+                cell.main.text = cardContent[indexPath.row].main
+                cell.step.text = cardContent[indexPath.row].step
+                return cell
+                
+            case 11:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell11") as! CardCell11
+                cell.main.text = cardContent[indexPath.row].main
+                return cell
+                
+            case 12:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell12") as! CardCell12
+                cell.main.text = cardContent[indexPath.row].main
+                return cell
                 
             default:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
-                   cell.main.text = cardContent[indexPath.row].main
-                   return cell
+                cell.main.text = cardContent[indexPath.row].main
+                return cell
             
         }
          

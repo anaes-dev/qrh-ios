@@ -3,23 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82011A2B253B1685003DCBE2 /* CardCell11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82011A29253B1685003DCBE2 /* CardCell11.swift */; };
+		82011A2C253B1685003DCBE2 /* CardCell11.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82011A2A253B1685003DCBE2 /* CardCell11.xib */; };
+		82011A31253B1797003DCBE2 /* CardCell12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82011A30253B1797003DCBE2 /* CardCell12.swift */; };
+		82011A35253B17A8003DCBE2 /* CardCell12.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82011A34253B17A8003DCBE2 /* CardCell12.xib */; };
 		820EB9562535B51100FAEDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9552535B51100FAEDB0 /* AppDelegate.swift */; };
 		820EB9582535B51100FAEDB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9572535B51100FAEDB0 /* SceneDelegate.swift */; };
 		820EB95D2535B51100FAEDB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EB95B2535B51100FAEDB0 /* Main.storyboard */; };
 		820EB95F2535B51200FAEDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820EB95E2535B51200FAEDB0 /* Assets.xcassets */; };
 		820EB9622535B51200FAEDB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EB9602535B51200FAEDB0 /* LaunchScreen.storyboard */; };
 		820EB9782535C47600FAEDB0 /* guidelines.json in Resources */ = {isa = PBXBuildFile; fileRef = 820EB9772535C47600FAEDB0 /* guidelines.json */; };
-		820EB9832535CCB300FAEDB0 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 820EB9822535CCB300FAEDB0 /* SwiftyJSON */; };
-		820EB9872535D1EF00FAEDB0 /* GuidelineListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9862535D1EF00FAEDB0 /* GuidelineListCell.swift */; };
 		820EB9922535E96200FAEDB0 /* GuidelinesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9912535E96200FAEDB0 /* GuidelinesCell.swift */; };
 		820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */; };
+		82258AFB253B0DA500E0C180 /* CardCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82258AFA253B0DA500E0C180 /* CardCell3.swift */; };
+		82258AFE253B0DB500E0C180 /* CardCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82258AFD253B0DB500E0C180 /* CardCell3.xib */; };
 		8230586725363D40002118DF /* 0-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8230586625363D40002118DF /* 0-3.json */; };
-		8230586A25363E2C002118DF /* GuidelineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230586925363E2C002118DF /* GuidelineDetail.swift */; };
-		8261AA6025377AEC000BFE6D /* guidelinelist.json in Resources */ = {isa = PBXBuildFile; fileRef = 8261AA5F25377AEC000BFE6D /* guidelinelist.json */; };
+		8276D047253B14A400243AB3 /* CardCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8276D046253B14A400243AB3 /* CardCell4.xib */; };
+		8276D04A253B14B100243AB3 /* CardCell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276D049253B14B100243AB3 /* CardCell4.swift */; };
 		8279AF882536557B003BF303 /* 3-9.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF6E25365579003BF303 /* 3-9.json */; };
 		8279AF892536557B003BF303 /* 1-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF6F25365579003BF303 /* 1-1.json */; };
 		8279AF8A2536557B003BF303 /* 4-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF7025365579003BF303 /* 4-1.json */; };
@@ -54,6 +58,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82011A29253B1685003DCBE2 /* CardCell11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell11.swift; sourceTree = "<group>"; };
+		82011A2A253B1685003DCBE2 /* CardCell11.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell11.xib; sourceTree = "<group>"; };
+		82011A30253B1797003DCBE2 /* CardCell12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell12.swift; sourceTree = "<group>"; };
+		82011A34253B17A8003DCBE2 /* CardCell12.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell12.xib; sourceTree = "<group>"; };
 		820EB9522535B51100FAEDB0 /* qrh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		820EB9552535B51100FAEDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		820EB9572535B51100FAEDB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,12 +70,13 @@
 		820EB9612535B51200FAEDB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		820EB9632535B51200FAEDB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		820EB9772535C47600FAEDB0 /* guidelines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guidelines.json; sourceTree = "<group>"; };
-		820EB9862535D1EF00FAEDB0 /* GuidelineListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelineListCell.swift; sourceTree = "<group>"; };
 		820EB9912535E96200FAEDB0 /* GuidelinesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesCell.swift; sourceTree = "<group>"; };
 		820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesController.swift; sourceTree = "<group>"; };
+		82258AFA253B0DA500E0C180 /* CardCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell3.swift; sourceTree = "<group>"; };
+		82258AFD253B0DB500E0C180 /* CardCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell3.xib; sourceTree = "<group>"; };
 		8230586625363D40002118DF /* 0-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "0-3.json"; sourceTree = "<group>"; };
-		8230586925363E2C002118DF /* GuidelineDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelineDetail.swift; sourceTree = "<group>"; };
-		8261AA5F25377AEC000BFE6D /* guidelinelist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guidelinelist.json; sourceTree = "<group>"; };
+		8276D046253B14A400243AB3 /* CardCell4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell4.xib; sourceTree = "<group>"; };
+		8276D049253B14B100243AB3 /* CardCell4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell4.swift; sourceTree = "<group>"; };
 		8279AF6E25365579003BF303 /* 3-9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-9.json"; sourceTree = "<group>"; };
 		8279AF6F25365579003BF303 /* 1-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1-1.json"; sourceTree = "<group>"; };
 		8279AF7025365579003BF303 /* 4-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4-1.json"; sourceTree = "<group>"; };
@@ -106,7 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				820EB9832535CCB300FAEDB0 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				820EB9772535C47600FAEDB0 /* guidelines.json */,
-				8261AA5F25377AEC000BFE6D /* guidelinelist.json */,
 				8230586625363D40002118DF /* 0-3.json */,
 				8279AF6F25365579003BF303 /* 1-1.json */,
 				8279AF842536557B003BF303 /* 2-1.json */,
@@ -168,14 +175,20 @@
 				82A08AB82538E96F00F6BEA9 /* CardCell1.xib */,
 				82A08AB12538E2E000F6BEA9 /* CardCell2.swift */,
 				82A08AB22538E2E000F6BEA9 /* CardCell2.xib */,
+				82258AFA253B0DA500E0C180 /* CardCell3.swift */,
+				82258AFD253B0DB500E0C180 /* CardCell3.xib */,
+				8276D049253B14B100243AB3 /* CardCell4.swift */,
+				8276D046253B14A400243AB3 /* CardCell4.xib */,
+				82011A29253B1685003DCBE2 /* CardCell11.swift */,
+				82011A2A253B1685003DCBE2 /* CardCell11.xib */,
+				82011A30253B1797003DCBE2 /* CardCell12.swift */,
+				82011A34253B17A8003DCBE2 /* CardCell12.xib */,
 				820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */,
 				82A08AAB2538D72400F6BEA9 /* DetailController.swift */,
 				820EB9912535E96200FAEDB0 /* GuidelinesCell.swift */,
 				820EB95E2535B51200FAEDB0 /* Assets.xcassets */,
 				820EB9602535B51200FAEDB0 /* LaunchScreen.storyboard */,
 				820EB9632535B51200FAEDB0 /* Info.plist */,
-				8230586925363E2C002118DF /* GuidelineDetail.swift */,
-				820EB9862535D1EF00FAEDB0 /* GuidelineListCell.swift */,
 			);
 			path = qrh;
 			sourceTree = "<group>";
@@ -197,7 +210,6 @@
 			);
 			name = qrh;
 			packageProductDependencies = (
-				820EB9822535CCB300FAEDB0 /* SwiftyJSON */,
 			);
 			productName = qrh;
 			productReference = 820EB9522535B51100FAEDB0 /* qrh.app */;
@@ -227,7 +239,6 @@
 			);
 			mainGroup = 820EB9492535B51100FAEDB0;
 			packageReferences = (
-				820EB9812535CCB300FAEDB0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 820EB9532535B51100FAEDB0 /* Products */;
 			projectDirPath = "";
@@ -243,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8276D047253B14A400243AB3 /* CardCell4.xib in Resources */,
 				8279AF9E2536557B003BF303 /* 2-1.json in Resources */,
 				8279AF992536557B003BF303 /* 3-13.json in Resources */,
 				8279AF9C2536557B003BF303 /* 3-5.json in Resources */,
@@ -257,7 +269,6 @@
 				8279AFA02536557B003BF303 /* 3-3.json in Resources */,
 				820EB9622535B51200FAEDB0 /* LaunchScreen.storyboard in Resources */,
 				8279AF8A2536557B003BF303 /* 4-1.json in Resources */,
-				8261AA6025377AEC000BFE6D /* guidelinelist.json in Resources */,
 				8279AF952536557B003BF303 /* 3-4.json in Resources */,
 				8279AF8F2536557B003BF303 /* 3-11.json in Resources */,
 				8279AF9F2536557B003BF303 /* 2-3.json in Resources */,
@@ -267,9 +278,12 @@
 				8279AF882536557B003BF303 /* 3-9.json in Resources */,
 				8279AF9A2536557B003BF303 /* 3-14.json in Resources */,
 				8279AF922536557B003BF303 /* 3-8.json in Resources */,
+				82258AFE253B0DB500E0C180 /* CardCell3.xib in Resources */,
 				8279AF892536557B003BF303 /* 1-1.json in Resources */,
 				8279AF912536557B003BF303 /* 3-6.json in Resources */,
+				82011A35253B17A8003DCBE2 /* CardCell12.xib in Resources */,
 				820EB95D2535B51100FAEDB0 /* Main.storyboard in Resources */,
+				82011A2C253B1685003DCBE2 /* CardCell11.xib in Resources */,
 				8279AF9D2536557B003BF303 /* 3-12.json in Resources */,
 				8279AF8E2536557B003BF303 /* 3-1.json in Resources */,
 				8279AF902536557B003BF303 /* 3-7.json in Resources */,
@@ -287,15 +301,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				820EB9872535D1EF00FAEDB0 /* GuidelineListCell.swift in Sources */,
+				8276D04A253B14B100243AB3 /* CardCell4.swift in Sources */,
 				82A08AAC2538D72400F6BEA9 /* DetailController.swift in Sources */,
 				820EB9562535B51100FAEDB0 /* AppDelegate.swift in Sources */,
-				8230586A25363E2C002118DF /* GuidelineDetail.swift in Sources */,
+				82011A31253B1797003DCBE2 /* CardCell12.swift in Sources */,
 				82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */,
 				820EB9582535B51100FAEDB0 /* SceneDelegate.swift in Sources */,
 				82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */,
 				820EB9922535E96200FAEDB0 /* GuidelinesCell.swift in Sources */,
 				820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */,
+				82258AFB253B0DA500E0C180 /* CardCell3.swift in Sources */,
+				82011A2B253B1685003DCBE2 /* CardCell11.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,25 +511,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		820EB9812535CCB300FAEDB0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		820EB9822535CCB300FAEDB0 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 820EB9812535CCB300FAEDB0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 820EB94A2535B51100FAEDB0 /* Project object */;
 }
