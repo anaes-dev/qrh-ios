@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ActiveLabel
 
 class DetailController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -46,6 +45,8 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         
     var unfilteredGuidelines = [Guideline]()
     var filteredGuidelines = [Guideline]()
+    
+    var expandedIndexSet : IndexSet = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,6 +113,21 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // if the cell is already expanded, remove it from the indexset to contract it
+        if(expandedIndexSet.contains(indexPath.row)){
+            expandedIndexSet.remove(indexPath.row)
+        } else {
+            // if the cell is not expanded, add it to the indexset to expand it
+            expandedIndexSet.insert(indexPath.row)
+        }
+        
+        // the animation magic happens here
+        // this will call cellForRow for the indexPath you supplied, and animate the changes
+        tableView.reloadData()
+    }
      
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -147,23 +163,35 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
                 cell.main.text = cardContent[indexPath.row].main
                 let subInput = cardContent[indexPath.row].sub
-                cell.sub.setHTMLFromString(htmlText: subInput)
+                
+                
+                if expandedIndexSet.contains(indexPath.row) {
+                  // the label can take as many lines it need to display all text
+                    cell.sub.setHTMLFromString(htmlText: subInput)
+                    
+                } else {
+                  // if the cell is contracted
+                  // only show first 3 lines
+                    cell.sub.text = ""
+                    
+                }
+                
                 return cell
                 
             case 9:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell9") as! CardCell9
                 let subInput = cardContent[indexPath.row].sub
-                let customLink = ActiveType.custom(pattern: "[(]?[→][\\s]?[1-4][-][0-9]{1,2}[)]?")
-                cell.sub.numberOfLines = 0
-                cell.sub.enabledTypes = [.url, customLink]
-                cell.sub.customColor[customLink] = UIColor.systemBlue
+//                let customLink = ActiveType.custom(pattern: "[(]?[→][\\s]?[1-4][-][0-9]{1,2}[)]?")
+//                cell.sub.numberOfLines = 0
+//                cell.sub.enabledTypes = [.url, customLink]
+//                cell.sub.customColor[customLink] = UIColor.systemBlue
                 cell.sub.setHTMLFromString(htmlText: subInput)
                 cell.main.text = cardContent[indexPath.row].main
                 
-                cell.sub.handleCustomTap(for: customLink) { element in
-                    self.scrubLink = element.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "→", with: "").replacingOccurrences(of: " ", with: "")
-                    self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
-                }
+//                cell.sub.handleCustomTap(for: customLink) { element in
+//                    self.scrubLink = element.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "→", with: "").replacingOccurrences(of: " ", with: "")
+//                    self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
+//                }
                 
                 return cell
                 
@@ -201,7 +229,25 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 
 extension UILabel {
     func setHTMLFromString(htmlText: String) {
-        let htmlInput = String(format:"<style type=\"text/css\">html { font-family: '-apple-system', 'HelveticaNeue'; font-size: \(self.font!.pointSize); } ul { padding: 8px 0 0 0; } li { margin: 0 0 8 0; }</style>%@", htmlText)
+        
+        let htmlInput = """
+                        <style type=\"text/css\">
+                        body {
+                            font-family: -apple-system, 'HelveticaNeue';
+                            font-size: \(self.font!.pointSize);
+                        }
+                        ul {
+                            padding: 8px 0 0 0;
+                        }
+                        li {
+                            margin: 0 0 8 0;
+                        }
+                        </style>
+                        \(htmlText)
+                        """
+        
+//
+//        let htmlInput = String(format:"<html><style type=\"text/css\">html { font-family: '-apple-system', 'HelveticaNeue'; font-size: \(self.font!.pointSize); } ul { padding: 8px 0 0 0; } li { margin: 0 0 8 0;  }</style>%@", htmlText)
                
         let attrStr = try! NSMutableAttributedString(
             data: htmlInput.data(using: .unicode, allowLossyConversion: true)!,
