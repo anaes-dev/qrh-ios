@@ -21,7 +21,7 @@
     {
       "type": 9,
       "main": "Box A: POTENTIAL CAUSES",
-      "sub": "<p><b>4 H's, 4 T's</b></p><ul><li>Hypoxia <b>→2-2</b></li><li>Hypovolaemia</li><li>Hypo/hyperkalaemia</li><li>Hypothermia</li></ul><ul><li>Tamponade <b>→3-9</b></li><li>Thrombosis <b>→3-5</b></li><li>Toxins</li><li>Tension pneumothorax</li></ul>",
+      "sub": "<p>4 H's, 4 T's</p><ul><li>Hypoxia <b>→2-2</b></li><li>Hypovolaemia</li><li>Hypo/hyperkalaemia</li><li>Hypothermia</li><li>Tamponade <b>→3-9</b></li><li>Thrombosis <b>→3-5</b></li><li>Toxins</li><li>Tension pneumothorax</li></ul>",
       "step": ""
     },
     {
@@ -57,13 +57,13 @@
     {
       "type": 6,
       "main": "Box B: DRUGS FOR PERI-OPERATIVE CARDIAC ARREST",
-      "sub": "<li>Fluid bolus 20 ml.kg⁻¹ <small>(adult 500 ml)</small><li>Adrenaline 10 µg.kg⁻¹ <small>(adult 1000 µg – may be given in increments)</small><li>Atropine 10 µg.kg⁻¹ <small>(adult 0.5-1 mg) if vagal tone likely cause</small><li>Amiodarone 5 mg.kg⁻¹ <small>(adult 300 mg) after 3rd shock</small><li>Magnesium 50 mg.kg⁻¹ <small>(adult 2 g) for polymorphic VT/hypomagnesaemia.</small><li>Calcium chloride 10% 0.2 ml.kg⁻¹ <small>(adult 10 ml) for magnesium overdose, hypocalcaemia or hyperkalaemia</small><li>Thrombolysis <small>for suspected massive pulmonary embolus</small>",
+      "sub": "<ul><li>Fluid bolus 20 ml.kg⁻¹ <small>(adult 500 ml)</small></li><li>Adrenaline 10 µg.kg⁻¹ <small>(adult 1000 µg – may be given in increments)</small></li><li>Atropine 10 µg.kg⁻¹ <small>(adult 0.5-1 mg) if vagal tone likely cause</small></li><li>Amiodarone 5 mg.kg⁻¹ <small>(adult 300 mg) after 3rd shock</small></li><li>Magnesium 50 mg.kg⁻¹ <small>(adult 2 g) for polymorphic VT/hypomagnesaemia.</small></li><li>Calcium chloride 10% 0.2 ml.kg⁻¹ <small>(adult 10 ml) for magnesium overdose, hypocalcaemia or hyperkalaemia</small></li><li>Thrombolysis <small>for suspected massive pulmonary embolus</small></li></ul>",
       "step": ""
     },
     {
       "type": 8,
       "main": "Box C: DEFIBRILLATION",
-      "sub": "Continue compressions while charging<br>Biphasic 4 J.kg⁻¹ (adult 150-200 J)</small><br>DO NOT check pulse after defibrillation<br>Use 3 stacked shocks in cardiac catheterisation lab",
+      "sub": "<p>Continue compressions while charging<br>Biphasic 4 J.kg⁻¹ (adult 150-200 J)</small></p><p>DO NOT check pulse after defibrillation<br>Use 3 stacked shocks in cardiac catheterisation lab</p>",
       "step": ""
     },
     {
@@ -81,7 +81,7 @@
     {
       "type": 8,
       "main": "Box D: DON'T FORGET!",
-      "sub": "<li><b>Use waveform capnography. No expired CO₂ = lungs not being ventilated (assume and exclude oesophageal intubation). Very rarely, absent/minimal expired CO₂ = CPR not occurring OR pulmonary circulation disconnected from systemic (e.g. in major trauma).</b> Sudden increase in ETCO₂ usually signals return of spontaneous circulation</li><li>Optimise position for chest compressions (use overhead for bariatric patients)</li><li>Uterine displacement in pregnant patients.</li><li>Ventilator can free up hands but remember to set to volume control. Minimise intrathoracic pressure: avoid excessive tidal volume and hyperventilation.</li>",
+      "sub": "<ul><li><b>Use waveform capnography. No expired CO₂ = lungs not being ventilated (assume and exclude oesophageal intubation). Very rarely, absent/minimal expired CO₂ = CPR not occurring OR pulmonary circulation disconnected from systemic (e.g. in major trauma).</b> Sudden increase in ETCO₂ usually signals return of spontaneous circulation</li><li>Optimise position for chest compressions (use overhead for bariatric patients)</li><li>Uterine displacement in pregnant patients.</li><li>Ventilator can free up hands but remember to set to volume control. Minimise intrathoracic pressure: avoid excessive tidal volume and hyperventilation.</li></ul>",
       "step": ""
     },
     {

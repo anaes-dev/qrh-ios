@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="288" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="main" text="Main" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOc-NZ-Eo6">
-                                        <rect key="frame" x="8" y="8" width="272" height="20.5"/>
+                                        <rect key="frame" x="8" y="8" width="240" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" systemColor="systemOrangeColor"/>
                                         <nil key="highlightedColor"/>
@@ -35,16 +36,29 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5L-D0-5yB">
+                                        <rect key="frame" x="248" y="9" width="28" height="28"/>
+                                        <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="RXl-cA-gL3"/>
+                                            <constraint firstAttribute="height" constant="28" id="wF1-zi-WQB"/>
+                                        </constraints>
+                                        <imageReference key="image" image="arrow.down" catalog="system" symbolScale="default"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="default" weight="heavy"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="r5L-D0-5yB" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" constant="4" id="08T-q3-eb6"/>
+                                    <constraint firstItem="r5L-D0-5yB" firstAttribute="leading" secondItem="pOc-NZ-Eo6" secondAttribute="trailing" constant="8" id="4ni-ru-0dp"/>
+                                    <constraint firstAttribute="trailing" secondItem="r5L-D0-5yB" secondAttribute="trailing" constant="4" id="7j1-jw-g9g"/>
                                     <constraint firstItem="u6o-o0-TnP" firstAttribute="leading" secondItem="Ggh-sj-7tR" secondAttribute="leading" constant="8" id="NXJ-0L-YTr"/>
                                     <constraint firstItem="pOc-NZ-Eo6" firstAttribute="bottom" secondItem="u6o-o0-TnP" secondAttribute="top" constant="-8" id="Sgc-eu-Q7x"/>
                                     <constraint firstItem="pOc-NZ-Eo6" firstAttribute="leading" secondItem="Ggh-sj-7tR" secondAttribute="leading" constant="8" id="VVD-p3-M4g"/>
                                     <constraint firstItem="pOc-NZ-Eo6" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" constant="8" id="dSC-Sx-X7O"/>
                                     <constraint firstAttribute="bottom" secondItem="u6o-o0-TnP" secondAttribute="bottom" constant="8" id="gdF-iF-Ma7"/>
                                     <constraint firstAttribute="trailing" secondItem="u6o-o0-TnP" secondAttribute="trailing" constant="8" id="lVy-qL-Oej"/>
-                                    <constraint firstAttribute="trailing" secondItem="pOc-NZ-Eo6" secondAttribute="trailing" constant="8" id="pk1-op-Yic"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -82,6 +96,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="arrow" destination="r5L-D0-5yB" id="FwF-oy-MZb"/>
                 <outlet property="main" destination="pOc-NZ-Eo6" id="881-jf-flu"/>
                 <outlet property="sub" destination="u6o-o0-TnP" id="hj1-uw-Cg4"/>
             </connections>
@@ -89,6 +104,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="arrow.down" catalog="system" width="120" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
