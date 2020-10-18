@@ -1,0 +1,114 @@
+{
+  "DetailContent": [
+    {
+      "type": 1,
+      "main": "The QRH is intended for use by individuals who are familiar with it and who are practised in its use.<p>See www.aagbi.org/qrh for further details on implementation.",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 1,
+      "main": "Each guideline follows the same format:",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "Guideline number, name and version number",
+      "sub": "",
+      "step": "1"
+    },
+    {
+      "type": 4,
+      "main": "A brief description of the clinical situation for which the guideline is written",
+      "sub": "",
+      "step": "2"
+    },
+    {
+      "type": 2,
+      "main": "START",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "The body of the guideline with steps",
+      "sub": "",
+      "step": "3"
+    },
+    {
+      "type": 4,
+      "main": "Call out boxes, which may be referred to in the steps",
+      "sub": "",
+      "step": "4"
+    },
+    {
+      "type": 5,
+      "main": "Orange = critical changes",
+      "sub": "Boxes expand on clicking",
+      "step": ""
+    },
+    {
+      "type": 6,
+      "main": "Blue = drug doses",
+      "sub": "Boxes expand on clicking",
+      "step": ""
+    },
+    {
+      "type": 7,
+      "main": "Green = CPR information",
+      "sub": "Boxes expand on clicking",
+      "step": ""
+    },
+    {
+      "type": 8,
+      "main": "Black = equipment instructions",
+      "sub": "Boxes expand on clicking",
+      "step": ""
+    },
+    {
+      "type": 9,
+      "main": "Purple = other reference information",
+      "sub": "Boxes expand on clicking",
+      "step": ""
+    },
+    {
+      "type": 4,
+      "main": "A guideline may suggest changing to one of the other guidelines, like this: <b>(→ 2-1)</b>",
+      "sub": "",
+      "step": "5"
+    },
+    {
+      "type": 1,
+      "main": "<p>Each guideline should be used in the same simple way.</p><ul><li>Start at <strong>START</strong></li><li>Work through the numbered bullet points in order.</li><li>Where indicated, refer to the call out boxes on the right.</li><li>Where indicated, move to another guideline.</li></ul>",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 1,
+      "main": "<p>We recommend:</p><ul><li>One person should read the guideline aloud; they should NOT also be the person performing the actions.</li><li>The reader should ensure that the guideline is followed systematically, thoroughly and completely and that steps are not omitted.</li><li>Whenever experienced help arrives, consider delegating leadership to them: they have a fresh pair of eyes and may be able to make a more clear-headed assessment.</li></ul>",
+      "sub": "",
+      "step": "5"
+    },
+    {
+      "type": 4,
+      "main": "The original handbook PDF for each section can be downloaded by clicking the button at the top-right of the screen.",
+      "sub": "",
+      "step": "!"
+    },
+    {
+      "type": 11,
+      "main": "v.1",
+      "sub": "",
+      "step": ""
+    },
+    {
+      "type": 12,
+      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "sub": "",
+      "step": ""
+    }
+
+
+  ]
+}
