@@ -83,7 +83,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="main" destination="pOc-NZ-Eo6" id="881-jf-flu"/>
-                <outlet property="sub" destination="u6o-o0-TnP" id="NiL-Ma-7w4"/>
+                <outlet property="sub" destination="u6o-o0-TnP" id="hj1-uw-Cg4"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="177.45535714285714"/>
         </tableViewCell>
