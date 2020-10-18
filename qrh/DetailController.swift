@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ActiveLabel
 
 class DetailController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -36,6 +37,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         tableView.register(UINib(nibName: "CardCell3", bundle: nil), forCellReuseIdentifier: "CardCell3")
         tableView.register(UINib(nibName: "CardCell4", bundle: nil), forCellReuseIdentifier: "CardCell4")
         tableView.register(UINib(nibName: "CardCell5", bundle: nil), forCellReuseIdentifier: "CardCell5")
+        tableView.register(UINib(nibName: "CardCell9", bundle: nil), forCellReuseIdentifier: "CardCell9")
         tableView.register(UINib(nibName: "CardCell11", bundle: nil), forCellReuseIdentifier: "CardCell11")
         tableView.register(UINib(nibName: "CardCell12", bundle: nil), forCellReuseIdentifier: "CardCell12")
 
@@ -106,11 +108,26 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 cell.step.text = cardContent[indexPath.row].step
                 return cell
                 
-            case 5,6,7,8,9:
+            case 5,6,7,8:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
                 cell.main.text = cardContent[indexPath.row].main
                 let subInput = cardContent[indexPath.row].sub
                 cell.sub.setHTMLFromString(htmlText: subInput)
+                return cell
+                
+            case 9:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell9") as! CardCell9
+                let subInput = cardContent[indexPath.row].sub
+                let customLink = ActiveType.custom(pattern: "[(]?[→][\\s]?[1-4][-][0-9]{1,2}[)]?")
+                cell.sub.numberOfLines = 0
+                cell.sub.enabledTypes = [.url, customLink]
+                cell.sub.customColor[customLink] = UIColor.systemBlue
+                cell.sub.setHTMLFromString(htmlText: subInput)
+                
+                cell.sub.handleCustomTap(for: customLink) { element in
+                    print("Custom type tapped: \(element)")
+                }
+                
                 return cell
                 
             case 11:
@@ -142,13 +159,15 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             tableView.reloadData()
         }
     }
+    
+    
 }
 
 
 extension UILabel {
     func setHTMLFromString(htmlText: String) {
         let modifiedFont = String(format:"<style type=\"text/css\">html { font-family: '-apple-system', 'HelveticaNeue'; font-size: \(self.font!.pointSize); } ul { padding: 8px 0 0 0; } li { margin: 0 0 8 0; }</style>%@", htmlText)
-
+               
         let attrStr = try! NSMutableAttributedString(
             data: modifiedFont.data(using: .unicode, allowLossyConversion: true)!,
             options: [.documentType: NSMutableAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue],
@@ -157,15 +176,25 @@ extension UILabel {
         if let lastCharacter = attrStr.string.last, lastCharacter == "\n" {
             attrStr.deleteCharacters(in: NSRange(location: attrStr.length-1, length: 1))
         }
-
+    
+        
         attrStr.addAttribute(.foregroundColor, value: UIColor.label, range: NSRange(location: 0, length:attrStr.length))
         
         self.attributedText = attrStr
     }
     
-    func processRegexLinks() {
-        
-    }
+//    func processRegexLinks() {
+//        let inString = self.attributedText
+//        let regexPattern = "[(]?[→][\\s]?[1-4][-][0-9]{1,2}[)]?"
+//        let regex = try? NSRegularExpression(pattern: regexPattern, options: [])
+//        while let match = regex.matches(in: inString., options: [], range: NSRange(location: 0, length: inString.utf8.count)).first {
+//            let indicator = str[Range(match.range(at: 1), in: str)!]
+//            let substr = str[Range(match.range(at: 2), in: str)!]
+//            let replacement = NSMutableAttributedString(string: String(substr))
+//            // now based on the indicator variable you might want to apply some transformations in the `substr` attributed string
+//            attrStr.replaceCharacters(in: match.range, with: replacement)
+//        }
+//    }
 }
 
 
