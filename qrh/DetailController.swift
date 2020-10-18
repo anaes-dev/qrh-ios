@@ -173,7 +173,6 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                   // if the cell is contracted
                   // only show first 3 lines
                     cell.sub.text = ""
-                    
                 }
                 
                 return cell
