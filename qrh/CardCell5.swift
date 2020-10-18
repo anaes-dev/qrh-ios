@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import TTTAttributedLabel
 
 class CardCell5: UITableViewCell {
 
