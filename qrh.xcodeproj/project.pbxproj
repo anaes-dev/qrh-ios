@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -59,9 +59,15 @@
 		82A08AB42538E2E000F6BEA9 /* CardCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB22538E2E000F6BEA9 /* CardCell2.xib */; };
 		82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AB72538E96F00F6BEA9 /* CardCell1.swift */; };
 		82A08ABA2538E96F00F6BEA9 /* CardCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB82538E96F00F6BEA9 /* CardCell1.xib */; };
+		82A20FBF253C298F00E511D9 /* CardCell9.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A20FBE253C298F00E511D9 /* CardCell9.xib */; };
+		82A20FC2253C29A300E511D9 /* CardCell9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A20FC1253C29A300E511D9 /* CardCell9.swift */; };
+		C64697E65B37E96B8B1584D8 /* Pods_qrh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BE4ACD6C4BAE9EE3AA8818 /* Pods_qrh.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47BE4ACD6C4BAE9EE3AA8818 /* Pods_qrh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qrh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A3617F214868BF0D2BA5160 /* Pods-qrh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrh.debug.xcconfig"; path = "Target Support Files/Pods-qrh/Pods-qrh.debug.xcconfig"; sourceTree = "<group>"; };
+		6A8D5C760696D2B5FAEEBAE0 /* Pods-qrh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrh.release.xcconfig"; path = "Target Support Files/Pods-qrh/Pods-qrh.release.xcconfig"; sourceTree = "<group>"; };
 		82011A29253B1685003DCBE2 /* CardCell11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell11.swift; sourceTree = "<group>"; };
 		82011A2A253B1685003DCBE2 /* CardCell11.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell11.xib; sourceTree = "<group>"; };
 		82011A30253B1797003DCBE2 /* CardCell12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell12.swift; sourceTree = "<group>"; };
@@ -116,6 +122,8 @@
 		82A08AB22538E2E000F6BEA9 /* CardCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell2.xib; sourceTree = "<group>"; };
 		82A08AB72538E96F00F6BEA9 /* CardCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell1.swift; sourceTree = "<group>"; };
 		82A08AB82538E96F00F6BEA9 /* CardCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell1.xib; sourceTree = "<group>"; };
+		82A20FBE253C298F00E511D9 /* CardCell9.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell9.xib; sourceTree = "<group>"; };
+		82A20FC1253C29A300E511D9 /* CardCell9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,17 +131,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64697E65B37E96B8B1584D8 /* Pods_qrh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56E1EA645D3DB0FA41DE5CC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A3617F214868BF0D2BA5160 /* Pods-qrh.debug.xcconfig */,
+				6A8D5C760696D2B5FAEEBAE0 /* Pods-qrh.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		820EB9492535B51100FAEDB0 = {
 			isa = PBXGroup;
 			children = (
 				820EB9542535B51100FAEDB0 /* qrh */,
 				820EB9532535B51100FAEDB0 /* Products */,
+				56E1EA645D3DB0FA41DE5CC4 /* Pods */,
+				A2F615BFFB40DA33A1EBDAC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +211,8 @@
 				8276D046253B14A400243AB3 /* CardCell4.xib */,
 				8277FCDF253B326300E8158D /* CardCell5.swift */,
 				8277FCDC253B313F00E8158D /* CardCell5.xib */,
+				82A20FC1253C29A300E511D9 /* CardCell9.swift */,
+				82A20FBE253C298F00E511D9 /* CardCell9.xib */,
 				82011A29253B1685003DCBE2 /* CardCell11.swift */,
 				82011A2A253B1685003DCBE2 /* CardCell11.xib */,
 				82011A30253B1797003DCBE2 /* CardCell12.swift */,
@@ -205,6 +227,14 @@
 			path = qrh;
 			sourceTree = "<group>";
 		};
+		A2F615BFFB40DA33A1EBDAC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47BE4ACD6C4BAE9EE3AA8818 /* Pods_qrh.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,17 +242,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 820EB9662535B51200FAEDB0 /* Build configuration list for PBXNativeTarget "qrh" */;
 			buildPhases = (
+				08EB22AD4948378436C0CD23 /* [CP] Check Pods Manifest.lock */,
 				820EB94E2535B51100FAEDB0 /* Sources */,
 				820EB94F2535B51100FAEDB0 /* Frameworks */,
 				820EB9502535B51100FAEDB0 /* Resources */,
+				E42C8AA49856D70154815635 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = qrh;
-			packageProductDependencies = (
-			);
 			productName = qrh;
 			productReference = 820EB9522535B51100FAEDB0 /* qrh.app */;
 			productType = "com.apple.product-type.application";
@@ -250,8 +280,6 @@
 				Base,
 			);
 			mainGroup = 820EB9492535B51100FAEDB0;
-			packageReferences = (
-			);
 			productRefGroup = 820EB9532535B51100FAEDB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,6 +297,7 @@
 				8276D047253B14A400243AB3 /* CardCell4.xib in Resources */,
 				8279AF9E2536557B003BF303 /* 2-1.json in Resources */,
 				8279AF992536557B003BF303 /* 3-13.json in Resources */,
+				82A20FBF253C298F00E511D9 /* CardCell9.xib in Resources */,
 				8279AF9C2536557B003BF303 /* 3-5.json in Resources */,
 				82A08ABA2538E96F00F6BEA9 /* CardCell1.xib in Resources */,
 				8277FCDD253B313F00E8158D /* CardCell5.xib in Resources */,
@@ -309,6 +338,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08EB22AD4948378436C0CD23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-qrh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E42C8AA49856D70154815635 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qrh/Pods-qrh-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qrh/Pods-qrh-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qrh/Pods-qrh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		820EB94E2535B51100FAEDB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -326,6 +397,7 @@
 				82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */,
 				820EB9922535E96200FAEDB0 /* GuidelinesCell.swift in Sources */,
 				820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */,
+				82A20FC2253C29A300E511D9 /* CardCell9.swift in Sources */,
 				82258AFB253B0DA500E0C180 /* CardCell3.swift in Sources */,
 				82011A2B253B1685003DCBE2 /* CardCell11.swift in Sources */,
 			);
@@ -471,6 +543,7 @@
 		};
 		820EB9672535B51200FAEDB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A3617F214868BF0D2BA5160 /* Pods-qrh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -489,6 +562,7 @@
 		};
 		820EB9682535B51200FAEDB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A8D5C760696D2B5FAEEBAE0 /* Pods-qrh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
