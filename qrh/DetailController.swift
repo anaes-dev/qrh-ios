@@ -168,11 +168,12 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 if expandedIndexSet.contains(indexPath.row) {
                   // the label can take as many lines it need to display all text
                     cell.sub.setHTMLFromString(htmlText: subInput)
-                    
+                    cell.arrow.image = UIImage(systemName: "arrow.up")
                 } else {
                   // if the cell is contracted
                   // only show first 3 lines
                     cell.sub.text = ""
+                    cell.arrow.image = UIImage(systemName: "arrow.down")
                 }
                 
                 return cell

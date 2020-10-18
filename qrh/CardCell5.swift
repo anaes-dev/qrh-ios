@@ -26,5 +26,5 @@ class CardCell5: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }
