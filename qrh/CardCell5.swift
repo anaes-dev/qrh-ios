@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import TTTAttributedLabel
 
 class CardCell5: UITableViewCell {
 
-    @IBOutlet weak var sub: UILabel!
     @IBOutlet weak var main: UILabel!
+    
+    @IBOutlet weak var sub: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

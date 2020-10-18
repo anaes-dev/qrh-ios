@@ -8,7 +8,7 @@
     },
     {
       "type": 1,
-      "main": "Using the same systematic approach:<li>Increases the chance of identifying the problem.</li><li>Reduces the risk of missing the problem</li><li>Limits fixing attention inappropriately.</li>",
+      "main": "<p>Using the same systematic approach:</p><ul><li>Increases the chance of identifying the problem.</li><li>Reduces the risk of missing the problem</li><li>Limits fixing attention inappropriately.</li></ul>",
       "sub": "",
       "step": ""
     },
@@ -45,19 +45,19 @@
     {
       "type": 8,
       "main": "Box C: AIRWAY",
-      "sub": "Noise: Listen over the larynx with a stethoscope to get more information (e.g. leak / obstruction).<br />Tracheal tube: You can pass a suction catheter to check patency.",
+      "sub": "<p>Noise: Listen over the larynx with a stethoscope to get more information (e.g. leak / obstruction).</p><p>Tracheal tube: You can pass a suction catheter to check patency.</p>",
       "step": ""
     },
     {
       "type": 8,
       "main": "Box D: ISOLATE EQUIPMENT",
-      "sub": "Ventilate lungs using self-inflating bag connected <b>DIRECTLY</b> to tracheal tube connector. <b>DO NOT</b> use the HME filter, angle piece or catheter mount.<br /><li>If increased pressure manually confirmed, re-connect machine.</li><li>If increased pressure NOT manually confirmed, assume problem with machine/circuit/HME/filter/angle piece/catheter mount:  check and replace as indicated.</li>",
+      "sub": "<p>Ventilate lungs using self-inflating bag connected <b>DIRECTLY</b> to tracheal tube connector. <b>DO NOT</b> use the HME filter, angle piece or catheter mount.</p><ul><li>If increased pressure manually confirmed, re-connect machine.</li><li>If increased pressure NOT manually confirmed, assume problem with machine/circuit/HME/filter/angle piece/catheter mount:  check and replace as indicated.</li></ul>",
       "step": ""
     },
     {
       "type": 3,
       "main": "Breathing",
-      "sub": "<li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve <b>(Box E)</b> &lt;3 breaths.</li>",
+      "sub": "<ul><li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve <b>(Box E)</b> &lt;3 breaths.</li></ul>",
       "step": "3"
     },
     {

@@ -28,6 +28,24 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     var passedCode = String()
     var passedTitle = String()
     var passedURL = String()
+    var scrubLink = String()
+    var fetchedURL: String = ""
+    var fetchedTitle: String = "Default"
+    
+    
+    struct Guideline: Codable {
+        var code: String
+        var title: String
+        var version: Int
+        var url: String
+    }
+    
+    struct GuidelineList: Codable {
+        var guidelines: [Guideline]
+    }
+        
+    var unfilteredGuidelines = [Guideline]()
+    var filteredGuidelines = [Guideline]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,21 +70,19 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         self.navigationItem.rightBarButtonItem = pdfButton
 
         self.navigationItem.title = passedTitle
-//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Load", style: .plain, target: self, action: #selector(urlTapped))
-
         
     }
 
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         cardContent.count
-        
     }
     
+
     @objc func urlTapped(sender: AnyObject) {
         self.performSegue(withIdentifier: "LoadPDF", sender: self)
     }
@@ -75,8 +91,27 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         if let destination = segue.destination as? PDFNavController {
             destination.passedURL = passedURL
         }
+        
+        if let destination = segue.destination as? DetailController {
+            let jsonURL = Bundle.main.url(forResource: "guidelines", withExtension: "json")!
+            if let jsonDATA = try? Data(contentsOf: jsonURL) {
+                let decoder = JSONDecoder()
+                if let jsonGuidelines = try? decoder.decode(GuidelineList.self, from: jsonDATA) {
+                    unfilteredGuidelines = jsonGuidelines.guidelines
+                    filteredGuidelines = unfilteredGuidelines.filter { (guideline: Guideline) -> Bool in
+                        return guideline.code.lowercased().contains(scrubLink)
+                    }
+                    fetchedURL = filteredGuidelines[0].url
+                    fetchedTitle = filteredGuidelines[0].title
+            }
+            destination.passedCode = scrubLink
+            destination.passedURL = fetchedURL
+            destination.passedTitle = fetchedTitle
+        }
+        }
+        
     }
-
+    
      
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -123,9 +158,11 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 cell.sub.enabledTypes = [.url, customLink]
                 cell.sub.customColor[customLink] = UIColor.systemBlue
                 cell.sub.setHTMLFromString(htmlText: subInput)
+                cell.main.text = cardContent[indexPath.row].main
                 
                 cell.sub.handleCustomTap(for: customLink) { element in
-                    print("Custom type tapped: \(element)")
+                    self.scrubLink = element.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "→", with: "").replacingOccurrences(of: " ", with: "")
+                    self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
                 }
                 
                 return cell
@@ -147,8 +184,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             
         }
          
-        
-        
+
     }
       
     
@@ -160,41 +196,40 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         }
     }
     
-    
 }
 
 
 extension UILabel {
     func setHTMLFromString(htmlText: String) {
-        let modifiedFont = String(format:"<style type=\"text/css\">html { font-family: '-apple-system', 'HelveticaNeue'; font-size: \(self.font!.pointSize); } ul { padding: 8px 0 0 0; } li { margin: 0 0 8 0; }</style>%@", htmlText)
+        let htmlInput = String(format:"<style type=\"text/css\">html { font-family: '-apple-system', 'HelveticaNeue'; font-size: \(self.font!.pointSize); } ul { padding: 8px 0 0 0; } li { margin: 0 0 8 0; }</style>%@", htmlText)
                
         let attrStr = try! NSMutableAttributedString(
-            data: modifiedFont.data(using: .unicode, allowLossyConversion: true)!,
+            data: htmlInput.data(using: .unicode, allowLossyConversion: true)!,
             options: [.documentType: NSMutableAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue],
             documentAttributes: nil)
 
         if let lastCharacter = attrStr.string.last, lastCharacter == "\n" {
             attrStr.deleteCharacters(in: NSRange(location: attrStr.length-1, length: 1))
         }
-    
         
         attrStr.addAttribute(.foregroundColor, value: UIColor.label, range: NSRange(location: 0, length:attrStr.length))
-        
+
+//        let unwrapped = attrStr.string
+//        let pattern = "[(]?[→][\\s]?[1-4][-][0-9]{1,2}[)]?"
+//        let regex = try! NSRegularExpression(pattern: pattern, options: [])
+//        let range = NSMakeRange(0, attrStr.length)
+//        let matches = regex.matches(in: unwrapped, options: [], range: range)
+//
+//        for match in matches {
+//            print(match.range)
+//            let stringRange = match.range
+//            let stringLink = (unwrapped as NSString).substring(with: stringRange)
+//            let scrubLink = stringLink.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "→", with: "").replacingOccurrences(of: " ", with: "")
+//            attrStr.addAttribute(NSAttributedString.Key.link, value: scrubLink, range: match.range)
+//        }
+                
         self.attributedText = attrStr
+                
     }
     
-//    func processRegexLinks() {
-//        let inString = self.attributedText
-//        let regexPattern = "[(]?[→][\\s]?[1-4][-][0-9]{1,2}[)]?"
-//        let regex = try? NSRegularExpression(pattern: regexPattern, options: [])
-//        while let match = regex.matches(in: inString., options: [], range: NSRange(location: 0, length: inString.utf8.count)).first {
-//            let indicator = str[Range(match.range(at: 1), in: str)!]
-//            let substr = str[Range(match.range(at: 2), in: str)!]
-//            let replacement = NSMutableAttributedString(string: String(substr))
-//            // now based on the indicator variable you might want to apply some transformations in the `substr` attributed string
-//            attrStr.replaceCharacters(in: match.range, with: replacement)
-//        }
-//    }
 }
-
-
