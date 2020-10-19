@@ -11,7 +11,8 @@ import ActiveLabel
 class CardCell9: UITableViewCell {
 
     
-    @IBOutlet weak var sub: UILabel!
+    @IBOutlet weak var sub: ActiveLabel!
+    
     @IBOutlet weak var main: UILabel!
     
     override func awakeFromNib() {

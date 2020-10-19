@@ -11,7 +11,8 @@ class CardCell5: UITableViewCell {
 
     @IBOutlet weak var main: UILabel!
     
-    @IBOutlet weak var sub: UILabel!
+
+    @IBOutlet weak var sub: TapabbleLabel!
     
     @IBOutlet weak var arrow: UIImageView!
     

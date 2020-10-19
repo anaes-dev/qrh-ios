@@ -55,8 +55,13 @@
                                             <constraint firstAttribute="trailing" secondItem="r5L-D0-5yB" secondAttribute="trailing" constant="8" id="fPk-W2-ZeZ"/>
                                             <constraint firstItem="r5L-D0-5yB" firstAttribute="top" secondItem="pOc-NZ-Eo6" secondAttribute="top" id="gPJ-TG-EWL"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Sub" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6o-o0-TnP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Sub" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6o-o0-TnP" customClass="TapabbleLabel" customModule="qrh" customModuleProvider="target">
                                         <rect key="frame" x="8" y="40" width="272" height="52"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
@@ -124,7 +129,7 @@
                 <outlet property="box" destination="Ggh-sj-7tR" id="7Sp-VK-Xbl"/>
                 <outlet property="button" destination="IJB-48-cnk" id="mVH-gi-7E5"/>
                 <outlet property="main" destination="pOc-NZ-Eo6" id="881-jf-flu"/>
-                <outlet property="sub" destination="u6o-o0-TnP" id="hj1-uw-Cg4"/>
+                <outlet property="sub" destination="u6o-o0-TnP" id="9Vz-E5-Xyb"/>
                 <outlet property="sub0" destination="f6t-Uv-QIu" id="Kvf-st-zXa"/>
                 <outlet property="sub8" destination="gdF-iF-Ma7" id="pm8-J0-WwN"/>
             </connections>
