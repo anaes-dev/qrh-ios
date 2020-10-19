@@ -15,16 +15,22 @@ class CardCell5: UITableViewCell {
     
     @IBOutlet weak var arrow: UIImageView!
     
+    @IBOutlet weak var sub0: NSLayoutConstraint!
+    
+    @IBOutlet weak var sub8: NSLayoutConstraint!
+    
+    @IBOutlet weak var box: UIView!
+    
+    @IBOutlet weak var button: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        button.backgroundColor = UIColor.systemOrange.withAlphaComponent(0)
     }
     
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }

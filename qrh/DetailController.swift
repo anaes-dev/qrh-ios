@@ -113,21 +113,41 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-        // if the cell is already expanded, remove it from the indexset to contract it
-        if(expandedIndexSet.contains(indexPath.row)){
-            expandedIndexSet.remove(indexPath.row)
-        } else {
-            // if the cell is not expanded, add it to the indexset to expand it
-            expandedIndexSet.insert(indexPath.row)
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        tableView.deselectRow(at: indexPath, animated: true)
+//                if(expandedIndexSet.contains(indexPath.row)){
+//            expandedIndexSet.remove(indexPath.row)
+//        } else {
+//            expandedIndexSet.insert(indexPath.row)
+//        }
+//        tableView.reloadData()
+//    }
+    
+    @objc func tapBox(sender: UITapGestureRecognizer) {
+        if let buttonView = sender.view {
+            let existingColor = buttonView.backgroundColor
+            if sender.state == .ended {
+                buttonView.backgroundColor = existingColor?.withAlphaComponent(0.1)
+            
+                DispatchQueue.main.asyncAfter(deadline: .now()+0.2 ) {
+                    buttonView.backgroundColor = existingColor?.withAlphaComponent(0)
+                }
+            }
+            if let cell = buttonView.superview?.superview?.superview?.superview as? UITableViewCell {
+                if let indexPath = tableView.indexPath(for: cell) {
+                    if(expandedIndexSet.contains(indexPath.row)){
+                        expandedIndexSet.remove(indexPath.row)
+                        } else {
+                            expandedIndexSet.insert(indexPath.row)
+                        }
+                    tableView.reloadRows(at: [indexPath], with: .fade)
+                    }
+            }
+
         }
-        
-        // the animation magic happens here
-        // this will call cellForRow for the indexPath you supplied, and animate the changes
-        tableView.reloadData()
     }
+    
+    
      
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -163,16 +183,21 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
                 cell.main.text = cardContent[indexPath.row].main
                 let subInput = cardContent[indexPath.row].sub
-                
+                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapBox))
+                cell.button.addGestureRecognizer(tapGesture)
                 
                 if expandedIndexSet.contains(indexPath.row) {
                   // the label can take as many lines it need to display all text
                     cell.sub.setHTMLFromString(htmlText: subInput)
+                    cell.sub0.isActive = false
+                    cell.sub8.isActive = true
                     cell.arrow.image = UIImage(systemName: "arrow.up")
                 } else {
                   // if the cell is contracted
                   // only show first 3 lines
                     cell.sub.text = ""
+                    cell.sub8.isActive = false
+                    cell.sub0.isActive = true
                     cell.arrow.image = UIImage(systemName: "arrow.down")
                 }
                 
@@ -260,19 +285,19 @@ extension UILabel {
         
         attrStr.addAttribute(.foregroundColor, value: UIColor.label, range: NSRange(location: 0, length:attrStr.length))
 
-//        let unwrapped = attrStr.string
-//        let pattern = "[(]?[→][\\s]?[1-4][-][0-9]{1,2}[)]?"
-//        let regex = try! NSRegularExpression(pattern: pattern, options: [])
-//        let range = NSMakeRange(0, attrStr.length)
-//        let matches = regex.matches(in: unwrapped, options: [], range: range)
-//
-//        for match in matches {
-//            print(match.range)
-//            let stringRange = match.range
-//            let stringLink = (unwrapped as NSString).substring(with: stringRange)
-//            let scrubLink = stringLink.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "→", with: "").replacingOccurrences(of: " ", with: "")
-//            attrStr.addAttribute(NSAttributedString.Key.link, value: scrubLink, range: match.range)
-//        }
+        let unwrapped = attrStr.string
+        let pattern = "[(]?[→][\\s]?[1-4][-][0-9]{1,2}[)]?"
+        let regex = try! NSRegularExpression(pattern: pattern, options: [])
+        let range = NSMakeRange(0, attrStr.length)
+        let matches = regex.matches(in: unwrapped, options: [], range: range)
+
+        for match in matches {
+            print(match.range)
+            let stringRange = match.range
+            let stringLink = (unwrapped as NSString).substring(with: stringRange)
+            let scrubLink = stringLink.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "→", with: "").replacingOccurrences(of: " ", with: "")
+            attrStr.addAttribute(NSAttributedString.Key.link, value: scrubLink, range: match.range)
+        }
                 
         self.attributedText = attrStr
                 
