@@ -29,6 +29,10 @@ class CardCell5: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         button.backgroundColor = UIColor.systemOrange.withAlphaComponent(0)
+        sub.isUserInteractionEnabled = true
+        sub.isEditable = false
+        sub.isSelectable = true
+        sub.isScrollEnabled = false
     }
     
 
