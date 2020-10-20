@@ -7,11 +7,6 @@
 
 import UIKit
 
-typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveType)
-
-public typealias ConfigureLinkAttribute = (ActiveType, [NSAttributedString.Key : Any], Bool) -> ([NSAttributedString.Key : Any])
-typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveType)
-
 class TapabbleLabel: UILabel {
 
 let layoutManager = NSLayoutManager()
@@ -72,7 +67,6 @@ override init(frame: CGRect) {
     super.init(frame: frame)
     setUp()
 }
-    lazy var activeElements = [ActiveType: [ElementTuple]]()
 
 /**
  Sets up the view.
@@ -104,29 +98,7 @@ func setUp() {
         layoutManager.drawGlyphs(forGlyphRange: range, at: newOrigin)
     }
     
-    fileprivate func element(at location: CGPoint) -> ElementTuple? {
-        guard textStorage.length > 0 else {
-            return nil
-        }
-        
-        var correctLocation = location
-        correctLocation.y -= heightCorrection
-        let boundingRect = layoutManager.boundingRect(forGlyphRange: NSRange(location: 0, length: textStorage.length), in: textContainer)
-        guard boundingRect.contains(correctLocation) else {
-            return nil
-        }
-        
-        let index = layoutManager.glyphIndex(for: correctLocation, in: textContainer)
-        
-        for element in activeElements.map({ $0.1 }).joined() {
-            if index >= element.range.location && index <= element.range.location + element.range.length {
-                return element
-            }
-        }
-        
-        return nil
-    }
-    
+   
 
 override func layoutSubviews() {
     super.layoutSubviews()
