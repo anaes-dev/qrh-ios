@@ -12,13 +12,15 @@ class CardCell5: UITableViewCell {
     @IBOutlet weak var main: UILabel!
     
 
-    @IBOutlet weak var sub: TapabbleLabel!
+    @IBOutlet weak var sub: UITextView!
     
     @IBOutlet weak var arrow: UIImageView!
+
     
-    @IBOutlet weak var sub0: NSLayoutConstraint!
     
     @IBOutlet weak var sub8: NSLayoutConstraint!
+    
+    @IBOutlet weak var sub0: NSLayoutConstraint!
     
     @IBOutlet weak var box: UIView!
     

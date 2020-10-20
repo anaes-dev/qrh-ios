@@ -29,7 +29,7 @@
                                         <color key="textColor" systemColor="systemPurpleColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Sub" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6o-o0-TnP" customClass="ActiveLabel" customModule="ActiveLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Sub" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6o-o0-TnP">
                                         <rect key="frame" x="8" y="36.5" width="272" height="55.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="highlightedColor"/>
@@ -82,16 +82,11 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="main" destination="pOc-NZ-Eo6" id="lA9-gq-6Pm"/>
-                <outlet property="sub" destination="u6o-o0-TnP" id="s42-qb-nlq"/>
+                <outlet property="sub" destination="u6o-o0-TnP" id="j7O-qX-xPF"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="177.45535714285714"/>
         </tableViewCell>
     </objects>
-    <designables>
-        <designable name="u6o-o0-TnP">
-            <size key="intrinsicContentSize" width="27" height="18"/>
-        </designable>
-    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
