@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ActiveLabel
 
 class CardCell9: UITableViewCell {
 

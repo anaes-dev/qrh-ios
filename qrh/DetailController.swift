@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class DetailController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -69,11 +69,11 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
            parseCards(json: jsonDATA)
         }
         
-        
         let pdfButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.action, target: self, action: #selector(urlTapped))
         self.navigationItem.rightBarButtonItem = pdfButton
 
         self.navigationItem.title = passedTitle
+        
     }
 
 
@@ -129,10 +129,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                             } else {
                                 expandedIndexSet.insert(indexPath.row)
                             }
-
-                        self.tableView.reloadRows(at: [indexPath], with: .none)
-
-    
+                        self.tableView.reloadRows(at: [indexPath], with: .fade)
                         return
                         }
                 }
@@ -144,28 +141,9 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         } else {
             return
         }
-        
     }
     
 
-    
-    
-    
-    
-//    @objc func tapLink(gesture: UITapGestureRecognizer) {
-//        print("hello")
-//        if let tappedLabel = gesture.view as? TapabbleLabel {
-//            tappedLabel.onCharacterTapped = { label, characterIndex in
-//            if let attribute = tappedLabel.attributedText?.attribute(NSAttributedString.Key.link, at: characterIndex, effectiveRange: nil) as? String,
-//                let url = NSURL(string: attribute) {
-//                print(url)
-//            }
-//        }
-//        }
-//
-//    }
-    
-    
      
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -197,54 +175,25 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             case 5,6,7,8:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
                 cell.main.text = cardContent[indexPath.row].main
-                cell.sub.attributedText = subParsed[indexPath.row]
+                cell.sub.delegate = self
                 
                 let tapGesture = UILongPressGestureRecognizer(target: self, action: #selector(tapBox))
                 tapGesture.minimumPressDuration = 0
                 cell.button.addGestureRecognizer(tapGesture)
-                                
-//                let linkGesture = UITapGestureRecognizer(target: self, action: #selector(tapLink))
-//                cell.sub.isUserInteractionEnabled = true
-//                cell.sub.addGestureRecognizer(linkGesture)
-                
+
                 if expandedIndexSet.contains(indexPath.row) {
                     cell.arrow.image = UIImage(systemName: "arrow.up")
+                    cell.sub.attributedText = subParsed[indexPath.row]
                 } else {
                     cell.arrow.image = UIImage(systemName: "arrow.down")
+                    cell.sub.attributedText = nil
                 }
-                                
-//                if let subLable = cell.sub {
-//                    subLable.onCharacterTapped = { label, characterIndex in
-//                    if let attribute = subLable.attributedText?.attribute(NSAttributedString.Key.link, at: characterIndex, effectiveRange: nil) as? String {
-//
-//                        self.scrubLink = attribute
-//                        self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
-//                    }
-//
-//                }
-//
-//                }
-
                 return cell
                 
             case 9:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell9") as! CardCell9
-                
-                
-//                let customLink = ActiveType.custom(pattern: "[(]?[→][\\s]?[1-4][-][0-9]{1,2}[)]?")
-//                cell.sub.numberOfLines = 0
-//                cell.sub.enabledTypes = [.url, customLink]
-//                cell.sub.customColor[customLink] = UIColor.systemBlue
-//                cell.sub.setHTMLFromString(htmlText: subInput)
-                
                 cell.main.text = cardContent[indexPath.row].main
                 cell.sub.attributedText = subParsed[indexPath.row]
-                
-//                cell.sub.handleCustomTap(for: customLink) { element in
-//                    self.scrubLink = element.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "→", with: "").replacingOccurrences(of: " ", with: "")
-//                    self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
-//                }
-                
                 return cell
                 
             case 11:
@@ -282,6 +231,12 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         }
     }
     
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        scrubLink = URL.absoluteString
+        self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
+        return false
+    }
+    
 
 
     func parseHtmlAttributes(htmlText: String) -> NSMutableAttributedString {
@@ -290,6 +245,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     <style type=\"text/css\">
                     body {
                         font-family: -apple-system, 'HelveticaNeue';
+                        font-size: 15;
                     }
                     ul {
                         padding: 8px 0 0 0;
@@ -305,7 +261,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 //        let htmlInput = String(format:"<html><style type=\"text/css\">html { font-family: '-apple-system', 'HelveticaNeue'; font-size: \(self.font!.pointSize); } ul { padding: 8px 0 0 0; } li { margin: 0 0 8 0;  }</style>%@", htmlText)
            
     let attrStr = try! NSMutableAttributedString(
-        data: htmlInput.data(using: .unicode, allowLossyConversion: true)!,
+        data: htmlInput.data(using: String.Encoding.utf8)!,
         options: [.documentType: NSMutableAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue],
         documentAttributes: nil)
 
@@ -322,11 +278,11 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     let matches = regex.matches(in: unwrapped, options: [], range: range)
 
     for match in matches {
-        print(match.range)
         let stringRange = match.range
         let stringLink = (unwrapped as NSString).substring(with: stringRange)
         let scrubLink = stringLink.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "→", with: "").replacingOccurrences(of: " ", with: "")
-        attrStr.addAttribute(NSAttributedString.Key.link, value: scrubLink, range: match.range)
+        let scrubURL = NSURL(string: scrubLink)
+        attrStr.addAttribute(NSAttributedString.Key.link, value: scrubURL, range: match.range)
     }
         
 //        let paragraphStyle = NSMutableParagraphStyle()
@@ -342,166 +298,3 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 }
 }
 
-extension UITextView {
-    func setHTMLFromString(htmlText: String) {
-        
-        let htmlInput = """
-                        <style type=\"text/css\">
-                        body {
-                            font-family: -apple-system, 'HelveticaNeue';
-                            font-size: \(self.font!.pointSize);
-                        }
-                        ul {
-                            padding: 8px 0 0 0;
-                        }
-                        li {
-                            margin: 0 0 8 0;
-                        }
-                        </style>
-                        \(htmlText)
-                        """
-        
-//
-//        let htmlInput = String(format:"<html><style type=\"text/css\">html { font-family: '-apple-system', 'HelveticaNeue'; font-size: \(self.font!.pointSize); } ul { padding: 8px 0 0 0; } li { margin: 0 0 8 0;  }</style>%@", htmlText)
-               
-        let attrStr = try! NSMutableAttributedString(
-            data: htmlInput.data(using: .unicode, allowLossyConversion: true)!,
-            options: [.documentType: NSMutableAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue],
-            documentAttributes: nil)
-
-        if let lastCharacter = attrStr.string.last, lastCharacter == "\n" {
-            attrStr.deleteCharacters(in: NSRange(location: attrStr.length-1, length: 1))
-        }
-        
-        attrStr.addAttribute(.foregroundColor, value: UIColor.label, range: NSRange(location: 0, length:attrStr.length))
-
-        let unwrapped = attrStr.string
-        let pattern = "[(]?[→][\\s]?[1-4][-][0-9]{1,2}[)]?"
-        let regex = try! NSRegularExpression(pattern: pattern, options: [])
-        let range = NSMakeRange(0, attrStr.length)
-        let matches = regex.matches(in: unwrapped, options: [], range: range)
-
-        for match in matches {
-            print(match.range)
-            let stringRange = match.range
-            let stringLink = (unwrapped as NSString).substring(with: stringRange)
-            let scrubLink = stringLink.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "→", with: "").replacingOccurrences(of: " ", with: "")
-            attrStr.addAttribute(NSAttributedString.Key.link, value: scrubLink, range: match.range)
-        }
-            
-//        let paragraphStyle = NSMutableParagraphStyle()
-//        var minimumLineHeight: CGFloat = 0
-//        var lineSpacing: CGFloat = 0
-//        paragraphStyle.lineBreakMode = NSLineBreakMode.byWordWrapping
-//        paragraphStyle.alignment = .natural
-//        paragraphStyle.lineSpacing = lineSpacing
-//        paragraphStyle.minimumLineHeight = minimumLineHeight > 0 ? minimumLineHeight: self.font.pointSize * 1.14
-//        attrStr.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: range)
-
-        
-                
-        self.attributedText = attrStr
-                
-    }
-    
-}
-
-extension UILabel {
-    func setHTMLFromString(htmlText: String) {
-        
-        let htmlInput = """
-                        <style type=\"text/css\">
-                        body {
-                            font-family: -apple-system, 'HelveticaNeue';
-                            font-size: \(self.font!.pointSize);
-                        }
-                        ul {
-                            padding: 8px 0 0 0;
-                        }
-                        li {
-                            margin: 0 0 8 0;
-                        }
-                        </style>
-                        \(htmlText)
-                        """
-        
-//
-//        let htmlInput = String(format:"<html><style type=\"text/css\">html { font-family: '-apple-system', 'HelveticaNeue'; font-size: \(self.font!.pointSize); } ul { padding: 8px 0 0 0; } li { margin: 0 0 8 0;  }</style>%@", htmlText)
-               
-        let attrStr = try! NSMutableAttributedString(
-            data: htmlInput.data(using: .unicode, allowLossyConversion: true)!,
-            options: [.documentType: NSMutableAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue],
-            documentAttributes: nil)
-
-        if let lastCharacter = attrStr.string.last, lastCharacter == "\n" {
-            attrStr.deleteCharacters(in: NSRange(location: attrStr.length-1, length: 1))
-        }
-        
-        attrStr.addAttribute(.foregroundColor, value: UIColor.label, range: NSRange(location: 0, length:attrStr.length))
-
-        let unwrapped = attrStr.string
-        let pattern = "[(]?[→][\\s]?[1-4][-][0-9]{1,2}[)]?"
-        let regex = try! NSRegularExpression(pattern: pattern, options: [])
-        let range = NSMakeRange(0, attrStr.length)
-        let matches = regex.matches(in: unwrapped, options: [], range: range)
-
-        for match in matches {
-            print(match.range)
-            let stringRange = match.range
-            let stringLink = (unwrapped as NSString).substring(with: stringRange)
-            let scrubLink = stringLink.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "→", with: "").replacingOccurrences(of: " ", with: "")
-            attrStr.addAttribute(NSAttributedString.Key.link, value: scrubLink, range: match.range)
-        }
-            
-//        let paragraphStyle = NSMutableParagraphStyle()
-//        var minimumLineHeight: CGFloat = 0
-//        var lineSpacing: CGFloat = 0
-//        paragraphStyle.lineBreakMode = NSLineBreakMode.byWordWrapping
-//        paragraphStyle.alignment = .natural
-//        paragraphStyle.lineSpacing = lineSpacing
-//        paragraphStyle.minimumLineHeight = minimumLineHeight > 0 ? minimumLineHeight: self.font.pointSize * 1.14
-//        attrStr.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: range)
-
-        
-                
-        self.attributedText = attrStr
-                
-    }
-    
-}
-
-extension UITapGestureRecognizer {
-
-    func didTapAttributedTextInLabel(label: UILabel, inRange targetRange: NSRange) -> Bool {
-        // Create instances of NSLayoutManager, NSTextContainer and NSTextStorage
-        let layoutManager = NSLayoutManager()
-        let textContainer = NSTextContainer(size: CGSize.zero)
-        let textStorage = NSTextStorage(attributedString: label.attributedText!)
-
-        // Configure layoutManager and textStorage
-        layoutManager.addTextContainer(textContainer)
-        textStorage.addLayoutManager(layoutManager)
-
-        // Configure textContainer
-        textContainer.lineFragmentPadding = 0.0
-        textContainer.lineBreakMode = label.lineBreakMode
-        textContainer.maximumNumberOfLines = label.numberOfLines
-        let labelSize = label.bounds.size
-        textContainer.size = labelSize
-
-        // Find the tapped character location and compare it to the specified range
-        let locationOfTouchInLabel = self.location(in: label)
-        let textBoundingBox = layoutManager.usedRect(for: textContainer)
-        let textContainerOffset = CGPoint(
-            x: (labelSize.width - textBoundingBox.size.width) * 0.5 - textBoundingBox.origin.x,
-            y: (labelSize.height - textBoundingBox.size.height) * 0.5 - textBoundingBox.origin.y
-        )
-        let locationOfTouchInTextContainer = CGPoint(
-            x: locationOfTouchInLabel.x - textContainerOffset.x,
-            y: locationOfTouchInLabel.y - textContainerOffset.y
-        )
-        let indexOfCharacter = layoutManager.characterIndex(for: locationOfTouchInTextContainer, in: textContainer, fractionOfDistanceBetweenInsertionPoints: nil)
-
-        return NSLocationInRange(indexOfCharacter, targetRange)
-    }
-}
