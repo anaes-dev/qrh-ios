@@ -69,6 +69,7 @@
                                         </constraints>
                                         <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="3Wk-jY-wnp"/>

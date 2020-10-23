@@ -8,7 +8,7 @@
     },
     {
       "type": 1,
-      "main": "Distinguish early between:<li>Excessive heating (most common)</li><li>Inadequate dissipation of metabolic heat</li><li>Excessive heat production</li><li>Actively maintained fever</li>",
+      "main": "Distinguish early between:<ul><li>Excessive heating (most common)</li><li>Inadequate dissipation of metabolic heat</li><li>Excessive heat production</li><li>Actively maintained fever</li></ul>",
       "sub": "",
       "step": ""
     },
@@ -32,43 +32,43 @@
     },
     {
       "type": 4,
-      "main": "Make an initial diagnosis of the cause as this affects further management <b>(Box A)</b>:<li>Actively maintained fever (typically cold peripheries, vasoconstricted) OR</li><li>Non-febrile hyperthermia (typically warm peripheries, vasodilated)</li><li>Suspect malignant hyperthermia crisis or neuroleptic malignant syndrome? <b>→3-8</b></li>",
+      "main": "Make an initial diagnosis of the cause as this affects further management <b>(Box A)</b>:<ul><li>Actively maintained fever (typically cold peripheries, vasoconstricted) OR</li><li>Non-febrile hyperthermia (typically warm peripheries, vasodilated)</li><li>Suspect malignant hyperthermia crisis or neuroleptic malignant syndrome? <b>→3-8</b></li></ul>",
       "sub": "",
       "step": "3"
     },
     {
       "type": 9,
       "main": "Box A: COMMON CAUSES",
-      "sub": "<li>Excessive insulation, high ambient temperature, external warming devices, especially infants and children (most common)</li><li>Surgical devices, e.g. HIFU, diathermy, radiotherapy</li><li>Prolonged epidural anaesthesia</li><li>Sepsis <b>→3-14</b> e.g. during manipulation of a urological device</li><li>Blood transfusion</li><li>Allergic reaction / anaphylaxis <b>→3-1</b></li>",
+      "sub": "<ul><li>Excessive insulation, high ambient temperature, external warming devices, especially infants and children (most common)</li><li>Surgical devices, e.g. HIFU, diathermy, radiotherapy</li><li>Prolonged epidural anaesthesia</li><li>Sepsis <b>→3-14</b> e.g. during manipulation of a urological device</li><li>Blood transfusion</li><li>Allergic reaction / anaphylaxis <b>→3-1</b></li></ul>",
       "step": ""
     },
     {
       "type": 9,
       "main": "Box A: DRUG CAUSES",
-      "sub": "<li>Neuroleptic malignant syndrome (e.g. haloperidol and other antipsychotics)</li><li>Malignant hyperthermia crisis (late sign) <b>→3-8</b></li><li></li><li>Serotonin syndrome (cocaine, amphetamine, phencyclidine, MDMA)</li><li>Anticholinergic syndrome (tricyclic antidepressants, antipsychotics, antihistamines)</li><li>Sympathomimetic syndrome (cocaine, MDMA, amphetamines)</li>",
+      "sub": "<ul><li>Neuroleptic malignant syndrome (e.g. haloperidol and other antipsychotics)</li><li>Malignant hyperthermia crisis (late sign) <b>→3-8</b></li><li></li><li>Serotonin syndrome (cocaine, amphetamine, phencyclidine, MDMA)</li><li>Anticholinergic syndrome (tricyclic antidepressants, antipsychotics, antihistamines)</li><li>Sympathomimetic syndrome (cocaine, MDMA, amphetamines)</li></ul>",
       "step": ""
     },
     {
       "type": 9,
       "main": "Box A: TOXIC CAUSES",
-      "sub": "<li>Radiologic contrast neurotoxicity</li><li>Alcohol withdrawal</li>",
+      "sub": "<ul><li>Radiologic contrast neurotoxicity</li><li>Alcohol withdrawal</li></ul>",
       "step": ""
     },
     {
       "type": 9,
       "main": "Box A: ENDOCRINE CAUSES",
-      "sub": "<li>Thyrotoxicosis</li><li>Phaeochromocytoma</li>",
+      "sub": "<ul><li>Thyrotoxicosis</li><li>Phaeochromocytoma</li></ul>",
       "step": ""
     },
     {
       "type": 9,
       "main": "Box A: NEUROLOGICAL CAUSES",
-      "sub": "<li>Meningitis</li><li>Intracranial blood</li><li>Hypoxic encephalopathy</li><li>Traumatic brain injury</li>",
+      "sub": "<ul><li>Meningitis</li><li>Intracranial blood</li><li>Hypoxic encephalopathy</li><li>Traumatic brain injury</li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Start active cooling WITH CAUTION if core temp ≥ 39°C (stop once below):<li>Reduce the operating room ambient temperature.</li><li>Cooling jackets or blankets.</li><li>Ice packing in groin, axillae and anterior neck.</li><li>Bladder, gastric or peritoneal lavage with boluses 10 ml.kg⁻¹ iced water.</li>",
+      "main": "Start active cooling WITH CAUTION if core temp ≥ 39°C (stop once below):<ul><li>Reduce the operating room ambient temperature.</li><li>Cooling jackets or blankets.</li><li>Ice packing in groin, axillae and anterior neck.</li><li>Bladder, gastric or peritoneal lavage with boluses 10 ml.kg⁻¹ iced water.</li></ul>",
       "sub": "",
       "step": "4"
     },
@@ -98,7 +98,7 @@
     },
     {
       "type": 4,
-      "main": "Monitor and manage life-threatening complications especially:<li>Hyperkalaemia, hypoglycaemia, acidosis</li><li>Hypotension <b>→2-4</b>, malignant hypertension</li><li>Altered conscious level, convulsions</li><li>Coagulopathy and disseminated intravascular coagulation</li>",
+      "main": "Monitor and manage life-threatening complications especially:<ul><li>Hyperkalaemia, hypoglycaemia, acidosis</li><li>Hypotension <b>→2-4</b>, malignant hypertension</li><li>Altered conscious level, convulsions</li><li>Coagulopathy and disseminated intravascular coagulation</li></ul>",
       "sub": "",
       "step": "8"
     },

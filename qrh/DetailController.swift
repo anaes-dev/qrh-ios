@@ -96,6 +96,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         }
         
         if let destination = segue.destination as? DetailController {
+            if segue.identifier == "LoadDetail" {
             let jsonURL = Bundle.main.url(forResource: "guidelines", withExtension: "json")!
             if let jsonDATA = try? Data(contentsOf: jsonURL) {
                 let decoder = JSONDecoder()
@@ -110,6 +111,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             destination.passedCode = scrubLink
             destination.passedURL = fetchedURL
             destination.passedTitle = fetchedTitle
+        }
         }
         }
         
@@ -271,8 +273,16 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
         scrubLink = URL.absoluteString
+        let regex = try! NSRegularExpression(pattern: "[1-4][-][0-9]")
+//        let phoneRegex = try! NSRegularExpression(pattern: "0[0-9]{10}")
+        let range = NSRange(location: 0, length: scrubLink.count)
+        if regex.firstMatch(in: scrubLink, options: [], range: range) != nil {
         self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
         return false
+        } else  {
+            UIApplication.shared.open(URL)
+            return false
+        }
     }
     
 

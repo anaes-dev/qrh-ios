@@ -33,7 +33,7 @@
     {
       "type": 3,
       "main": "Airway",
-      "sub": "<ul><li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter)</li><<li>Isolate patient from anaesthetic machine and breathing system <b>(Box C)</b>.</li><li>If machine/breathing system problem excluded, consider whether airway device should be replaced or its type changed.</li></ul>",
+      "sub": "<ul><li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter)</li><li>Isolate patient from anaesthetic machine and breathing system <b>(Box C)</b>.</li><li>If machine/breathing system problem excluded, consider whether airway device should be replaced or its type changed.</li></ul>",
       "step": "2"
     },
     {
