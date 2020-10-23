@@ -63,6 +63,13 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         }
         filteredGuidelines = unfilteredGuidelines
         
+        let aboutButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.organize, target: self, action: #selector(aboutLoad))
+        self.navigationItem.rightBarButtonItem = aboutButton
+        
+    }
+    
+    @objc func aboutLoad() {
+        self.performSegue(withIdentifier: "LoadAbout", sender: self)
     }
 
     

@@ -172,8 +172,42 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 cell.step.text = cardContent[indexPath.row].step
                 return cell
                 
-            case 5,6,7,8:
+            case 5,6,7,8,9:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
+                
+                switch cardContent[indexPath.row].type {
+                case 5:
+                    cell.box.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.15)
+                    cell.button.backgroundColor = UIColor.systemOrange.withAlphaComponent(0)
+                    cell.main.textColor = UIColor.systemOrange
+                    cell.arrow.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.15)
+                    cell.arrow.tintColor = UIColor.systemOrange
+                case 6:
+                    cell.box.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.15)
+                    cell.button.backgroundColor = UIColor.systemBlue.withAlphaComponent(0)
+                    cell.main.textColor = UIColor.systemBlue
+                    cell.arrow.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.15)
+                    cell.arrow.tintColor = UIColor.systemBlue
+                case 7:
+                    cell.box.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.15)
+                    cell.button.backgroundColor = UIColor.systemGreen.withAlphaComponent(0)
+                    cell.main.textColor = UIColor.systemGreen
+                    cell.arrow.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.15)
+                    cell.arrow.tintColor = UIColor.systemGreen
+                case 9:
+                    cell.box.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.15)
+                    cell.button.backgroundColor = UIColor.systemPurple.withAlphaComponent(0)
+                    cell.main.textColor = UIColor.systemPurple
+                    cell.arrow.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.15)
+                    cell.arrow.tintColor = UIColor.systemPurple
+                default:
+                    cell.box.backgroundColor = UIColor.systemGray.withAlphaComponent(0.15)
+                    cell.button.backgroundColor = UIColor.systemGray.withAlphaComponent(0)
+                    cell.main.textColor = UIColor.label
+                    cell.arrow.backgroundColor = UIColor.systemGray.withAlphaComponent(0.15)
+                    cell.arrow.tintColor = UIColor.label
+                }
+                
                 cell.main.text = cardContent[indexPath.row].main
                 cell.sub.delegate = self
                 
@@ -184,16 +218,20 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 if expandedIndexSet.contains(indexPath.row) {
                     cell.arrow.image = UIImage(systemName: "arrow.up")
                     cell.sub.attributedText = subParsed[indexPath.row]
+                    cell.sub0.isActive = false
+                    cell.sub8.isActive = true
+                    if cell.subheight?.isActive != nil {
+                        cell.subheight.isActive = false
+                    }
                 } else {
                     cell.arrow.image = UIImage(systemName: "arrow.down")
                     cell.sub.attributedText = nil
+                    cell.sub8.isActive = false
+                    cell.sub0.isActive = true
+                    if cell.subheight?.isActive != nil {
+                        cell.subheight.isActive = true
+                    }
                 }
-                return cell
-                
-            case 9:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell9") as! CardCell9
-                cell.main.text = cardContent[indexPath.row].main
-                cell.sub.attributedText = subParsed[indexPath.row]
                 return cell
                 
             case 11:
@@ -257,9 +295,6 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     \(htmlText)
                     """
     
-//
-//        let htmlInput = String(format:"<html><style type=\"text/css\">html { font-family: '-apple-system', 'HelveticaNeue'; font-size: \(self.font!.pointSize); } ul { padding: 8px 0 0 0; } li { margin: 0 0 8 0;  }</style>%@", htmlText)
-           
     let attrStr = try! NSMutableAttributedString(
         data: htmlInput.data(using: String.Encoding.utf8)!,
         options: [.documentType: NSMutableAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue],
@@ -281,8 +316,9 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         let stringRange = match.range
         let stringLink = (unwrapped as NSString).substring(with: stringRange)
         let scrubLink = stringLink.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "→", with: "").replacingOccurrences(of: " ", with: "")
-        let scrubURL = NSURL(string: scrubLink)
+        let scrubURL = NSURL(string: scrubLink)!
         attrStr.addAttribute(NSAttributedString.Key.link, value: scrubURL, range: match.range)
+        attrStr.addAttribute(NSAttributedString.Key.underlineStyle , value: NSUnderlineStyle.single.rawValue, range: match.range)
     }
         
 //        let paragraphStyle = NSMutableParagraphStyle()
