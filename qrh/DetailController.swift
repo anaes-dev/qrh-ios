@@ -30,7 +30,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     var scrubLink = String()
     var fetchedURL: String = ""
     var fetchedTitle: String = "Default"
-    
+    var cellOneDIsplayCode: Bool = true
     
     struct Guideline: Codable {
         var code: String
@@ -154,6 +154,10 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
                 cell.main.attributedText = mainParsed[indexPath.row]
+                if cellOneDIsplayCode {
+                    cell.code.text = passedCode
+                    cellOneDIsplayCode = false
+                }
                 return cell
             
             case 2:

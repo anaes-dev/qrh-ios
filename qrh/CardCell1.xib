@@ -20,6 +20,14 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggh-sj-7tR">
                         <rect key="frame" x="16" y="8" width="288" height="28"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBD-Vm-PDC">
+                                <rect key="frame" x="288" y="-6" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="48"/>
+                                <color key="textColor" systemColor="systemGray5Color"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemGray6Color"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="main" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEi-DJ-lze">
                                 <rect key="frame" x="8" y="8" width="272" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -29,9 +37,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RBD-Vm-PDC" secondAttribute="trailing" id="3je-ll-9Xg"/>
                             <constraint firstItem="cEi-DJ-lze" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" constant="8" id="4hj-uf-eU9"/>
                             <constraint firstAttribute="bottom" secondItem="cEi-DJ-lze" secondAttribute="bottom" constant="8" id="5hc-GT-hjz"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RBD-Vm-PDC" secondAttribute="bottom" priority="997" id="HzI-0V-oaS"/>
                             <constraint firstItem="cEi-DJ-lze" firstAttribute="leading" secondItem="Ggh-sj-7tR" secondAttribute="leading" constant="8" id="XA0-Qf-uEI"/>
+                            <constraint firstItem="RBD-Vm-PDC" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" constant="-6" id="lhG-10-N7o"/>
                             <constraint firstAttribute="trailing" secondItem="cEi-DJ-lze" secondAttribute="trailing" constant="8" id="zZe-pe-Csh"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -61,6 +72,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="code" destination="RBD-Vm-PDC" id="LwP-LB-tFy"/>
                 <outlet property="main" destination="cEi-DJ-lze" id="3Yy-Gb-QNu"/>
             </connections>
             <point key="canvasLocation" x="141" y="154"/>
@@ -69,6 +81,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
