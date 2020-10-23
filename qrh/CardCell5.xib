@@ -28,7 +28,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="main" text="Main" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOc-NZ-Eo6">
-                                                <rect key="frame" x="8" y="8" width="39.5" height="24"/>
+                                                <rect key="frame" x="8" y="8" width="240" height="24"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                                 <nil key="highlightedColor"/>
@@ -48,10 +48,11 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstItem="pOc-NZ-Eo6" firstAttribute="bottom" secondItem="r5L-D0-5yB" secondAttribute="bottom" priority="996" id="2Nu-fi-KX6"/>
+                                            <constraint firstItem="pOc-NZ-Eo6" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="r5L-D0-5yB" secondAttribute="bottom" priority="996" id="2Nu-fi-KX6"/>
                                             <constraint firstItem="pOc-NZ-Eo6" firstAttribute="leading" secondItem="IJB-48-cnk" secondAttribute="leading" constant="8" id="5y5-Xx-Mld"/>
                                             <constraint firstItem="pOc-NZ-Eo6" firstAttribute="top" secondItem="IJB-48-cnk" secondAttribute="top" constant="8" id="Bb2-bC-dVj"/>
                                             <constraint firstAttribute="bottom" secondItem="pOc-NZ-Eo6" secondAttribute="bottom" constant="8" id="TMS-H8-WX7"/>
+                                            <constraint firstItem="r5L-D0-5yB" firstAttribute="leading" secondItem="pOc-NZ-Eo6" secondAttribute="trailing" constant="8" id="bea-sk-UNl"/>
                                             <constraint firstAttribute="trailing" secondItem="r5L-D0-5yB" secondAttribute="trailing" constant="8" id="fPk-W2-ZeZ"/>
                                             <constraint firstItem="r5L-D0-5yB" firstAttribute="top" secondItem="pOc-NZ-Eo6" secondAttribute="top" id="gPJ-TG-EWL"/>
                                         </constraints>
@@ -63,8 +64,16 @@
                                     </view>
                                     <textView autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlm-zb-5eJ">
                                         <rect key="frame" x="8" y="40" width="272" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" identifier="SubHeight" id="3Wk-jY-wnp"/>
+                                        </constraints>
                                         <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="3Wk-jY-wnp"/>
+                                            </mask>
+                                        </variation>
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
@@ -131,6 +140,7 @@
                 <outlet property="sub" destination="hlm-zb-5eJ" id="ogQ-R8-hNM"/>
                 <outlet property="sub0" destination="4iE-Yk-rkH" id="sXG-Xp-tmu"/>
                 <outlet property="sub8" destination="pr6-xl-Q7h" id="pd1-He-wXF"/>
+                <outlet property="subheight" destination="3Wk-jY-wnp" id="VQf-Wi-LPK"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="169.08482142857142"/>
         </tableViewCell>
