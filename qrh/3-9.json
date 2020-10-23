@@ -32,14 +32,14 @@
     },
     {
       "type": 4,
-      "main": "Rapid diagnosis and rapid drainage are vital, so:<li>Call for ultrasound machine</li><li>Call for pericardiocentesis kit (eg 18G Luer spinal needle + 3-way tap + 20 ml syringe or a purpose made kit)</li><li>Call for cardiac arrest trolley</li><li>Diagnostic features are shown in <b>Box A</b></li>",
+      "main": "<p>Rapid diagnosis and rapid drainage are vital, so:</p><ul><li>Call for ultrasound machine</li><li>Call for pericardiocentesis kit (eg 18G Luer spinal needle + 3-way tap + 20 ml syringe or a purpose made kit)</li><li>Call for cardiac arrest trolley</li><li>Diagnostic features are shown in <b>Box A</b></li></ul>",
       "sub": "",
       "step": "4"
     },
     {
       "type": 9,
       "main": "Box A: DIAGNOSTIC FEATURES",
-      "sub": "<b>ULTRASOUND IS THE PREFERRED TECHNIQUE</b><li>Unexplained dyspnoea/tachypnoea and agitation if conscious</li><li>At least one of ‘Beck’s Triad’: jugular venous distension; muffled heart sounds; hypotension</li><li>Other signs: Pulsus paradoxus; ECG → low voltage QRS / electrical alternans / pulseless electrical activity; chest X-ray → enlarged cardiac silhouette</li>",
+      "sub": "<p><b>ULTRASOUND IS THE PREFERRED TECHNIQUE</b></p><ul><li>Unexplained dyspnoea/tachypnoea and agitation if conscious</li><li>At least one of ‘Beck’s Triad’: jugular venous distension; muffled heart sounds; hypotension</li><li>Other signs: Pulsus paradoxus; ECG → low voltage QRS / electrical alternans / pulseless electrical activity; chest X-ray → enlarged cardiac silhouette</li></ul>",
       "step": "2"
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "type": 4,
-      "main": "Consider the following temporising measures:<li>Fluid bolus (Adult: 500 - 1000 ml, Child: 20 ml.kg⁻¹)</li><li>Inotropic drugs</li><li>Low tidal volume, low/no PEEP ventilation strategy</li>",
+      "main": "<p>Consider the following temporising measures:</p><ul><li>Fluid bolus (Adult: 500 - 1000 ml, Child: 20 ml.kg⁻¹)</li><li>Inotropic drugs</li><li>Low tidal volume, low/no PEEP ventilation strategy</li></ul>",
       "sub": "",
       "step": "6"
     },
@@ -63,7 +63,7 @@
     {
       "type": 6,
       "main": "Box B: EMERGENCY PERICARDIOCENTESIS (sub-xiphoid approach)",
-      "sub": "<b><u>ULTRASOUND IS THE PREFERRED TECHNIQUE</u></b><p><b>WARNING: Myocardial rupture, aortic dissection and severe bleeding disorder are <i>relative</i> contraindications</b><li>Identify tip of xiphoid</li><li>Prep and drape overlying skin</li><li>Infiltrate local anaesthetic (if necessary and if time)</li><li>Ideally use ultrasound to identify pericardial fluid</li><li>Insert pericardiocentesis needle immediately to left of tip of xiphoid</li><li>Attach 3-way tap and 20 ml syringe</li><li>Direct needle generally toward left shoulder but using ultrasound to direct needle toward the largest pericardial collection</li><li>Aspirate and drain – aspiration of a small volume may cause a dramatic clinical improvement</li>",
+      "sub": "<p><b><u>ULTRASOUND IS THE PREFERRED TECHNIQUE</u></b></p><p><b>WARNING: Myocardial rupture, aortic dissection and severe bleeding disorder are <i>relative</i> contraindications</b></p><ul><li>Identify tip of xiphoid</li><li>Prep and drape overlying skin</li><li>Infiltrate local anaesthetic (if necessary and if time)</li><li>Ideally use ultrasound to identify pericardial fluid</li><li>Insert pericardiocentesis needle immediately to left of tip of xiphoid</li><li>Attach 3-way tap and 20 ml syringe</li><li>Direct needle generally toward left shoulder but using ultrasound to direct needle toward the largest pericardial collection</li><li>Aspirate and drain – aspiration of a small volume may cause a dramatic clinical improvement</li></ul>",
       "step": "6"
     },
     {

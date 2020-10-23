@@ -33,43 +33,43 @@
     {
       "type": 3,
       "main": "Treat airway and breathing:",
-      "sub": "<li>Give 100% oxygen</li><li>Chin lift / jaw thrust may suffice</li><li>Consider supraglottic airway or tracheal intubation <b>(Box A)</b></li>",
+      "sub": "<ul><li>Give 100% oxygen</li><li>Chin lift / jaw thrust may suffice</li><li>Consider supraglottic airway or tracheal intubation <b>(Box A)</b></li></ul>",
       "step": "3"
     },
     {
       "type": 9,
       "main": "Box A: INDUCING ANAESTHESIA",
-      "sub": "<li>Consider reduced dose of hypnotic drug to avoid further hypotension. A full induction dose will not be necessary if the patient’s consciousness is already impaired.</li><li>Neuromuscular blockade may not be necessary for tracheal intubation if the patient is unconscious, paralysed and apnoeic.</li>",
+      "sub": "<ul><li>Consider reduced dose of hypnotic drug to avoid further hypotension. A full induction dose will not be necessary if the patient’s consciousness is already impaired.</li><li>Neuromuscular blockade may not be necessary for tracheal intubation if the patient is unconscious, paralysed and apnoeic.</li></ul>",
       "step": ""
     },
     {
       "type": 3,
       "main": "Treat circulatory insufficiency:",
-      "sub": "<li>Give IV fluid by rapid infusion</li><li>Elevate the legs; do not use head-down tilt</li><li>In obstetrics, relieve aorto-caval compression</li><li>Bradycardia: give atropine or glycopyrrolate <b>(Box B)</b></li><li>Hypotension: give metaraminol, phenylephrine or ephedrine <b>(Box B)</b></li><li>CPR may be necessary to circulate drugs</li>",
+      "sub": "<ul><li>Give IV fluid by rapid infusion</li><li>Elevate the legs; do not use head-down tilt</li><li>In obstetrics, relieve aorto-caval compression</li><li>Bradycardia: give atropine or glycopyrrolate <b>(Box B)</b></li><li>Hypotension: give metaraminol, phenylephrine or ephedrine <b>(Box B)</b></li><li>CPR may be necessary to circulate drugs</li></ul>",
       "step": "4"
     },
     {
       "type": 6,
       "main": "Box B: DRUG DOSES",
-      "sub": "<b>Bradycardia:</b><li>Atropine: 0.6-1.2 mg</li><li>Glycopyrrolate: 0.2-0.4 mg</li><p><b>Hypotension:</b><li>Metaraminol: 1-2 mg boluses repeated</li><li>PHENYLephrine: 50-100 μg boluses repeated <small>or by infusion</small></li><li>ePHEDrine: 6-12 mg boluses repeated up to max 30 mg <small>(tachyphylaxis limits further usefulness)</small></li>",
+      "sub": "<p><b>Bradycardia:</b></p><ul><li>Atropine: 0.6-1.2 mg</li><li>Glycopyrrolate: 0.2-0.4 mg</li></ul><p><b>Hypotension:</b></p><ul><li>Metaraminol: 1-2 mg boluses repeated</li><li>PHENYLephrine: 50-100 μg boluses repeated <small>or by infusion</small></li><li>ePHEDrine: 6-12 mg boluses repeated up to max 30 mg <small>(tachyphylaxis limits further usefulness)</small></li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "If the case is obstetric, consider expedited delivery of the baby to manage:<li>Risk to mother of unrelieved aorto-caval compression</li><li>Risk to fetus of impaired feto-placental oxygen delivery</li>",
+      "main": "<p>If the case is obstetric, consider expedited delivery of the baby to manage:</p><ul><li>Risk to mother of unrelieved aorto-caval compression</li><li>Risk to fetus of impaired feto-placental oxygen delivery</li></ul>",
       "sub": "",
       "step": "5"
     },
     {
       "type": 4,
-      "main": "Consider other causes that may mimic signs and symptoms, including <b>(Box C)</b>:<li>Obstetric aorto-caval compression</li><li>Local anaesthetic toxicity</li><li>Embolism</li><li>Vasovagal event</li><li>Haemorrhage</li>",
+      "main": "<p>Consider other causes that may mimic signs and symptoms, including <b>(Box C)</b>:</p><ul><li>Obstetric aorto-caval compression</li><li>Local anaesthetic toxicity</li><li>Embolism</li><li>Vasovagal event</li><li>Haemorrhage</li></ul>",
       "sub": "",
       "step": "6"
     },
     {
       "type": 5,
       "main": "Box C: CRITICAL CHANGES",
-      "sub": "<li>Cardiac arrest <b>→2-1</b></li><li>Hypotension <b>→2-4</b></li><li>Bradycardia <b>→2-6</b></li><li>Local anaesthetic toxicity <b>→3-10</b></li>",
+      "sub": "<ul><li>Cardiac arrest <b>→2-1</b></li><li>Hypotension <b>→2-4</b></li><li>Bradycardia <b>→2-6</b></li><li>Local anaesthetic toxicity <b>→3-10</b></li></ul>",
       "step": ""
     },
     {

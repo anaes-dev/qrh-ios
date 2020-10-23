@@ -2,7 +2,7 @@
   "DetailContent": [
     {
       "type": 1,
-      "main": "If the patient is unconscious, signs of cardiac ischaemia primarily include:<li>ST elevation or depression</li><li>T wave flattening or inversion</li><li>Arrhythmias, particularly ventricular</li><li>Other haemodynamic abnormalities (hypo- or hypertension, tachy- or bradycardia)</li><li>New or evolving regional wall motion abnormalities if echocardiography is used</li>",
+      "main": "<p>If the patient is unconscious, signs of cardiac ischaemia primarily include:</p><ul><li>ST elevation or depression</li><li>T wave flattening or inversion</li><li>Arrhythmias, particularly ventricular</li><li>Other haemodynamic abnormalities (hypo- or hypertension, tachy- or bradycardia)</li><li>New or evolving regional wall motion abnormalities if echocardiography is used</li></ul>",
       "sub": "",
       "step": ""
     },
@@ -39,7 +39,7 @@
     {
       "type": 5,
       "main": "Box A: HAEMODYNAMIC INSTABILITY",
-      "sub": "<li>Cardiac arrest <b>→2-1</b></li><li>Hypotension <b>→2-4</b></li><li>Hypertension <b>→2-5</b></li><li>Bradycardia <b>→2-6</b></li><li>Tachycardia <b>→2-7</b></li>",
+      "sub": "<ul><li>Cardiac arrest <b>→2-1</b></li><li>Hypotension <b>→2-4</b></li><li>Hypertension <b>→2-5</b></li><li>Bradycardia <b>→2-6</b></li><li>Tachycardia <b>→2-7</b></li></ul>",
       "step": ""
     },
     {
@@ -51,19 +51,19 @@
     {
       "type": 8,
       "main": "Box B: CM5 ECG CONFIGURATION",
-      "sub": "<li>Right arm (red) lead over upper right sternum</li><li>Left arm (yellow) lead 5th intercostal space under left nipple</li><li>Indifferent (green or black) lead on left shoulder</li>",
+      "sub": "<ul><li>Right arm (red) lead over upper right sternum</li><li>Left arm (yellow) lead 5th intercostal space under left nipple</li><li>Indifferent (green or black) lead on left shoulder</li></ul>",
       "step": ""
     },
     {
       "type": 3,
       "main": "If ischaemia does not resolve:",
-      "sub": "<li>Call for help. Inform theatre team of problem. Stop or rapidly complete the surgery.</li><li>Start glyceryl trinitrate (GTN) <b>(Box C)</b>.</li><li>EXTREME CAUTION with GTN if the patient is hypotensive.</li>",
+      "sub": "<ul><li>Call for help. Inform theatre team of problem. Stop or rapidly complete the surgery.</li><li>Start glyceryl trinitrate (GTN) <b>(Box C)</b>.</li><li>EXTREME CAUTION with GTN if the patient is hypotensive.</li></ul>",
       "step": "5"
     },
     {
       "type": 6,
       "main": "Box C: GLYCERYL TRINITRATE (GTN) DOSE",
-      "sub": "<li>Consider sublingual administration</li><li>IntraVENOUS: 1 mg.ml-1 solution – start at 0.1ml.kg⁻¹.hr⁻¹, titrate against response</li><li>NOT RECOMMENDED IN CHILDREN</li>",
+      "sub": "<ul><li>Consider sublingual administration</li><li>IntraVENOUS: 1 mg.ml-1 solution – start at 0.1ml.kg⁻¹.hr⁻¹, titrate against response</li><li>NOT RECOMMENDED IN CHILDREN</li></ul>",
       "step": ""
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "type": 4,
-      "main": "Treat anaemia aiming for haematocrit >30%.<li>CAUTION – beware volume overload especially in heart failure.</li>",
+      "main": "<p>Treat anaemia aiming for haematocrit >30%.</p><ul><li>CAUTION – beware volume overload especially in heart failure.</li></ul>",
       "sub": "",
       "step": "8"
     },
@@ -93,7 +93,7 @@
     {
       "type": 9,
       "main": "Box D: AFTER THE EVENT",
-      "sub": "Admit to critical care environment and consult cardiology<br>Maintain head up position if practicable<br>Obtain serial 12-lead ECGs and cardiac enzymes",
+      "sub": "<p>Admit to critical care environment and consult cardiology<br>Maintain head up position if practicable</p><p>Obtain serial 12-lead ECGs and cardiac enzymes</p>",
       "step": ""
     },
     {

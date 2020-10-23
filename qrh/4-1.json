@@ -21,7 +21,7 @@
     {
       "type": 9,
       "main": "Box A: ORGANISATIONAL ISSUES",
-      "sub": "Theatre coordinator or equivalent should:<li>Ensure no new case is started unless clinical priority absolutely requires it</li><li>Ascertain the extent of the failure throughout the hospital</li><li>Ascertain the reserve supplies of oxygen</li><li>Evaluate implications for ongoing supply</li><li>Ensure any other relevant emergency plans are initiated</li><li>Coordinate delivery of further oxygen cylinders in good time</li><li>Ensure individual theatres are kept informed</li>",
+      "sub": "<p>Theatre coordinator or equivalent should:</p><ul><li>Ensure no new case is started unless clinical priority absolutely requires it</li><li>Ascertain the extent of the failure throughout the hospital</li><li>Ascertain the reserve supplies of oxygen</li><li>Evaluate implications for ongoing supply</li><li>Ensure any other relevant emergency plans are initiated</li><li>Coordinate delivery of further oxygen cylinders in good time</li><li>Ensure individual theatres are kept informed</li></ul>",
       "step": ""
     },
     {
@@ -51,7 +51,7 @@
     {
       "type": 4,
       "main": "Prolong duration of cylinder oxygen supply:",
-      "sub": "<li>Use circle system</li><li>Use lowest possible fresh gas flow</li>Use lowest possible F<small>i</small>O₂<li></li><li>Check F<small>i</small>O₂ alarms</li>",
+      "sub": "<ul><li>Use circle system</li><li>Use lowest possible fresh gas flow</li>Use lowest possible F<small>i</small>O₂<li></li><li>Check F<small>i</small>O₂ alarms</li></ul>",
       "step": "5"
     },
     {
@@ -75,7 +75,7 @@
     {
       "type": 3,
       "main": "Workflow:",
-      "sub": "<li>Do not start any new case unless clinical priority absolutely requires it</li><li>Expedite conclusion of current case if clinically appropriate</li><li>Consider recovering the patient in theatre if recovery also affected <b>(Box C)</b></li>",
+      "sub": "<ul><li>Do not start any new case unless clinical priority absolutely requires it</li><li>Expedite conclusion of current case if clinically appropriate</li><li>Consider recovering the patient in theatre if recovery also affected <b>(Box C)</b></li></ul>",
       "step": "9"
     },
     {
@@ -93,7 +93,7 @@
     {
       "type": 8,
       "main": "Box D: RE-ESTABLISHMENT OF SERVICES",
-      "sub": "<li>Disconnect equipment from failed wall/pendant outlets</li><li>When re-established, output may not initially be 100% oxygen</li><li>Do not re-use outlet until gas composition and quality satisfactorily confirmed by a competent authority</li>",
+      "sub": "<ul><li>Disconnect equipment from failed wall/pendant outlets</li><li>When re-established, output may not initially be 100% oxygen</li><li>Do not re-use outlet until gas composition and quality satisfactorily confirmed by a competent authority</li></ul>",
       "step": ""
     },
     {
