@@ -11,6 +11,8 @@ class CardCell1: UITableViewCell {
 
     @IBOutlet weak var main: UILabel!
     
+    @IBOutlet weak var code: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

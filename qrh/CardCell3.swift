@@ -10,7 +10,7 @@ import UIKit
 class CardCell3: UITableViewCell {
 
     @IBOutlet weak var main: UILabel!
-    @IBOutlet weak var sub: UILabel!
+    @IBOutlet weak var sub: UITextView!
     @IBOutlet weak var step: UILabel!
     
     

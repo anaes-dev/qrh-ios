@@ -20,6 +20,12 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggh-sj-7tR">
                         <rect key="frame" x="16" y="8" width="288" height="104"/>
                         <subviews>
+                            <textView autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpQ-qH-TQk">
+                                <rect key="frame" x="8" y="40" width="272" height="56"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
                             <view contentMode="scaleToFill" id="TOq-K7-ftH">
                                 <rect key="frame" x="8" y="8" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,12 +58,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Sub" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d81-BA-MRG">
-                                <rect key="frame" x="16" y="46.5" width="264" height="49.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -65,11 +65,11 @@
                             <constraint firstAttribute="trailing" secondItem="cEi-DJ-lze" secondAttribute="trailing" constant="8" id="A4E-NE-2gZ"/>
                             <constraint firstItem="cEi-DJ-lze" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" constant="14" id="D6m-lN-ZM3"/>
                             <constraint firstItem="TOq-K7-ftH" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" constant="8" id="DWX-os-8ZU"/>
-                            <constraint firstAttribute="trailing" secondItem="d81-BA-MRG" secondAttribute="trailing" constant="8" id="ITf-I8-pQ9"/>
-                            <constraint firstItem="d81-BA-MRG" firstAttribute="leading" secondItem="Ggh-sj-7tR" secondAttribute="leading" constant="16" id="e6f-mx-H1s"/>
+                            <constraint firstItem="FpQ-qH-TQk" firstAttribute="leading" secondItem="Ggh-sj-7tR" secondAttribute="leading" constant="8" id="FkF-zf-bHK"/>
+                            <constraint firstItem="FpQ-qH-TQk" firstAttribute="top" secondItem="TOq-K7-ftH" secondAttribute="bottom" id="V6g-r8-dVp"/>
+                            <constraint firstAttribute="bottom" secondItem="FpQ-qH-TQk" secondAttribute="bottom" constant="8" id="ce4-b6-p1c"/>
                             <constraint firstItem="TOq-K7-ftH" firstAttribute="leading" secondItem="Ggh-sj-7tR" secondAttribute="leading" constant="8" id="hPp-i9-wf5"/>
-                            <constraint firstItem="d81-BA-MRG" firstAttribute="top" secondItem="cEi-DJ-lze" secondAttribute="bottom" constant="12" id="wG7-vi-4eM"/>
-                            <constraint firstAttribute="bottom" secondItem="d81-BA-MRG" secondAttribute="bottom" constant="8" id="zk9-iE-EdY"/>
+                            <constraint firstAttribute="trailing" secondItem="FpQ-qH-TQk" secondAttribute="trailing" constant="8" id="iOV-Vd-xEo"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
@@ -100,7 +100,7 @@
             <connections>
                 <outlet property="main" destination="cEi-DJ-lze" id="CYg-1T-qsB"/>
                 <outlet property="step" destination="TN8-I4-D6Q" id="hQJ-5v-ltl"/>
-                <outlet property="sub" destination="d81-BA-MRG" id="CGy-pc-86a"/>
+                <outlet property="sub" destination="FpQ-qH-TQk" id="Zy8-1h-Ull"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="178.79464285714286"/>
         </tableViewCell>

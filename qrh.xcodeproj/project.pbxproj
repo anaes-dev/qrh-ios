@@ -62,8 +62,6 @@
 		82A08AB42538E2E000F6BEA9 /* CardCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB22538E2E000F6BEA9 /* CardCell2.xib */; };
 		82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AB72538E96F00F6BEA9 /* CardCell1.swift */; };
 		82A08ABA2538E96F00F6BEA9 /* CardCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB82538E96F00F6BEA9 /* CardCell1.xib */; };
-		82A20FBF253C298F00E511D9 /* CardCell9.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A20FBE253C298F00E511D9 /* CardCell9.xib */; };
-		82A20FC2253C29A300E511D9 /* CardCell9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A20FC1253C29A300E511D9 /* CardCell9.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,8 +121,6 @@
 		82A08AB22538E2E000F6BEA9 /* CardCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell2.xib; sourceTree = "<group>"; };
 		82A08AB72538E96F00F6BEA9 /* CardCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell1.swift; sourceTree = "<group>"; };
 		82A08AB82538E96F00F6BEA9 /* CardCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell1.xib; sourceTree = "<group>"; };
-		82A20FBE253C298F00E511D9 /* CardCell9.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell9.xib; sourceTree = "<group>"; };
-		82A20FC1253C29A300E511D9 /* CardCell9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell9.swift; sourceTree = "<group>"; };
 		87B7FD38A0D26FEB5D2E4E49 /* Pods-qrh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrh.release.xcconfig"; path = "Target Support Files/Pods-qrh/Pods-qrh.release.xcconfig"; sourceTree = "<group>"; };
 		DB1E457E3E238EBA5D6D1983 /* Pods_qrh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qrh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9FB3CF71C0CFFC2A80A71E /* Pods-qrh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrh.debug.xcconfig"; path = "Target Support Files/Pods-qrh/Pods-qrh.debug.xcconfig"; sourceTree = "<group>"; };
@@ -217,8 +213,6 @@
 				8276D046253B14A400243AB3 /* CardCell4.xib */,
 				8277FCDF253B326300E8158D /* CardCell5.swift */,
 				8277FCDC253B313F00E8158D /* CardCell5.xib */,
-				82A20FC1253C29A300E511D9 /* CardCell9.swift */,
-				82A20FBE253C298F00E511D9 /* CardCell9.xib */,
 				82011A29253B1685003DCBE2 /* CardCell11.swift */,
 				82011A2A253B1685003DCBE2 /* CardCell11.xib */,
 				82011A30253B1797003DCBE2 /* CardCell12.swift */,
@@ -302,7 +296,6 @@
 				8276D047253B14A400243AB3 /* CardCell4.xib in Resources */,
 				8279AF9E2536557B003BF303 /* 2-1.json in Resources */,
 				8279AF992536557B003BF303 /* 3-13.json in Resources */,
-				82A20FBF253C298F00E511D9 /* CardCell9.xib in Resources */,
 				8279AF9C2536557B003BF303 /* 3-5.json in Resources */,
 				82A08ABA2538E96F00F6BEA9 /* CardCell1.xib in Resources */,
 				8277FCDD253B313F00E8158D /* CardCell5.xib in Resources */,
@@ -387,7 +380,6 @@
 				82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */,
 				820EB9922535E96200FAEDB0 /* GuidelinesCell.swift in Sources */,
 				820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */,
-				82A20FC2253C29A300E511D9 /* CardCell9.swift in Sources */,
 				82258AFB253B0DA500E0C180 /* CardCell3.swift in Sources */,
 				82011A2B253B1685003DCBE2 /* CardCell11.swift in Sources */,
 			);
