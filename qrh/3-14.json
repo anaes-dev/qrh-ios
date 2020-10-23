@@ -27,25 +27,25 @@
     {
       "type": 3,
       "main": "Give crystalloid IV:",
-      "sub": "<li>Adult: at least 30 ml.kg⁻¹ <b>(Boxes A, B)</b></li><li>Child: at least 20 ml.kg⁻¹ <b>(Box C)</b></li>",
+      "sub": "<ul><li>Adult: at least 30 ml.kg⁻¹ <b>(Boxes A, B)</b></li><li>Child: at least 20 ml.kg⁻¹ <b>(Box C)</b></li></ul>",
       "step": "3"
     },
     {
       "type": 6,
       "main": "Box A: FLUID THERAPY",
-      "sub": "<li>Crystalloids initial fluid of choice in severe sepsis and septic shock</li><li>Greater than 30 ml.kg⁻¹ of crystalloid may be required in some patients</li><li>Continue fluid challenge if haemodynamic improvement</li><li>Hydroxyethyl starches should not be used</li>",
+      "sub": "<ul><li>Crystalloids initial fluid of choice in severe sepsis and septic shock</li><li>Greater than 30 ml.kg⁻¹ of crystalloid may be required in some patients</li><li>Continue fluid challenge if haemodynamic improvement</li><li>Hydroxyethyl starches should not be used</li></ul>",
       "step": ""
     },
     {
       "type": 7,
       "main": "Box B: SET PHYSIOLOGICAL GOALS",
-      "sub": "<li>Central venous pressure</li><li>Mean arterial pressure</li><li>Urine output</li><li>Central venous (superior vena cava) or mixed venous saturation</li>",
+      "sub": "<ul><li>Central venous pressure</li><li>Mean arterial pressure</li><li>Urine output</li><li>Central venous (superior vena cava) or mixed venous saturation</li></ul>",
       "step": ""
     },
     {
       "type": 9,
       "main": "Box C: PAEDIATRIC CONSIDERATIONS",
-      "sub": "<li>Goals: capillary refill time (CRT) ≤ 2 secs, normal BP for age, normal peripheral pulses, warm extremities, urine &gt;1 ml.kg⁻¹.hr⁻¹, SCVO2 &gt;70%.</li><li>Give 20 ml.kg⁻¹ initially up to or over 60 ml.kg⁻¹ fluid until goals or unless rales or hepatomegaly develops.</li><li>Begin peripheral inotropic support pending central/intraosseous access.</li><li>If warm shock (↑HR, ↓BP) start NORadrenaline.</li><li>If cold shock (↑HR, ↓CRT) start dopamine and, if resistant,adrenaline.</li>",
+      "sub": "<ul><li>Goals: capillary refill time (CRT) ≤ 2 secs, normal BP for age, normal peripheral pulses, warm extremities, urine &gt;1 ml.kg⁻¹.hr⁻¹, SCVO2 &gt;70%.</li><li>Give 20 ml.kg⁻¹ initially up to or over 60 ml.kg⁻¹ fluid until goals or unless rales or hepatomegaly develops.</li><li>Begin peripheral inotropic support pending central/intraosseous access.</li><li>If warm shock (↑HR, ↓BP) start NORadrenaline.</li><li>If cold shock (↑HR, ↓CRT) start dopamine and, if resistant,adrenaline.</li></ul>",
       "step": ""
     },
     {
@@ -87,7 +87,7 @@
     {
       "type": 6,
       "main": "Box D: DRUG THERAPY",
-      "sub": "<li><b>NORadrenaline (NA)</b> as first choice vasopressor.</li><li><b>Adrenaline</b> added to noradrenaline when additional agent needed.</li><li><b>Vasopressin</b> 0.03 units.min⁻¹ added to ↑MAP or ↓noradrenaline need.</li><li><b>DOBUTamine</b> up to 20 µg.kg⁻¹.min⁻¹ if evidence of myocardial dysfunction or ongoing signs of hypoperfusion despite adequate MAP and adequate intravascular volume.</li><li><b>Hydrocortisone</b> if unable to restore haemodynamic stability.</li>",
+      "sub": "<ul><li><b>NORadrenaline (NA)</b> as first choice vasopressor.</li><li><b>Adrenaline</b> added to noradrenaline when additional agent needed.</li><li><b>Vasopressin</b> 0.03 units.min⁻¹ added to ↑MAP or ↓noradrenaline need.</li><li><b>DOBUTamine</b> up to 20 µg.kg⁻¹.min⁻¹ if evidence of myocardial dysfunction or ongoing signs of hypoperfusion despite adequate MAP and adequate intravascular volume.</li><li><b>Hydrocortisone</b> if unable to restore haemodynamic stability.</li></ul>",
       "step": ""
     },
     {

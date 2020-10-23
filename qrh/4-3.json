@@ -21,7 +21,7 @@
     {
       "type": 9,
       "main": "Box A: UNABLE TO MOVE PATIENT",
-      "sub": "<li>Ensure adequate depth of anaesthesia</li><li>Ensure adequate reserve: 100% oxygen, low flow, fill vaporiser</li><li>Ensure adequate neuromuscular blockade if relevant</li><li>Evacuate all staff, including anaesthetist when indicated</li><li>Inform rescue services and theatre coordinator</li>",
+      "sub": "<ul><li>Ensure adequate depth of anaesthesia</li><li>Ensure adequate reserve: 100% oxygen, low flow, fill vaporiser</li><li>Ensure adequate neuromuscular blockade if relevant</li><li>Evacuate all staff, including anaesthetist when indicated</li><li>Inform rescue services and theatre coordinator</li></ul>",
       "step": ""
     },
     {
@@ -51,19 +51,19 @@
     {
       "type": 3,
       "main": "Breathing/ventilation options:",
-      "sub": "<li>Minimise oxygen usage: lowest flows possible</li><li>Self-inflating bag +/- supplemental oxygen</li><li>Mechanical ventilator or C-circuit require higher flows</li>",
+      "sub": "<ul><li>Minimise oxygen usage: lowest flows possible</li><li>Self-inflating bag +/- supplemental oxygen</li><li>Mechanical ventilator or C-circuit require higher flows</li></ul>",
       "step": "6"
     },
     {
       "type": 3,
       "main": "Circulation:",
-      "sub": "<li>Ensure adequacy and security of IV access</li><li>Take adequate supplies of fluid ± infusion sets</li><li>Take vasopressor(s) and/or resuscitation drug box</li>",
+      "sub": "<ul><li>Ensure adequacy and security of IV access</li><li>Take adequate supplies of fluid ± infusion sets</li><li>Take vasopressor(s) and/or resuscitation drug box</li></ul>",
       "step": "7"
     },
     {
       "type": 3,
       "main": "Maintenance of anaesthesia:",
-      "sub": "<li>Intermittent bolus propofol simplest and quickest</li><li>Infusion if time allows – remember mains cable for pump if available</li><li>Consider taking stocks and pump to make infusion later</li><li>Take blankets and/or warming devices if possible</li>",
+      "sub": "<ul><li>Intermittent bolus propofol simplest and quickest</li><li>Infusion if time allows – remember mains cable for pump if available</li><li>Consider taking stocks and pump to make infusion later</li><li>Take blankets and/or warming devices if possible</li></ul>",
       "step": "8"
     },
     {
@@ -75,7 +75,7 @@
     {
       "type": 6,
       "main": "Box B: DRUGS",
-      "sub": "Drugs may not be readily available at muster point. Aim to take:<li>Oxygen</li><li>Propofol /other hypnotic</li><li>Neuromuscular blockade</li><li>Vasopressor(s)</li><li>Analgesics</li><li>IV fluids</li><li>Neuromuscular reversal if extubation anticipated</li>",
+      "sub": "<p>Drugs may not be readily available at muster point. Aim to take:</p><ul><li>Oxygen</li><li>Propofol /other hypnotic</li><li>Neuromuscular blockade</li><li>Vasopressor(s)</li><li>Analgesics</li><li>IV fluids</li><li>Neuromuscular reversal if extubation anticipated</li></ul>",
       "step": ""
     },
     {
@@ -93,7 +93,7 @@
     {
       "type": 9,
       "main": "Box C: MUSTER POINT",
-      "sub": "<li>Able bodied → adjacent safe zone</li><li>Anaesthetised/sedated patient → area with appropriate access to oxygen and medications, e.g. theatre, recovery or critical care area in a safe zone</li><li>Inform rescue services and relevant coordinator of location</li>",
+      "sub": "<ul><li>Able bodied → adjacent safe zone</li><li>Anaesthetised/sedated patient → area with appropriate access to oxygen and medications, e.g. theatre, recovery or critical care area in a safe zone</li><li>Inform rescue services and relevant coordinator of location</li></ul>",
       "step": ""
     },
     {

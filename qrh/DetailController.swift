@@ -96,7 +96,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         }
         
         if let destination = segue.destination as? DetailController {
-            if segue.identifier == "LoadDetail" {
+            if segue.identifier == "LoadDetailLink" {
             let jsonURL = Bundle.main.url(forResource: "guidelines", withExtension: "json")!
             if let jsonDATA = try? Data(contentsOf: jsonURL) {
                 let decoder = JSONDecoder()
@@ -180,7 +180,6 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 
             case 5,6,7,8,9:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
-                
                 switch cardContent[indexPath.row].type {
                 case 5:
                     cell.box.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.15)
@@ -334,16 +333,6 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         attrStr.addAttribute(NSAttributedString.Key.link, value: scrubURL, range: match.range)
         attrStr.addAttribute(NSAttributedString.Key.underlineStyle , value: NSUnderlineStyle.single.rawValue, range: match.range)
     }
-        
-//        let paragraphStyle = NSMutableParagraphStyle()
-//        var minimumLineHeight: CGFloat = 0
-//        var lineSpacing: CGFloat = 0
-//        paragraphStyle.lineBreakMode = NSLineBreakMode.byWordWrapping
-//        paragraphStyle.alignment = .natural
-//        paragraphStyle.lineSpacing = lineSpacing
-//        paragraphStyle.minimumLineHeight = minimumLineHeight > 0 ? minimumLineHeight: self.font.pointSize * 1.14
-//        attrStr.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: range)
-
     return attrStr
 }
 }

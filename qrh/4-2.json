@@ -27,7 +27,7 @@
     {
       "type": 9,
       "main": "Box A: ACTION FROM LOCAL COORDINATOR",
-      "sub": "Local coordinator should activate any local incident plan and urgently establish and brief teams on:<li>Extent of failure</li><li>Likely duration of failure</li><li>Interruption to other services (eg oxygen, water)</li>",
+      "sub": "<p>Local coordinator should activate any local incident plan and urgently establish and brief teams on:</p><ul><li>Extent of failure</li><li>Likely duration of failure</li><li>Interruption to other services (eg oxygen, water)</li></ul>",
       "step": ""
     },
     {
@@ -39,13 +39,13 @@
     {
       "type": 8,
       "main": "Box B: SOURCES OF ADDITIONAL LIGHT",
-      "sub": "<li>Open doors and blinds</li><li>Hand torches, portable lights, mobile phones, laryngoscopes</li>",
+      "sub": "<ul><li>Open doors and blinds</li><li>Hand torches, portable lights, mobile phones, laryngoscopes</li></ul>",
       "step": ""
     },
     {
       "type": 3,
       "main": "Ensure ventilation continues:",
-      "sub": "<li>Manual ventilation if required</li><li>Consider moving to spontaneous ventilation</li><li>Maintain anaesthesia</li>",
+      "sub": "<ul><li>Manual ventilation if required</li><li>Consider moving to spontaneous ventilation</li><li>Maintain anaesthesia</li></ul>",
       "step": "4"
     },
     {
@@ -69,12 +69,12 @@
     {
       "type": 9,
       "main": "Box C: TYPES OF POWER SUPPLY",
-      "sub": "<li>Standard power socket: not protected.</li><li>SPS: Secondary supply (red socket) for devices that can sustain brief periods of loss of power (eg those with internal battery back-up).</li><li>UPS: Uninterrupted supply (blue socket) for instantaneous and continuous protection. This supply is limited therefore avoid using UPS sockets unless absolutely necessary.</li><li>Devices’ internal battery backup: this may not supply all functions of the device and duration may be variable.</li>",
+      "sub": "<ul><li>Standard power socket: not protected.</li><li>SPS: Secondary supply (red socket) for devices that can sustain brief periods of loss of power (eg those with internal battery back-up).</li><li>UPS: Uninterrupted supply (blue socket) for instantaneous and continuous protection. This supply is limited therefore avoid using UPS sockets unless absolutely necessary.</li><li>Devices’ internal battery backup: this may not supply all functions of the device and duration may be variable.</li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Assess reliability of power supply, duration of surgery and patient condition:<li>Consider stopping surgery immediately</li><li>Consider continuing surgery until patient is stable and wound is closed (may be temporary closure)</li><li>Consider evacuation to theatre with intact mains supply <b>→ 4-3</b></li>",
+      "main": "<p>Assess reliability of power supply, duration of surgery and patient condition:</p><ul><li>Consider stopping surgery immediately</li><li>Consider continuing surgery until patient is stable and wound is closed (may be temporary closure)</li><li>Consider evacuation to theatre with intact mains supply <b>→ 4-3</b></li></ul>",
       "sub": "",
       "step": "8"
     },
@@ -87,7 +87,7 @@
     {
       "type": 5,
       "main": "Box D: CRITICAL CHANGES",
-      "sub": "Mains oxygen failure <b>→4-1</b><br>Emergency evacuation <b>→4-3</b>",
+      "sub": "<p>Mains oxygen failure <b>→4-1</b></p><p>Emergency evacuation <b>→4-3</b></p>",
       "step": ""
     },
     {

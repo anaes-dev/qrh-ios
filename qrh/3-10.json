@@ -2,7 +2,7 @@
   "DetailContent": [
     {
       "type": 1,
-      "main": "Signs of severe toxicity:<li>Sudden alteration in mental status, severe agitation or loss of consciousness, with or without tonic-clonic convulsions.</li><li>Cardiovascular collapse: sinus bradycardia, conduction blocks, asystole and ventricular tachyarrhythmias may all occur.</li><li> Local anaesthetic toxicity may occur some time after an initial injection.</li>",
+      "main": "<p>Signs of severe toxicity:</p><ul><li>Sudden alteration in mental status, severe agitation or loss of consciousness, with or without tonic-clonic convulsions.</li><li>Cardiovascular collapse: sinus bradycardia, conduction blocks, asystole and ventricular tachyarrhythmias may all occur.</li><li> Local anaesthetic toxicity may occur some time after an initial injection.</li></ul>",
       "sub": "",
       "step": ""
     },
@@ -32,7 +32,7 @@
     },
     {
       "type": 4,
-      "main": "Give 100% oxygen and ensure adequate lung ventilation:<li>Maintain the airway and if necessary secure it with a tracheal tube</li><li>Hyperventilation may help reduce acidosis</li>",
+      "main": "<p>Give 100% oxygen and ensure adequate lung ventilation:</p><ul><li>Maintain the airway and if necessary secure it with a tracheal tube</li><li>Hyperventilation may help reduce acidosis</li></ul>",
       "sub": "",
       "step": "4"
     },
@@ -50,14 +50,14 @@
     },
     {
       "type": 4,
-      "main": "<li>Start continuous CPR using standard protocols</li><li>Give intravenous lipid emulsion <b>(Box A)</b></li><li>Recovery may take &gt;1 hour</li><li>Consider the use of cardiopulmonary bypass if available</li>",
+      "main": "<ul><li>Start continuous CPR using standard protocols</li><li>Give intravenous lipid emulsion <b>(Box A)</b></li><li>Recovery may take &gt;1 hour</li><li>Consider the use of cardiopulmonary bypass if available</li></ul>",
       "sub": "",
       "step": "6"
     },
     {
       "type": 6,
       "main": "Box A: LIPID EMULSION REGIME",
-      "sub": "<b>USE 20% Intralipid® <small>(propofol is not a suitable substitute)</small></b><p><b>Immediately:</b><li>Give an initial intraVENOUS bolus of lipid emulsion 1.5 ml.kg⁻¹ over 1 min (~100 ml for a 70 kg adult)</li><li>Start an intraVENOUS infusion of lipid emulsion at 15 ml.kg⁻¹.h⁻¹ (17.5 ml.min⁻¹ for a 70 kg adult)</li><p><b>At 5 and 10 minutes:</b><li>Give a repeat bolus (same dose) if: cardiovascular stability has not been restored or; an adequate circulation deteriorates.</li><p><b>At any time after 5 minutes:</b><li>Double the rate to 30 ml.kg⁻¹.h⁻¹ if: cardiovascular stability has not been restored or; an adequate circulation deteriorates</li><p><b>Do not exceed maximum cumulative dose 12 ml.kg⁻¹ (70kg: 840 ml)</b>",
+      "sub": "<p><b>USE 20% Intralipid® <small>(propofol is not a suitable substitute)</small></b></p><p><b>Immediately:</b></p><ul><li>Give an initial intraVENOUS bolus of lipid emulsion 1.5 ml.kg⁻¹ over 1 min (~100 ml for a 70 kg adult)</li><li>Start an intraVENOUS infusion of lipid emulsion at 15 ml.kg⁻¹.h⁻¹ (17.5 ml.min⁻¹ for a 70 kg adult)</li></ul><p><b>At 5 and 10 minutes:</b></p><ul><li>Give a repeat bolus (same dose) if: cardiovascular stability has not been restored or; an adequate circulation deteriorates.</li></ul><p><b>At any time after 5 minutes:</b></p><ul><li>Double the rate to 30 ml.kg⁻¹.h⁻¹ if: cardiovascular stability has not been restored or; an adequate circulation deteriorates</li><p><b>Do not exceed maximum cumulative dose 12 ml.kg⁻¹ (70kg: 840 ml)</b></ul>",
       "step": ""
     },
     {
@@ -68,13 +68,13 @@
     },
     {
       "type": 4,
-      "main": "<li>Conventional therapies to treat hypotension, brady- and tachyarrhythmia</li><li><i>Consider</i> intravenous lipid emulsion <b>(Box A)</b></li>",
+      "main": "<ul><li>Conventional therapies to treat hypotension, brady- and tachyarrhythmia</li><li><i>Consider</i> intravenous lipid emulsion <b>(Box A)</b></li></ul>",
       "sub": "",
       "step": "6"
     },
     {
       "type": 4,
-      "main": "Control seizures with small incremental dose of benzodiazepine, thiopental or\npropofol.",
+      "main": "Control seizures with small incremental dose of benzodiazepine, thiopental or propofol.",
       "sub": "",
       "step": "7"
     },
@@ -87,7 +87,7 @@
     {
       "type": 9,
       "main": "Box C: AFTER THE EVENT",
-      "sub": "Arrange safe transfer to appropriate clinical area<br>Exclude pancreatitis: regular clinical review, daily amylase or lipase<br>Report cases to MHRA: yellowcard.mhra.gov.uk",
+      "sub": "<p>Arrange safe transfer to appropriate clinical area<br>Exclude pancreatitis: regular clinical review, daily amylase or lipase</p><p>Report cases to MHRA: yellowcard.mhra.gov.uk</p>",
       "step": ""
     },
     {

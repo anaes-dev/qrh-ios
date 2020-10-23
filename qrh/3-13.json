@@ -20,7 +20,7 @@
     },
     {
       "type": 4,
-      "main": "Use positive pressure ventilation, aiming for:<li>S<small>p</small>O₂ &gt; 94% and &lt; 98%.</li><li>PCO₂ &gt; 4.5 kPa and &lt; 5.5 kPa</li>",
+      "main": "<p>Use positive pressure ventilation, aiming for:</p><ul><li>S<small>p</small>O₂ &gt; 94% and &lt; 98%.</li><li>PCO₂ &gt; 4.5 kPa and &lt; 5.5 kPa</li></ul>",
       "sub": "",
       "step": "2"
     },
@@ -51,13 +51,13 @@
     {
       "type": 3,
       "main": "Check core temperature",
-      "sub": "Target temperature is a constant temperature in the range of 32 – 36°C (precise target determined by local policy):<li>Temperature usually decreases without intervention in the immediate postarrest period</li><li>Start cooling strategies if indicated <b>(Box A)</b></li><li>Avoid hyperthermia &gt; 37.5°C</li>",
+      "sub": "<p>Target temperature is a constant temperature in the range of 32 – 36°C (precise target determined by local policy):</p><ul><li>Temperature usually decreases without intervention in the immediate postarrest period</li><li>Start cooling strategies if indicated <b>(Box A)</b></li><li>Avoid hyperthermia &gt; 37.5°C</li></ul>",
       "step": "7"
     },
     {
       "type": 8,
       "main": "Box A: COOLING STRATEGIES",
-      "sub": "<b>Intravenous fluid bolus:</b> if not contraindicated give 30 ml.kg⁻¹ of cold (4°C) non glucose-containing solutions<p><b>External:</b> simple ice packs and/or wet towels; cooling blankets or pads; water or air circulating blankets; water circulating gel-coated pads<p><b>Internal:</b> intravascular heat exchanger; cardiopulmonary bypass",
+      "sub": "<p><b>Intravenous fluid bolus:</b> if not contraindicated give 30 ml.kg⁻¹ of cold (4°C) non glucose-containing solutions</p><p><b>External:</b> simple ice packs and/or wet towels; cooling blankets or pads; water or air circulating blankets; water circulating gel-coated pads</p><p><b>Internal:</b> intravascular heat exchanger; cardiopulmonary bypass</p>",
       "step": ""
     },
     {
@@ -69,7 +69,7 @@
     {
       "type": 6,
       "main": "Box B: DRUGS TO CONTROL/PREVENT SEIZURES",
-      "sub": "<li>Benzodiazepines or propofol are likely to be closest to hand in the operating theatre.</li><li>Sodium valproate, levetiracetam, phenytoin or a barbiturate can also be used.</li>",
+      "sub": "<ul><li>Benzodiazepines or propofol are likely to be closest to hand in the operating theatre.</li><li>Sodium valproate, levetiracetam, phenytoin or a barbiturate can also be used.</li></ul>",
       "step": ""
     },
     {
