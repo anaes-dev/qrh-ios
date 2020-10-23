@@ -9,9 +9,8 @@ import UIKit
 
 class CardCell4: UITableViewCell {
 
-    
-    @IBOutlet weak var main: UILabel!
-    
+        
+    @IBOutlet weak var main: UITextView!
     @IBOutlet weak var step: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
