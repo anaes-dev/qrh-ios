@@ -21,7 +21,7 @@
     {
       "type": 3,
       "main": "Adequate oxygen delivery",
-      "sub": "<li>Pause surgery if possible.</li><li>Consider surgery related cause.</li><li>Increase fresh gas flow AND give 100% oxygen AND check measured F<small>i</small>O₂.<li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li><li>Confirm increased airway pressure by switching to hand ventilation (&lt;3 breaths) <b>(Box B)</b>.</li>",
+      "sub": "<ul><li>Pause surgery if possible.</li><li>Consider surgery related cause.</li><li>Increase fresh gas flow AND give 100% oxygen AND check measured F<small>i</small>O₂.<li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li><li>Confirm increased airway pressure by switching to hand ventilation (&lt;3 breaths) <b>(Box B)</b>.</li></ul>",
       "step": "1"
     },
     {
@@ -33,25 +33,25 @@
     {
       "type": 3,
       "main": "Airway",
-      "sub": "<li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter)</li><<li>Isolate patient from anaesthetic machine and breathing system <b>(Box C)</b>.</li><li>If machine/breathing system problem excluded, consider whether airway device should be replaced or its type changed.</li>",
+      "sub": "<ul><li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter)</li><<li>Isolate patient from anaesthetic machine and breathing system <b>(Box C)</b>.</li><li>If machine/breathing system problem excluded, consider whether airway device should be replaced or its type changed.</li></ul>",
       "step": "2"
     },
     {
       "type": 8,
       "main": "Box C: EXCLUDE ANAESTHETIC MACHINE/BREATHING SYSTEM PROBLEM",
-      "sub": "Ventilate lungs using self-inflating bag connected <b>DIRECTLY</b> to tracheal tube connector. <b>DO NOT</b> use HME filter, angle piece or catheter mount.<li>If increased pressure manually confirmed, re-connect machine</li><li>If problem resolved, assume problem with machine, circuit, HME, filter, angle piece or catheter mount: check and replace.</li>",
+      "sub": "Ventilate lungs using self-inflating bag connected <b>DIRECTLY</b> to tracheal tube connector. <b>DO NOT</b> use HME filter, angle piece or catheter mount.<ul><li>If increased pressure manually confirmed, re-connect machine</li><li>If problem resolved, assume problem with machine, circuit, HME, filter, angle piece or catheter mount: check and replace.</li></ul>",
       "step": ""
     },
     {
       "type": 3,
       "main": "Breathing",
-      "sub": "<li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve <b>(Box B)</b>.</li><li>Consider potential causes and actions <b>(Box D)</b>.</li>",
+      "sub": "<ul><li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve <b>(Box B)</b>.</li><li>Consider potential causes and actions <b>(Box D)</b>.</li></ul>",
       "step": "3"
     },
     {
       "type": 3,
       "main": "Circulation",
-      "sub": "<li>Check heart rate, rhythm, perfusion, recheck blood pressure.</li><li>If circulation unstable, consider if it is due to high airway pressure gas trapping</li>",
+      "sub": "<ul><li>Check heart rate, rhythm, perfusion, recheck blood pressure.</li><li>If circulation unstable, consider if it is due to high airway pressure gas trapping</li></ul>",
       "step": "4"
     },
     {
