@@ -180,31 +180,31 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     cell.box.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.15)
                     cell.button.backgroundColor = UIColor.systemOrange.withAlphaComponent(0)
                     cell.main.textColor = UIColor.systemOrange
-                    cell.arrow.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.15)
+                    cell.arrow.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.2)
                     cell.arrow.tintColor = UIColor.systemOrange
                 case 6:
                     cell.box.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.15)
                     cell.button.backgroundColor = UIColor.systemBlue.withAlphaComponent(0)
                     cell.main.textColor = UIColor.systemBlue
-                    cell.arrow.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.15)
+                    cell.arrow.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.2)
                     cell.arrow.tintColor = UIColor.systemBlue
                 case 7:
                     cell.box.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.15)
                     cell.button.backgroundColor = UIColor.systemGreen.withAlphaComponent(0)
                     cell.main.textColor = UIColor.systemGreen
-                    cell.arrow.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.15)
+                    cell.arrow.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.2)
                     cell.arrow.tintColor = UIColor.systemGreen
                 case 9:
                     cell.box.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.15)
                     cell.button.backgroundColor = UIColor.systemPurple.withAlphaComponent(0)
                     cell.main.textColor = UIColor.systemPurple
-                    cell.arrow.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.15)
+                    cell.arrow.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.2)
                     cell.arrow.tintColor = UIColor.systemPurple
                 default:
                     cell.box.backgroundColor = UIColor.systemGray.withAlphaComponent(0.15)
                     cell.button.backgroundColor = UIColor.systemGray.withAlphaComponent(0)
                     cell.main.textColor = UIColor.label
-                    cell.arrow.backgroundColor = UIColor.systemGray.withAlphaComponent(0.15)
+                    cell.arrow.backgroundColor = UIColor.systemGray.withAlphaComponent(0.2)
                     cell.arrow.tintColor = UIColor.label
                 }
                 
