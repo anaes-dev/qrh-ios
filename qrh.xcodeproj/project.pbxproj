@@ -66,6 +66,11 @@
 		8279AFA12536557B003BF303 /* 2-7.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF872536557B003BF303 /* 2-7.json */; };
 		82901D35253E37300020E6A4 /* TappableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82901D34253E37300020E6A4 /* TappableLabel.swift */; };
 		8292B3082544DF7D005AEAD1 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8292B3072544DF7D005AEAD1 /* About.swift */; };
+		8292B3102544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png in Resources */ = {isa = PBXBuildFile; fileRef = 8292B30B2544EA0C005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png */; };
+		8292B3112544EA0D005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png in Resources */ = {isa = PBXBuildFile; fileRef = 8292B30C2544EA0C005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png */; };
+		8292B3122544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-25 at 00.00.45.png in Resources */ = {isa = PBXBuildFile; fileRef = 8292B30D2544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-25 at 00.00.45.png */; };
+		8292B3132544EA0D005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.57.40.png in Resources */ = {isa = PBXBuildFile; fileRef = 8292B30E2544EA0D005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.57.40.png */; };
+		8292B3142544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.17.png in Resources */ = {isa = PBXBuildFile; fileRef = 8292B30F2544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.17.png */; };
 		82A08AAC2538D72400F6BEA9 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AAB2538D72400F6BEA9 /* DetailController.swift */; };
 		82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AB12538E2E000F6BEA9 /* CardCell2.swift */; };
 		82A08AB42538E2E000F6BEA9 /* CardCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB22538E2E000F6BEA9 /* CardCell2.xib */; };
@@ -135,6 +140,11 @@
 		8279AF872536557B003BF303 /* 2-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-7.json"; sourceTree = "<group>"; };
 		82901D34253E37300020E6A4 /* TappableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableLabel.swift; sourceTree = "<group>"; };
 		8292B3072544DF7D005AEAD1 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		8292B30B2544EA0C005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png"; sourceTree = "<group>"; };
+		8292B30C2544EA0C005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png"; sourceTree = "<group>"; };
+		8292B30D2544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-25 at 00.00.45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 11 - 2020-10-25 at 00.00.45.png"; sourceTree = "<group>"; };
+		8292B30E2544EA0D005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.57.40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.57.40.png"; sourceTree = "<group>"; };
+		8292B30F2544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.17.png"; sourceTree = "<group>"; };
 		82A08AAB2538D72400F6BEA9 /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		82A08AB12538E2E000F6BEA9 /* CardCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell2.swift; sourceTree = "<group>"; };
 		82A08AB22538E2E000F6BEA9 /* CardCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell2.xib; sourceTree = "<group>"; };
@@ -172,6 +182,7 @@
 		820EB9542535B51100FAEDB0 /* qrh */ = {
 			isa = PBXGroup;
 			children = (
+				8292B30A2544E9CA005AEAD1 /* screenshots */,
 				8277FCE6253B42C500E8158D /* PDFNavController.swift */,
 				8277FCE3253B39D900E8158D /* PDFController.swift */,
 				820EB9772535C47600FAEDB0 /* guidelines.json */,
@@ -241,6 +252,18 @@
 			path = qrh;
 			sourceTree = "<group>";
 		};
+		8292B30A2544E9CA005AEAD1 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				8292B30E2544EA0D005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.57.40.png */,
+				8292B30C2544EA0C005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png */,
+				8292B30F2544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.17.png */,
+				8292B30B2544EA0C005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png */,
+				8292B30D2544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-25 at 00.00.45.png */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,6 +323,7 @@
 			files = (
 				8276D047253B14A400243AB3 /* CardCell4.xib in Resources */,
 				8279AF9E2536557B003BF303 /* 2-1.json in Resources */,
+				8292B3112544EA0D005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png in Resources */,
 				8279AF992536557B003BF303 /* 3-13.json in Resources */,
 				8279AF9C2536557B003BF303 /* 3-5.json in Resources */,
 				82A08ABA2538E96F00F6BEA9 /* CardCell1.xib in Resources */,
@@ -311,16 +335,19 @@
 				820EB9782535C47600FAEDB0 /* guidelines.json in Resources */,
 				8279AF962536557B003BF303 /* 2-5.json in Resources */,
 				82A08AB42538E2E000F6BEA9 /* CardCell2.xib in Resources */,
+				8292B3122544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-25 at 00.00.45.png in Resources */,
 				8279AFA02536557B003BF303 /* 3-3.json in Resources */,
 				820EB9622535B51200FAEDB0 /* LaunchScreen.storyboard in Resources */,
 				8279AF8A2536557B003BF303 /* 4-1.json in Resources */,
 				8279AF952536557B003BF303 /* 3-4.json in Resources */,
 				824137E725449FA9004BFAF3 /* Tablet.storyboard in Resources */,
+				8292B3102544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png in Resources */,
 				8279AF8F2536557B003BF303 /* 3-11.json in Resources */,
 				8279AF9F2536557B003BF303 /* 2-3.json in Resources */,
 				8206BC062544947C00820D52 /* oxygen.png in Resources */,
 				8279AF972536557B003BF303 /* 2-6.json in Resources */,
 				820EB95F2535B51200FAEDB0 /* Assets.xcassets in Resources */,
+				8292B3132544EA0D005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.57.40.png in Resources */,
 				8279AFA12536557B003BF303 /* 2-7.json in Resources */,
 				824137EC2544A055004BFAF3 /* logo.png in Resources */,
 				8206BBFD25447C6300820D52 /* Strings.strings in Resources */,
@@ -340,6 +367,7 @@
 				8279AF8E2536557B003BF303 /* 3-1.json in Resources */,
 				8279AF902536557B003BF303 /* 3-7.json in Resources */,
 				8230586725363D40002118DF /* 0-3.json in Resources */,
+				8292B3142544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.17.png in Resources */,
 				8279AF8C2536557B003BF303 /* 4-2.json in Resources */,
 				8279AF932536557B003BF303 /* 3-2.json in Resources */,
 				8279AF9B2536557B003BF303 /* 2-8.json in Resources */,
