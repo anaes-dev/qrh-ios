@@ -1,73 +1,93 @@
 {
   "DetailContent": [
     {
+      "type": 1,
+      "head": "",
+      "body": "Evidence of fire (smoke, heat, odour, flash, flame) on patient or drapes, or in patient’s airway",
+      "step": ""
+    },
+    {
       "type": 2,
-      "main": "If <u>AIRWAY</u> fire:",
-      "sub": "",
+      "head": "",
+      "body": "<b>START</b>",
       "step": ""
     },
     {
       "type": 3,
-      "main": "Extinguish fire:",
-      "sub": "<li>Stop laser or diathermy</li><li>Discontinue ventilation AND fresh gas flow</li><li>Remove tracheal tube if on fire</li><li>Remove flammable material from airway</li><li>Flood airway with 0.9% saline</li>",
-      "step": "2"
+      "head": "Call for help and inform theatre team:",
+      "body": "<ul><li>Activate fire alarm</li><li>Dial hospital fire emergency number and report location and nature of fire</li><li>Bring CO2 fire extinguisher into theatre</li>",
+      "step": "1"
     },
     {
-      "type": 3,
-      "main": "After fire extinguished:",
-      "sub": "<li>Re-establish ventilation </li><li>Minimise O₂, avoid N₂O</li><li>Check airway for damage and debris</li><li>Consider bronchoscopy</li><li>Re-intubate</li>",
-      "step": "3"
-    },{
       "type": 2,
-      "main": "If <u>NON-AIRWAY</u> fire:",
-      "sub": "",
+      "head": "",
+      "body": "<b>If <u>AIRWAY</u> fire:</b>",
       "step": ""
     },
     {
       "type": 3,
-      "main": "Extinguish fire:",
-      "sub": "<li>Stop laser or diathermy</li><li>Remove all drapes and burning material</li><li>Flood fire with 0.9% saline or saline soaked gauze</li><li>Use CO₂ extinguisher</li>",
+      "head": "Extinguish fire:",
+      "body": "<ul><li>Stop laser or diathermy</li><li>Discontinue ventilation AND fresh gas flow</li><li>Remove tracheal tube if on fire</li><li>Remove flammable material from airway</li><li>Flood airway with 0.9% saline</li></ul>",
       "step": "2"
     },
     {
       "type": 3,
-      "main": "After fire extinguished:",
-      "sub": "<li>Re-establish ventilation </li><li>Minimise O₂, avoid N₂O</li><li>Assess damage</li><li>Consider inhalational injury if not intubated</li><li>Consider intubation depending on degree of injury</li>",
+      "head": "After fire extinguished:",
+      "body": "<ul><li>Re-establish ventilation </li><li>Minimise O₂, avoid N₂O</li><li>Check airway for damage and debris</li><li>Consider bronchoscopy</li><li>Re-intubate</li></ul>",
       "step": "3"
-    },{
+    },
+    {
       "type": 2,
-      "main": "ONGOING MANAGEMENT:",
-      "sub": "",
+      "head": "",
+      "body": "<b>If <u>NON-AIRWAY</u> fire:</b>",
+      "step": ""
+    },
+    {
+      "type": 3,
+      "head": "Extinguish fire:",
+      "body": "<ul><li>Stop laser or diathermy</li><li>Remove all drapes and burning material</li><li>Flood fire with 0.9% saline or saline soaked gauze</li><li>Use CO₂ extinguisher</li></ul>",
+      "step": "2"
+    },
+    {
+      "type": 3,
+      "head": "After fire extinguished:",
+      "body": "<ul><li>Re-establish ventilation </li><li>Minimise O₂, avoid N₂O</li><li>Assess damage</li><li>Consider inhalational injury if not intubated</li><li>Consider intubation depending on degree of injury</li></ul>",
+      "step": "3"
+    },
+    {
+      "type": 2,
+      "head": "",
+      "body": "<b>ONGOING MANAGEMENT:</b>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Assess patient and devise ongoing management plan. Confirm no secondary fire, assess smoke risk to patient, consider intensive care.",
-      "sub": "",
+      "head": "",
+      "body": "Assess patient and devise ongoing management plan. Confirm no secondary fire, assess smoke risk to patient, consider intensive care.",
       "step": "4"
     },
     {
       "type": 4,
-      "main": "Keep involved materials or devices for inspection and report to the MHRA.",
-      "sub": "",
+      "head": "",
+      "body": "Keep involved materials or devices for inspection and report to the MHRA.",
       "step": "5"
     },
     {
       "type": 4,
-      "main": "If secondary non-patient fire occurs, or concerned about smoke/fire risk to staff, follow local fire procedures.",
-      "sub": "",
+      "head": "",
+      "body": "If secondary non-patient fire occurs, or concerned about smoke/fire risk to staff, follow local fire procedures.",
       "step": "6"
     },
     {
       "type": 11,
-      "main": "v.1",
-      "sub": "",
+      "head": "",
+      "body": "v.1",
       "step": ""
     },
     {
       "type": 12,
-      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
-      "sub": "",
+      "head": "",
+      "body": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
       "step": ""
     }
   ]

@@ -2,134 +2,134 @@
   "DetailContent": [
     {
       "type": 1,
-      "main": "Severe sepsis (hypotension persisting after initial fluid challenge of 30ml.kg⁻¹ or blood lactate concentration ≥ 4mmol.l⁻¹ if infection most likely underlying cause) or septic shock (sepsis with end organ dysfunction).",
-      "sub": "",
+      "head": "",
+      "body": "Severe sepsis (hypotension persisting after initial fluid challenge of 30ml.kg⁻¹ or blood lactate concentration ≥ 4mmol.l⁻¹ if infection most likely underlying cause) or septic shock (sepsis with end organ dysfunction).",
       "step": ""
     },
     {
       "type": 2,
-      "main": "START",
-      "sub": "",
+      "head": "",
+      "body": "<b>START</b>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Call for help and inform theatre team of problem.",
-      "sub": "",
+      "head": "",
+      "body": "Call for help and inform theatre team of problem.",
       "step": "1"
     },
     {
       "type": 4,
-      "main": "Increase F<small>i</small>O₂, consider reducing anaesthetic agent and intubate patient.",
-      "sub": "",
+      "head": "",
+      "body": "Increase F<small>i</small>O₂, consider reducing anaesthetic agent and intubate patient.",
       "step": "2"
     },
     {
       "type": 3,
-      "main": "Give crystalloid IV:",
-      "sub": "<ul><li>Adult: at least 30 ml.kg⁻¹ <b>(Boxes A, B)</b></li><li>Child: at least 20 ml.kg⁻¹ <b>(Box C)</b></li></ul>",
+      "head": "Give crystalloid IV:",
+      "body": "<ul><li>Adult: at least 30 ml.kg⁻¹ <b>(Boxes A, B)</b></li><li>Child: at least 20 ml.kg⁻¹ <b>(Box C)</b></li></ul>",
       "step": "3"
     },
     {
       "type": 6,
-      "main": "Box A: FLUID THERAPY",
-      "sub": "<ul><li>Crystalloids initial fluid of choice in severe sepsis and septic shock</li><li>Greater than 30 ml.kg⁻¹ of crystalloid may be required in some patients</li><li>Continue fluid challenge if haemodynamic improvement</li><li>Hydroxyethyl starches should not be used</li></ul>",
+      "head": "Box A: FLUID THERAPY",
+      "body": "<ul><li>Crystalloids initial fluid of choice in severe sepsis and septic shock</li><li>Greater than 30 ml.kg⁻¹ of crystalloid may be required in some patients</li><li>Continue fluid challenge if haemodynamic improvement</li><li>Hydroxyethyl starches should not be used</li></ul>",
       "step": ""
     },
     {
       "type": 7,
-      "main": "Box B: SET PHYSIOLOGICAL GOALS",
-      "sub": "<ul><li>Central venous pressure</li><li>Mean arterial pressure</li><li>Urine output</li><li>Central venous (superior vena cava) or mixed venous saturation</li></ul>",
+      "head": "Box B: SET PHYSIOLOGICAL GOALS",
+      "body": "<ul><li>Central venous pressure</li><li>Mean arterial pressure</li><li>Urine output</li><li>Central venous (superior vena cava) or mixed venous saturation</li></ul>",
       "step": ""
     },
     {
       "type": 9,
-      "main": "Box C: PAEDIATRIC CONSIDERATIONS",
-      "sub": "<ul><li>Goals: capillary refill time (CRT) ≤ 2 secs, normal BP for age, normal peripheral pulses, warm extremities, urine &gt;1 ml.kg⁻¹.hr⁻¹, SCVO2 &gt;70%.</li><li>Give 20 ml.kg⁻¹ initially up to or over 60 ml.kg⁻¹ fluid until goals or unless rales or hepatomegaly develops.</li><li>Begin peripheral inotropic support pending central/intraosseous access.</li><li>If warm shock (↑HR, ↓BP) start NORadrenaline.</li><li>If cold shock (↑HR, ↓CRT) start dopamine and, if resistant,adrenaline.</li></ul>",
+      "head": "Box C: PAEDIATRIC CONSIDERATIONS",
+      "body": "<ul><li>Goals: capillary refill time (CRT) ≤ 2 secs, normal BP for age, normal peripheral pulses, warm extremities, urine &gt;1 ml.kg⁻¹.hr⁻¹, SCVO2 &gt;70%.</li><li>Give 20 ml.kg⁻¹ initially up to or over 60 ml.kg⁻¹ fluid until goals or unless rales or hepatomegaly develops.</li><li>Begin peripheral inotropic support pending central/intraosseous access.</li><li>If warm shock (↑HR, ↓BP) start NORadrenaline.</li><li>If cold shock (↑HR, ↓CRT) start dopamine and, if resistant,adrenaline.</li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Take bloods including blood gas, lactate, FBC, U&Es, coagulation and cultures.",
-      "sub": "",
+      "head": "",
+      "body": "Take bloods including blood gas, lactate, FBC, U&Es, coagulation and cultures.",
       "step": "4"
     },
     {
       "type": 4,
-      "main": "Give empiric intravenous antimicrobials within 1 h (seek microbiology advice).",
-      "sub": "",
+      "head": "",
+      "body": "Give empiric intravenous antimicrobials within 1 h (seek microbiology advice).",
       "step": "5"
     },
     {
       "type": 4,
-      "main": "Consider whether indwelling devices could have caused a septic shower.",
-      "sub": "",
+      "head": "",
+      "body": "Consider whether indwelling devices could have caused a septic shower.",
       "step": "6"
     },
     {
       "type": 4,
-      "main": "If patient is not improving proceed to the next steps.",
-      "sub": "",
+      "head": "",
+      "body": "If patient is not improving proceed to the next steps.",
       "step": "7"
     },
     {
       "type": 4,
-      "main": "Insert central and arterial access lines. Check serial lactates.",
-      "sub": "",
+      "head": "",
+      "body": "Insert central and arterial access lines. Check serial lactates.",
       "step": "8"
     },
     {
       "type": 4,
-      "main": "Start NORadrenaline to achieve mean arterial pressure ≥ 65 mmHg <b>(Box D)</b>",
-      "sub": "",
+      "head": "",
+      "body": "Start NORadrenaline to achieve mean arterial pressure ≥ 65 mmHg <b>(Box D)</b>",
       "step": "9"
     },
     {
       "type": 6,
-      "main": "Box D: DRUG THERAPY",
-      "sub": "<ul><li><b>NORadrenaline (NA)</b> as first choice vasopressor.</li><li><b>Adrenaline</b> added to noradrenaline when additional agent needed.</li><li><b>Vasopressin</b> 0.03 units.min⁻¹ added to ↑MAP or ↓noradrenaline need.</li><li><b>DOBUTamine</b> up to 20 µg.kg⁻¹.min⁻¹ if evidence of myocardial dysfunction or ongoing signs of hypoperfusion despite adequate MAP and adequate intravascular volume.</li><li><b>Hydrocortisone</b> if unable to restore haemodynamic stability.</li></ul>",
+      "head": "Box D: DRUG THERAPY",
+      "body": "<ul><li><b>NORadrenaline (NA)</b> as first choice vasopressor.</li><li><b>Adrenaline</b> added to noradrenaline when additional agent needed.</li><li><b>Vasopressin</b> 0.03 units.min⁻¹ added to ↑MAP or ↓noradrenaline need.</li><li><b>DOBUTamine</b> up to 20 µg.kg⁻¹.min⁻¹ if evidence of myocardial dysfunction or ongoing signs of hypoperfusion despite adequate MAP and adequate intravascular volume.</li><li><b>Hydrocortisone</b> if unable to restore haemodynamic stability.</li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Insert urinary catheter and record hourly urine output.",
-      "sub": "",
+      "head": "",
+      "body": "Insert urinary catheter and record hourly urine output.",
       "step": "10"
     },
     {
       "type": 4,
-      "main": "Consider monitoring cardiac output to further aid fluid and vasopressor therapy.",
-      "sub": "",
+      "head": "",
+      "body": "Consider monitoring cardiac output to further aid fluid and vasopressor therapy.",
       "step": "11"
     },
     {
       "type": 4,
-      "main": "Identify source of sepsis, consider source control and send source cultures if possible (eg. surgical site, urine, broncho-alveolar lavage).",
-      "sub": "",
+      "head": "",
+      "body": "Identify source of sepsis, consider source control and send source cultures if possible (eg. surgical site, urine, broncho-alveolar lavage).",
       "step": "12"
     },
     {
       "type": 4,
-      "main": "Discuss whether appropriate to abandon or limit surgery.",
-      "sub": "",
+      "head": "",
+      "body": "Discuss whether appropriate to abandon or limit surgery.",
       "step": "13"
     },
     {
       "type": 4,
-      "main": "Discuss ongoing management plan with intensive care team.",
-      "sub": "",
+      "head": "",
+      "body": "Discuss ongoing management plan with intensive care team.",
       "step": "14"
     },
     {
       "type": 11,
-      "main": "v.1",
-      "sub": "",
+      "head": "",
+      "body": "v.1",
       "step": ""
     },
     {
       "type": 12,
-      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
-      "sub": "",
+      "head": "",
+      "body": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
       "step": ""
     }
   ]

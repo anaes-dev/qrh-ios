@@ -2,116 +2,116 @@
   "DetailContent": [
     {
       "type": 1,
-      "main": "This is the last resort when all other attempts to oxygenate have failed.",
-      "sub": "",
+      "head": "",
+      "body": "This is the last resort when all other attempts to oxygenate have failed.",
       "step": ""
     },
     {
       "type": 5,
-      "main": "Box A: CRITICAL CHANGES",
-      "sub": "<b>CARDIAC ARREST →2-1</b>",
+      "head": "Box A: CRITICAL CHANGES",
+      "body": "<b>CARDIAC ARREST →2-1</b>",
       "step": ""
     },
     {
       "type": 2,
-      "main": "START",
-      "sub": "",
+      "head": "",
+      "body": "<b>START</b>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Check optimal airway management is in place and maintain anaesthesia: supply 100% oxygen either by tightly fitting facemask, supraglottic airway device or nasal high flow",
-      "sub": "",
+      "head": "",
+      "body": "Check optimal airway management is in place and maintain anaesthesia: supply 100% oxygen either by tightly fitting facemask, supraglottic airway device or nasal high flow",
       "step": "1"
     },
     {
       "type": 4,
-      "main": "Consider ONE final attempt at rescue oxygenation via upper airway if not already done",
-      "sub": "",
+      "head": "",
+      "body": "Consider ONE final attempt at rescue oxygenation via upper airway if not already done",
       "step": "2"
     },
     {
       "type": 4,
-      "main": "Declare CICO and call for help (additional staff and surgical airway expertise e.g. ENT, ICU)",
-      "sub": "",
+      "head": "",
+      "body": "Declare CICO and call for help (additional staff and surgical airway expertise e.g. ENT, ICU)",
       "step": "3"
     },
     {
       "type": 4,
-      "main": "Call for airway rescue trolley and then cardiac arrest trolley",
-      "sub": "",
+      "head": "",
+      "body": "Call for airway rescue trolley and then cardiac arrest trolley",
       "step": "4"
     },
     {
       "type": 4,
-      "main": "Give neuromuscular blocking drug now",
-      "sub": "",
+      "head": "",
+      "body": "Call for airway rescue trolley and then cardiac arrest trolley",
       "step": "5"
     },
     {
       "type": 4,
-      "main": "Prepare for Front of Neck Access – FoNA <b>(Box B)</b>",
-      "sub": "",
+      "head": "",
+      "body": "Prepare for Front of Neck Access – FoNA <b>(Box B)</b>",
       "step": "6"
     },
     {
       "type": 8,
-      "main": "Box B: EQUIPMENT INSTRUCTIONS",
-      "sub": "Airway rescue trolley, FoNA drawer:<li>Scalpel with number 10 blade</li><li>Bougie with coudé (angled) tip</li><li>Tracheal tube, cuffed, 6 mm</li>",
+      "head": "Box B: EQUIPMENT INSTRUCTIONS",
+      "body": "Airway rescue trolley, FoNA drawer:<li>Scalpel with number 10 blade</li><li>Bougie with coudé (angled) tip</li><li>Tracheal tube, cuffed, 6 mm</li>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Check that the patient is positioned with full neck extension",
-      "sub": "",
+      "head": "",
+      "body": "Check that the patient is positioned with full neck extension",
       "step": "7"
     },
     {
       "type": 3,
-      "main": "Operator position:",
-      "sub": "<li><b>Right-handed</b> operator stands on patient’s <b>left</b> hand side</li><li><b>Left-handed</b> operator stands on patient’s <b>right</b> hand side</li>",
+      "head": "Operator position:",
+      "body": "<li><b>Right-handed</b> operator stands on patient’s <b>left</b> hand side</li><li><b>Left-handed</b> operator stands on patient’s <b>right</b> hand side</li>",
       "step": "8"
     },
     {
       "type": 4,
-      "main": "Perform a ‘laryngeal handshake’ to identify the laryngeal anatomy",
-      "sub": "",
+      "head": "",
+      "body": "Perform a ‘laryngeal handshake’ to identify the laryngeal anatomy",
       "step": "9"
     },
     {
       "type": 4,
-      "main": "Perform FoNA using technique in <b>Box C</b> to intubate trachea via cricothyroid membrane<br><b><i>(If cricothyroid membrane cannot be identified, use technique in Box D)</i></b>",
-      "sub": "",
+      "head": "",
+      "body": "<p>Perform FoNA using technique in <b>Box C</b> to intubate trachea via cricothyroid membrane</p><p><b><i>(If cricothyroid membrane cannot be identified, use technique in Box D)</i></b></p>",
       "step": "10"
     },
     {
       "type": 8,
-      "main": "Box C: (STAB, TWIST, BOUGIE, TUBE TECHNIQUE)",
-      "sub": "<li>Identify the cricothyroid membrane <i><b>(If unable, go to Box D)</b></i></li><li>Single transverse incision through skin and membrane</li><li>Rotate scalpel 90° with sharp edge facing caudally</li><li>Slide angled tip of bougie past the scalpel into the trachea</li><li>Railroad tube over bougie</li>",
+      "head": "Box C: (STAB, TWIST, BOUGIE, TUBE TECHNIQUE)",
+      "body": "<ul><li>Identify the cricothyroid membrane <i><b>(If unable, go to Box D)</b></i></li><li>Single transverse incision through skin and membrane</li><li>Rotate scalpel 90° with sharp edge facing caudally</li><li>Slide angled tip of bougie past the scalpel into the trachea</li><li>Railroad tube over bougie</li></ul>",
       "step": ""
     },
     {
       "type": 8,
-      "main": "Box D: IF BOX C FAILS (SCALPEL, FINGER, BOUGIE TECHNIQUE)",
-      "sub": "<li>Make an 8-10 cm vertical incision head to toe orientation</li><li>Use blunt dissection to retract tissue to identify trachea</li><li>Stabilise the trachea and proceed as in <b>Box C</b> through the cricothyroid membrane</li>",
+      "head": "Box D: IF BOX C FAILS (SCALPEL, FINGER, BOUGIE TECHNIQUE)",
+      "body": "<ul><li>Make an 8-10 cm vertical incision head to toe orientation</li><li>Use blunt dissection to retract tissue to identify trachea</li><li>Stabilise the trachea and proceed as in <b>Box C</b> through the cricothyroid membrane</li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Secure tube, continue to oxygenate patient and ensure adequate depth of anaesthesia",
-      "sub": "",
+      "head": "",
+      "body": "Secure tube, continue to oxygenate patient and ensure adequate depth of anaesthesia",
       "step": "11"
     },
     {
       "type": 11,
-      "main": "v.1",
-      "sub": "",
+      "head": "",
+      "body": "v.1",
       "step": ""
     },
     {
       "type": 12,
-      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
-      "sub": "",
+      "head": "",
+      "body": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
       "step": ""
     }
   ]

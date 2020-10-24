@@ -2,98 +2,98 @@
   "DetailContent": [
     {
       "type": 1,
-      "main": "The probable cause is one or more of: something related to surgery or anaesthesia; the patient’s underlying medical condition; the reason for surgery; equipment failure. The first priority is to start chest compressions, then get help, then find and treat the cause using the guideline.",
-      "sub": "",
+      "head": "",
+      "body": "The probable cause is one or more of: something related to surgery or anaesthesia; the patient’s underlying medical condition; the reason for surgery; equipment failure. The first priority is to start chest compressions, then get help, then find and treat the cause using the guideline.",
       "step": ""
     },
     {
       "type": 2,
-      "main": "START",
-      "sub": "",
+      "head": "",
+      "body": "<b>START</b>",
       "step": ""
     },
     {
       "type": 3,
-      "main": "IMMEDIATE ACTION",
-      "sub": "<ul><li><b>Declare “cardiac arrest”</b> to the theatre team AND note time.</li><li>Delegate one person (minimum) to chest compressions 100 min⁻¹, depth 5 cm.</li><li>Call for help: nearby theatres / emergency bell / senior on-call / dial emergency number.</li><li>Call for cardiac arrest trolley.</li><li>As soon as possible, delegate task of evaluating potential causes <b>(Box A)</b>.</li></ul>",
+      "head": "IMMEDIATE ACTION",
+      "body": "<ul><li><b>Declare “cardiac arrest”</b> to the theatre team AND note time.</li><li>Delegate one person (minimum) to chest compressions 100 min⁻¹, depth 5 cm.</li><li>Call for help: nearby theatres / emergency bell / senior on-call / dial emergency number.</li><li>Call for cardiac arrest trolley.</li><li>As soon as possible, delegate task of evaluating potential causes <b>(Box A)</b>.</li></ul>",
       "step": "1"
     },
     {
       "type": 9,
-      "main": "Box A: POTENTIAL CAUSES",
-      "sub": "<p><b>4 H's, 4 T's</b></p><ul><li>Hypoxia <b>→2-2</b></li><li>Hypovolaemia</li><li>Hypo/hyperkalaemia</li><li>Hypothermia</li><li>Tamponade <b>→3-9</b></li><li>Thrombosis <b>→3-5</b></li><li>Toxins</li><li>Tension pneumothorax</li></ul>",
+      "head": "Box A: POTENTIAL CAUSES",
+      "body": "<p><b>4 H's, 4 T's</b></p><ul><li>Hypoxia <b>→2-2</b></li><li>Hypovolaemia</li><li>Hypo/hyperkalaemia</li><li>Hypothermia</li><li>Tamponade <b>→3-9</b></li><li>Thrombosis <b>→3-5</b></li><li>Toxins</li><li>Tension pneumothorax</li></ul>",
       "step": ""
     },
     {
       "type": 9,
-      "main": "Specific peri-operative problems:",
-      "sub": "<ul><li>Vagal tone</li><li>Drug error</li><li>Local anaesthetic toxicity <b>→3-10</b></li><li>Acidosis</li><li>Anaphylaxis <b>→3-1</b></li><li>Embolism, gas/fat/amniotic <b>→3-5</b></li><li>Massive blood loss <b>→3-2</b></li></ul>",
+      "head": "Specific peri-operative problems:",
+      "body": "<ul><li>Vagal tone</li><li>Drug error</li><li>Local anaesthetic toxicity <b>→3-10</b></li><li>Acidosis</li><li>Anaphylaxis <b>→3-1</b></li><li>Embolism, gas/fat/amniotic <b>→3-5</b></li><li>Massive blood loss <b>→3-2</b></li></ul>",
       "step": ""
     },
     {
       "type": 3,
-      "main": "Adequate oxygen delivery",
-      "sub": "<li>Increase fresh gas flow, give 100% oxygen AND check measured F<small>i</small>O₂.</li><li>Turn off anaesthetic (inhalational or intravenous).</li><li>Check breathing system valves working and system connections intact.</li><li>Rapidly confirm ventilator bellows moving or provide manual ventilation.</li>",
+      "head": "Adequate oxygen delivery",
+      "body": "<li>Increase fresh gas flow, give 100% oxygen AND check measured F<small>i</small>O₂.</li><li>Turn off anaesthetic (inhalational or intravenous).</li><li>Check breathing system valves working and system connections intact.</li><li>Rapidly confirm ventilator bellows moving or provide manual ventilation.</li>",
       "step": "2"
     },
     {
       "type": 3,
-      "main": "Airway",
-      "sub": "<li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Confirm airway device is patent (consider passing suction catheter).</li><li><b>If expired CO₂ is absent, presume oesophageal intubation until absolutely excluded.</b></li>",
+      "head": "Airway",
+      "body": "<li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Confirm airway device is patent (consider passing suction catheter).</li><li><b>If expired CO₂ is absent, presume oesophageal intubation until absolutely excluded.</b></li>",
       "step": "3"
     },
     {
       "type": 3,
-      "main": "Breathing",
-      "sub": "<li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured expired volume, ETCO₂.</li><li>Evaluate the airway pressure using reservoir bag and APL valve.</li>",
+      "head": "Breathing",
+      "body": "<li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured expired volume, ETCO₂.</li><li>Evaluate the airway pressure using reservoir bag and APL valve.</li>",
       "step": "4"
     },
     {
       "type": 3,
-      "main": "Circulation",
-      "sub": "<li>Check rate and adequacy of chest compressions (visual and ETCO₂).<li>Encourage rotation of personnel performing compressions.</li><li>If IV access fails or impossible use intraosseous (IO) route.</li><li>Check ECG rhythm for no more than 5 seconds.</li><li>Follow Resuscitation Council (UK) and ERC Guidelines.</li><li>See <b>Boxes B and C</b> for reminders about drugs and defibrillation.</li>",
+      "head": "Circulation",
+      "body": "<li>Check rate and adequacy of chest compressions (visual and ETCO₂).<li>Encourage rotation of personnel performing compressions.</li><li>If IV access fails or impossible use intraosseous (IO) route.</li><li>Check ECG rhythm for no more than 5 seconds.</li><li>Follow Resuscitation Council (UK) and ERC Guidelines.</li><li>See <b>Boxes B and C</b> for reminders about drugs and defibrillation.</li>",
       "step": "5"
     },
     {
       "type": 6,
-      "main": "Box B: DRUGS FOR PERI-OPERATIVE CARDIAC ARREST",
-      "sub": "<ul><li>Fluid bolus 20 ml.kg⁻¹ <small>(adult 500 ml)</small></li><li>Adrenaline 10 µg.kg⁻¹ <small>(adult 1000 µg – may be given in increments)</small></li><li>Atropine 10 µg.kg⁻¹ <small>(adult 0.5-1 mg) if vagal tone likely cause</small></li><li>Amiodarone 5 mg.kg⁻¹ <small>(adult 300 mg) after 3rd shock</small></li><li>Magnesium 50 mg.kg⁻¹ <small>(adult 2 g) for polymorphic VT/hypomagnesaemia.</small></li><li>Calcium chloride 10% 0.2 ml.kg⁻¹ <small>(adult 10 ml) for magnesium overdose, hypocalcaemia or hyperkalaemia</small></li><li>Thrombolysis <small>for suspected massive pulmonary embolus</small></li></ul>",
+      "head": "Box B: DRUGS FOR PERI-OPERATIVE CARDIAC ARREST",
+      "body": "<ul><li>Fluid bolus 20 ml.kg⁻¹ <small>(adult 500 ml)</small></li><li>Adrenaline 10 µg.kg⁻¹ <small>(adult 1000 µg – may be given in increments)</small></li><li>Atropine 10 µg.kg⁻¹ <small>(adult 0.5-1 mg) if vagal tone likely cause</small></li><li>Amiodarone 5 mg.kg⁻¹ <small>(adult 300 mg) after 3rd shock</small></li><li>Magnesium 50 mg.kg⁻¹ <small>(adult 2 g) for polymorphic VT/hypomagnesaemia.</small></li><li>Calcium chloride 10% 0.2 ml.kg⁻¹ <small>(adult 10 ml) for magnesium overdose, hypocalcaemia or hyperkalaemia</small></li><li>Thrombolysis <small>for suspected massive pulmonary embolus</small></li></ul>",
       "step": ""
     },
     {
       "type": 8,
-      "main": "Box C: DEFIBRILLATION",
-      "sub": "<p>Continue compressions while charging<br>Biphasic 4 J.kg⁻¹ (adult 150-200 J)</small></p><p>DO NOT check pulse after defibrillation<br>Use 3 stacked shocks in cardiac catheterisation lab</p>",
+      "head": "Box C: DEFIBRILLATION",
+      "body": "<p>Continue compressions while charging</p><p>Biphasic 4 J.kg⁻¹ (adult 150-200 J)</small></p><p>DO NOT check pulse after defibrillation</p><p>Use 3 stacked shocks in cardiac catheterisation lab</p>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Systematically evaluate potential underlying problems and act accordingly <b>(Box A)</b>",
-      "sub": "",
+      "head": "",
+      "body": "Systematically evaluate potential underlying problems and act accordingly <b>(Box A)</b>",
       "step": "6"
     },
     {
       "type": 4,
-      "main": "If there is return of spontaneous circulation, re-establish anaesthesia.",
-      "sub": "",
+      "head": "",
+      "body": "If there is return of spontaneous circulation, re-establish anaesthesia.",
       "step": "7"
     },
     {
       "type": 8,
-      "main": "Box D: DON'T FORGET!",
-      "sub": "<ul><li><b>Use waveform capnography. No expired CO₂ = lungs not being ventilated (assume and exclude oesophageal intubation). Very rarely, absent/minimal expired CO₂ = CPR not occurring OR pulmonary circulation disconnected from systemic (e.g. in major trauma).</b> Sudden increase in ETCO₂ usually signals return of spontaneous circulation</li><li>Optimise position for chest compressions (use overhead for bariatric patients)</li><li>Uterine displacement in pregnant patients.</li><li>Ventilator can free up hands but remember to set to volume control. Minimise intrathoracic pressure: avoid excessive tidal volume and hyperventilation.</li></ul>",
+      "head": "Box D: DON'T FORGET!",
+      "body": "<ul><li><b>Use waveform capnography. No expired CO₂ = lungs not being ventilated (assume and exclude oesophageal intubation). Very rarely, absent/minimal expired CO₂ = CPR not occurring OR pulmonary circulation disconnected from systemic (e.g. in major trauma).</b> Sudden increase in ETCO₂ usually signals return of spontaneous circulation</li><li>Optimise position for chest compressions (use overhead for bariatric patients)</li><li>Uterine displacement in pregnant patients.</li><li>Ventilator can free up hands but remember to set to volume control. Minimise intrathoracic pressure: avoid excessive tidal volume and hyperventilation.</li></ul>",
       "step": ""
     },
     {
       "type": 11,
-      "main": "v.1",
-      "sub": "",
+      "head": "",
+      "body": "v.1",
       "step": ""
     },
     {
       "type": 12,
-      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
-      "sub": "",
+      "head": "",
+      "body": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
       "step": ""
     }
   ]

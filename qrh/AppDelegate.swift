@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if UIDevice.current.userInterfaceIdiom == .pad {
             config.storyboard = UIStoryboard(name: "Tablet", bundle: nil)
         } else {
-            config.storyboard = UIStoryboard(name: "Main", bundle: nil)
+            config.storyboard = UIStoryboard(name: "head", bundle: nil)
         }
         return config
     }

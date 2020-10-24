@@ -9,14 +9,13 @@ import UIKit
 
 class DetailController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextViewDelegate {
     
-        
     @IBOutlet weak var tableViewMain: UITableView!
     @IBOutlet weak var tableViewRight: UITableView!
     
     struct Card: Codable {
         var type: Int
-        var main: String
-        var sub: String
+        var head: String
+        var body: String
         var step: String
     }
     
@@ -32,7 +31,6 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     var scrubLink = String()
     var fetchedURL: String = ""
     var fetchedTitle: String = "Default"
-    var cellOneDIsplayCode: Bool = true
     
     struct Guideline: Codable {
         var code: String
@@ -48,8 +46,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     var unfilteredGuidelines = [Guideline]()
     var filteredGuidelines = [Guideline]()
     
-    var subParsed = Array<NSMutableAttributedString>()
-    var mainParsed = Array<NSMutableAttributedString>()
+    var bodyParsed = Array<NSMutableAttributedString>()
     
     var expandedIndexSet : IndexSet = []
     
@@ -65,6 +62,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         tableViewMain.register(UINib(nibName: "CardCell3", bundle: nil), forCellReuseIdentifier: "CardCell3")
         tableViewMain.register(UINib(nibName: "CardCell4", bundle: nil), forCellReuseIdentifier: "CardCell4")
         tableViewMain.register(UINib(nibName: "CardCell5", bundle: nil), forCellReuseIdentifier: "CardCell5")
+        tableViewMain.register(UINib(nibName: "CardCell10", bundle: nil), forCellReuseIdentifier: "CardCell10")
         tableViewMain.register(UINib(nibName: "CardCell11", bundle: nil), forCellReuseIdentifier: "CardCell11")
         tableViewMain.register(UINib(nibName: "CardCell12", bundle: nil), forCellReuseIdentifier: "CardCell12")
         
@@ -168,46 +166,50 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     
                     case 1:
                         let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
-                        cell.main.attributedText = mainParsed[indexPath.row]
-                        if cellOneDIsplayCode {
+                        cell.body.attributedText = bodyParsed[indexPath.row]
+                        if indexPath.row == 1 {
                             cell.code.text = passedCode
-                            cellOneDIsplayCode = false
                         }
                         return cell
                     
                     case 2:
                         let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell2") as! CardCell2
-                        cell.main.text = cardContent[indexPath.row].main
+                        cell.main.attributedText = bodyParsed[indexPath.row]
                         return cell
                         
                     case 3:
                         let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell3") as! CardCell3
-                        cell.main.text = cardContent[indexPath.row].main
-                        cell.sub.attributedText = subParsed[indexPath.row]
+                        cell.main.text = cardContent[indexPath.row].head
+                        cell.sub.attributedText = bodyParsed[indexPath.row]
                         cell.step.text = cardContent[indexPath.row].step
                         return cell
                         
                     case 4:
                         let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell4") as! CardCell4
-                        cell.main.attributedText = mainParsed[indexPath.row]
+                        cell.main.attributedText = bodyParsed[indexPath.row]
                         cell.step.text = cardContent[indexPath.row].step
                         return cell
                         
+                    case 10:
+                        let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell10") as! CardCell10
+                        cell.head.text = cardContent[indexPath.row].head
+                        cell.imageFile.image = UIImage(named: cardContent[indexPath.row].body)
+                        return cell
 
-                case 11:
-                    let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell11") as! CardCell11
-                    cell.main.text = cardContent[indexPath.row].main
-                    return cell
-                    
-                case 12:
-                    let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell12") as! CardCell12
-                    cell.main.text = cardContent[indexPath.row].main
-                    return cell
-                    
-                default:
-                    let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CellEmpty") as! CellEmpty
-                    tableViewMainHidden.insert(indexPath.row)
-                    return cell
+                    case 11:
+                        let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell11") as! CardCell11
+                        cell.main.text = cardContent[indexPath.row].body
+                        return cell
+                        
+                    case 12:
+                        let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell12") as! CardCell12
+                        cell.main.text = cardContent[indexPath.row].body
+                        return cell
+                        
+                    default:
+                        let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CellEmpty") as! CellEmpty
+                        tableViewMainHidden.insert(indexPath.row)
+                        return cell
                 }
                 
             } else if tableView == tableViewRight {
@@ -248,13 +250,13 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                         cell.arrow.tintColor = UIColor.label
                     }
                     
-                    cell.main.text = cardContent[indexPath.row].main
+                    cell.main.text = cardContent[indexPath.row].head
                     cell.sub.delegate = self
                     
 
                         cell.arrow.image = nil
                         cell.arrow.backgroundColor = UIColor.clear
-                        cell.sub.attributedText = subParsed[indexPath.row]
+                        cell.sub.attributedText = bodyParsed[indexPath.row]
                         cell.sub0.isActive = false
                         cell.sub8.isActive = true
                         if cell.subheight?.isActive != nil {
@@ -286,28 +288,28 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             
             case 1:
                 let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
-                cell.main.attributedText = mainParsed[indexPath.row]
-                if cellOneDIsplayCode {
+                cell.body.attributedText = bodyParsed[indexPath.row]
+                if indexPath.row == 0 {
                     cell.code.text = passedCode
-                    cellOneDIsplayCode = false
                 }
                 return cell
             
             case 2:
                 let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell2") as! CardCell2
-                cell.main.text = cardContent[indexPath.row].main
+                cell.main.attributedText = bodyParsed[indexPath.row]
+                cell.main.textColor = UIColor.systemBackground
                 return cell
                 
             case 3:
                 let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell3") as! CardCell3
-                cell.main.text = cardContent[indexPath.row].main
-                cell.sub.attributedText = subParsed[indexPath.row]
+                cell.main.text = cardContent[indexPath.row].head
+                cell.sub.attributedText = bodyParsed[indexPath.row]
                 cell.step.text = cardContent[indexPath.row].step
                 return cell
                 
             case 4:
                 let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell4") as! CardCell4
-                cell.main.attributedText = mainParsed[indexPath.row]
+                cell.main.attributedText = bodyParsed[indexPath.row]
                 cell.step.text = cardContent[indexPath.row].step
                 return cell
                 
@@ -346,7 +348,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     cell.arrow.tintColor = UIColor.label
                 }
                 
-                cell.main.text = cardContent[indexPath.row].main
+                cell.main.text = cardContent[indexPath.row].head
                 cell.sub.delegate = self
                 
                 let tapGesture = UILongPressGestureRecognizer(target: self, action: #selector(tapBox))
@@ -355,7 +357,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 
                 if expandedIndexSet.contains(indexPath.row) {
                     cell.arrow.image = UIImage(systemName: "arrow.up")
-                    cell.sub.attributedText = subParsed[indexPath.row]
+                    cell.sub.attributedText = bodyParsed[indexPath.row]
                     cell.sub0.isActive = false
                     cell.sub8.isActive = true
                     if cell.subheight?.isActive != nil {
@@ -372,19 +374,27 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 }
                 return cell
                 
+        case 10:
+            let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell10") as! CardCell10
+            cell.head.text = cardContent[indexPath.row].head
+            cell.imageFile.image = UIImage(named: cardContent[indexPath.row].body)
+            let heightInPoints = image.size.height
+
+            return cell
+                
             case 11:
                 let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell11") as! CardCell11
-                cell.main.text = cardContent[indexPath.row].main
+                cell.main.text = cardContent[indexPath.row].body
                 return cell
                 
             case 12:
                 let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell12") as! CardCell12
-                cell.main.text = cardContent[indexPath.row].main
+                cell.main.text = cardContent[indexPath.row].body
                 return cell
                 
             default:
                 let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
-                cell.main.text = cardContent[indexPath.row].main
+                cell.body.text = cardContent[indexPath.row].body
                 return cell
             
         }
@@ -422,8 +432,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             
 
             for card in cardContent {
-                subParsed.append(parseHtmlAttributes(htmlText: card.sub))
-                mainParsed.append(parseHtmlAttributes(htmlText: card.main))
+                bodyParsed.append(parseHtmlAttributes(htmlText: card.body))
             }
             
             tableViewMain.reloadData()

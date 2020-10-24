@@ -1,17 +1,16 @@
 //
-//  CardCell1.swift
+//  CardCell10.swift
 //  qrh
 //
-//  Created by user185107 on 10/15/20.
+//  Created by user185107 on 10/24/20.
 //
 
 import UIKit
 
-class CardCell1: UITableViewCell {
+class CardCell10: UITableViewCell {
 
-    
-    @IBOutlet weak var body: UILabel!
-    @IBOutlet weak var code: UILabel!
+    @IBOutlet var imageFile: UIImageView!
+    @IBOutlet var head: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
