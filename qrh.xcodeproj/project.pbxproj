@@ -11,6 +11,10 @@
 		82011A2C253B1685003DCBE2 /* CardCell11.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82011A2A253B1685003DCBE2 /* CardCell11.xib */; };
 		82011A31253B1797003DCBE2 /* CardCell12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82011A30253B1797003DCBE2 /* CardCell12.swift */; };
 		82011A35253B17A8003DCBE2 /* CardCell12.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82011A34253B17A8003DCBE2 /* CardCell12.xib */; };
+		8206BBFD25447C6300820D52 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8206BBFC25447C6300820D52 /* Strings.strings */; };
+		8206BC012544930D00820D52 /* CardCell10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8206BBFF2544930D00820D52 /* CardCell10.swift */; };
+		8206BC022544930D00820D52 /* CardCell10.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8206BC002544930D00820D52 /* CardCell10.xib */; };
+		8206BC062544947C00820D52 /* oxygen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8206BC052544947C00820D52 /* oxygen.png */; };
 		820EB9562535B51100FAEDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9552535B51100FAEDB0 /* AppDelegate.swift */; };
 		820EB9582535B51100FAEDB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9572535B51100FAEDB0 /* SceneDelegate.swift */; };
 		820EB95D2535B51100FAEDB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EB95B2535B51100FAEDB0 /* Main.storyboard */; };
@@ -71,6 +75,10 @@
 		82011A2A253B1685003DCBE2 /* CardCell11.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell11.xib; sourceTree = "<group>"; };
 		82011A30253B1797003DCBE2 /* CardCell12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell12.swift; sourceTree = "<group>"; };
 		82011A34253B17A8003DCBE2 /* CardCell12.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell12.xib; sourceTree = "<group>"; };
+		8206BBFC25447C6300820D52 /* Strings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Strings.strings; sourceTree = "<group>"; };
+		8206BBFF2544930D00820D52 /* CardCell10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell10.swift; sourceTree = "<group>"; };
+		8206BC002544930D00820D52 /* CardCell10.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell10.xib; sourceTree = "<group>"; };
+		8206BC052544947C00820D52 /* oxygen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oxygen.png; sourceTree = "<group>"; };
 		820EB9522535B51100FAEDB0 /* qrh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		820EB9552535B51100FAEDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		820EB9572535B51100FAEDB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +198,7 @@
 				8279AF7025365579003BF303 /* 4-1.json */,
 				8279AF722536557A003BF303 /* 4-2.json */,
 				8279AF732536557A003BF303 /* 4-3.json */,
+				8206BC052544947C00820D52 /* oxygen.png */,
 				820EB9552535B51100FAEDB0 /* AppDelegate.swift */,
 				820EB9572535B51100FAEDB0 /* SceneDelegate.swift */,
 				820EB95B2535B51100FAEDB0 /* Main.storyboard */,
@@ -206,10 +215,13 @@
 				8276D046253B14A400243AB3 /* CardCell4.xib */,
 				8277FCDF253B326300E8158D /* CardCell5.swift */,
 				8277FCDC253B313F00E8158D /* CardCell5.xib */,
+				8206BBFF2544930D00820D52 /* CardCell10.swift */,
+				8206BC002544930D00820D52 /* CardCell10.xib */,
 				82011A29253B1685003DCBE2 /* CardCell11.swift */,
 				82011A2A253B1685003DCBE2 /* CardCell11.xib */,
 				82011A30253B1797003DCBE2 /* CardCell12.swift */,
 				82011A34253B17A8003DCBE2 /* CardCell12.xib */,
+				8206BBFC25447C6300820D52 /* Strings.strings */,
 				820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */,
 				82A08AAB2538D72400F6BEA9 /* DetailController.swift */,
 				820EB9912535E96200FAEDB0 /* GuidelinesCell.swift */,
@@ -297,9 +309,11 @@
 				823F084E25434EAD00A1B988 /* Tablet.storyboard in Resources */,
 				8279AF8F2536557B003BF303 /* 3-11.json in Resources */,
 				8279AF9F2536557B003BF303 /* 2-3.json in Resources */,
+				8206BC062544947C00820D52 /* oxygen.png in Resources */,
 				8279AF972536557B003BF303 /* 2-6.json in Resources */,
 				820EB95F2535B51200FAEDB0 /* Assets.xcassets in Resources */,
 				8279AFA12536557B003BF303 /* 2-7.json in Resources */,
+				8206BBFD25447C6300820D52 /* Strings.strings in Resources */,
 				8279AF882536557B003BF303 /* 3-9.json in Resources */,
 				8279AF9A2536557B003BF303 /* 3-14.json in Resources */,
 				8279AF922536557B003BF303 /* 3-8.json in Resources */,
@@ -308,6 +322,7 @@
 				8279AF912536557B003BF303 /* 3-6.json in Resources */,
 				8251661B25443B43002C87F5 /* CellEmpty.xib in Resources */,
 				82011A35253B17A8003DCBE2 /* CardCell12.xib in Resources */,
+				8206BC022544930D00820D52 /* CardCell10.xib in Resources */,
 				820EB95D2535B51100FAEDB0 /* Main.storyboard in Resources */,
 				82011A2C253B1685003DCBE2 /* CardCell11.xib in Resources */,
 				8279AF9D2536557B003BF303 /* 3-12.json in Resources */,
@@ -341,6 +356,7 @@
 				82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */,
 				820EB9922535E96200FAEDB0 /* GuidelinesCell.swift in Sources */,
 				820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */,
+				8206BC012544930D00820D52 /* CardCell10.swift in Sources */,
 				82258AFB253B0DA500E0C180 /* CardCell3.swift in Sources */,
 				82011A2B253B1685003DCBE2 /* CardCell11.swift in Sources */,
 				8251661A25443B43002C87F5 /* CellEmpty.swift in Sources */,

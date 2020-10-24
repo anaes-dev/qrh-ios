@@ -2,110 +2,110 @@
   "DetailContent": [
     {
       "type": 1,
-      "main": "Laryngospasm usually occurs when a patient is in a light plane of anaesthesia and their airway is stimulated in some way.<p>Stridor is a sign and associated with laryngospasm (although it can have other causes).",
-      "sub": "",
+      "head": "",
+      "body": "Laryngospasm usually occurs when a patient is in a light plane of anaesthesia and their airway is stimulated in some way.<p>Stridor is a sign and associated with laryngospasm (although it can have other causes).",
       "step": ""
     },
     {
       "type": 2,
-      "main": "START",
-      "sub": "",
+      "head": "",
+      "body": "<b>START</b>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Call for help and inform theatre team of problem.",
-      "sub": "",
+      "head": "",
+      "body": "Call for help and inform theatre team of problem.",
       "step": "1"
     },
     {
       "type": 4,
-      "main": "Perform jaw thrust and stop any other stimulation.",
-      "sub": "",
+      "head": "",
+      "body": "Perform jaw thrust and stop any other stimulation.",
       "step": "2"
     },
     {
       "type": 4,
-      "main": "Remove airway devices and anything else that may be stimulating or obstructing the airway, e.g. suction catheters, blood or vomit (direct visualisation and suction if in doubt).<li>A correctly positioned tracheal tube rules out laryngospasm.</li>",
-      "sub": "",
+      "head": "",
+      "body": "<p>Remove airway devices and anything else that may be stimulating or obstructing the airway, e.g. suction catheters, blood or vomit (direct visualisation and suction if in doubt).</p><ul><li>A correctly positioned tracheal tube rules out laryngospasm.</li></ul>",
       "step": "3"
     },
     {
       "type": 4,
-      "main": "Give CPAP with 100% oxygen and face mask:<li>Avoid over-vigorous attempts at lung inflation, as this may inflate the stomach.</li><li>Insert an oro-pharyngeal and/or nasal airway if you are not sure that the airway is clear above the larynx.</li>",
-      "sub": "",
+      "head": "",
+      "body": "<p>Give CPAP with 100% oxygen and face mask:</p><ul><li>Avoid over-vigorous attempts at lung inflation, as this may inflate the stomach.</li><li>Insert an oro-pharyngeal and/or nasal airway if you are not sure that the airway is clear above the larynx.</li></ul>",
       "step": "4"
     },
     {
       "type": 4,
-      "main": "If problem persists:<li>Continue CPAP</li><li>Deepen anaesthesia</li><li>Give a neuromuscular blocker <b>(See Box A)</b></li>",
-      "sub": "",
+      "head": "",
+      "body": "<p>If problem persists:</p><ul><li>Continue CPAP</li><li>Deepen anaesthesia</li><li>Give a neuromuscular blocker <b>(See Box A)</b></li></ul>",
       "step": "5"
     },
     {
       "type": 6,
-      "main": "Box A: DRUG DOSES FOR TREATMENT OF LARYNGOSPASM",
-      "sub": "0.25-0.5 mg.kg⁻¹ intraVENOUS:<li>Propofol</li><li>Rocuronium</li><li>Atracurium</li><li>Suxamethonium<br><small>(also intraMUSCULAR including tongue 4.0 mg.kg⁻¹)</small></li>",
+      "head": "Box A: DRUG DOSES FOR TREATMENT OF LARYNGOSPASM",
+      "body": "<p>0.25-0.5 mg.kg⁻¹ intraVENOUS:</p><ul><li>Propofol</li><li>Rocuronium</li><li>Atracurium</li><li>Suxamethonium<br><small>(also intraMUSCULAR including tongue 4.0 mg.kg⁻¹)</small></li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Consider tracheal intubation particularly if likely to recur.",
-      "sub": "",
+      "head": "",
+      "body": "Consider tracheal intubation particularly if likely to recur.",
       "step": "6"
     },
     {
       "type": 4,
-      "main": "Use nasogastric tube to decompress the stomach.",
-      "sub": "",
+      "head": "",
+      "body": "Use nasogastric tube to decompress the stomach.",
       "step": "7"
     },
     {
       "type": 4,
-      "main": "Consider other causes <b>(Box B)</b>",
-      "sub": "",
+      "head": "",
+      "body": "Consider other causes <b>(Box B)</b>",
       "step": "8"
     },
     {
       "type": 9,
-      "main": "Box B: ALTERNATIVES and MIMICS",
-      "sub": "Foreign body<br>Infection of larynx/upper<br>respiratory tract<br>Anaphylaxis<br>Airway tumour<br>Vocal cord paralysis<br>Intrinsic laryngeal or tracheal obstruction<br>Extrinsic laryngeal or tracheal<br>compression<br>Sub-glottic stenosis<br>Laryngo/tracheomalacia",
+      "head": "Box B: ALTERNATIVES and MIMICS",
+      "body": "<p>Foreign body</p><p>Infection of larynx/upper</p><p>respiratory tract</p><p>Anaphylaxis</p><p>Airway tumour</p><p>Vocal cord paralysis</p><p>Intrinsic laryngeal or tracheal obstruction</p><p>Extrinsic laryngeal or tracheal</p><p>compression</p><p>Sub-glottic stenosis</p><p>Laryngo/tracheomalacia</p>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Consider whether guideline <b>→2-3 Increased airway pressure</b> may help.",
-      "sub": "",
+      "head": "",
+      "body": "Consider whether guideline <b>→2-3 Increased airway pressure</b> may help.",
       "step": "9"
     },
     {
       "type": 4,
-      "main": "Consider the appropriate strategy, location and support needed for waking the patient.",
-      "sub": "",
+      "head": "",
+      "body": "Consider the appropriate strategy, location and support needed for waking the patient.",
       "step": "10"
     },
     {
       "type": 4,
-      "main": "Continued airway and ventilation support may be necessary if aspiration has occurred or if the patient has developed negative-pressure pulmonary oedema.",
-      "sub": "",
+      "head": "",
+      "body": "Continued airway and ventilation support may be necessary if aspiration has occurred or if the patient has developed negative-pressure pulmonary oedema.",
       "step": "11"
     },
     {
       "type": 5,
-      "main": "Box C: CRITICAL CHANGES",
-      "sub": "<li>Cardiac arrest <b>→2-1</b></li><li>Hypoxia/desaturation/cyanosis <b>→2-2</b></li><li>Increased airway pressure <b>→2-3</b></li><li>Hypotension <b>→2-4</b></li><li>Bradycardia <b>→2-6</b></li>",
+      "head": "Box C: CRITICAL CHANGES",
+      "body": "<ul><li>Cardiac arrest <b>→2-1</b></li><li>Hypoxia/desaturation/cyanosis <b>→2-2</b></li><li>Increased airway pressure <b>→2-3</b></li><li>Hypotension <b>→2-4</b></li><li>Bradycardia <b>→2-6</b></li></ul>",
       "step": ""
     },
     {
       "type": 11,
-      "main": "v.1",
-      "sub": "",
+      "head": "",
+      "body": "v.1",
       "step": ""
     },
     {
       "type": 12,
-      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
-      "sub": "",
+      "head": "",
+      "body": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
       "step": ""
     }
   ]

@@ -2,110 +2,110 @@
   "DetailContent": [
     {
       "type": 1,
-      "main": "<p>If the patient is unconscious, signs of cardiac ischaemia primarily include:</p><ul><li>ST elevation or depression</li><li>T wave flattening or inversion</li><li>Arrhythmias, particularly ventricular</li><li>Other haemodynamic abnormalities (hypo- or hypertension, tachy- or bradycardia)</li><li>New or evolving regional wall motion abnormalities if echocardiography is used</li></ul>",
-      "sub": "",
+      "head": "",
+      "body": "<p>If the patient is unconscious, signs of cardiac ischaemia primarily include:</p><ul><li>ST elevation or depression</li><li>T wave flattening or inversion</li><li>Arrhythmias, particularly ventricular</li><li>Other haemodynamic abnormalities (hypo- or hypertension, tachy- or bradycardia)</li><li>New or evolving regional wall motion abnormalities if echocardiography is used</li></ul>",
       "step": ""
     },
     {
       "type": 1,
-      "main": "If the patient is conscious, symptoms may include chest pain, breathlessness, dizziness, nausea and vomiting. Have a high index of suspicion in patients with a pre-existing history or risk factors for cardiac ischaemia.",
-      "sub": "",
+      "head": "",
+      "body": "If the patient is conscious, symptoms may include chest pain, breathlessness, dizziness, nausea and vomiting. Have a high index of suspicion in patients with a pre-existing history or risk factors for cardiac ischaemia.",
       "step": ""
     },
     {
       "type": 2,
-      "main": "START",
-      "sub": "",
+      "head": "",
+      "body": "<b>START</b>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Call for cardiac arrest trolley and 12-lead ECG machine.",
-      "sub": "",
+      "head": "",
+      "body": "Call for cardiac arrest trolley and 12-lead ECG machine.",
       "step": "1"
     },
     {
       "type": 4,
-      "main": "Ensure adequate oxygenation and anaesthesia/analgesia.",
-      "sub": "",
+      "head": "",
+      "body": "Ensure adequate oxygenation and anaesthesia/analgesia.",
       "step": "2"
     },
     {
       "type": 4,
-      "main": "Treat haemodynamic instability <b>(Box A)</b>.",
-      "sub": "",
+      "head": "",
+      "body": "Treat haemodynamic instability <b>(Box A)</b>.",
       "step": "3"
     },
     {
       "type": 5,
-      "main": "Box A: HAEMODYNAMIC INSTABILITY",
-      "sub": "<ul><li>Cardiac arrest <b>→2-1</b></li><li>Hypotension <b>→2-4</b></li><li>Hypertension <b>→2-5</b></li><li>Bradycardia <b>→2-6</b></li><li>Tachycardia <b>→2-7</b></li></ul>",
+      "head": "Box A: HAEMODYNAMIC INSTABILITY",
+      "body": "<ul><li>Cardiac arrest <b>→2-1</b></li><li>Hypotension <b>→2-4</b></li><li>Hypertension <b>→2-5</b></li><li>Bradycardia <b>→2-6</b></li><li>Tachycardia <b>→2-7</b></li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Apply CM5 continuous ECG monitoring <b>(Box B)</b>. Obtain a 12-lead ECG as soon as possible.",
-      "sub": "",
+      "head": "",
+      "body": "Apply CM5 continuous ECG monitoring <b>(Box B)</b>. Obtain a 12-lead ECG as soon as possible.",
       "step": "4"
     },
     {
       "type": 8,
-      "main": "Box B: CM5 ECG CONFIGURATION",
-      "sub": "<ul><li>Right arm (red) lead over upper right sternum</li><li>Left arm (yellow) lead 5th intercostal space under left nipple</li><li>Indifferent (green or black) lead on left shoulder</li></ul>",
+      "head": "Box B: CM5 ECG CONFIGURATION",
+      "body": "<ul><li>Right arm (red) lead over upper right sternum</li><li>Left arm (yellow) lead 5th intercostal space under left nipple</li><li>Indifferent (green or black) lead on left shoulder</li></ul>",
       "step": ""
     },
     {
       "type": 3,
-      "main": "If ischaemia does not resolve:",
-      "sub": "<ul><li>Call for help. Inform theatre team of problem. Stop or rapidly complete the surgery.</li><li>Start glyceryl trinitrate (GTN) <b>(Box C)</b>.</li><li>EXTREME CAUTION with GTN if the patient is hypotensive.</li></ul>",
+      "head": "If ischaemia does not resolve:",
+      "body": "<ul><li>Call for help. Inform theatre team of problem. Stop or rapidly complete the surgery.</li><li>Start glyceryl trinitrate (GTN) <b>(Box C)</b>.</li><li>EXTREME CAUTION with GTN if the patient is hypotensive.</li></ul>",
       "step": "5"
     },
     {
       "type": 6,
-      "main": "Box C: GLYCERYL TRINITRATE (GTN) DOSE",
-      "sub": "<ul><li>Consider sublingual administration</li><li>IntraVENOUS: 1 mg.ml-1 solution – start at 0.1ml.kg⁻¹.hr⁻¹, titrate against response</li><li>NOT RECOMMENDED IN CHILDREN</li></ul>",
+      "head": "Box C: GLYCERYL TRINITRATE (GTN) DOSE",
+      "body": "<ul><li>Consider sublingual administration</li><li>IntraVENOUS: 1 mg.ml-1 solution – start at 0.1ml.kg⁻¹.hr⁻¹, titrate against response</li><li>NOT RECOMMENDED IN CHILDREN</li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Consider invasive arterial blood pressure monitoring.",
-      "sub": "",
+      "head": "",
+      "body": "Consider invasive arterial blood pressure monitoring.",
       "step": "6"
     },
     {
       "type": 4,
-      "main": "Treat electrolyte abnormalities particularly potassium, magnesium and calcium.",
-      "sub": "",
+      "head": "",
+      "body": "Treat electrolyte abnormalities particularly potassium, magnesium and calcium.",
       "step": "7"
     },
     {
       "type": 4,
-      "main": "<p>Treat anaemia aiming for haematocrit >30%.</p><ul><li>CAUTION – beware volume overload especially in heart failure.</li></ul>",
-      "sub": "",
+      "head": "",
+      "body": "<p>Treat anaemia aiming for haematocrit >30%.</p><ul><li>CAUTION – beware volume overload especially in heart failure.</li></ul>",
       "step": "8"
     },
     {
       "type": 4,
-      "main": "If persistent ST elevation is present, consider need for anticoagulation, anti-platelet therapy and revascularisation in consultation with cardiology and surgical teams.",
-      "sub": "",
+      "head": "",
+      "body": "If persistent ST elevation is present, consider need for anticoagulation, anti-platelet therapy and revascularisation in consultation with cardiology and surgical teams.",
       "step": "9"
     },
     {
       "type": 9,
-      "main": "Box D: AFTER THE EVENT",
-      "sub": "<p>Admit to critical care environment and consult cardiology<br>Maintain head up position if practicable</p><p>Obtain serial 12-lead ECGs and cardiac enzymes</p>",
+      "head": "Box D: AFTER THE EVENT",
+      "body": "<p>Admit to critical care environment and consult cardiology</p><p>Maintain head up position if practicable</p><p>Obtain serial 12-lead ECGs and cardiac enzymes</p>",
       "step": ""
     },
     {
       "type": 11,
-      "main": "v.2",
-      "sub": "",
+      "head": "",
+      "body": "v.2",
       "step": ""
     },
     {
       "type": 12,
-      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
-      "sub": "",
+      "head": "",
+      "body": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
       "step": ""
     }
   ]

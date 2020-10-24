@@ -2,116 +2,116 @@
   "DetailContent": [
     {
       "type": 1,
-      "main": "<b>Causes:</b> thrombus, fat, amniotic fluid, air/gas<br><b>Signs:</b> hypotension, tachycardia, hypoxemia, decreased ETCO₂<br><b>Symptoms:</b> dyspnoea, anxiety, tachypnoea. Also consider if sudden unexplained loss of cardiac output",
-      "sub": "",
+      "head": "",
+      "body": "<p><b>Causes:</b> thrombus, fat, amniotic fluid, air/gas</p><p><b>Signs:</b> hypotension, tachycardia, hypoxemia, decreased ETCO₂</p><p><b>Symptoms:</b> dyspnoea, anxiety, tachypnoea. Also consider if sudden unexplained loss of cardiac output</p>",
       "step": ""
     },
     {
       "type": 2,
-      "main": "START",
-      "sub": "",
+      "head": "",
+      "body": "<b>START</b>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Call for help and inform theatre team of problem. Note the time.",
-      "sub": "",
+      "head": "",
+      "body": "Call for help and inform theatre team of problem. Note the time.",
       "step": "1"
     },
     {
       "type": 4,
-      "main": "Call for cardiac arrest trolley.",
-      "sub": "",
+      "head": "",
+      "body": "Call for cardiac arrest trolley.",
       "step": "2"
     },
     {
       "type": 4,
-      "main": "Stop all potential triggers. Stop surgery.",
-      "sub": "",
+      "head": "",
+      "body": "Stop all potential triggers. Stop surgery.",
       "step": "3"
     },
     {
       "type": 4,
-      "main": "Give 100% oxygen and ensure adequate ventilation: maintain the airway and, if necessary, secure it with tracheal tube.",
-      "sub": "",
+      "head": "",
+      "body": "Give 100% oxygen and ensure adequate ventilation: maintain the airway and, if necessary, secure it with tracheal tube.",
       "step": "4"
     },
     {
       "type": 4,
-      "main": "If indicated start CPR immediately (CPR can help disperse air emboli and large thrombi).",
-      "sub": "",
+      "head": "",
+      "body": "If indicated start CPR immediately (CPR can help disperse air emboli and large thrombi).",
       "step": "5"
     },
     {
       "type": 4,
-      "main": "Give IV crystalloid at a high infusion rate. (Adult: 500-1000 ml, Child: 20 ml.kg⁻¹). Inotropes may be required to support circulation.",
-      "sub": "",
+      "head": "",
+      "body": "Give IV crystalloid at a high infusion rate. (Adult: 500-1000 ml, Child: 20 ml.kg⁻¹). Inotropes may be required to support circulation.",
       "step": "6"
     },
     {
       "type": 4,
-      "main": "Treat according to suspected embolus type <b>(see Boxes A-D)</b> whilst considering alternative diagnoses <b>(Box E)</b>.",
-      "sub": "",
+      "head": "",
+      "body": "Treat according to suspected embolus type <b>(see Boxes A-D)</b> whilst considering alternative diagnoses <b>(Box E)</b>.",
       "step": "7"
     },
     {
       "type": 8,
-      "main": "Box A: THROMBOEMBOLISM",
-      "sub": "<li>Consider thrombolysis e.g. alteplase 10 mg intraVENOUS then 90 mg over 2 h (&gt;65 kg)</li><li>Consider surgical removal – consult vascular surgeon</li><li>Consider percutaneous removal – consult radiologist</li>",
+      "head": "Box A: THROMBOEMBOLISM",
+      "body": "<ul><li>Consider thrombolysis e.g. alteplase 10 mg intraVENOUS then 90 mg over 2 h (>65 kg)</li><li>Consider surgical removal – consult vascular surgeon</li><li>Consider percutaneous removal – consult radiologist</li></ul>",
       "step": ""
     },
     {
       "type": 8,
-      "main": "Box B: FAT EMBOLISM",
-      "sub": "<li>Petechial rash, desaturation, confusion/irritability if patient conscious</li><li>Supportive measures are mainstay of initial management</li>",
+      "head": "Box B: FAT EMBOLISM",
+      "body": "<ul><li>Petechial rash, desaturation, confusion/irritability if patient conscious</li><li>Supportive measures are mainstay of initial management</li></ul>",
       "step": ""
     },
     {
       "type": 8,
-      "main": "Box C: AMNIOTIC FLUID EMBOLISM",
-      "sub": "<li>Supportive measures are mainstay of initial management</li><li>Monitor the fetus, if undelivered</li><li>Treat coagulopathy (fresh frozen plasma, cryoprecipitate and/or platelets)</li><li>Consider plasmaphoresis</li>",
+      "head": "Box C: AMNIOTIC FLUID EMBOLISM",
+      "body": "<ul><li>Supportive measures are mainstay of initial management</li><li>Monitor the fetus, if undelivered</li><li>Treat coagulopathy (fresh frozen plasma, cryoprecipitate and/or platelets)</li><li>Consider plasmaphoresis</li></ul>",
       "step": ""
     },
     {
       "type": 8,
-      "main": "Box D: AIR/GAS EMBOLISM",
-      "sub": "<li>“Mill wheel” murmur may be present</li><li>Discontinue source of air/gas if applicable and discontinue N₂O</li><li>Tell surgeon to flood wound with saline and cover with wet packs</li><li>Lower surgical field to below level of heart if possible</li><li>Place patient in left lateral position if possible</li><li>If central venous catheter in situ, attempt to aspirate air</li><li>Volume loading and Valsalva manoeuvre may help</li>",
+      "head": "Box D: AIR/GAS EMBOLISM",
+      "body": "<ul><li>“Mill wheel” murmur may be present</li><li>Discontinue source of air/gas if applicable and discontinue N₂O</li><li>Tell surgeon to flood wound with saline and cover with wet packs</li><li>Lower surgical field to below level of heart if possible</li><li>Place patient in left lateral position if possible</li><li>If central venous catheter in situ, attempt to aspirate air</li><li>Volume loading and Valsalva manoeuvre may help</li></ul>",
       "step": ""
     },
     {
       "type": 8,
-      "main": "Box E: ALTERNATIVE DIAGNOSES",
-      "sub": "<li>Pneumothorax (+/- tension)</li><li>Bronchospasm <b>→3-4</b></li><li>Pulmonary oedema</li><li>Cardiogenic shock</li><li>Hypovolaemia</li><li>Myocardial failure</li><li>Sepsis <b>→3-14</b></li><li>Bone cement implantation syndrome</li><li>Anaphylaxis <b>→3-1</b></li>",
+      "head": "Box E: ALTERNATIVE DIAGNOSES",
+      "body": "<ul><li>Pneumothorax (+/- tension)</li><li>Bronchospasm <b>→3-4</b></li><li>Pulmonary oedema</li><li>Cardiogenic shock</li><li>Hypovolaemia</li><li>Myocardial failure</li><li>Sepsis <b>→3-14</b></li><li>Bone cement implantation syndrome</li><li>Anaphylaxis <b>→3-1</b></li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Consider investigations to help confirm diagnosis:<li>Arterial blood gases (increased PaCO₂-ETCO₂ gradient)</li><li>Transoesophageal echocardiography (right heart strain, pulmonary arterial emboli)</li><li>Computerised tomography</li>",
-      "sub": "",
+      "head": "",
+      "body": "<p>Consider investigations to help confirm diagnosis:</p><ul><li>Arterial blood gases (increased PaCO₂-ETCO₂ gradient)</li><li>Transoesophageal echocardiography (right heart strain, pulmonary arterial emboli)</li><li>Computerised tomography</li></ul>",
       "step": "9"
     },
     {
       "type": 4,
-      "main": "If cardiovascular collapse refractory to treatment, consider extra-corporeal membrane oxygenation (ECMO) or intra-aortic balloon counter-pulsation.",
-      "sub": "",
+      "head": "",
+      "body": "If cardiovascular collapse refractory to treatment, consider extra-corporeal membrane oxygenation (ECMO) or intra-aortic balloon counter-pulsation.",
       "step": "9"
     },
     {
       "type": 4,
-      "main": "Plan transfer of the patient to an appropriate critical care area.",
-      "sub": "",
+      "head": "",
+      "body": "Plan transfer of the patient to an appropriate critical care area.",
       "step": "10"
     },
     {
       "type": 11,
-      "main": "v.1",
-      "sub": "",
+      "head": "",
+      "body": "v.1",
       "step": ""
     },
     {
       "type": 12,
-      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
-      "sub": "",
+      "head": "",
+      "body": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
       "step": ""
     }
   ]

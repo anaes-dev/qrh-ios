@@ -2,104 +2,104 @@
   "DetailContent": [
     {
       "type": 1,
-      "main": "<p>Signs of severe toxicity:</p><ul><li>Sudden alteration in mental status, severe agitation or loss of consciousness, with or without tonic-clonic convulsions.</li><li>Cardiovascular collapse: sinus bradycardia, conduction blocks, asystole and ventricular tachyarrhythmias may all occur.</li><li> Local anaesthetic toxicity may occur some time after an initial injection.</li></ul>",
-      "sub": "",
+      "head": "",
+      "body": "<p>Signs of severe toxicity:</p><ul><li>Sudden alteration in mental status, severe agitation or loss of consciousness, with or without tonic-clonic convulsions.</li><li>Cardiovascular collapse: sinus bradycardia, conduction blocks, asystole and ventricular tachyarrhythmias may all occur.</li><li> Local anaesthetic toxicity may occur some time after an initial injection.</li></ul>",
       "step": ""
     },
     {
       "type": 2,
-      "main": "START",
-      "sub": "",
+      "head": "",
+      "body": "<b>START</b>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Stop injecting the local anaesthetic (remember infusion pumps).",
-      "sub": "",
+      "head": "",
+      "body": "Stop injecting the local anaesthetic (remember infusion pumps).",
       "step": "1"
     },
     {
       "type": 4,
-      "main": "Call for help and inform immediate clinical team of problem.",
-      "sub": "",
+      "head": "",
+      "body": "Call for help and inform immediate clinical team of problem.",
       "step": "2"
     },
     {
       "type": 4,
-      "main": "Call for cardiac arrest trolley and lipid rescue pack.",
-      "sub": "",
+      "head": "",
+      "body": "Call for cardiac arrest trolley and lipid rescue pack.",
       "step": "3"
     },
     {
       "type": 4,
-      "main": "<p>Give 100% oxygen and ensure adequate lung ventilation:</p><ul><li>Maintain the airway and if necessary secure it with a tracheal tube</li><li>Hyperventilation may help reduce acidosis</li></ul>",
-      "sub": "",
+      "head": "",
+      "body": "<p>Give 100% oxygen and ensure adequate lung ventilation:</p><ul><li>Maintain the airway and if necessary secure it with a tracheal tube</li><li>Hyperventilation may help reduce acidosis</li></ul>",
       "step": "4"
     },
     {
       "type": 4,
-      "main": "Confirm or establish intravenous access.",
-      "sub": "",
+      "head": "",
+      "body": "Confirm or establish intravenous access.",
       "step": "5"
     },
     {
       "type": 2,
-      "main": "If circulatory arrest:",
-      "sub": "",
+      "head": "",
+      "body": "<b>If circulatory arrest:</b>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "<ul><li>Start continuous CPR using standard protocols</li><li>Give intravenous lipid emulsion <b>(Box A)</b></li><li>Recovery may take &gt;1 hour</li><li>Consider the use of cardiopulmonary bypass if available</li></ul>",
-      "sub": "",
+      "head": "",
+      "body": "<ul><li>Start continuous CPR using standard protocols</li><li>Give intravenous lipid emulsion <b>(Box A)</b></li><li>Recovery may take >1 hour</li><li>Consider the use of cardiopulmonary bypass if available</li></ul>",
       "step": "6"
     },
     {
       "type": 6,
-      "main": "Box A: LIPID EMULSION REGIME",
-      "sub": "<p><b>USE 20% Intralipid® <small>(propofol is not a suitable substitute)</small></b></p><p><b>Immediately:</b></p><ul><li>Give an initial intraVENOUS bolus of lipid emulsion 1.5 ml.kg⁻¹ over 1 min (~100 ml for a 70 kg adult)</li><li>Start an intraVENOUS infusion of lipid emulsion at 15 ml.kg⁻¹.h⁻¹ (17.5 ml.min⁻¹ for a 70 kg adult)</li></ul><p><b>At 5 and 10 minutes:</b></p><ul><li>Give a repeat bolus (same dose) if: cardiovascular stability has not been restored or; an adequate circulation deteriorates.</li></ul><p><b>At any time after 5 minutes:</b></p><ul><li>Double the rate to 30 ml.kg⁻¹.h⁻¹ if: cardiovascular stability has not been restored or; an adequate circulation deteriorates</li><p><b>Do not exceed maximum cumulative dose 12 ml.kg⁻¹ (70kg: 840 ml)</b></ul>",
+      "head": "Box A: LIPID EMULSION REGIME",
+      "body": "<p><b>USE 20% Intralipid® <small>(propofol is not a suitable substitute)</small></b></p><p><b>Immediately:</b></p><ul><li>Give an initial intraVENOUS bolus of lipid emulsion 1.5 ml.kg⁻¹ over 1 min (~100 ml for a 70 kg adult)</li><li>Start an intraVENOUS infusion of lipid emulsion at 15 ml.kg⁻¹.h⁻¹ (17.5 ml.min⁻¹ for a 70 kg adult)</li></ul><p><b>At 5 and 10 minutes:</b></p><ul><li>Give a repeat bolus (same dose) if: cardiovascular stability has not been restored or; an adequate circulation deteriorates.</li></ul><p><b>At any time after 5 minutes:</b></p><ul><li>Double the rate to 30 ml.kg⁻¹.h⁻¹ if: cardiovascular stability has not been restored or; an adequate circulation deteriorates</li><p><b>Do not exceed maximum cumulative dose 12 ml.kg⁻¹ (70kg: 840 ml)</b></ul>",
       "step": ""
     },
     {
       "type": 2,
-      "main": "If no circulatory arrest:",
-      "sub": "",
+      "head": "",
+      "body": "<b>If no circulatory arrest:</b>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "<ul><li>Conventional therapies to treat hypotension, brady- and tachyarrhythmia</li><li><i>Consider</i> intravenous lipid emulsion <b>(Box A)</b></li></ul>",
-      "sub": "",
+      "head": "",
+      "body": "<ul><li>Conventional therapies to treat hypotension, brady- and tachyarrhythmia</li><li><i>Consider</i> intravenous lipid emulsion <b>(Box A)</b></li></ul>",
       "step": "6"
     },
     {
       "type": 4,
-      "main": "Control seizures with small incremental dose of benzodiazepine, thiopental or propofol.",
-      "sub": "",
+      "head": "",
+      "body": "Control seizures with small incremental dose of benzodiazepine, thiopental or propofol.",
       "step": "7"
     },
     {
       "type": 5,
-      "main": "Box B: CRITICAL CHANGES",
-      "sub": "<b>CARDIAC ARREST →2-1</b>",
+      "head": "Box B: CRITICAL CHANGES",
+      "body": "<b>CARDIAC ARREST →2-1</b>",
       "step": ""
     },
     {
       "type": 9,
-      "main": "Box C: AFTER THE EVENT",
-      "sub": "<p>Arrange safe transfer to appropriate clinical area<br>Exclude pancreatitis: regular clinical review, daily amylase or lipase</p><p>Report cases to MHRA: yellowcard.mhra.gov.uk</p>",
+      "head": "Box C: AFTER THE EVENT",
+      "body": "<p>Arrange safe transfer to appropriate clinical area</p><p>Exclude pancreatitis: regular clinical review, daily amylase or lipase</p><p>Report cases to MHRA: yellowcard.mhra.gov.uk</p>",
       "step": ""
     },
     {
       "type": 11,
-      "main": "v.1",
-      "sub": "",
+      "head": "",
+      "body": "v.1",
       "step": ""
     },
     {
       "type": 12,
-      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
-      "sub": "",
+      "head": "",
+      "body": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
       "step": ""
     }
   ]

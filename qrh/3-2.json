@@ -2,116 +2,116 @@
   "DetailContent": [
     {
       "type": 1,
-      "main": "Expected or unexpected major haemorrhage.",
-      "sub": "",
+      "head": "",
+      "body": "Expected or unexpected major haemorrhage.",
       "step": ""
     },
     {
       "type": 2,
-      "main": "START",
-      "sub": "",
+      "head": "",
+      "body": "<b>START</b>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Call for help, inform theatre team of problem and note the time.",
-      "sub": "",
+      "head": "",
+      "body": "Call for help, inform theatre team of problem and note the time.",
       "step": "1"
     },
     {
       "type": 4,
-      "main": "Increase F<small>i</small>O₂ and consider cautiously reducing inhalational/intravenous anaesthetics.",
-      "sub": "",
+      "head": "",
+      "body": "Increase F<small>i</small>O₂ and consider cautiously reducing inhalational/intravenous anaesthetics.",
       "step": "2"
     },
     {
       "type": 4,
-      "main": "Check and expose intravenous access.",
-      "sub": "",
+      "head": "",
+      "body": "Check and expose intravenous access.",
       "step": "3"
     },
     {
       "type": 4,
-      "main": "Control any obvious bleeding (pressure, uterotonics, tourniquet, haemostatic dressings).",
-      "sub": "",
+      "head": "",
+      "body": "Control any obvious bleeding (pressure, uterotonics, tourniquet, haemostatic dressings).",
       "step": "4"
     },
     {
       "type": 4,
-      "main": "Call blood bank (and assign one person in theatre to liase with them):<li>Activate major haemorrhage protocol</li><li>Communicate how quickly blood is required</li><li>Communicate how much blood and blood product is required</li>",
-      "sub": "",
+      "head": "",
+      "body": "<p>Call blood bank (and assign one person in theatre to liase with them):</p><ul><li>Activate major haemorrhage protocol</li><li>Communicate how quickly blood is required</li><li>Communicate how much blood and blood product is required</li></ul>",
       "step": "5"
     },
     {
       "type": 4,
-      "main": "Begin active patient warming",
-      "sub": "",
+      "head": "",
+      "body": "Begin active patient warming",
       "step": "6"
     },
     {
       "type": 4,
-      "main": "Use rapid infusion and fluid warming equipment.",
-      "sub": "",
+      "head": "",
+      "body": "Begin active patient warming",
       "step": "7"
     },
     {
       "type": 4,
-      "main": "Discuss management plan between surgical, anaesthetic and nursing teams: <li>Liaise with haematologist if necessary <b>(Box A)</b></li><li>Consider interventional radiology</li><li>Consider use of cell salvage equipment</li>",
-      "sub": "",
+      "head": "",
+      "body": "<p>Discuss management plan between surgical, anaesthetic and nursing teams:</p><ul><li>Liaise with haematologist if necessary <b>(Box A)</b></li><li>Consider interventional radiology</li><li>Consider use of cell salvage equipment</li></ul>",
       "step": "8"
     },
     {
       "type": 8,
-      "main": "Box A: SPECIAL CASES",
-      "sub": "Seek advice from haematologist if:<li>Non-surgical uncontrolled bleeding despite PRBCs/FFP/platelets</li><li>Warfarin overdose</li><li>Newer oral anticoagulants (eg dabigatran/rivaroxaban)</li><li>Inherited bleeding disorder (eg haemophilia, von Willebrand disease)</li>",
+      "head": "Box A: SPECIAL CASES",
+      "body": "<p>Seek advice from haematologist if:</p><ul><li>Non-surgical uncontrolled bleeding despite PRBCs/FFP/platelets</li><li>Warfarin overdose</li><li>Newer oral anticoagulants (eg dabigatran/rivaroxaban)</li><li>Inherited bleeding disorder (eg haemophilia, von Willebrand disease)</li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Monitor progress:<li>Use point of care testing: Hb, lactate, coagulation, etc.</li><li>Use lab testing: including calcium and fibrinogen</li>",
-      "sub": "",
+      "head": "",
+      "body": "<p>Monitor progress:</p><ul><li>Use point of care testing: Hb, lactate, coagulation, etc.</li><li>Use lab testing: including calcium and fibrinogen</li></ul>",
       "step": "9"
     },
     {
       "type": 9,
-      "main": "Box B: TRANSFUSION GOALS",
-      "sub": "<li>Maintain Hb &gt; 80 g.l⁻¹</li><li>Maintain platelet count &gt; 75x10⁹.l⁻¹</li><li>Maintain PT and APTT &lt;1.5 x mean control (FFP)</li><li>Maintain fibrinogen &gt;1.0 g.l⁻¹ (cryoprecipitate)</li><li>Avoid DIC (maintain blood pressure, treat/prevent acidosis, avoid hypothermia, treat hypocalcaemia and hyperkalaemia)</li>",
+      "head": "Box B: TRANSFUSION GOALS",
+      "body": "<ul><li>Maintain Hb > 80 g.l⁻¹</li><li>Maintain platelet count > 75x10⁹.l⁻¹</li><li>Maintain PT and APTT <1.5 x mean control (FFP)</li><li>Maintain fibrinogen >1.0 g.l⁻¹ (cryoprecipitate)</li><li>Avoid DIC (maintain blood pressure, treat/prevent acidosis, avoid hypothermia, treat hypocalcaemia and hyperkalaemia)</li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "Replace calcium and consider giving tranexamic acid <b>(Box C)</b>.",
-      "sub": "",
+      "head": "",
+      "body": "Replace calcium and consider giving tranexamic acid <b>(Box C)</b>.",
       "step": "10"
     },
     {
       "type": 6,
-      "main": "Box C: DRUG DOSES",
-      "sub": "<b>CALCIUM:</b> (use either the chloride or gluconate)<li>Adult: 10 ml of 10% calcium chloride intraVENOUS</li><li>Adult: 20 ml of 10% calcium gluconate intraVENOUS</li><li>Child: 0.2 ml.kg⁻¹ of 10% calcium chloride intraVENOUS</li><li>Child: 0.5 ml.kg⁻¹ of 10% calcium gluconate intraVENOUS </li><br><b>TRANEXAMIC ACID:</b><li>Child: 15 mg.kg⁻¹ intraVENOUS bolus then 2 mg.kg⁻¹.h⁻¹ until bleeding stops</li><li>Adult: 1 g intraVENOUS bolus, then:<br><small>Obstetric haemorrhage, repeat dose 30 mins later</small><br><small>Non-obstetric haemorrhage, 1 g intraVENOUS infusion over next 8 h</small></li>",
+      "head": "Box C: DRUG DOSES",
+      "body": "<p><b>CALCIUM:</b> (use either the chloride or gluconate)</p><ul><li>Adult: 10 ml of 10% calcium chloride intraVENOUS</li><li>Adult: 20 ml of 10% calcium gluconate intraVENOUS</li><li>Child: 0.2 ml.kg⁻¹ of 10% calcium chloride intraVENOUS</li><li>Child: 0.5 ml.kg⁻¹ of 10% calcium gluconate intraVENOUS </li></ul><p><b>TRANEXAMIC ACID:</b></p><ul><li>Child: 15 mg.kg⁻¹ intraVENOUS bolus then 2 mg.kg⁻¹.h⁻¹ until bleeding stops</li><li>Adult: 1 g intraVENOUS bolus, then:<br><small>Obstetric haemorrhage, repeat dose 30 mins later</small><br><small>Non-obstetric haemorrhage, 1 g intraVENOUS infusion over next 8 h</small></li></ul>",
       "step": ""
     },
     {
       "type": 4,
-      "main": "If bleeding continues consider giving recombinant factor VIIa: liase with haematologist.",
-      "sub": "",
+      "head": "",
+      "body": "If bleeding continues consider giving recombinant factor VIIa: liase with haematologist.",
       "step": "11"
     },
     {
       "type": 4,
-      "main": "Plan ongoing care in an appropriate clinical area.",
-      "sub": "",
+      "head": "",
+      "body": "Plan ongoing care in an appropriate clinical area.",
       "step": "12"
     },
     {
       "type": 11,
-      "main": "v.2",
-      "sub": "",
+      "head": "",
+      "body": "v.2",
       "step": ""
     },
     {
       "type": 12,
-      "main": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
-      "sub": "",
+      "head": "",
+      "body": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
       "step": ""
     }
   ]
