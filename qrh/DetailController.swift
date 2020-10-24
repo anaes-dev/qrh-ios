@@ -9,7 +9,9 @@ import UIKit
 
 class DetailController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextViewDelegate {
     
-    @IBOutlet weak var tableView: UITableView!
+        
+    @IBOutlet weak var tableViewMain: UITableView!
+    @IBOutlet weak var tableViewRight: UITableView!
     
     struct Card: Codable {
         var type: Int
@@ -51,18 +53,26 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     
     var expandedIndexSet : IndexSet = []
     
+    var tableViewMainHidden : IndexSet = []
+    var tableViewRightHidden : IndexSet = []
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UINib(nibName: "CardCell1", bundle: nil), forCellReuseIdentifier: "CardCell1")
-        tableView.register(UINib(nibName: "CardCell2", bundle: nil), forCellReuseIdentifier: "CardCell2")
-        tableView.register(UINib(nibName: "CardCell3", bundle: nil), forCellReuseIdentifier: "CardCell3")
-        tableView.register(UINib(nibName: "CardCell4", bundle: nil), forCellReuseIdentifier: "CardCell4")
-        tableView.register(UINib(nibName: "CardCell5", bundle: nil), forCellReuseIdentifier: "CardCell5")
-        tableView.register(UINib(nibName: "CardCell9", bundle: nil), forCellReuseIdentifier: "CardCell9")
-        tableView.register(UINib(nibName: "CardCell11", bundle: nil), forCellReuseIdentifier: "CardCell11")
-        tableView.register(UINib(nibName: "CardCell12", bundle: nil), forCellReuseIdentifier: "CardCell12")
-
+        tableViewMain.register(UINib(nibName: "CardCell1", bundle: nil), forCellReuseIdentifier: "CardCell1")
+        tableViewMain.register(UINib(nibName: "CardCell2", bundle: nil), forCellReuseIdentifier: "CardCell2")
+        tableViewMain.register(UINib(nibName: "CardCell3", bundle: nil), forCellReuseIdentifier: "CardCell3")
+        tableViewMain.register(UINib(nibName: "CardCell4", bundle: nil), forCellReuseIdentifier: "CardCell4")
+        tableViewMain.register(UINib(nibName: "CardCell5", bundle: nil), forCellReuseIdentifier: "CardCell5")
+        tableViewMain.register(UINib(nibName: "CardCell11", bundle: nil), forCellReuseIdentifier: "CardCell11")
+        tableViewMain.register(UINib(nibName: "CardCell12", bundle: nil), forCellReuseIdentifier: "CardCell12")
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            tableViewMain.register(UINib(nibName: "CellEmpty", bundle: nil), forCellReuseIdentifier: "CellEmpty")
+            tableViewRight.register(UINib(nibName: "CellEmpty", bundle: nil), forCellReuseIdentifier: "CellEmpty")
+            tableViewRight.register(UINib(nibName: "CardCell5", bundle: nil), forCellReuseIdentifier: "CardCell5")
+        }
         
         let jsonURL = Bundle.main.url(forResource: passedCode, withExtension: "json")!
         if let jsonDATA = try? Data(contentsOf: jsonURL) {
@@ -125,13 +135,13 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             } else if sender.state == .ended {
                 buttonView.backgroundColor = existingColor?.withAlphaComponent(0)
                 if let cell = buttonView.superview?.superview?.superview?.superview as? UITableViewCell {
-                    if let indexPath = tableView.indexPath(for: cell) {
+                    if let indexPath = tableViewMain.indexPath(for: cell) {
                         if(expandedIndexSet.contains(indexPath.row)){
                             expandedIndexSet.remove(indexPath.row)
                             } else {
                                 expandedIndexSet.insert(indexPath.row)
                             }
-                        self.tableView.reloadRows(at: [indexPath], with: .fade)
+                        self.tableViewMain.reloadRows(at: [indexPath], with: .fade)
                         return
                         }
                 }
@@ -148,11 +158,134 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 
      
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            
+            if tableView == tableViewMain {
+                
+                switch cardContent[indexPath.row].type {
+                    
+                    case 1:
+                        let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
+                        cell.main.attributedText = mainParsed[indexPath.row]
+                        if cellOneDIsplayCode {
+                            cell.code.text = passedCode
+                            cellOneDIsplayCode = false
+                        }
+                        return cell
+                    
+                    case 2:
+                        let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell2") as! CardCell2
+                        cell.main.text = cardContent[indexPath.row].main
+                        return cell
+                        
+                    case 3:
+                        let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell3") as! CardCell3
+                        cell.main.text = cardContent[indexPath.row].main
+                        cell.sub.attributedText = subParsed[indexPath.row]
+                        cell.step.text = cardContent[indexPath.row].step
+                        return cell
+                        
+                    case 4:
+                        let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell4") as! CardCell4
+                        cell.main.attributedText = mainParsed[indexPath.row]
+                        cell.step.text = cardContent[indexPath.row].step
+                        return cell
+                        
+
+                case 11:
+                    let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell11") as! CardCell11
+                    cell.main.text = cardContent[indexPath.row].main
+                    return cell
+                    
+                case 12:
+                    let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell12") as! CardCell12
+                    cell.main.text = cardContent[indexPath.row].main
+                    return cell
+                    
+                default:
+                    let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CellEmpty") as! CellEmpty
+                    tableViewMainHidden.insert(indexPath.row)
+                    return cell
+                }
+                
+            } else if tableView == tableViewRight {
+                
+                switch cardContent[indexPath.row].type {
+                case 5,6,7,8,9:
+                    let cell = tableViewRight.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
+                    switch cardContent[indexPath.row].type {
+                    case 5:
+                        cell.box.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.15)
+                        cell.button.backgroundColor = UIColor.systemOrange.withAlphaComponent(0)
+                        cell.main.textColor = UIColor.systemOrange
+                        cell.arrow.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.2)
+                        cell.arrow.tintColor = UIColor.systemOrange
+                    case 6:
+                        cell.box.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.15)
+                        cell.button.backgroundColor = UIColor.systemBlue.withAlphaComponent(0)
+                        cell.main.textColor = UIColor.systemBlue
+                        cell.arrow.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.2)
+                        cell.arrow.tintColor = UIColor.systemBlue
+                    case 7:
+                        cell.box.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.15)
+                        cell.button.backgroundColor = UIColor.systemGreen.withAlphaComponent(0)
+                        cell.main.textColor = UIColor.systemGreen
+                        cell.arrow.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.2)
+                        cell.arrow.tintColor = UIColor.systemGreen
+                    case 9:
+                        cell.box.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.15)
+                        cell.button.backgroundColor = UIColor.systemPurple.withAlphaComponent(0)
+                        cell.main.textColor = UIColor.systemPurple
+                        cell.arrow.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.2)
+                        cell.arrow.tintColor = UIColor.systemPurple
+                    default:
+                        cell.box.backgroundColor = UIColor.systemGray.withAlphaComponent(0.15)
+                        cell.button.backgroundColor = UIColor.systemGray.withAlphaComponent(0)
+                        cell.main.textColor = UIColor.label
+                        cell.arrow.backgroundColor = UIColor.systemGray.withAlphaComponent(0.2)
+                        cell.arrow.tintColor = UIColor.label
+                    }
+                    
+                    cell.main.text = cardContent[indexPath.row].main
+                    cell.sub.delegate = self
+                    
+
+                        cell.arrow.image = nil
+                        cell.arrow.backgroundColor = UIColor.clear
+                        cell.sub.attributedText = subParsed[indexPath.row]
+                        cell.sub0.isActive = false
+                        cell.sub8.isActive = true
+                        if cell.subheight?.isActive != nil {
+                            cell.subheight.isActive = false
+                        }
+                    return cell
+                    
+
+                default:
+                    let cell = tableViewRight.dequeueReusableCell(withIdentifier: "CellEmpty") as! CellEmpty
+                    tableViewRightHidden.insert(indexPath.row)
+                    return cell
+                }
+                
+                
+                
+            } else {
+                fatalError("Table not present")
+            }
+            
+            
+            
+            
+            
+        } else {
+
         
         switch cardContent[indexPath.row].type {
             
             case 1:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
+                let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
                 cell.main.attributedText = mainParsed[indexPath.row]
                 if cellOneDIsplayCode {
                     cell.code.text = passedCode
@@ -161,25 +294,25 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 return cell
             
             case 2:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell2") as! CardCell2
+                let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell2") as! CardCell2
                 cell.main.text = cardContent[indexPath.row].main
                 return cell
                 
             case 3:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell3") as! CardCell3
+                let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell3") as! CardCell3
                 cell.main.text = cardContent[indexPath.row].main
                 cell.sub.attributedText = subParsed[indexPath.row]
                 cell.step.text = cardContent[indexPath.row].step
                 return cell
                 
             case 4:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell4") as! CardCell4
+                let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell4") as! CardCell4
                 cell.main.attributedText = mainParsed[indexPath.row]
                 cell.step.text = cardContent[indexPath.row].step
                 return cell
                 
             case 5,6,7,8,9:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
+                let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
                 switch cardContent[indexPath.row].type {
                 case 5:
                     cell.box.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.15)
@@ -240,24 +373,46 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 return cell
                 
             case 11:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell11") as! CardCell11
+                let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell11") as! CardCell11
                 cell.main.text = cardContent[indexPath.row].main
                 return cell
                 
             case 12:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell12") as! CardCell12
+                let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell12") as! CardCell12
                 cell.main.text = cardContent[indexPath.row].main
                 return cell
                 
             default:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
+                let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
                 cell.main.text = cardContent[indexPath.row].main
                 return cell
             
         }
-         
-
+        }
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            if tableView == tableViewMain {
+                if tableViewMainHidden.contains(indexPath.row) {
+                    return 0
+                } else {
+                    return UITableView.automaticDimension
+                }
+            } else if tableView == tableViewRight {
+                if tableViewRightHidden.contains(indexPath.row) {
+                    return 0
+                } else {
+                    return UITableView.automaticDimension
+                }
+            } else {
+                return UITableView.automaticDimension
+            }
+        } else {
+        return UITableView.automaticDimension
+        }
+    }
+    
       
     
     func parseCards(json: Data) {
@@ -265,12 +420,16 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         if let jsonCards = try? decoder.decode(Cards.self, from: json) {
             cardContent = jsonCards.DetailContent
             
+
             for card in cardContent {
                 subParsed.append(parseHtmlAttributes(htmlText: card.sub))
                 mainParsed.append(parseHtmlAttributes(htmlText: card.main))
             }
             
-            tableView.reloadData()
+            tableViewMain.reloadData()
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                tableViewRight.reloadData()
+            }
         }
     }
     
