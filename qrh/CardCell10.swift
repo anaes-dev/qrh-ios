@@ -12,6 +12,10 @@ class CardCell10: UITableViewCell {
     @IBOutlet var imageFile: UIImageView!
     @IBOutlet var head: UILabel!
     
+    @IBOutlet weak var imageContainer: UIView!
+    
+    @IBOutlet weak var imageHeight: NSLayoutConstraint!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
