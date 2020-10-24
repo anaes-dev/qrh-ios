@@ -65,6 +65,7 @@
 		8279AFA02536557B003BF303 /* 3-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF862536557B003BF303 /* 3-3.json */; };
 		8279AFA12536557B003BF303 /* 2-7.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF872536557B003BF303 /* 2-7.json */; };
 		82901D35253E37300020E6A4 /* TappableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82901D34253E37300020E6A4 /* TappableLabel.swift */; };
+		8292B3082544DF7D005AEAD1 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8292B3072544DF7D005AEAD1 /* About.swift */; };
 		82A08AAC2538D72400F6BEA9 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AAB2538D72400F6BEA9 /* DetailController.swift */; };
 		82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AB12538E2E000F6BEA9 /* CardCell2.swift */; };
 		82A08AB42538E2E000F6BEA9 /* CardCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB22538E2E000F6BEA9 /* CardCell2.xib */; };
@@ -133,6 +134,7 @@
 		8279AF862536557B003BF303 /* 3-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-3.json"; sourceTree = "<group>"; };
 		8279AF872536557B003BF303 /* 2-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-7.json"; sourceTree = "<group>"; };
 		82901D34253E37300020E6A4 /* TappableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableLabel.swift; sourceTree = "<group>"; };
+		8292B3072544DF7D005AEAD1 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		82A08AAB2538D72400F6BEA9 /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		82A08AB12538E2E000F6BEA9 /* CardCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell2.swift; sourceTree = "<group>"; };
 		82A08AB22538E2E000F6BEA9 /* CardCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell2.xib; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				820EB9552535B51100FAEDB0 /* AppDelegate.swift */,
 				820EB9572535B51100FAEDB0 /* SceneDelegate.swift */,
 				820EB95B2535B51100FAEDB0 /* Main.storyboard */,
+				8292B3072544DF7D005AEAD1 /* About.swift */,
 				824137E925449FA9004BFAF3 /* Tablet.storyboard */,
 				8251661825443B43002C87F5 /* CellEmpty.swift */,
 				8251661925443B43002C87F5 /* CellEmpty.xib */,
@@ -366,6 +369,7 @@
 				820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */,
 				8206BC012544930D00820D52 /* CardCell10.swift in Sources */,
 				82258AFB253B0DA500E0C180 /* CardCell3.swift in Sources */,
+				8292B3082544DF7D005AEAD1 /* About.swift in Sources */,
 				82011A2B253B1685003DCBE2 /* CardCell11.swift in Sources */,
 				8251661A25443B43002C87F5 /* CellEmpty.swift in Sources */,
 			);

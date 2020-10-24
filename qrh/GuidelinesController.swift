@@ -63,7 +63,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         }
         filteredGuidelines = unfilteredGuidelines
         
-        let aboutButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.organize, target: self, action: #selector(aboutLoad))
+        let aboutButton = UIBarButtonItem(image: UIImage(systemName: "info.circle"), style: .plain, target: self, action: #selector(aboutLoad))
         self.navigationItem.rightBarButtonItem = aboutButton
         
     }
@@ -115,7 +115,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         } else {
             passCode = unfilteredGuidelines[indexPath.row].code
             passTitle = unfilteredGuidelines[indexPath.row].title
-            passURL = filteredGuidelines[indexPath.row].url
+            passURL = unfilteredGuidelines[indexPath.row].url
         }
         self.performSegue(withIdentifier: "LoadDetail", sender: self)
     }
