@@ -77,7 +77,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
            parseCards(json: jsonDATA)
         }
         
-        let pdfButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.action, target: self, action: #selector(urlTapped))
+        let pdfButton = UIBarButtonItem(image: UIImage(systemName: "arrow.down.doc"), style: .plain, target: self, action: #selector(urlTapped))
         self.navigationItem.rightBarButtonItem = pdfButton
 
         self.navigationItem.title = passedTitle
@@ -167,7 +167,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     case 1:
                         let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell1") as! CardCell1
                         cell.body.attributedText = bodyParsed[indexPath.row]
-                        if indexPath.row == 1 {
+                        if indexPath.row == 0 {
                             cell.code.text = passedCode
                         }
                         return cell
@@ -175,6 +175,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     case 2:
                         let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell2") as! CardCell2
                         cell.main.attributedText = bodyParsed[indexPath.row]
+                        cell.main.textColor = UIColor.systemBackground
                         return cell
                         
                     case 3:
@@ -188,18 +189,6 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                         let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell4") as! CardCell4
                         cell.main.attributedText = bodyParsed[indexPath.row]
                         cell.step.text = cardContent[indexPath.row].step
-                        return cell
-                        
-                    case 10:
-                        let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell10") as! CardCell10
-                        cell.head.text = cardContent[indexPath.row].head
-                        let imageView = cell.imageFile as UIImageView
-                        if let imageFile = UIImage(named: cardContent[indexPath.row].body) {
-                            imageView.image = imageFile
-                            let ratio = imageFile.size.width / imageFile.size.height
-                            let newHeight = UIScreen.main.bounds.width / ratio
-                            cell.imageHeight.constant = newHeight
-                        }
                         return cell
 
                     case 11:
@@ -221,6 +210,19 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             } else if tableView == tableViewRight {
                 
                 switch cardContent[indexPath.row].type {
+                
+                case 10:
+                    let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell10") as! CardCell10
+                    cell.head.text = cardContent[indexPath.row].head
+                    let imageView = cell.imageFile as UIImageView
+                    if let imageFile = UIImage(named: cardContent[indexPath.row].body) {
+                        imageView.image = imageFile
+                        let ratio = imageFile.size.width / imageFile.size.height
+                        let newHeight = (UIScreen.main.bounds.width * 0.4) / ratio
+                        cell.imageHeight.constant = newHeight
+                    }
+                    return cell
+                    
                 case 5,6,7,8,9:
                     let cell = tableViewRight.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
                     switch cardContent[indexPath.row].type {
