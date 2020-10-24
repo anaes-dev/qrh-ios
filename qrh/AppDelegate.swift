@@ -22,7 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+        let config = UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+        config.sceneClass = UIWindowScene.self
+        config.delegateClass = SceneDelegate.self
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            config.storyboard = UIStoryboard(name: "Tablet", bundle: nil)
+        } else {
+            config.storyboard = UIStoryboard(name: "Main", bundle: nil)
+        }
+        return config
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
