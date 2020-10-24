@@ -1,6 +1,13 @@
 # Quick Reference Handbook (QRH)
 
+## Screenshots
+
+### iPhone
 <img src="./qrh/screenshots/Simulator Screen Shot - iPhone 11 - 2020-10-25 at 00.05.59.png" width="200px"> | <img src="./qrh/screenshots/Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png" width="200px"> | <img src="./qrh/screenshots/Simulator Screen Shot - iPhone 11 - 2020-10-25 at 00.00.45.png" width="200px"> | <img src="./qrh/screenshots/Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.17.png" width="200px">
+
+### iPad
+
+<img src="./qrh/screenshots/Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png" width="400px"> | <img src="./qrh/screenshots/Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.57.40.png" width="400px">
 
 ## Features
 - Unofficial derivative of the Association of Anaesthetists Quick Reference Handbook (QRH): www.anaesthetists.org/qrh (CC BY-NC-SA 4.0)
