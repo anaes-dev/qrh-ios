@@ -193,7 +193,13 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     case 10:
                         let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell10") as! CardCell10
                         cell.head.text = cardContent[indexPath.row].head
-                        cell.imageFile.image = UIImage(named: cardContent[indexPath.row].body)
+                        let imageView = cell.imageFile as UIImageView
+                        if let imageFile = UIImage(named: cardContent[indexPath.row].body) {
+                            imageView.image = imageFile
+                            let ratio = imageFile.size.width / imageFile.size.height
+                            let newHeight = UIScreen.main.bounds.width / ratio
+                            cell.imageHeight.constant = newHeight
+                        }
                         return cell
 
                     case 11:
@@ -377,9 +383,13 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         case 10:
             let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell10") as! CardCell10
             cell.head.text = cardContent[indexPath.row].head
-            cell.imageFile.image = UIImage(named: cardContent[indexPath.row].body)
-            let heightInPoints = image.size.height
-
+            let imageView = cell.imageFile as UIImageView
+            if let imageFile = UIImage(named: cardContent[indexPath.row].body) {
+                imageView.image = imageFile
+                let ratio = imageFile.size.width / imageFile.size.height
+                let newHeight = UIScreen.main.bounds.width / ratio
+                cell.imageHeight.constant = newHeight
+            }
             return cell
                 
             case 11:
