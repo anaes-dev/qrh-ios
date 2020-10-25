@@ -52,12 +52,13 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var noItemsView: UIView!
     
-    
+   
+
     
 //    viewDidLoad
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+               
         
 //        Setup navbar & search
         
@@ -94,6 +95,19 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         let aboutButton = UIBarButtonItem(image: UIImage(systemName: "info.circle"), style: .plain, target: self, action: #selector(aboutLoad))
         self.navigationItem.rightBarButtonItem = aboutButton
         
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        //        Check if disclaimer accepted
+                
+        let hasAcceptedDisclaimer = UserDefaults.standard.bool(forKey: "hasAcceptedDisclaimer")
+        print(hasAcceptedDisclaimer)
+                
+        if !hasAcceptedDisclaimer {
+            print("test")
+            performSegue(withIdentifier: "LoadDisclaimer", sender: self)
+        }
     }
     
     
@@ -155,7 +169,11 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
             passTitle = unfilteredGuidelines[indexPath.row].title
             passURL = unfilteredGuidelines[indexPath.row].url
         }
-        self.performSegue(withIdentifier: "LoadDetail", sender: self)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            self.performSegue(withIdentifier: "LoadDetailTablet", sender: self)
+        } else {
+            self.performSegue(withIdentifier: "LoadDetail", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

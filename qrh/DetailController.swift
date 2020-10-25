@@ -135,7 +135,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 //        Link to other guideline segue
         
         if let destination = segue.destination as? DetailController {
-            if segue.identifier == "LoadDetailLink" {
+            if segue.identifier == "LoadDetailLink" || segue.identifier == "LoadDetailLinkTablet" {
                 
 //          Currently reloads and filters guidelines.json to find title, code & URL to pass to new instance of view controller - ? more optimal way to achieve this
                 
@@ -551,7 +551,12 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         
 //        Perform segue only if link matches format for link to other guideline, otherwise fall back to default behaviour (for URLS & phone numbers)
         if regex.firstMatch(in: scrubLink, options: [], range: range) != nil {
-            self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                self.performSegue(withIdentifier: "LoadDetailLinkTablet", sender: self)
+
+            } else {
+                self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
+            }
             return false
         } else  {
             UIApplication.shared.open(URL)
