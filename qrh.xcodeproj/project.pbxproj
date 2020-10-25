@@ -31,7 +31,6 @@
 		824137EF2544A3DF004BFAF3 /* by_nc_sa.png in Resources */ = {isa = PBXBuildFile; fileRef = 824137EE2544A3DF004BFAF3 /* by_nc_sa.png */; };
 		8251661A25443B43002C87F5 /* CellEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251661825443B43002C87F5 /* CellEmpty.swift */; };
 		8251661B25443B43002C87F5 /* CellEmpty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8251661925443B43002C87F5 /* CellEmpty.xib */; };
-		826FD582253C7437000FC7D7 /* LinkedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FD581253C7437000FC7D7 /* LinkedLabel.swift */; };
 		8276D047253B14A400243AB3 /* CardCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8276D046253B14A400243AB3 /* CardCell4.xib */; };
 		8276D04A253B14B100243AB3 /* CardCell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276D049253B14B100243AB3 /* CardCell4.swift */; };
 		8277FCDD253B313F00E8158D /* CardCell5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8277FCDC253B313F00E8158D /* CardCell5.xib */; };
@@ -64,7 +63,6 @@
 		8279AF9F2536557B003BF303 /* 2-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF852536557B003BF303 /* 2-3.json */; };
 		8279AFA02536557B003BF303 /* 3-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF862536557B003BF303 /* 3-3.json */; };
 		8279AFA12536557B003BF303 /* 2-7.json in Resources */ = {isa = PBXBuildFile; fileRef = 8279AF872536557B003BF303 /* 2-7.json */; };
-		82901D35253E37300020E6A4 /* TappableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82901D34253E37300020E6A4 /* TappableLabel.swift */; };
 		8292B3082544DF7D005AEAD1 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8292B3072544DF7D005AEAD1 /* About.swift */; };
 		8292B3102544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png in Resources */ = {isa = PBXBuildFile; fileRef = 8292B30B2544EA0C005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png */; };
 		8292B3112544EA0D005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png in Resources */ = {isa = PBXBuildFile; fileRef = 8292B30C2544EA0C005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png */; };
@@ -106,7 +104,6 @@
 		824137EE2544A3DF004BFAF3 /* by_nc_sa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = by_nc_sa.png; sourceTree = "<group>"; };
 		8251661825443B43002C87F5 /* CellEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEmpty.swift; sourceTree = "<group>"; };
 		8251661925443B43002C87F5 /* CellEmpty.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellEmpty.xib; sourceTree = "<group>"; };
-		826FD581253C7437000FC7D7 /* LinkedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedLabel.swift; sourceTree = "<group>"; };
 		8276D046253B14A400243AB3 /* CardCell4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell4.xib; sourceTree = "<group>"; };
 		8276D049253B14B100243AB3 /* CardCell4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell4.swift; sourceTree = "<group>"; };
 		8277FCDC253B313F00E8158D /* CardCell5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell5.xib; sourceTree = "<group>"; };
@@ -139,7 +136,6 @@
 		8279AF852536557B003BF303 /* 2-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-3.json"; sourceTree = "<group>"; };
 		8279AF862536557B003BF303 /* 3-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3-3.json"; sourceTree = "<group>"; };
 		8279AF872536557B003BF303 /* 2-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-7.json"; sourceTree = "<group>"; };
-		82901D34253E37300020E6A4 /* TappableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableLabel.swift; sourceTree = "<group>"; };
 		8292B3072544DF7D005AEAD1 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		8292B30B2544EA0C005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png"; sourceTree = "<group>"; };
 		8292B30C2544EA0C005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png"; sourceTree = "<group>"; };
@@ -188,8 +184,6 @@
 				8277FCE6253B42C500E8158D /* PDFNavController.swift */,
 				8277FCE3253B39D900E8158D /* PDFController.swift */,
 				820EB9772535C47600FAEDB0 /* guidelines.json */,
-				826FD581253C7437000FC7D7 /* LinkedLabel.swift */,
-				82901D34253E37300020E6A4 /* TappableLabel.swift */,
 				8230586625363D40002118DF /* 0-3.json */,
 				8279AF6F25365579003BF303 /* 1-1.json */,
 				8279AF842536557B003BF303 /* 2-1.json */,
@@ -388,14 +382,12 @@
 				8277FCE7253B42C500E8158D /* PDFNavController.swift in Sources */,
 				8276D04A253B14B100243AB3 /* CardCell4.swift in Sources */,
 				82A08AAC2538D72400F6BEA9 /* DetailController.swift in Sources */,
-				826FD582253C7437000FC7D7 /* LinkedLabel.swift in Sources */,
 				820EB9562535B51100FAEDB0 /* AppDelegate.swift in Sources */,
 				82011A31253B1797003DCBE2 /* CardCell12.swift in Sources */,
 				82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */,
 				8277FCE0253B326300E8158D /* CardCell5.swift in Sources */,
 				820EB9582535B51100FAEDB0 /* SceneDelegate.swift in Sources */,
 				8277FCE4253B39D900E8158D /* PDFController.swift in Sources */,
-				82901D35253E37300020E6A4 /* TappableLabel.swift in Sources */,
 				82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */,
 				820EB9922535E96200FAEDB0 /* GuidelinesCell.swift in Sources */,
 				820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */,
