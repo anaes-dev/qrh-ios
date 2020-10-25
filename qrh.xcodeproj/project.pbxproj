@@ -26,7 +26,6 @@
 		82258AFB253B0DA500E0C180 /* CardCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82258AFA253B0DA500E0C180 /* CardCell3.swift */; };
 		82258AFE253B0DB500E0C180 /* CardCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82258AFD253B0DB500E0C180 /* CardCell3.xib */; };
 		8230586725363D40002118DF /* 0-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8230586625363D40002118DF /* 0-3.json */; };
-		824137E725449FA9004BFAF3 /* Tablet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824137E925449FA9004BFAF3 /* Tablet.storyboard */; };
 		824137EC2544A055004BFAF3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 824137EB2544A055004BFAF3 /* logo.png */; };
 		824137EF2544A3DF004BFAF3 /* by_nc_sa.png in Resources */ = {isa = PBXBuildFile; fileRef = 824137EE2544A3DF004BFAF3 /* by_nc_sa.png */; };
 		8251661A25443B43002C87F5 /* CellEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251661825443B43002C87F5 /* CellEmpty.swift */; };
@@ -75,6 +74,8 @@
 		82A08AB42538E2E000F6BEA9 /* CardCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB22538E2E000F6BEA9 /* CardCell2.xib */; };
 		82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AB72538E96F00F6BEA9 /* CardCell1.swift */; };
 		82A08ABA2538E96F00F6BEA9 /* CardCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB82538E96F00F6BEA9 /* CardCell1.xib */; };
+		82ECD0572545DBDB0050EA14 /* Strings.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 82ECD0562545DBDB0050EA14 /* Strings.stringsdict */; };
+		82ECEC8E2545952C004DE2FD /* DisclaimersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ECEC8D2545952C004DE2FD /* DisclaimersController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,7 +100,6 @@
 		82258AFA253B0DA500E0C180 /* CardCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell3.swift; sourceTree = "<group>"; };
 		82258AFD253B0DB500E0C180 /* CardCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell3.xib; sourceTree = "<group>"; };
 		8230586625363D40002118DF /* 0-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "0-3.json"; sourceTree = "<group>"; };
-		824137E825449FA9004BFAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Tablet.storyboard; sourceTree = "<group>"; };
 		824137EB2544A055004BFAF3 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		824137EE2544A3DF004BFAF3 /* by_nc_sa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = by_nc_sa.png; sourceTree = "<group>"; };
 		8251661825443B43002C87F5 /* CellEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEmpty.swift; sourceTree = "<group>"; };
@@ -148,6 +148,8 @@
 		82A08AB22538E2E000F6BEA9 /* CardCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell2.xib; sourceTree = "<group>"; };
 		82A08AB72538E96F00F6BEA9 /* CardCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell1.swift; sourceTree = "<group>"; };
 		82A08AB82538E96F00F6BEA9 /* CardCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell1.xib; sourceTree = "<group>"; };
+		82ECD0562545DBDB0050EA14 /* Strings.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Strings.stringsdict; sourceTree = "<group>"; };
+		82ECEC8D2545952C004DE2FD /* DisclaimersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimersController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,7 +220,6 @@
 				820EB9572535B51100FAEDB0 /* SceneDelegate.swift */,
 				820EB95B2535B51100FAEDB0 /* Main.storyboard */,
 				8292B3072544DF7D005AEAD1 /* About.swift */,
-				824137E925449FA9004BFAF3 /* Tablet.storyboard */,
 				8251661825443B43002C87F5 /* CellEmpty.swift */,
 				8251661925443B43002C87F5 /* CellEmpty.xib */,
 				82A08AB72538E96F00F6BEA9 /* CardCell1.swift */,
@@ -238,7 +239,9 @@
 				82011A30253B1797003DCBE2 /* CardCell12.swift */,
 				82011A34253B17A8003DCBE2 /* CardCell12.xib */,
 				8206BBFC25447C6300820D52 /* Strings.strings */,
+				82ECD0562545DBDB0050EA14 /* Strings.stringsdict */,
 				820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */,
+				82ECEC8D2545952C004DE2FD /* DisclaimersController.swift */,
 				82A08AAB2538D72400F6BEA9 /* DetailController.swift */,
 				820EB9912535E96200FAEDB0 /* GuidelinesCell.swift */,
 				820EB95E2535B51200FAEDB0 /* Assets.xcassets */,
@@ -337,12 +340,12 @@
 				820EB9622535B51200FAEDB0 /* LaunchScreen.storyboard in Resources */,
 				8279AF8A2536557B003BF303 /* 4-1.json in Resources */,
 				8279AF952536557B003BF303 /* 3-4.json in Resources */,
-				824137E725449FA9004BFAF3 /* Tablet.storyboard in Resources */,
 				8292B3102544EA0D005AEAD1 /* Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png in Resources */,
 				8279AF8F2536557B003BF303 /* 3-11.json in Resources */,
 				8279AF9F2536557B003BF303 /* 2-3.json in Resources */,
 				8206BC062544947C00820D52 /* oxygen.png in Resources */,
 				8279AF972536557B003BF303 /* 2-6.json in Resources */,
+				82ECD0572545DBDB0050EA14 /* Strings.stringsdict in Resources */,
 				820EB95F2535B51200FAEDB0 /* Assets.xcassets in Resources */,
 				8292B3132544EA0D005AEAD1 /* Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.57.40.png in Resources */,
 				8279AFA12536557B003BF303 /* 2-7.json in Resources */,
@@ -395,6 +398,7 @@
 				82258AFB253B0DA500E0C180 /* CardCell3.swift in Sources */,
 				8292B3082544DF7D005AEAD1 /* About.swift in Sources */,
 				82011A2B253B1685003DCBE2 /* CardCell11.swift in Sources */,
+				82ECEC8E2545952C004DE2FD /* DisclaimersController.swift in Sources */,
 				8251661A25443B43002C87F5 /* CellEmpty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,15 +421,6 @@
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
-		};
-		824137E925449FA9004BFAF3 /* Tablet.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				824137E825449FA9004BFAF3 /* Base */,
-			);
-			name = Tablet.storyboard;
-			path = /Users/user185107/Desktop/qrh/qrh;
-			sourceTree = "<absolute>";
 		};
 /* End PBXVariantGroup section */
 

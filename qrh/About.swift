@@ -12,6 +12,7 @@ class About: UIViewController {
     
     @IBOutlet weak var ccImage: UIImageView!
     
+    @IBOutlet weak var version: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,6 +20,11 @@ class About: UIViewController {
         
         let ccImageClicked = UITapGestureRecognizer(target: self, action: #selector(openCcLink))
         ccImage.addGestureRecognizer(ccImageClicked)
+        
+
+        if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+           self.version.text = "Version \(version)"
+       }
     }
     
     @objc func closeModal() {
