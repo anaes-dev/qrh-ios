@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "SwiftyJSON",
-        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+        "package": "Toast",
+        "repositoryURL": "https://github.com/scalessec/Toast-Swift",
         "state": {
           "branch": null,
-          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
-          "version": "5.0.0"
+          "revision": "0c9493eeacb102cc614da385cfaaf475379f4ab4",
+          "version": "5.0.1"
         }
       }
     ]
