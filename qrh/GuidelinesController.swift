@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import Toast
 
-class GuidelinesController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+class GuidelinesController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UIScrollViewDelegate {
  
     
 //    Setup codables
@@ -76,14 +77,13 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         
         tableView.tableFooterView = UIView()
         
-        
 //        Parse guidelines list from guidelines.json
 
         let jsonURL = Bundle.main.url(forResource: "guidelines", withExtension: "json")!
         if let jsonDATA = try? Data(contentsOf: jsonURL) {
             parseList(json: jsonDATA)
         }
-        
+
         
 //        Initially populate filteredlist with unfiltered list
         
@@ -105,9 +105,27 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         print(hasAcceptedDisclaimer)
                 
         if !hasAcceptedDisclaimer {
-            print("test")
             performSegue(withIdentifier: "LoadDisclaimer", sender: self)
+        } else {
+            var toastStyle = ToastStyle()
+            toastStyle.messageFont = UIFont.systemFont(ofSize: 10)
+            toastStyle.backgroundColor = UIColor.label.withAlphaComponent(0.6)
+            toastStyle.messageColor = UIColor.systemBackground
+            toastStyle.displayShadow = true
+            toastStyle.fadeDuration = 0.4
+            toastStyle.maxWidthPercentage = 0.9
+            toastStyle.shadowOpacity = 0.6
+            toastStyle.shadowColor = UIColor.systemGray
+            let toastMessage = """
+                Unofficial adaptation of Quick Reference Handbook
+                Not endorsed by the Association of Anaesthetists
+                Untested and unregulated; not recommended for clinical use
+                No guarantees of completeness, accuracy or performance
+                Should not override your own knowledge and judgement
+                """
+            self.view.makeToast(toastMessage, duration: 5.0, position: .bottom, style: toastStyle)
         }
+        
     }
     
     
@@ -135,6 +153,10 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         } else {
             return unfilteredGuidelines.count
         }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.view.hideAllToasts()
     }
     
     
