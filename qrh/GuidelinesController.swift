@@ -9,6 +9,9 @@ import UIKit
 
 class GuidelinesController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
  
+    
+//    Setup codables
+    
     struct Guideline: Codable {
         var code: String
         var title: String
@@ -23,9 +26,15 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     var unfilteredGuidelines = [Guideline]()
     var filteredGuidelines = [Guideline]()
     
+    
+//    Init variables
+    
     var passCode: String?
     var passTitle: String?
     var passURL: String?
+    
+    
+//    Setup search
     
     let searchController = UISearchController(searchResultsController: nil)
     
@@ -37,13 +46,20 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
       return searchController.isActive && !isSearchBarEmpty
     }
     
+    
+//    Table & view outlets
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var noItemsView: UIView!
     
     
+    
+//    viewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        Setup navbar & search
         
         searchController.searchResultsUpdater = self
         self.navigationItem.searchController = searchController
@@ -55,23 +71,40 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         navigationController!.navigationBar.sizeToFit()
         navigationItem.hidesSearchBarWhenScrolling = false
         
+//        Hide empty cells at bottom of table
+        
         tableView.tableFooterView = UIView()
+        
+        
+//        Parse guidelines list from guidelines.json
 
         let jsonURL = Bundle.main.url(forResource: "guidelines", withExtension: "json")!
         if let jsonDATA = try? Data(contentsOf: jsonURL) {
             parseList(json: jsonDATA)
         }
+        
+        
+//        Initially populate filteredlist with unfiltered list
+        
         filteredGuidelines = unfilteredGuidelines
+        
+        
+//        Add about link to navbar
         
         let aboutButton = UIBarButtonItem(image: UIImage(systemName: "info.circle"), style: .plain, target: self, action: #selector(aboutLoad))
         self.navigationItem.rightBarButtonItem = aboutButton
         
     }
     
+    
+//    Segue to about page
+    
     @objc func aboutLoad() {
         self.performSegue(withIdentifier: "LoadAbout", sender: self)
     }
-
+    
+    
+//    Tableview setup
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -90,6 +123,9 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
+    
+//    Populate table
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "GuidelinesCell") as? GuidelinesCell else { return UITableViewCell() }
         if isFiltering {
@@ -106,6 +142,8 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
       
+    
+//    Action on selecting table row
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if isFiltering {
@@ -126,8 +164,10 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
             destination.passedTitle = passTitle!
             destination.passedURL = passURL!
         }
-           
     }
+    
+    
+//    JSON parsing
     
     func parseList(json: Data) {
         let decoder = JSONDecoder()
@@ -136,6 +176,9 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
             tableView.reloadData()
         }
     }
+    
+    
+//    Filter from search text
     
     func filterContentForSearchText(_ searchText: String) {
         filteredGuidelines = unfilteredGuidelines.filter { (guideline: Guideline) -> Bool in
