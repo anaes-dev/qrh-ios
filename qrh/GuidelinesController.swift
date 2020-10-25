@@ -34,6 +34,8 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     var passTitle: String?
     var passURL: String?
     
+    var alreadyLaunched: Bool = false
+    
     
 //    Setup search
     
@@ -101,29 +103,32 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidAppear(_ animated: Bool) {
         //        Check if disclaimer accepted
                 
-        let hasAcceptedDisclaimer = UserDefaults.standard.bool(forKey: "hasAcceptedDisclaimer")
-        print(hasAcceptedDisclaimer)
-                
-        if !hasAcceptedDisclaimer {
-            performSegue(withIdentifier: "LoadDisclaimer", sender: self)
-        } else {
-            var toastStyle = ToastStyle()
-            toastStyle.messageFont = UIFont.systemFont(ofSize: 10)
-            toastStyle.backgroundColor = UIColor.label.withAlphaComponent(0.6)
-            toastStyle.messageColor = UIColor.systemBackground
-            toastStyle.displayShadow = true
-            toastStyle.fadeDuration = 0.4
-            toastStyle.maxWidthPercentage = 0.9
-            toastStyle.shadowOpacity = 0.6
-            toastStyle.shadowColor = UIColor.systemGray
-            let toastMessage = """
-                Unofficial adaptation of Quick Reference Handbook
-                Not endorsed by the Association of Anaesthetists
-                Untested and unregulated; not recommended for clinical use
-                No guarantees of completeness, accuracy or performance
-                Should not override your own knowledge and judgement
-                """
-            self.view.makeToast(toastMessage, duration: 5.0, position: .bottom, style: toastStyle)
+        
+        if !alreadyLaunched {
+            let hasAcceptedDisclaimer = UserDefaults.standard.bool(forKey: "hasAcceptedDisclaimer")
+            if !hasAcceptedDisclaimer {
+                alreadyLaunched = true
+                performSegue(withIdentifier: "LoadDisclaimer", sender: self)
+            } else {
+                alreadyLaunched = true
+                var toastStyle = ToastStyle()
+                toastStyle.messageFont = UIFont.systemFont(ofSize: 10)
+                toastStyle.backgroundColor = UIColor.label.withAlphaComponent(0.6)
+                toastStyle.messageColor = UIColor.systemBackground
+                toastStyle.displayShadow = true
+                toastStyle.fadeDuration = 0.4
+                toastStyle.maxWidthPercentage = 0.9
+                toastStyle.shadowOpacity = 0.6
+                toastStyle.shadowColor = UIColor.systemGray
+                let toastMessage = """
+                    Unofficial adaptation of Quick Reference Handbook
+                    Not endorsed by the Association of Anaesthetists
+                    Untested and unregulated; not recommended for clinical use
+                    No guarantees of completeness, accuracy or performance
+                    Should not override your own knowledge and judgement
+                    """
+                self.view.makeToast(toastMessage, duration: 5.0, position: .bottom, style: toastStyle)
+            }
         }
         
     }
@@ -191,6 +196,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
             passTitle = unfilteredGuidelines[indexPath.row].title
             passURL = unfilteredGuidelines[indexPath.row].url
         }
+        tableView.deselectRow(at: indexPath, animated: true)
         if UIDevice.current.userInterfaceIdiom == .pad {
             self.performSegue(withIdentifier: "LoadDetailTablet", sender: self)
         } else {
