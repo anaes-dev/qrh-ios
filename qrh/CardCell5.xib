@@ -27,7 +27,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJB-48-cnk" userLabel="Button">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="main" text="Main" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOc-NZ-Eo6">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="main" text="Head" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOc-NZ-Eo6">
                                                 <rect key="frame" x="8" y="8" width="240" height="24"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" systemColor="systemOrangeColor"/>
@@ -83,7 +83,7 @@
                                     <constraint firstItem="IJB-48-cnk" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" id="8ub-9q-eQ7"/>
                                     <constraint firstAttribute="trailing" secondItem="IJB-48-cnk" secondAttribute="trailing" id="LGO-m7-9AY"/>
                                     <constraint firstAttribute="trailing" secondItem="hlm-zb-5eJ" secondAttribute="trailing" constant="8" id="g7w-U9-lkI"/>
-                                    <constraint firstAttribute="bottom" secondItem="hlm-zb-5eJ" secondAttribute="bottom" constant="8" id="pr6-xl-Q7h"/>
+                                    <constraint firstAttribute="bottom" secondItem="hlm-zb-5eJ" secondAttribute="bottom" constant="4" id="pr6-xl-Q7h"/>
                                     <constraint firstItem="hlm-zb-5eJ" firstAttribute="top" secondItem="IJB-48-cnk" secondAttribute="bottom" id="qeB-Nc-T4e"/>
                                     <constraint firstItem="hlm-zb-5eJ" firstAttribute="leading" secondItem="Ggh-sj-7tR" secondAttribute="leading" constant="8" id="rXd-Cn-Rzo"/>
                                     <constraint firstItem="IJB-48-cnk" firstAttribute="leading" secondItem="Ggh-sj-7tR" secondAttribute="leading" id="zfD-J5-ENp"/>
@@ -135,10 +135,10 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="arrow" destination="r5L-D0-5yB" id="FwF-oy-MZb"/>
+                <outlet property="body" destination="hlm-zb-5eJ" id="Ihg-de-RD7"/>
                 <outlet property="box" destination="Ggh-sj-7tR" id="7Sp-VK-Xbl"/>
                 <outlet property="button" destination="IJB-48-cnk" id="mVH-gi-7E5"/>
-                <outlet property="main" destination="pOc-NZ-Eo6" id="881-jf-flu"/>
-                <outlet property="sub" destination="hlm-zb-5eJ" id="ogQ-R8-hNM"/>
+                <outlet property="head" destination="pOc-NZ-Eo6" id="jr3-bq-9a3"/>
                 <outlet property="sub0" destination="4iE-Yk-rkH" id="sXG-Xp-tmu"/>
                 <outlet property="sub8" destination="pr6-xl-Q7h" id="pd1-He-wXF"/>
                 <outlet property="subheight" destination="3Wk-jY-wnp" id="VQf-Wi-LPK"/>

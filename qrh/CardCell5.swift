@@ -9,9 +9,9 @@ import UIKit
 
 class CardCell5: UITableViewCell {
 
-    @IBOutlet weak var main: UILabel!
+    @IBOutlet weak var head: UILabel!
     
-    @IBOutlet weak var sub: UITextView!
+    @IBOutlet weak var body: UITextView!
     
     @IBOutlet weak var arrow: UIImageView!
     
@@ -27,14 +27,10 @@ class CardCell5: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        sub.isUserInteractionEnabled = true
-        sub.isEditable = false
-        sub.isSelectable = true
-        sub.isScrollEnabled = false
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        body.isUserInteractionEnabled = true
+        body.isEditable = false
+        body.isSelectable = true
+        body.isScrollEnabled = false
     }
     
 }

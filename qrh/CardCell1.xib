@@ -28,22 +28,23 @@
                                 <color key="shadowColor" systemColor="systemGray6Color"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="main" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEi-DJ-lze">
-                                <rect key="frame" x="8" y="8" width="272" height="12"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Lxy-jC-8dB">
+                                <rect key="frame" x="4" y="2" width="280" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="RBD-Vm-PDC" secondAttribute="trailing" id="3je-ll-9Xg"/>
-                            <constraint firstItem="cEi-DJ-lze" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" constant="8" id="4hj-uf-eU9"/>
-                            <constraint firstAttribute="bottom" secondItem="cEi-DJ-lze" secondAttribute="bottom" constant="8" id="5hc-GT-hjz"/>
+                            <constraint firstItem="Lxy-jC-8dB" firstAttribute="leading" secondItem="Ggh-sj-7tR" secondAttribute="leading" constant="4" id="CE0-ky-sS1"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RBD-Vm-PDC" secondAttribute="bottom" priority="997" id="HzI-0V-oaS"/>
-                            <constraint firstItem="cEi-DJ-lze" firstAttribute="leading" secondItem="Ggh-sj-7tR" secondAttribute="leading" constant="8" id="XA0-Qf-uEI"/>
+                            <constraint firstAttribute="trailing" secondItem="Lxy-jC-8dB" secondAttribute="trailing" constant="4" id="aeI-UW-8Qa"/>
+                            <constraint firstAttribute="bottom" secondItem="Lxy-jC-8dB" secondAttribute="bottom" constant="2" id="dgC-py-pjR"/>
                             <constraint firstItem="RBD-Vm-PDC" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" constant="-6" id="lhG-10-N7o"/>
-                            <constraint firstAttribute="trailing" secondItem="cEi-DJ-lze" secondAttribute="trailing" constant="8" id="zZe-pe-Csh"/>
+                            <constraint firstItem="Lxy-jC-8dB" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" constant="2" id="wTg-la-Me1"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
@@ -72,13 +73,16 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="body" destination="cEi-DJ-lze" id="Rea-vs-ht2"/>
+                <outlet property="body" destination="Lxy-jC-8dB" id="gfa-SK-Ooy"/>
                 <outlet property="code" destination="RBD-Vm-PDC" id="LwP-LB-tFy"/>
             </connections>
             <point key="canvasLocation" x="141" y="154"/>
         </tableViewCell>
     </objects>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

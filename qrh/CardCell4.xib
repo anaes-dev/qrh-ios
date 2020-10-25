@@ -21,9 +21,9 @@
                         <rect key="frame" x="16" y="8" width="288" height="104"/>
                         <subviews>
                             <textView autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQy-yW-w5J">
-                                <rect key="frame" x="48" y="8" width="232" height="88"/>
+                                <rect key="frame" x="44" y="8" width="244" height="94"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="k8V-M3-ehm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="k8V-M3-ehm"/>
                                 </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -59,10 +59,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TOq-K7-ftH" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" constant="8" id="DWX-os-8ZU"/>
-                            <constraint firstItem="uQy-yW-w5J" firstAttribute="leading" secondItem="TOq-K7-ftH" secondAttribute="trailing" constant="8" id="Hqt-ud-tcO"/>
-                            <constraint firstAttribute="bottom" secondItem="uQy-yW-w5J" secondAttribute="bottom" constant="8" id="KSk-Z4-PlZ"/>
+                            <constraint firstItem="uQy-yW-w5J" firstAttribute="leading" secondItem="TOq-K7-ftH" secondAttribute="trailing" constant="4" id="Hqt-ud-tcO"/>
+                            <constraint firstAttribute="bottom" secondItem="uQy-yW-w5J" secondAttribute="bottom" constant="2" id="KSk-Z4-PlZ"/>
                             <constraint firstItem="TOq-K7-ftH" firstAttribute="leading" secondItem="Ggh-sj-7tR" secondAttribute="leading" constant="8" id="hPp-i9-wf5"/>
-                            <constraint firstAttribute="trailing" secondItem="uQy-yW-w5J" secondAttribute="trailing" constant="8" id="mWP-ah-IPn"/>
+                            <constraint firstAttribute="trailing" secondItem="uQy-yW-w5J" secondAttribute="trailing" id="mWP-ah-IPn"/>
                             <constraint firstItem="uQy-yW-w5J" firstAttribute="top" secondItem="Ggh-sj-7tR" secondAttribute="top" constant="8" id="rAC-HU-EII"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -92,7 +92,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="main" destination="uQy-yW-w5J" id="ykv-0N-67w"/>
+                <outlet property="body" destination="uQy-yW-w5J" id="QmI-TR-i28"/>
                 <outlet property="step" destination="TN8-I4-D6Q" id="tmG-E0-I1C"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="178.79464285714286"/>

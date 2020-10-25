@@ -73,7 +73,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="main" destination="cEi-DJ-lze" id="ySZ-xY-1nD"/>
+                <outlet property="label" destination="cEi-DJ-lze" id="bGm-h1-eaV"/>
             </connections>
             <point key="canvasLocation" x="141" y="154"/>
         </tableViewCell>
