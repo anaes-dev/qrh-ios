@@ -13,6 +13,7 @@ class About: UIViewController {
     @IBOutlet weak var ccImage: UIImageView!
     
     @IBOutlet weak var version: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
