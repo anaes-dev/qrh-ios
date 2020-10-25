@@ -92,8 +92,8 @@
     },
     {
       "type": 12,
-      "head": "",
-      "body": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "head": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
+      "body": "",
       "step": ""
     }
   ]

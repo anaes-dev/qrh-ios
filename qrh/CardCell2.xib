@@ -46,7 +46,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="main" destination="4jz-a3-BGJ" id="E4g-0h-zLH"/>
+                <outlet property="label" destination="4jz-a3-BGJ" id="jx9-YO-BiM"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="153.34821428571428"/>
         </tableViewCell>

@@ -10,18 +10,16 @@ import UIKit
 class CardCell1: UITableViewCell {
 
     
-    @IBOutlet weak var body: UILabel!
     @IBOutlet weak var code: UILabel!
+    
+    @IBOutlet weak var body: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        body.isUserInteractionEnabled = true
+        body.isEditable = false
+        body.isSelectable = true
+        body.isScrollEnabled = false
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

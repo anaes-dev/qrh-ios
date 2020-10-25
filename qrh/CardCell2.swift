@@ -8,18 +8,10 @@
 import UIKit
 
 class CardCell2: UITableViewCell {
-
-    @IBOutlet weak var main: UILabel!
+    
+    @IBOutlet weak var label: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }
