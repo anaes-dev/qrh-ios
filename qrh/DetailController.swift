@@ -247,6 +247,11 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                         cell.body.attributedText = bodyParsed[indexPath.row]
                         cell.step.text = cardContent[indexPath.row].step
                         cell.body.delegate = self
+                        // Fix for guideline 3-5 telephone number misdetection
+                        if(passedCode == "3-5" && indexPath.row == 7) {
+                            cell.body.linkTextAttributes = nil
+                            cell.body.isSelectable = false
+                        }
                         return cell
 
                     case 11:
@@ -395,6 +400,11 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 cell.body.attributedText = bodyParsed[indexPath.row]
                 cell.step.text = cardContent[indexPath.row].step
                 cell.body.delegate = self
+                // Fix for guideline 3-5 telephone number misdetection
+                if(passedCode == "3-5" && indexPath.row == 7) {
+                    cell.body.linkTextAttributes = nil
+                    cell.body.isSelectable = false
+                }
                 return cell
                 
             case 5,6,7,8,9:
