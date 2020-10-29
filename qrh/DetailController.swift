@@ -247,7 +247,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                         cell.body.attributedText = bodyParsed[indexPath.row]
                         cell.step.text = cardContent[indexPath.row].step
                         cell.body.delegate = self
-                        // Fix for guideline 3-5 telephone number misdetection
+                        // Fix for guideline 3-5 auto link misdetection
                         if(passedCode == "3-5" && indexPath.row == 7) {
                             cell.body.linkTextAttributes = nil
                             cell.body.isSelectable = false
@@ -336,6 +336,12 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     cell.body.delegate = self
                     cell.body.attributedText = bodyParsed[indexPath.row]
                     
+                    // Fix for guideline 2-5 auto link misdetection
+                    if(passedCode == "2-5" && indexPath.row == 12) {
+                            cell.body.linkTextAttributes = nil
+                            cell.body.isSelectable = false
+                    }
+                    
 //                    Fixed / non-expanding boxes, therefore arrow hidden & expanded constraints active
 
                     cell.arrow.image = nil
@@ -400,7 +406,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 cell.body.attributedText = bodyParsed[indexPath.row]
                 cell.step.text = cardContent[indexPath.row].step
                 cell.body.delegate = self
-                // Fix for guideline 3-5 telephone number misdetection
+                // Fix for guideline 3-5 auto link misdetection
                 if(passedCode == "3-5" && indexPath.row == 7) {
                     cell.body.linkTextAttributes = nil
                     cell.body.isSelectable = false
@@ -446,6 +452,12 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 
                 cell.head.text = cardContent[indexPath.row].head
                 cell.body.delegate = self
+                
+                // Fix for guideline 2-5 auto link misdetection
+                if(passedCode == "2-5" && indexPath.row == 12) {
+                        cell.body.linkTextAttributes = nil
+                        cell.body.isSelectable = false
+                }
                 
 //                Add gesture recogniser to button (UIView covering title & arrow)
                 

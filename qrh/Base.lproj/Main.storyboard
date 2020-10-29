@@ -2,7 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nHu-Uq-TsV">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -159,7 +160,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="h5P-dv-VIP">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5P-dv-VIP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdF-kV-cU9" userLabel="Container View">
@@ -452,6 +453,12 @@ This application does not intentionally collect, store or transmit any personal 
                                                                 <state key="normal" title="Disagree" image="xmark.square" catalog="system">
                                                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                                                 </state>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" systemColor="secondaryLabelColor"/>
+                                                                </state>
+                                                                <state key="highlighted">
+                                                                    <color key="titleColor" systemColor="secondaryLabelColor"/>
+                                                                </state>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4i7-s5-b6W">
                                                                 <rect key="frame" x="155.66666666666663" y="0.0" width="155.33333333333337" height="21"/>
@@ -459,6 +466,12 @@ This application does not intentionally collect, store or transmit any personal 
                                                                 <color key="tintColor" systemColor="linkColor"/>
                                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 <state key="normal" title="Agree" image="checkmark.square" catalog="system">
+                                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                                </state>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                                </state>
+                                                                <state key="highlighted">
                                                                     <color key="titleColor" systemColor="linkColor"/>
                                                                 </state>
                                                             </button>
@@ -568,6 +581,7 @@ This application does not intentionally collect, store or transmit any personal 
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="kaT-Z9-esc"/>
                     <connections>
                         <outlet property="agree" destination="4i7-s5-b6W" id="KHP-09-EDY"/>
+                        <outlet property="ccImage" destination="4Eo-Ah-vb4" id="TuS-pu-UIX"/>
                         <outlet property="disagree" destination="lF0-Mw-k57" id="5Kh-fM-CbE"/>
                         <outlet property="version" destination="VSX-9Q-3Ce" id="bXB-H6-crM"/>
                     </connections>
@@ -600,7 +614,7 @@ This application does not intentionally collect, store or transmit any personal 
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="cjb-VO-VlR">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjb-VO-VlR">
                                 <rect key="frame" x="0.0" y="56" width="375" height="619"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BG4-Fe-Pfb" userLabel="Container View">
@@ -679,44 +693,6 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                                                     <constraint firstAttribute="width" constant="100" id="G6P-aL-sbI"/>
                                                 </constraints>
                                             </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPj-sB-dQ5" userLabel="Buttons">
-                                                <rect key="frame" x="32" y="604" width="311" height="49"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlQ-Ny-kIE">
-                                                        <rect key="frame" x="8" y="8" width="295" height="33"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="tintColor" systemColor="linkColor"/>
-                                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="View Disclaimers">
-                                                            <color key="titleColor" systemColor="linkColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="cud-si-UHg" kind="presentation" id="iUF-P0-u29"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="wlQ-Ny-kIE" secondAttribute="bottom" constant="8" id="79p-ea-L10"/>
-                                                    <constraint firstItem="wlQ-Ny-kIE" firstAttribute="top" secondItem="fPj-sB-dQ5" secondAttribute="top" constant="8" id="KCQ-v2-Ppt"/>
-                                                    <constraint firstItem="wlQ-Ny-kIE" firstAttribute="leading" secondItem="fPj-sB-dQ5" secondAttribute="leading" constant="8" id="Ywz-r5-Hit"/>
-                                                    <constraint firstAttribute="trailing" secondItem="wlQ-Ny-kIE" secondAttribute="trailing" constant="8" id="mNU-QX-Liu"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                        <real key="value" value="0.10000000000000001"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                        <integer key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOffset">
-                                                        <integer key="value" value="0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down.doc" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Ky-yp-99u">
                                                 <rect key="frame" x="16" y="439.33333333333331" width="32" height="31.666666666666686"/>
                                                 <color key="tintColor" systemColor="systemGrayColor"/>
@@ -753,6 +729,68 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPj-sB-dQ5" userLabel="Buttons">
+                                                <rect key="frame" x="32" y="604" width="311" height="49"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tIv-lp-Wde">
+                                                        <rect key="frame" x="8" y="8" width="295" height="33"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjf-Nh-62z">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147.66666666666666" height="33"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="tintColor" systemColor="linkColor"/>
+                                                                <state key="normal" title="Privacy Policy">
+                                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                                </state>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" systemColor="systemTealColor"/>
+                                                                </state>
+                                                                <state key="highlighted">
+                                                                    <color key="titleColor" systemColor="systemTealColor"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlQ-Ny-kIE">
+                                                                <rect key="frame" x="147.66666666666663" y="0.0" width="147.33333333333337" height="33"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="tintColor" systemColor="linkColor"/>
+                                                                <state key="normal" title="Disclaimers">
+                                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                                </state>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" systemColor="systemTealColor"/>
+                                                                </state>
+                                                                <state key="highlighted">
+                                                                    <color key="titleColor" systemColor="systemTealColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="cud-si-UHg" kind="presentation" id="iUF-P0-u29"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="tIv-lp-Wde" firstAttribute="top" secondItem="fPj-sB-dQ5" secondAttribute="top" constant="8" id="Zeh-dr-np6"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tIv-lp-Wde" secondAttribute="bottom" constant="8" id="khi-QR-BFK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tIv-lp-Wde" secondAttribute="trailing" constant="8" id="nqP-hb-k3J"/>
+                                                    <constraint firstItem="tIv-lp-Wde" firstAttribute="leading" secondItem="fPj-sB-dQ5" secondAttribute="leading" constant="8" id="oaN-lE-sym"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                        <real key="value" value="0.10000000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOffset">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -820,6 +858,7 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ccImage" destination="vfh-lv-6ei" id="32k-6l-Kkk"/>
+                        <outlet property="privacy" destination="Sjf-Nh-62z" id="phz-b2-yZt"/>
                         <outlet property="version" destination="GCp-g5-YDE" id="LWR-G0-hPP"/>
                     </connections>
                 </viewController>
@@ -972,7 +1011,7 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gsf-Fe-bV2"/>
+        <segue reference="cTs-Rd-bk2"/>
         <segue reference="iUF-P0-u29"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemTealColor"/>
