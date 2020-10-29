@@ -12,6 +12,9 @@ class About: UIViewController {
     
     @IBOutlet weak var ccImage: UIImageView!
     
+    
+    @IBOutlet weak var privacy: UIButton!
+    
     @IBOutlet weak var version: UILabel!
     
     override func viewDidLoad() {
@@ -26,6 +29,9 @@ class About: UIViewController {
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
            self.version.text = "Version \(version)"
        }
+        
+        privacy.addTarget(self, action: #selector(openPrivacyLink), for: .touchUpInside)
+         
     }
     
     @objc func closeModal() {
@@ -36,7 +42,12 @@ class About: UIViewController {
         if let ccURL = URL(string: "https://creativecommons.org/licenses/by-nc-sa/4.0/") {
             UIApplication.shared.open(ccURL, options: [:], completionHandler: nil)
         }
-        
+    }
+    
+    @objc func openPrivacyLink() {
+        if let privacyUrl = URL(string: "http://qrh.anaes.dev/privacy") {
+            UIApplication.shared.open(privacyUrl, options: [:], completionHandler: nil)
+        }
     }
 
    
