@@ -921,7 +921,6 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                         <barButtonItem key="backBarButtonItem" title="Back" id="L0E-q5-YrK"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="LoadingSpinner" destination="zzd-zK-fgj" id="NbL-6v-wXw"/>
                         <outlet property="activitySpinner" destination="r02-Ww-ttT" id="C3R-hf-l3x"/>
                         <outlet property="tableViewMain" destination="73I-s3-MOL" id="c0J-QH-eXz"/>
                         <segue destination="XPg-Xo-eAi" kind="presentation" identifier="LoadPDF" id="cTs-Rd-bk2"/>
@@ -929,45 +928,6 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uK-eT-EcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzd-zK-fgj">
-                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                    <subviews>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4vz-8J-mLo">
-                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                        </activityIndicatorView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CG-bc-BlN">
-                            <rect key="frame" x="0.0" y="91" width="120" height="21"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                            <color key="textColor" systemColor="secondaryLabelColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <viewLayoutGuide key="safeArea" id="Ikt-jP-v0R"/>
-                    <color key="backgroundColor" systemColor="systemGray5Color"/>
-                    <constraints>
-                        <constraint firstItem="4vz-8J-mLo" firstAttribute="bottom" secondItem="zzd-zK-fgj" secondAttribute="bottom" id="9KP-mh-rcL"/>
-                        <constraint firstItem="4vz-8J-mLo" firstAttribute="leading" secondItem="zzd-zK-fgj" secondAttribute="leading" id="NfE-8x-cNJ"/>
-                        <constraint firstItem="4vz-8J-mLo" firstAttribute="top" secondItem="zzd-zK-fgj" secondAttribute="top" id="Nru-Jo-9Ui"/>
-                        <constraint firstItem="0CG-bc-BlN" firstAttribute="leading" secondItem="Ikt-jP-v0R" secondAttribute="leading" id="Ohc-Vb-D5h"/>
-                        <constraint firstItem="Ikt-jP-v0R" firstAttribute="bottom" secondItem="0CG-bc-BlN" secondAttribute="bottom" constant="8" id="RDB-hv-hzp"/>
-                        <constraint firstItem="Ikt-jP-v0R" firstAttribute="trailing" secondItem="0CG-bc-BlN" secondAttribute="trailing" id="WGG-Tj-5LA"/>
-                        <constraint firstAttribute="trailing" secondItem="4vz-8J-mLo" secondAttribute="trailing" id="dpp-x2-sZF"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                            <real key="value" value="0.20000000000000001"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                            <integer key="value" value="2"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOffset">
-                            <integer key="value" value="0"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="6"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
             </objects>
             <point key="canvasLocation" x="2903" y="-727"/>
         </scene>
@@ -1080,46 +1040,6 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Cr-E4-xlk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="izW-vC-hzM">
-                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="bNH-mY-yu6">
-                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                        </activityIndicatorView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlI-RJ-pnI">
-                            <rect key="frame" x="0.0" y="91" width="120" height="21"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                            <color key="textColor" systemColor="secondaryLabelColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <viewLayoutGuide key="safeArea" id="MgV-Qm-ehR"/>
-                    <color key="backgroundColor" systemColor="systemGray5Color"/>
-                    <constraints>
-                        <constraint firstItem="bNH-mY-yu6" firstAttribute="top" secondItem="izW-vC-hzM" secondAttribute="top" id="2le-mC-N9E"/>
-                        <constraint firstItem="RlI-RJ-pnI" firstAttribute="leading" secondItem="MgV-Qm-ehR" secondAttribute="leading" id="Dxh-nE-T89"/>
-                        <constraint firstItem="bNH-mY-yu6" firstAttribute="leading" secondItem="izW-vC-hzM" secondAttribute="leading" id="Kmq-Ts-Ahz"/>
-                        <constraint firstItem="MgV-Qm-ehR" firstAttribute="bottom" secondItem="RlI-RJ-pnI" secondAttribute="bottom" constant="8" id="Pz9-R1-x7x"/>
-                        <constraint firstItem="MgV-Qm-ehR" firstAttribute="trailing" secondItem="RlI-RJ-pnI" secondAttribute="trailing" id="WMI-U3-sxP"/>
-                        <constraint firstItem="bNH-mY-yu6" firstAttribute="bottom" secondItem="izW-vC-hzM" secondAttribute="bottom" id="cbP-VB-Bw2"/>
-                        <constraint firstAttribute="trailing" secondItem="bNH-mY-yu6" secondAttribute="trailing" id="cmH-20-YH5"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                            <real key="value" value="0.20000000000000001"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                            <integer key="value" value="2"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOffset">
-                            <integer key="value" value="0"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="6"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
             </objects>
             <point key="canvasLocation" x="2903" y="-31"/>
         </scene>

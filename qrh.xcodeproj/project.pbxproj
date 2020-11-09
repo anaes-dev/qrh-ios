@@ -75,6 +75,7 @@
 		82A08AB42538E2E000F6BEA9 /* CardCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB22538E2E000F6BEA9 /* CardCell2.xib */; };
 		82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AB72538E96F00F6BEA9 /* CardCell1.swift */; };
 		82A08ABA2538E96F00F6BEA9 /* CardCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB82538E96F00F6BEA9 /* CardCell1.xib */; };
+		82D993342559C9BD004FC9E6 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D993332559C9BD004FC9E6 /* Spinner.swift */; };
 		82ECD0572545DBDB0050EA14 /* Strings.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 82ECD0562545DBDB0050EA14 /* Strings.stringsdict */; };
 		82ECEC8E2545952C004DE2FD /* DisclaimersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ECEC8D2545952C004DE2FD /* DisclaimersController.swift */; };
 /* End PBXBuildFile section */
@@ -149,6 +150,7 @@
 		82A08AB22538E2E000F6BEA9 /* CardCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell2.xib; sourceTree = "<group>"; };
 		82A08AB72538E96F00F6BEA9 /* CardCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell1.swift; sourceTree = "<group>"; };
 		82A08AB82538E96F00F6BEA9 /* CardCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell1.xib; sourceTree = "<group>"; };
+		82D993332559C9BD004FC9E6 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		82ECD0562545DBDB0050EA14 /* Strings.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Strings.stringsdict; sourceTree = "<group>"; };
 		82ECEC8D2545952C004DE2FD /* DisclaimersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimersController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +223,7 @@
 				820EB9552535B51100FAEDB0 /* AppDelegate.swift */,
 				820EB9572535B51100FAEDB0 /* SceneDelegate.swift */,
 				820EB95B2535B51100FAEDB0 /* Main.storyboard */,
+				82D993332559C9BD004FC9E6 /* Spinner.swift */,
 				8292B3072544DF7D005AEAD1 /* About.swift */,
 				8251661825443B43002C87F5 /* CellEmpty.swift */,
 				8251661925443B43002C87F5 /* CellEmpty.xib */,
@@ -400,6 +403,7 @@
 				82011A31253B1797003DCBE2 /* CardCell12.swift in Sources */,
 				82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */,
 				8277FCE0253B326300E8158D /* CardCell5.swift in Sources */,
+				82D993342559C9BD004FC9E6 /* Spinner.swift in Sources */,
 				820EB9582535B51100FAEDB0 /* SceneDelegate.swift in Sources */,
 				8277FCE4253B39D900E8158D /* PDFController.swift in Sources */,
 				82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */,
@@ -561,7 +565,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = K4AA5XW5PX;
 				INFOPLIST_FILE = qrh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -584,7 +588,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = K4AA5XW5PX;
 				INFOPLIST_FILE = qrh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
