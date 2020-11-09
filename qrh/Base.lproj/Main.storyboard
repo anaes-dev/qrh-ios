@@ -892,6 +892,19 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                                     <outlet property="delegate" destination="gGv-fq-olE" id="Cx9-os-mug"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="r02-Ww-ttT">
+                                <rect key="frame" x="137.66666666666666" y="356" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Siq-cs-zv5"/>
+                                    <constraint firstAttribute="height" constant="100" id="mo4-ca-26T"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UnT-m3-KhQ"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -899,6 +912,8 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                             <constraint firstItem="73I-s3-MOL" firstAttribute="top" secondItem="UnT-m3-KhQ" secondAttribute="top" id="G2K-iE-RIr"/>
                             <constraint firstItem="UnT-m3-KhQ" firstAttribute="trailing" secondItem="73I-s3-MOL" secondAttribute="trailing" id="Jyw-mq-Aj8"/>
                             <constraint firstItem="UnT-m3-KhQ" firstAttribute="bottom" secondItem="73I-s3-MOL" secondAttribute="bottom" id="Lb2-bT-Cvn"/>
+                            <constraint firstItem="r02-Ww-ttT" firstAttribute="centerX" secondItem="UIU-69-Nvi" secondAttribute="centerX" id="aLA-MF-MeJ"/>
+                            <constraint firstItem="r02-Ww-ttT" firstAttribute="centerY" secondItem="UIU-69-Nvi" secondAttribute="centerY" id="t6f-fZ-LZL"/>
                             <constraint firstItem="73I-s3-MOL" firstAttribute="leading" secondItem="UnT-m3-KhQ" secondAttribute="leading" id="uYz-Je-gTJ"/>
                         </constraints>
                     </view>
@@ -906,12 +921,53 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                         <barButtonItem key="backBarButtonItem" title="Back" id="L0E-q5-YrK"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="LoadingSpinner" destination="zzd-zK-fgj" id="NbL-6v-wXw"/>
+                        <outlet property="activitySpinner" destination="r02-Ww-ttT" id="C3R-hf-l3x"/>
                         <outlet property="tableViewMain" destination="73I-s3-MOL" id="c0J-QH-eXz"/>
                         <segue destination="XPg-Xo-eAi" kind="presentation" identifier="LoadPDF" id="cTs-Rd-bk2"/>
                         <segue destination="7Gq-kw-dKV" kind="show" identifier="LoadDetailLink" id="eCo-aK-JR7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uK-eT-EcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzd-zK-fgj">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4vz-8J-mLo">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CG-bc-BlN">
+                            <rect key="frame" x="0.0" y="91" width="120" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Ikt-jP-v0R"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstItem="4vz-8J-mLo" firstAttribute="bottom" secondItem="zzd-zK-fgj" secondAttribute="bottom" id="9KP-mh-rcL"/>
+                        <constraint firstItem="4vz-8J-mLo" firstAttribute="leading" secondItem="zzd-zK-fgj" secondAttribute="leading" id="NfE-8x-cNJ"/>
+                        <constraint firstItem="4vz-8J-mLo" firstAttribute="top" secondItem="zzd-zK-fgj" secondAttribute="top" id="Nru-Jo-9Ui"/>
+                        <constraint firstItem="0CG-bc-BlN" firstAttribute="leading" secondItem="Ikt-jP-v0R" secondAttribute="leading" id="Ohc-Vb-D5h"/>
+                        <constraint firstItem="Ikt-jP-v0R" firstAttribute="bottom" secondItem="0CG-bc-BlN" secondAttribute="bottom" constant="8" id="RDB-hv-hzp"/>
+                        <constraint firstItem="Ikt-jP-v0R" firstAttribute="trailing" secondItem="0CG-bc-BlN" secondAttribute="trailing" id="WGG-Tj-5LA"/>
+                        <constraint firstAttribute="trailing" secondItem="4vz-8J-mLo" secondAttribute="trailing" id="dpp-x2-sZF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.20000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOffset">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </objects>
             <point key="canvasLocation" x="2903" y="-727"/>
         </scene>
@@ -981,6 +1037,21 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                                     <outlet property="delegate" destination="pFN-c1-UtQ" id="Mxw-o7-3Db"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="xY3-cm-iry">
+                                <rect key="frame" x="137.66666666666666" y="356" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1EP-Xr-p9O"/>
+                                    <constraint firstAttribute="height" constant="100" id="2LH-Hu-pc1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="DvP-YC-dKD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="yBJ-Xp-in4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FCQ-vZ-ZIa"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -990,8 +1061,10 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                             <constraint firstItem="FCQ-vZ-ZIa" firstAttribute="bottom" secondItem="V0I-VX-9Vm" secondAttribute="bottom" id="4jR-GA-yTs"/>
                             <constraint firstItem="V0I-VX-9Vm" firstAttribute="leading" secondItem="FCQ-vZ-ZIa" secondAttribute="leading" id="7dz-pp-roV"/>
                             <constraint firstItem="V0I-VX-9Vm" firstAttribute="top" secondItem="FCQ-vZ-ZIa" secondAttribute="top" id="8n6-sb-FbF"/>
+                            <constraint firstItem="xY3-cm-iry" firstAttribute="centerX" secondItem="zz1-xn-rVx" secondAttribute="centerX" id="BqH-yX-uHK"/>
                             <constraint firstItem="soV-aX-dYB" firstAttribute="top" secondItem="FCQ-vZ-ZIa" secondAttribute="top" id="Rmz-Uv-8Yb"/>
                             <constraint firstItem="soV-aX-dYB" firstAttribute="width" secondItem="zz1-xn-rVx" secondAttribute="width" multiplier="0.4" id="W9u-d2-d3I"/>
+                            <constraint firstItem="xY3-cm-iry" firstAttribute="centerY" secondItem="zz1-xn-rVx" secondAttribute="centerY" id="Wbi-UL-ggc"/>
                             <constraint firstItem="FCQ-vZ-ZIa" firstAttribute="bottom" secondItem="soV-aX-dYB" secondAttribute="bottom" id="vF1-VA-v2A"/>
                         </constraints>
                     </view>
@@ -999,6 +1072,7 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                         <barButtonItem key="backBarButtonItem" title="Back" id="7ut-SL-pNa"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="activitySpinner" destination="xY3-cm-iry" id="eeB-hQ-z57"/>
                         <outlet property="tableViewMain" destination="V0I-VX-9Vm" id="ijI-da-c5i"/>
                         <outlet property="tableViewRight" destination="soV-aX-dYB" id="xNY-tK-kLA"/>
                         <segue destination="LvK-2P-hRK" kind="show" identifier="LoadDetailLinkTablet" id="Ard-1l-MgR"/>
@@ -1006,13 +1080,53 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Cr-E4-xlk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="izW-vC-hzM">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="bNH-mY-yu6">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlI-RJ-pnI">
+                            <rect key="frame" x="0.0" y="91" width="120" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="MgV-Qm-ehR"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstItem="bNH-mY-yu6" firstAttribute="top" secondItem="izW-vC-hzM" secondAttribute="top" id="2le-mC-N9E"/>
+                        <constraint firstItem="RlI-RJ-pnI" firstAttribute="leading" secondItem="MgV-Qm-ehR" secondAttribute="leading" id="Dxh-nE-T89"/>
+                        <constraint firstItem="bNH-mY-yu6" firstAttribute="leading" secondItem="izW-vC-hzM" secondAttribute="leading" id="Kmq-Ts-Ahz"/>
+                        <constraint firstItem="MgV-Qm-ehR" firstAttribute="bottom" secondItem="RlI-RJ-pnI" secondAttribute="bottom" constant="8" id="Pz9-R1-x7x"/>
+                        <constraint firstItem="MgV-Qm-ehR" firstAttribute="trailing" secondItem="RlI-RJ-pnI" secondAttribute="trailing" id="WMI-U3-sxP"/>
+                        <constraint firstItem="bNH-mY-yu6" firstAttribute="bottom" secondItem="izW-vC-hzM" secondAttribute="bottom" id="cbP-VB-Bw2"/>
+                        <constraint firstAttribute="trailing" secondItem="bNH-mY-yu6" secondAttribute="trailing" id="cmH-20-YH5"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.20000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOffset">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </objects>
             <point key="canvasLocation" x="2903" y="-31"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cTs-Rd-bk2"/>
-        <segue reference="iUF-P0-u29"/>
+        <segue reference="gsf-Fe-bV2"/>
+        <segue reference="d0R-o2-rfv"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemTealColor"/>
     <resources>
@@ -1033,6 +1147,9 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

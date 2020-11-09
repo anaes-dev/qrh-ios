@@ -8,14 +8,16 @@
 import UIKit
 
 class DetailController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextViewDelegate {
+    
 
 //    Tableview outlets
     
     @IBOutlet weak var tableViewMain: UITableView!
     @IBOutlet weak var tableViewRight: UITableView!
     
-    
-//    Codable structures
+    @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
+
+    //    Codable structures
     
     struct Card: Codable {
         var type: Int
@@ -61,11 +63,16 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     var tableViewRightHidden : IndexSet = []
 
     
+
+    
 //    viewDidLoad
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        activitySpinner.stopAnimating()
+        
         
 //      Load cells for table
         
@@ -562,20 +569,22 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             }
         }
     }
+
     
 
 //    Perform segue for links between guidelines
     
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        
         scrubLink = URL.absoluteString
         let regex = try! NSRegularExpression(pattern: "[1-4][-][0-9]")
         let range = NSRange(location: 0, length: scrubLink.count)
         
 //        Perform segue only if link matches format for link to other guideline, otherwise fall back to default behaviour (for URLS & phone numbers)
         if regex.firstMatch(in: scrubLink, options: [], range: range) != nil {
+            activitySpinner.startAnimating()
             if UIDevice.current.userInterfaceIdiom == .pad {
                 self.performSegue(withIdentifier: "LoadDetailLinkTablet", sender: self)
-
             } else {
                 self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
             }
