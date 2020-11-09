@@ -70,9 +70,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        activitySpinner.stopAnimating()
-        
+               
         
 //      Load cells for table
         
