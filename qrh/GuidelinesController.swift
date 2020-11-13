@@ -10,6 +10,7 @@ import Toast
 
 class GuidelinesController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UIScrollViewDelegate {
  
+    @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
     
 //    Setup codables
     
@@ -61,8 +62,11 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
 //    viewDidLoad
     
     override func viewDidLoad() {
-               
         
+        super.viewDidLoad()
+               
+        activitySpinner.backgroundColor = UIColor.systemGray4.withAlphaComponent(0.6)
+
 //        Setup navbar & search
         
         searchController.searchResultsUpdater = self
@@ -96,6 +100,8 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         
         let aboutButton = UIBarButtonItem(image: UIImage(systemName: "info.circle"), style: .plain, target: self, action: #selector(aboutLoad))
         self.navigationItem.rightBarButtonItem = aboutButton
+        
+        activitySpinner.stopAnimating()
         
     }
     
@@ -197,10 +203,20 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
             passURL = unfilteredGuidelines[indexPath.row].url
         }
         tableView.deselectRow(at: indexPath, animated: true)
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            self.performSegue(withIdentifier: "LoadDetailTablet", sender: self)
-        } else {
-            self.performSegue(withIdentifier: "LoadDetail", sender: self)
+        
+        activitySpinner.startAnimating()
+        if(view.isUserInteractionEnabled == true) {
+            view.isUserInteractionEnabled = false
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+        
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                self.performSegue(withIdentifier: "LoadDetailTablet", sender: self)
+            } else {
+                self.performSegue(withIdentifier: "LoadDetail", sender: self)
+            }
+            
         }
     }
     
@@ -209,6 +225,10 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
             destination.passedCode = passCode!
             destination.passedTitle = passTitle!
             destination.passedURL = passURL!
+        }
+        self.activitySpinner.stopAnimating()
+        if(view.isUserInteractionEnabled == false) {
+            view.isUserInteractionEnabled = true
         }
     }
     
