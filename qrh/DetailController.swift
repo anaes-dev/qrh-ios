@@ -63,14 +63,16 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     var tableViewRightHidden : IndexSet = []
 
     
-
+	
     
 //    viewDidLoad
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-               
+        
+        activitySpinner.backgroundColor = UIColor.systemGray4.withAlphaComponent(0.6)
+                    
         
 //      Load cells for table
         
@@ -106,6 +108,8 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 //        Set title from title passed to view
         
         self.navigationItem.title = passedTitle
+        
+        activitySpinner.stopAnimating()
         
     }
 
@@ -159,7 +163,13 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 destination.passedURL = fetchedURL
                 destination.passedTitle = fetchedTitle
                 }
+                self.activitySpinner.stopAnimating()
+                if(view.isUserInteractionEnabled == false) {
+                    view.isUserInteractionEnabled = true
+                }
+                
             }
+            
         }
     }
     
@@ -581,10 +591,18 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 //        Perform segue only if link matches format for link to other guideline, otherwise fall back to default behaviour (for URLS & phone numbers)
         if regex.firstMatch(in: scrubLink, options: [], range: range) != nil {
             activitySpinner.startAnimating()
-            if UIDevice.current.userInterfaceIdiom == .pad {
-                self.performSegue(withIdentifier: "LoadDetailLinkTablet", sender: self)
-            } else {
-                self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
+            if(view.isUserInteractionEnabled == true) {
+                view.isUserInteractionEnabled = false
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+                 
+                if UIDevice.current.userInterfaceIdiom == .pad {
+                    self.performSegue(withIdentifier: "LoadDetailLinkTablet", sender: self)
+                } else {
+                    self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
+                }
+                
             }
             return false
         } else  {

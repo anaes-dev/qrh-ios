@@ -107,12 +107,29 @@
                                     <outlet property="delegate" destination="KES-QJ-TiB" id="f9Y-7A-Eem"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="hfs-JI-Vhv">
+                                <rect key="frame" x="137.66666666666666" y="356" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="TlY-1G-rRH"/>
+                                    <constraint firstAttribute="height" constant="100" id="bO8-Y5-Vhp"/>
+                                    <constraint firstAttribute="width" constant="100" id="sAc-bc-AZg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vON-gp-fVN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d92-fE-s2k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lxr-97-Vo6" firstAttribute="top" secondItem="d92-fE-s2k" secondAttribute="top" id="6CA-GY-qPu"/>
                             <constraint firstItem="d92-fE-s2k" firstAttribute="bottom" secondItem="Lxr-97-Vo6" secondAttribute="bottom" id="Ug1-t3-meE"/>
+                            <constraint firstItem="hfs-JI-Vhv" firstAttribute="centerY" secondItem="P2z-SB-bBi" secondAttribute="centerY" id="hDV-JH-wjw"/>
+                            <constraint firstItem="hfs-JI-Vhv" firstAttribute="centerX" secondItem="P2z-SB-bBi" secondAttribute="centerX" id="jmx-68-K7G"/>
                             <constraint firstItem="d92-fE-s2k" firstAttribute="trailing" secondItem="Lxr-97-Vo6" secondAttribute="trailing" id="kEH-1B-1HE"/>
                             <constraint firstItem="Lxr-97-Vo6" firstAttribute="leading" secondItem="d92-fE-s2k" secondAttribute="leading" id="mhb-vW-FUX"/>
                         </constraints>
@@ -121,6 +138,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="pNN-Bk-afc"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="activitySpinner" destination="hfs-JI-Vhv" id="dMn-7E-TnI"/>
                         <outlet property="noItemsView" destination="GZ4-ff-qyx" id="Awa-9u-Btc"/>
                         <outlet property="tableView" destination="Lxr-97-Vo6" id="XQI-bQ-nS6"/>
                         <segue destination="gGv-fq-olE" kind="show" identifier="LoadDetail" id="7XP-zg-opd"/>
