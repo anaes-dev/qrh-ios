@@ -6,11 +6,9 @@
 //
 
 import UIKit
-import Toast
 
 class GuidelinesController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UIScrollViewDelegate {
  
-    @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
     
 //    Setup codables
     
@@ -36,6 +34,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     var passURL: String?
     
     var alreadyLaunched: Bool = false
+    var alreadyAnimating: Bool = false
     
     
 //    Setup search
@@ -55,17 +54,19 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var noItemsView: UIView!
-    
-   
+    @IBOutlet var disclaimerMessage: UIView!
+    @IBOutlet weak var disclaimerBackground: UIView!
+    @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
 
     
-//    viewDidLoad
+    //    viewDidLoad
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
                
         activitySpinner.backgroundColor = UIColor.systemGray4.withAlphaComponent(0.6)
+        disclaimerBackground.backgroundColor = UIColor.label.withAlphaComponent(0.6)
 
 //        Setup navbar & search
         
@@ -117,26 +118,55 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
                 performSegue(withIdentifier: "LoadDisclaimer", sender: self)
             } else {
                 alreadyLaunched = true
-                var toastStyle = ToastStyle()
-                toastStyle.messageFont = UIFont.systemFont(ofSize: 10)
-                toastStyle.backgroundColor = UIColor.label.withAlphaComponent(0.6)
-                toastStyle.messageColor = UIColor.systemBackground
-                toastStyle.displayShadow = true
-                toastStyle.fadeDuration = 0.4
-                toastStyle.maxWidthPercentage = 0.9
-                toastStyle.shadowOpacity = 0.6
-                toastStyle.shadowColor = UIColor.systemGray
-                let toastMessage = """
-                    Unofficial adaptation of Quick Reference Handbook
-                    Not endorsed by the Association of Anaesthetists
-                    Untested and unregulated; not recommended for clinical use
-                    No guarantees of completeness, accuracy or performance
-                    Should not override your own knowledge and judgement
-                    """
-                self.view.makeToast(toastMessage, duration: 5.0, position: .bottom, style: toastStyle)
+//                var toastStyle = ToastStyle()
+//                toastStyle.messageFont = UIFont.systemFont(ofSize: 10)
+//                toastStyle.backgroundColor = UIColor.label.withAlphaComponent(0.6)
+//                toastStyle.messageColor = UIColor.systemBackground
+//                toastStyle.displayShadow = true
+//                toastStyle.fadeDuration = 0.4
+//                toastStyle.maxWidthPercentage = 0.9
+//                toastStyle.shadowOpacity = 0.6
+//                toastStyle.shadowColor = UIColor.systemGray
+//                let toastMessage = """
+//                    Unofficial adaptation of Quick Reference Handbook
+//                    Not endorsed by the Association of Anaesthetists
+//                    Untested and unregulated; not recommended for clinical use
+//                    No guarantees of completeness, accuracy or performance
+//                    Should not override your own knowledge and judgement
+//                    """
+//                self.view.makeToast(toastMessage, duration: 5.0, position: .bottom, style: toastStyle)
+                
+                disclaimerMessage.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width - 32, height: disclaimerBackground.frame.size.height + 16)
+                disclaimerMessage.center = CGPoint(x: view.bounds.size.width / 2.0, y: (view.bounds.size.height - (disclaimerMessage.frame.size.height / 2.0)) - 64)
+                disclaimerMessage.alpha = 0.0
+                view.addSubview(disclaimerMessage)
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    UIView.animate(withDuration: 0.6, delay: 0, options: .curveLinear, animations: {
+                      // 3
+                        self.disclaimerMessage.alpha = 1.0
+                    }, completion: nil)
+                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    UIView.animate(withDuration: 0.6, delay: 0, options: .curveLinear, animations: {
+                      // 3
+                        self.disclaimerMessage.alpha = 0.0
+                    }, completion: { complete in
+                        self.disclaimerMessage.removeFromSuperview()
+                    })
+                    
+                }
+              
             }
+            
         }
         
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        disclaimerMessage.removeFromSuperview()
     }
     
     
@@ -167,7 +197,19 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        self.view.hideAllToasts()
+        if disclaimerMessage != nil {
+            if self.view.subviews.contains(disclaimerMessage) {
+                if !alreadyAnimating {
+                    alreadyAnimating = true
+                    UIView.animate(withDuration: 0.6, delay: 0, options: .curveLinear, animations: {
+                      // 3
+                        self.disclaimerMessage.alpha = 0.0
+                    }, completion: { complete in
+                        self.disclaimerMessage.removeFromSuperview()
+                    })
+                }
+            }
+        }
     }
     
     
