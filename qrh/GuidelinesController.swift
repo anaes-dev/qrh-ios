@@ -9,7 +9,6 @@ import UIKit
 
 class GuidelinesController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UIScrollViewDelegate {
  
-    
 //    Setup codables
     
     struct Guideline: Codable {
@@ -22,7 +21,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     struct GuidelineList: Codable {
         var guidelines: [Guideline]
     }
-        
+            
     var unfilteredGuidelines = [Guideline]()
     var filteredGuidelines = [Guideline]()
     
@@ -35,8 +34,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     
     var alreadyLaunched: Bool = false
     var alreadyAnimating: Bool = false
-    
-    
+   
 //    Setup search
     
     let searchController = UISearchController(searchResultsController: nil)
