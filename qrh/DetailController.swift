@@ -7,16 +7,17 @@
 
 import UIKit
 
+
 class DetailController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextViewDelegate {
     
-
 //    Tableview outlets
     
     @IBOutlet weak var tableViewMain: UITableView!
     @IBOutlet weak var tableViewRight: UITableView!
-    
     @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
-
+    @IBOutlet weak var breadcrumbStack: UIStackView!
+    @IBOutlet var breadcrumb: UIView!
+    
     //    Codable structures
     
     struct Card: Codable {
@@ -61,9 +62,9 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     var expandedIndexSet : IndexSet = []
     var tableViewMainHidden : IndexSet = []
     var tableViewRightHidden : IndexSet = []
-
     
-	
+    var breadcrumbPopulated: Bool = Bool()
+    
     
 //    viewDidLoad
     
@@ -72,7 +73,6 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         super.viewDidLoad()
         
         activitySpinner.backgroundColor = UIColor.systemGray4.withAlphaComponent(0.6)
-                    
         
 //      Load cells for table
         
@@ -103,15 +103,57 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 //        Set button for loading PDF
         
         let pdfButton = UIBarButtonItem(image: UIImage(systemName: "arrow.down.doc"), style: .plain, target: self, action: #selector(loadPDF))
-        self.navigationItem.rightBarButtonItem = pdfButton
+        navigationItem.rightBarButtonItem = pdfButton
         
 //        Set title from title passed to view
         
-        self.navigationItem.title = passedTitle
+        navigationItem.title = passedTitle
+        
+        print(breadcrumbStack.frame.height)
+        
+        populateBreadCrumb()
+        tableViewMain.estimatedSectionHeaderHeight = breadcrumbStack.frame.height
+        tableViewMain.sectionHeaderHeight = breadcrumbStack.frame.height
+        print(breadcrumbStack.frame.height)
+
+    
+        tableViewMain.reloadData()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            tableViewRight.reloadData()
+        }
         
         activitySpinner.stopAnimating()
         
     }
+    
+    func populateBreadCrumb() {
+        if !breadcrumbPopulated {
+            if var vcarray: Array<UIViewController> = self.navigationController?.viewControllers {
+                vcarray.removeFirst()
+                for vc in vcarray {
+                    let bcButton: UIButton = UIButton()
+                    let bcTitle = vc.navigationItem.title
+                    bcButton.frame = CGRect(x: 0, y: 0 , width: self.view.bounds.width - 16, height: 20)
+                    bcButton.setTitle(bcTitle, for: .normal)
+                    bcButton.setTitleColor(UIColor.systemTeal, for: .normal)
+                    bcButton.titleLabel?.font = UIFont.systemFont(ofSize: 10)
+                    bcButton.titleEdgeInsets.left = 16
+                    bcButton.titleEdgeInsets.right = 0
+                    breadcrumbStack.addArrangedSubview(bcButton)
+                }
+                breadcrumbStack.layoutIfNeeded()
+            }
+            breadcrumbPopulated = true
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+            if tableView == tableViewMain {
+                return breadcrumb
+            } else {
+                return nil
+            }
+        }
 
     
 //    Tableview setup
@@ -566,14 +608,8 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         if let jsonCards = try? decoder.decode(Cards.self, from: json) {
             cardContent = jsonCards.DetailContent
             
-
             for card in cardContent {
                 bodyParsed.append(parseHtmlAttributes(htmlText: card.body))
-            }
-            
-            tableViewMain.reloadData()
-            if UIDevice.current.userInterfaceIdiom == .pad {
-                tableViewRight.reloadData()
             }
         }
     }
@@ -590,19 +626,27 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         
 //        Perform segue only if link matches format for link to other guideline, otherwise fall back to default behaviour (for URLS & phone numbers)
         if regex.firstMatch(in: scrubLink, options: [], range: range) != nil {
-            activitySpinner.startAnimating()
-            if(view.isUserInteractionEnabled == true) {
-                view.isUserInteractionEnabled = false
-            }
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-                 
-                if UIDevice.current.userInterfaceIdiom == .pad {
-                    self.performSegue(withIdentifier: "LoadDetailLinkTablet", sender: self)
+            if let vcCount = self.navigationController?.viewControllers.count {
+                if(vcCount < 11) {
+                    activitySpinner.startAnimating()
+                    if(view.isUserInteractionEnabled == true) {
+                        view.isUserInteractionEnabled = false
+                    }
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+                         
+                        if UIDevice.current.userInterfaceIdiom == .pad {
+                            self.performSegue(withIdentifier: "LoadDetailLinkTablet", sender: self)
+                        } else {
+                            self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
+                        }
+                        
+                    }
                 } else {
-                    self.performSegue(withIdentifier: "LoadDetailLink", sender: self)
+                    let alert = UIAlertController(title: "Too many guidelines open", message: "Please do not try to open more than 10 guidelines", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
                 }
-                
             }
             return false
         } else  {
