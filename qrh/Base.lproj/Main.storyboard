@@ -1001,56 +1001,39 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                     <connections>
                         <outlet property="activitySpinner" destination="r02-Ww-ttT" id="C3R-hf-l3x"/>
                         <outlet property="breadcrumb" destination="icZ-Qa-7s7" id="AVD-bl-Tb4"/>
-                        <outlet property="breadcrumbStack" destination="uEt-Pc-eTB" id="fzL-QB-LYb"/>
+                        <outlet property="breadcrumbStack" destination="hdj-XW-KSe" id="DLL-uA-QfK"/>
                         <outlet property="tableViewMain" destination="73I-s3-MOL" id="c0J-QH-eXz"/>
                         <segue destination="XPg-Xo-eAi" kind="presentation" identifier="LoadPDF" id="cTs-Rd-bk2"/>
                         <segue destination="7Gq-kw-dKV" kind="show" identifier="LoadDetailLink" id="eCo-aK-JR7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uK-eT-EcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="icZ-Qa-7s7">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icZ-Qa-7s7">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEr-iJ-S9j">
+                        <stackView opaque="NO" contentMode="left" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="hdj-XW-KSe">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdj-XW-KSe">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="17.666666666666668"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayz-nw-bKu">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="17.666666666666668"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <state key="normal" title="Home">
-                                                <color key="titleColor" systemColor="systemTealColor"/>
-                                                <imageReference key="image" image="house" catalog="system" symbolScale="small"/>
-                                            </state>
-                                        </button>
-                                    </subviews>
-                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayz-nw-bKu">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Home">
+                                        <color key="titleColor" systemColor="systemTealColor"/>
+                                        <imageReference key="image" image="house" catalog="system" symbolScale="small"/>
+                                    </state>
+                                </button>
                             </subviews>
-                            <constraints>
-                                <constraint firstAttribute="trailing" secondItem="hdj-XW-KSe" secondAttribute="trailing" id="9ln-eG-3JV"/>
-                                <constraint firstItem="hdj-XW-KSe" firstAttribute="width" secondItem="eEr-iJ-S9j" secondAttribute="width" id="EnP-BD-yBK"/>
-                                <constraint firstAttribute="bottom" secondItem="hdj-XW-KSe" secondAttribute="bottom" id="MUg-c1-pfG"/>
-                                <constraint firstItem="hdj-XW-KSe" firstAttribute="leading" secondItem="eEr-iJ-S9j" secondAttribute="leading" id="Ru2-PH-rHe"/>
-                                <constraint firstItem="hdj-XW-KSe" firstAttribute="top" secondItem="eEr-iJ-S9j" secondAttribute="top" id="W57-W6-Lso"/>
-                            </constraints>
-                        </scrollView>
-                        <stackView opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="uEt-Pc-eTB">
-                            <rect key="frame" x="16" y="0.0" width="208" height="17.666666666666668"/>
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
                     <constraints>
-                        <constraint firstItem="uEt-Pc-eTB" firstAttribute="leading" secondItem="icZ-Qa-7s7" secondAttribute="leading" constant="16" id="0uf-d0-4Vv"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" id="6el-0g-O45"/>
-                        <constraint firstItem="eEr-iJ-S9j" firstAttribute="top" secondItem="icZ-Qa-7s7" secondAttribute="top" id="aOT-MO-3DC"/>
-                        <constraint firstItem="uEt-Pc-eTB" firstAttribute="top" secondItem="icZ-Qa-7s7" secondAttribute="top" id="c4R-nQ-Mp2"/>
-                        <constraint firstItem="eEr-iJ-S9j" firstAttribute="leading" secondItem="icZ-Qa-7s7" secondAttribute="leading" id="c7N-9V-uaS"/>
-                        <constraint firstAttribute="bottom" secondItem="eEr-iJ-S9j" secondAttribute="bottom" id="ibt-Rm-LUw"/>
-                        <constraint firstAttribute="trailing" secondItem="eEr-iJ-S9j" secondAttribute="trailing" id="jLT-xY-Hjf"/>
-                        <constraint firstAttribute="trailing" secondItem="uEt-Pc-eTB" secondAttribute="trailing" constant="16" id="rXN-nc-rda"/>
+                        <constraint firstAttribute="bottom" secondItem="hdj-XW-KSe" secondAttribute="bottom" id="Idk-FU-JNX"/>
+                        <constraint firstAttribute="trailing" secondItem="hdj-XW-KSe" secondAttribute="trailing" id="Xh6-wK-RX4"/>
+                        <constraint firstItem="hdj-XW-KSe" firstAttribute="top" secondItem="icZ-Qa-7s7" secondAttribute="top" id="fgF-8q-dbI"/>
+                        <constraint firstItem="hdj-XW-KSe" firstAttribute="leading" secondItem="icZ-Qa-7s7" secondAttribute="leading" id="rlK-Ag-GmP"/>
                     </constraints>
                 </view>
             </objects>
@@ -1209,11 +1192,17 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
