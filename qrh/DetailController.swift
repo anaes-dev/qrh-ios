@@ -108,10 +108,20 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 //        Set title from title passed to view
         
         navigationItem.title = passedTitle
+        navigationItem.backButtonTitle = passedCode
         
-        print(breadcrumbStack.frame.height)
+
         
         populateBreadCrumb()
+        
+//        let bcConstraint1 = NSLayoutConstraint(item: breadcrumb!, attribute: .leading, relatedBy: .equal, toItem: view.frame, attribute: .leading, multiplier: 1, constant: 0)
+//        let bcConstraint2 = NSLayoutConstraint(item: breadcrumb!, attribute: .trailing, relatedBy: .equal, toItem: view.frame, attribute: .trailing, multiplier: 1, constant: 0)
+        
+//        NSLayoutConstraint.activate([bcConstraint1, bcConstraint2])
+        
+        breadcrumb.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width, height: breadcrumbStack.frame.size.height)
+
+        
         tableViewMain.estimatedSectionHeaderHeight = breadcrumbStack.frame.height
         tableViewMain.sectionHeaderHeight = breadcrumbStack.frame.height
         print(breadcrumbStack.frame.height)
