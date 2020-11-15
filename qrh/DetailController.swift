@@ -16,7 +16,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     @IBOutlet weak var tableViewRight: UITableView!
     @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
     @IBOutlet weak var breadcrumbStack: UIStackView!
-    @IBOutlet var breadcrumb: UIView!
+    @IBOutlet var breadcrumb: UIScrollView!
     
     //    Codable structures
     
@@ -119,11 +119,11 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         
 //        NSLayoutConstraint.activate([bcConstraint1, bcConstraint2])
         
-        breadcrumb.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width, height: breadcrumbStack.frame.size.height)
+        breadcrumb.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 24)
 
-        
-        tableViewMain.estimatedSectionHeaderHeight = breadcrumbStack.frame.height
-        tableViewMain.sectionHeaderHeight = breadcrumbStack.frame.height
+//
+//        tableViewMain.estimatedSectionHeaderHeight = breadcrumbStack.frame.height
+//        tableViewMain.sectionHeaderHeight = breadcrumbStack.frame.height
         print(breadcrumbStack.frame.height)
 
     
@@ -140,7 +140,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         if !breadcrumbPopulated {
             if var vcarray: Array<UIViewController> = self.navigationController?.viewControllers {
                 vcarray.removeFirst()
-                for vc in vcarray {
+                for (index, vc) in vcarray.enumerated() {
                     let bcButton: UIButton = UIButton()
                     let bcTitle = vc.navigationItem.title
                     bcButton.frame = CGRect(x: 0, y: 0 , width: self.view.bounds.width - 16, height: 20)
@@ -149,23 +149,23 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     bcButton.titleLabel?.font = UIFont.systemFont(ofSize: 10)
                     bcButton.titleEdgeInsets.left = 16
                     bcButton.titleEdgeInsets.right = 0
+                    bcButton.tag = index + 1
+                    bcButton.addTarget(self, action: #selector(breadcrumbPop), for: .touchUpInside)
                     breadcrumbStack.addArrangedSubview(bcButton)
                 }
                 breadcrumbStack.layoutIfNeeded()
+                self.tableViewMain.tableHeaderView = breadcrumb
             }
             breadcrumbPopulated = true
-        }
+            }
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-            if tableView == tableViewMain {
-                return breadcrumb
-            } else {
-                return nil
-            }
+    @objc func breadcrumbPop(sender: UIButton) {
+        if let vcPop = self.navigationController?.viewControllers[sender.tag] {
+            self.navigationController?.popToViewController(vcPop, animated: true)
         }
-
-    
+    }
+        
 //    Tableview setup
 
     func numberOfSections(in tableView: UITableView) -> Int {
