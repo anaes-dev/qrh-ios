@@ -1000,7 +1000,7 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                     <navigationItem key="navigationItem" id="iBX-i5-nrS"/>
                     <connections>
                         <outlet property="activitySpinner" destination="r02-Ww-ttT" id="C3R-hf-l3x"/>
-                        <outlet property="breadcrumb" destination="icZ-Qa-7s7" id="AVD-bl-Tb4"/>
+                        <outlet property="breadcrumb" destination="B5I-En-OHD" id="UOg-LY-IO6"/>
                         <outlet property="breadcrumbStack" destination="hdj-XW-KSe" id="DLL-uA-QfK"/>
                         <outlet property="tableViewMain" destination="73I-s3-MOL" id="c0J-QH-eXz"/>
                         <segue destination="XPg-Xo-eAi" kind="presentation" identifier="LoadPDF" id="cTs-Rd-bk2"/>
@@ -1008,14 +1008,14 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uK-eT-EcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icZ-Qa-7s7">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5I-En-OHD">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="24"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="left" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="hdj-XW-KSe">
-                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <stackView opaque="NO" contentMode="left" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hdj-XW-KSe">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayz-nw-bKu">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="Home">
@@ -1024,18 +1024,19 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                                     </state>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="6el-0g-O45"/>
-                        <constraint firstAttribute="bottom" secondItem="hdj-XW-KSe" secondAttribute="bottom" id="Idk-FU-JNX"/>
-                        <constraint firstAttribute="trailing" secondItem="hdj-XW-KSe" secondAttribute="trailing" id="Xh6-wK-RX4"/>
-                        <constraint firstItem="hdj-XW-KSe" firstAttribute="top" secondItem="icZ-Qa-7s7" secondAttribute="top" id="fgF-8q-dbI"/>
-                        <constraint firstItem="hdj-XW-KSe" firstAttribute="leading" secondItem="icZ-Qa-7s7" secondAttribute="leading" id="rlK-Ag-GmP"/>
+                        <constraint firstItem="hdj-XW-KSe" firstAttribute="top" secondItem="B5I-En-OHD" secondAttribute="top" id="9SL-3Y-5nu"/>
+                        <constraint firstItem="hdj-XW-KSe" firstAttribute="height" secondItem="B5I-En-OHD" secondAttribute="height" id="ECe-JC-I73"/>
+                        <constraint firstAttribute="bottom" secondItem="hdj-XW-KSe" secondAttribute="bottom" id="QoY-Lz-zWO"/>
+                        <constraint firstItem="hdj-XW-KSe" firstAttribute="centerY" secondItem="B5I-En-OHD" secondAttribute="centerY" id="RPX-yg-gML"/>
+                        <constraint firstAttribute="trailing" secondItem="hdj-XW-KSe" secondAttribute="trailing" id="ReN-Wj-Ui7"/>
+                        <constraint firstItem="hdj-XW-KSe" firstAttribute="leading" secondItem="B5I-En-OHD" secondAttribute="leading" id="pOS-Rg-KfK"/>
                     </constraints>
-                </view>
+                </scrollView>
             </objects>
             <point key="canvasLocation" x="2903" y="-727"/>
         </scene>
@@ -1192,17 +1193,11 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
