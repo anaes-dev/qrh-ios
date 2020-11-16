@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1008,22 +1007,11 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uK-eT-EcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5I-En-OHD">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5I-En-OHD">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="24"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="left" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hdj-XW-KSe">
+                        <stackView opaque="NO" contentMode="left" ambiguous="YES" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="hdj-XW-KSe">
                             <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayz-nw-bKu">
-                                    <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" title="Home">
-                                        <color key="titleColor" systemColor="systemTealColor"/>
-                                        <imageReference key="image" image="house" catalog="system" symbolScale="small"/>
-                                    </state>
-                                </button>
-                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </stackView>
                     </subviews>
@@ -1033,9 +1021,10 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                         <constraint firstItem="hdj-XW-KSe" firstAttribute="height" secondItem="B5I-En-OHD" secondAttribute="height" id="ECe-JC-I73"/>
                         <constraint firstAttribute="bottom" secondItem="hdj-XW-KSe" secondAttribute="bottom" id="QoY-Lz-zWO"/>
                         <constraint firstItem="hdj-XW-KSe" firstAttribute="centerY" secondItem="B5I-En-OHD" secondAttribute="centerY" id="RPX-yg-gML"/>
-                        <constraint firstAttribute="trailing" secondItem="hdj-XW-KSe" secondAttribute="trailing" id="ReN-Wj-Ui7"/>
+                        <constraint firstAttribute="trailing" secondItem="hdj-XW-KSe" secondAttribute="trailing" constant="16" id="ReN-Wj-Ui7"/>
                         <constraint firstItem="hdj-XW-KSe" firstAttribute="leading" secondItem="B5I-En-OHD" secondAttribute="leading" id="pOS-Rg-KfK"/>
                     </constraints>
+                    <inset key="scrollIndicatorInsets" minX="16" minY="0.0" maxX="16" maxY="-1"/>
                 </scrollView>
             </objects>
             <point key="canvasLocation" x="2903" y="-727"/>
@@ -1169,7 +1158,6 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="by_nc_sa.png" width="96.720001220703125" height="33.840000152587891"/>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
-        <image name="house" catalog="system" width="128" height="106"/>
         <image name="logo.png" width="192" height="192"/>
         <image name="xmark.square" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">

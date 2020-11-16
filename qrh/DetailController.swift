@@ -108,23 +108,19 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 //        Set title from title passed to view
         
         navigationItem.title = passedTitle
-        navigationItem.backButtonTitle = passedCode
+        navigationItem.backButtonTitle = passedTitle
         
+        accessibilityLabel = passedCode
 
-        
-        populateBreadCrumb()
-        
+        if ((navigationController?.viewControllers.count)! > 2) {
+            breadcrumb.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 24)
+            populateBreadCrumb()
+        }
 //        let bcConstraint1 = NSLayoutConstraint(item: breadcrumb!, attribute: .leading, relatedBy: .equal, toItem: view.frame, attribute: .leading, multiplier: 1, constant: 0)
 //        let bcConstraint2 = NSLayoutConstraint(item: breadcrumb!, attribute: .trailing, relatedBy: .equal, toItem: view.frame, attribute: .trailing, multiplier: 1, constant: 0)
         
 //        NSLayoutConstraint.activate([bcConstraint1, bcConstraint2])
         
-        breadcrumb.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 24)
-
-//
-//        tableViewMain.estimatedSectionHeaderHeight = breadcrumbStack.frame.height
-//        tableViewMain.sectionHeaderHeight = breadcrumbStack.frame.height
-        print(breadcrumbStack.frame.height)
 
     
         tableViewMain.reloadData()
@@ -132,29 +128,56 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             tableViewRight.reloadData()
         }
         
+              
         activitySpinner.stopAnimating()
-        
+    
     }
     
     func populateBreadCrumb() {
         if !breadcrumbPopulated {
             if var vcarray: Array<UIViewController> = self.navigationController?.viewControllers {
+                
+                let homeButton: UIButton = UIButton()
+                homeButton.setTitle("Home", for: .normal)
+                homeButton.setTitleColor(UIColor.systemTeal, for: .normal)
+                homeButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+                homeButton.setImage(UIImage(systemName: "house"), for: .normal)
+                homeButton.imageView?.contentMode = .scaleAspectFit
+                homeButton.addTarget(self, action: #selector(homePop), for: .touchUpInside)
+                homeButton.contentVerticalAlignment = .center
+                homeButton.contentEdgeInsets.left = 16
+                homeButton.titleEdgeInsets.left = 4
+                homeButton.titleEdgeInsets.right = -4
+                homeButton.heightAnchor.constraint(equalToConstant: 18).isActive = true
+                homeButton.contentVerticalAlignment = .center
+                breadcrumbStack.addArrangedSubview(homeButton)
+                
                 vcarray.removeFirst()
                 for (index, vc) in vcarray.enumerated() {
                     let bcButton: UIButton = UIButton()
-                    let bcTitle = vc.navigationItem.title
-                    bcButton.frame = CGRect(x: 0, y: 0 , width: self.view.bounds.width - 16, height: 20)
+                    let bcTitle = vc.navigationItem.title!
                     bcButton.setTitle(bcTitle, for: .normal)
                     bcButton.setTitleColor(UIColor.systemTeal, for: .normal)
-                    bcButton.titleLabel?.font = UIFont.systemFont(ofSize: 10)
-                    bcButton.titleEdgeInsets.left = 16
-                    bcButton.titleEdgeInsets.right = 0
+                    bcButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+                    bcButton.setImage(UIImage(systemName: "chevron.forward"), for: .normal)
+                    bcButton.imageView?.contentMode = .scaleAspectFit
                     bcButton.tag = index + 1
                     bcButton.addTarget(self, action: #selector(breadcrumbPop), for: .touchUpInside)
+                    bcButton.contentEdgeInsets.left = 8
+                    bcButton.titleEdgeInsets.left = 4
+                    bcButton.titleEdgeInsets.right = -4
+                    bcButton.heightAnchor.constraint(equalToConstant: 18).isActive = true
+                    bcButton.contentVerticalAlignment = .center
                     breadcrumbStack.addArrangedSubview(bcButton)
                 }
                 breadcrumbStack.layoutIfNeeded()
+                breadcrumb.layoutIfNeeded()
                 self.tableViewMain.tableHeaderView = breadcrumb
+                
+                let rightOffset = CGPoint(x: breadcrumb.contentSize.width - breadcrumb.bounds.size.width + breadcrumb.contentInset.right, y: 0);
+
+                self.breadcrumb.setContentOffset(rightOffset, animated: false)
+                
             }
             breadcrumbPopulated = true
             }
@@ -164,6 +187,10 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         if let vcPop = self.navigationController?.viewControllers[sender.tag] {
             self.navigationController?.popToViewController(vcPop, animated: true)
         }
+    }
+    
+    @objc func homePop(sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
         
 //    Tableview setup
