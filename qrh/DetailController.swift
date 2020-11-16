@@ -15,8 +15,9 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     @IBOutlet weak var tableViewMain: UITableView!
     @IBOutlet weak var tableViewRight: UITableView!
     @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
-    @IBOutlet weak var breadcrumbStack: UIStackView!
-    @IBOutlet var breadcrumb: UIScrollView!
+    @IBOutlet var breadcrumbStack: UIStackView!
+    @IBOutlet var breadcrumbScroll: UIScrollView!
+    @IBOutlet var breadcrumb: UIView!
     
     //    Codable structures
     
@@ -113,7 +114,6 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         accessibilityLabel = passedCode
 
         if ((navigationController?.viewControllers.count)! > 2) {
-            breadcrumb.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 24)
             populateBreadCrumb()
         }
 //        let bcConstraint1 = NSLayoutConstraint(item: breadcrumb!, attribute: .leading, relatedBy: .equal, toItem: view.frame, attribute: .leading, multiplier: 1, constant: 0)
@@ -145,10 +145,10 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 homeButton.imageView?.contentMode = .scaleAspectFit
                 homeButton.addTarget(self, action: #selector(homePop), for: .touchUpInside)
                 homeButton.contentVerticalAlignment = .center
-                homeButton.contentEdgeInsets.left = 16
+                homeButton.contentEdgeInsets.right = 8
                 homeButton.titleEdgeInsets.left = 4
                 homeButton.titleEdgeInsets.right = -4
-                homeButton.heightAnchor.constraint(equalToConstant: 18).isActive = true
+                homeButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
                 homeButton.contentVerticalAlignment = .center
                 breadcrumbStack.addArrangedSubview(homeButton)
                 
@@ -163,24 +163,42 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     bcButton.imageView?.contentMode = .scaleAspectFit
                     bcButton.tag = index + 1
                     bcButton.addTarget(self, action: #selector(breadcrumbPop), for: .touchUpInside)
-                    bcButton.contentEdgeInsets.left = 8
+                    bcButton.contentEdgeInsets.right = 8
                     bcButton.titleEdgeInsets.left = 4
                     bcButton.titleEdgeInsets.right = -4
-                    bcButton.heightAnchor.constraint(equalToConstant: 18).isActive = true
+                    bcButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
                     bcButton.contentVerticalAlignment = .center
                     breadcrumbStack.addArrangedSubview(bcButton)
                 }
+
+                breadcrumb.frame.size.height = 32
                 breadcrumbStack.layoutIfNeeded()
-                breadcrumb.layoutIfNeeded()
+                breadcrumbScroll.layoutIfNeeded()
                 self.tableViewMain.tableHeaderView = breadcrumb
                 
-                let rightOffset = CGPoint(x: breadcrumb.contentSize.width - breadcrumb.bounds.size.width + breadcrumb.contentInset.right, y: 0);
+                breadcrumb.translatesAutoresizingMaskIntoConstraints = false
+                breadcrumb.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+                breadcrumb.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+                breadcrumb.topAnchor.constraint(equalTo: tableViewMain.topAnchor).isActive = true
+                breadcrumb.heightAnchor.constraint(equalToConstant: 32).isActive = true
 
-                self.breadcrumb.setContentOffset(rightOffset, animated: false)
-                
             }
             breadcrumbPopulated = true
             }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if(breadcrumbPopulated) {
+            breadcrumbStack.layoutIfNeeded()
+            breadcrumbScroll.layoutIfNeeded()
+            breadcrumb.layoutSubviews()
+                        
+            if (breadcrumbScroll.contentSize.width + 32) > breadcrumb.frame.width {
+                let rightOffset = CGPoint(x: (breadcrumbScroll.contentSize.width) - view.safeAreaLayoutGuide.layoutFrame.width, y: 0);
+                breadcrumbScroll.setContentOffset(rightOffset, animated: false)
+            }
+        }
     }
     
     @objc func breadcrumbPop(sender: UIButton) {
