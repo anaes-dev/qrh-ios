@@ -278,7 +278,7 @@ Should not override your own knowledge and judgement</string>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="github.com/mttrnd/qrh_ios" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a0f-wT-ee0" userLabel="Github link">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="github.com/anaes-dev/qrh-ios" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a0f-wT-ee0" userLabel="Github link">
                                                 <rect key="frame" x="16" y="100" width="343" height="38"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" systemColor="labelColor"/>
@@ -472,11 +472,11 @@ For more information please see: https://www.gov.uk/government/publications/medi
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLF-aA-xiS">
                                                 <rect key="frame" x="64" y="1701.6666666666667" width="295" height="604.00000000000023"/>
-                                                <string key="text">This application reproduces the August 2019 version of the QRH, adapted to fit the mobile application format. Content has largely been transcribed verbatim, except for minor formatting, punctuation and structure tweaks that do not meaningfully alter the guidelines, and the introduction of TALLman Lettering to improve the readability of certain words. The developer assumes no responsibility or liability for any errors or omissions in the content. The information is provided on an "as is" basis with no guarantees of completeness, accuracy, usefulness or timeliness. Drug indications and doses may be incorrect, and do not take into account individual circumstances such as comorbidities, interactions, renal and hepatic function. Likewise, the application is provided on an "as is" basis with no guarantees of usefulness, performance or reliability. The developer, original QRH authors, or anyone else connected in any way with the QRH or application, cannot be held responsible for your use of the information contained in or linked from this application. Links to external websites and telephone numbers are provided for convenience and informational purposes only; they do not constitute an endorsement and the developer is not responsible for any third-party content accessed through them.
+                                                <mutableString key="text">This application reproduces the August 2019 version of the QRH, adapted to fit the mobile application format. Content has largely been transcribed verbatim, except for minor formatting, punctuation and structure tweaks that do not meaningfully alter the guidelines, and the introduction of TALLman Lettering to improve the readability of certain words. The developer assumes no responsibility or liability for any errors or omissions in the content. The information is provided on an "as is" basis with no guarantees of completeness, accuracy, usefulness or timeliness. Drug indications and doses may be incorrect, and do not take into account individual circumstances such as comorbidities, interactions, renal and hepatic function. Likewise, the application is provided on an "as is" basis with no guarantees of usefulness, performance or reliability. The developer, original QRH authors, or anyone else connected in any way with the QRH or application, cannot be held responsible for your use of the information contained in or linked from this application. Links to external websites and telephone numbers are provided for convenience and informational purposes only; they do not constitute an endorsement and the developer is not responsible for any third-party content accessed through them.
 
-The QRH is updated from time to time. A version number is displayed next to each guideline in the list view, and in the header and footer when opened; these correspond with the Association of Anaesthetists guideline versioning. You must check that the guidelines you are using are up to date. The developer will endeavour to keep the application updated with any new QRH revision, but there will be a delay between release from the Association of Anaesthetists and release of an application update. If any guidelines contained within the application become superseded, please revert to using the latest version from the Association of Anaesthetists. Alternatively, the source code could be obtained from github.com/mttrnd/qrh_ios and updated by the end-user.
+The QRH is updated from time to time. A version number is displayed next to each guideline in the list view, and in the header and footer when opened; these correspond with the Association of Anaesthetists guideline versioning. You must check that the guidelines you are using are up to date. The developer will endeavour to keep the application updated with any new QRH revision, but there will be a delay between release from the Association of Anaesthetists and release of an application update. If any guidelines contained within the application become superseded, please revert to using the latest version from the Association of Anaesthetists. Alternatively, the source code could be obtained from github.com/anaes-dev/qrh-ios and updated by the end-user.
 
-This application does not intentionally collect, store or transmit any personal data. However analytical and performance data may be collected by the Apple iOS operating system.</string>
+This application does not intentionally collect, store or transmit any personal data. However analytical and performance data may be collected by the Apple iOS operating system.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -735,7 +735,7 @@ This application does not intentionally collect, store or transmit any personal 
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="github.com/mttrnd/qrh_ios" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DpY-GV-96m" userLabel="Github link">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="github.com/anaes-dev/qrh-ios" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DpY-GV-96m" userLabel="Github link">
                                                 <rect key="frame" x="16" y="100" width="343" height="38"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" systemColor="labelColor"/>
@@ -999,6 +999,8 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                     <navigationItem key="navigationItem" id="iBX-i5-nrS"/>
                     <connections>
                         <outlet property="activitySpinner" destination="r02-Ww-ttT" id="C3R-hf-l3x"/>
+                        <outlet property="bcGradientLeft" destination="fhn-Xj-qOm" id="xkb-L5-Hfu"/>
+                        <outlet property="bcGradientRight" destination="n3m-XQ-GtE" id="Muz-0C-bff"/>
                         <outlet property="breadcrumb" destination="nUE-6E-v9z" id="8c6-33-hcM"/>
                         <outlet property="breadcrumbScroll" destination="B5I-En-OHD" id="yRq-i8-QjZ"/>
                         <outlet property="breadcrumbStack" destination="hdj-XW-KSe" id="DLL-uA-QfK"/>
@@ -1008,15 +1010,18 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uK-eT-EcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUE-6E-v9z">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUE-6E-v9z" userLabel="breadcrumb">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="32"/>
                     <subviews>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" indicatorStyle="white" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5I-En-OHD">
+                        <scrollView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" indicatorStyle="white" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5I-En-OHD" userLabel="breadcrumbScroll">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="32"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="left" ambiguous="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hdj-XW-KSe">
-                                    <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
+                                <stackView verifyAmbiguity="off" opaque="NO" contentMode="left" ambiguous="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hdj-XW-KSe" userLabel="breadcrumbStack">
+                                    <rect key="frame" x="16" y="0.0" width="70" height="32"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="w2i-UJ-mzS"/>
+                                    </constraints>
                                 </stackView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1030,19 +1035,18 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                             </constraints>
                             <inset key="scrollIndicatorInsets" minX="16" minY="0.0" maxX="16" maxY="-1"/>
                         </scrollView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3m-XQ-GtE">
-                            <rect key="frame" x="224" y="0.0" width="16" height="32"/>
-                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3m-XQ-GtE" userLabel="gradientRight">
+                            <rect key="frame" x="216" y="0.0" width="24" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="16" id="9pU-NB-PFn"/>
-                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="TrC-mL-LE4"/>
+                                <constraint firstAttribute="width" constant="24" id="9pU-NB-PFn"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhn-Xj-qOm">
-                            <rect key="frame" x="0.0" y="0.0" width="16" height="32"/>
-                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhn-Xj-qOm" userLabel="gradientLeft">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="16" id="CsO-sg-4gd"/>
+                                <constraint firstAttribute="width" constant="24" id="CsO-sg-4gd"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -1166,11 +1170,14 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                             <constraint firstItem="Egt-uS-Yiu" firstAttribute="top" secondItem="soV-aX-dYB" secondAttribute="bottom" id="vF1-VA-v2A"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cJR-iw-AON">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="7ut-SL-pNa"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="cJR-iw-AON"/>
                     <connections>
                         <outlet property="activitySpinner" destination="xY3-cm-iry" id="eeB-hQ-z57"/>
+                        <outlet property="bcGradientLeft" destination="h16-yr-LdO" id="e2w-9G-RdY"/>
+                        <outlet property="bcGradientRight" destination="26D-Z0-QkY" id="uXT-I1-gk4"/>
+                        <outlet property="breadcrumb" destination="owc-Mm-Q9j" id="GRR-KV-hKq"/>
+                        <outlet property="breadcrumbScroll" destination="ylh-G3-Nvv" id="Riv-Bi-l4e"/>
+                        <outlet property="breadcrumbStack" destination="RS1-i0-cy0" id="Lkp-UZ-cDC"/>
                         <outlet property="tableViewMain" destination="V0I-VX-9Vm" id="ijI-da-c5i"/>
                         <outlet property="tableViewRight" destination="soV-aX-dYB" id="xNY-tK-kLA"/>
                         <segue destination="LvK-2P-hRK" kind="show" identifier="LoadDetailLinkTablet" id="Ard-1l-MgR"/>
@@ -1178,13 +1185,68 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Cr-E4-xlk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="owc-Mm-Q9j" userLabel="breadcrumb">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="32"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <scrollView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" indicatorStyle="white" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylh-G3-Nvv" userLabel="breadcrumbScroll">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="32"/>
+                            <subviews>
+                                <stackView verifyAmbiguity="off" opaque="NO" contentMode="left" ambiguous="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RS1-i0-cy0" userLabel="breadcrumbStack">
+                                    <rect key="frame" x="16" y="0.0" width="70" height="32"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="UI1-Ye-AtH"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="RS1-i0-cy0" firstAttribute="leading" secondItem="ylh-G3-Nvv" secondAttribute="leading" constant="16" id="CdV-m9-gVh"/>
+                                <constraint firstItem="RS1-i0-cy0" firstAttribute="height" secondItem="ylh-G3-Nvv" secondAttribute="height" id="SJY-ax-O4c"/>
+                                <constraint firstItem="RS1-i0-cy0" firstAttribute="top" secondItem="ylh-G3-Nvv" secondAttribute="top" id="Tuc-ax-PGU"/>
+                                <constraint firstAttribute="bottom" secondItem="RS1-i0-cy0" secondAttribute="bottom" id="XJa-RP-boC"/>
+                                <constraint firstAttribute="trailing" secondItem="RS1-i0-cy0" secondAttribute="trailing" constant="16" id="rGd-PG-R69"/>
+                                <constraint firstItem="RS1-i0-cy0" firstAttribute="centerY" secondItem="ylh-G3-Nvv" secondAttribute="centerY" id="vff-B7-P8Q"/>
+                            </constraints>
+                            <inset key="scrollIndicatorInsets" minX="16" minY="0.0" maxX="16" maxY="-1"/>
+                        </scrollView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26D-Z0-QkY" userLabel="gradientRight">
+                            <rect key="frame" x="216" y="0.0" width="24" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="f3d-Po-tar"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h16-yr-LdO" userLabel="gradientLeft">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="csD-Fh-bn4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="h16-yr-LdO" secondAttribute="bottom" id="64A-AJ-EVB"/>
+                        <constraint firstItem="h16-yr-LdO" firstAttribute="leading" secondItem="owc-Mm-Q9j" secondAttribute="leading" id="TYy-dh-j9j"/>
+                        <constraint firstAttribute="bottom" secondItem="26D-Z0-QkY" secondAttribute="bottom" id="c0e-g2-x9o"/>
+                        <constraint firstItem="26D-Z0-QkY" firstAttribute="top" secondItem="owc-Mm-Q9j" secondAttribute="top" id="fyG-Kq-H4v"/>
+                        <constraint firstItem="ylh-G3-Nvv" firstAttribute="leading" secondItem="owc-Mm-Q9j" secondAttribute="leading" id="inx-9c-83V"/>
+                        <constraint firstAttribute="trailing" secondItem="ylh-G3-Nvv" secondAttribute="trailing" id="qlx-3K-wRh"/>
+                        <constraint firstAttribute="bottom" secondItem="ylh-G3-Nvv" secondAttribute="bottom" id="rLT-ZF-x75"/>
+                        <constraint firstItem="ylh-G3-Nvv" firstAttribute="top" secondItem="owc-Mm-Q9j" secondAttribute="top" id="wFF-ip-4tV"/>
+                        <constraint firstAttribute="trailing" secondItem="26D-Z0-QkY" secondAttribute="trailing" id="wzY-IX-GjW"/>
+                        <constraint firstItem="h16-yr-LdO" firstAttribute="top" secondItem="owc-Mm-Q9j" secondAttribute="top" id="xOZ-Yg-xMY"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="2903" y="-31"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="cTs-Rd-bk2"/>
-        <segue reference="d0R-o2-rfv"/>
+        <segue reference="iUF-P0-u29"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemTealColor"/>
     <resources>
@@ -1214,12 +1276,6 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
