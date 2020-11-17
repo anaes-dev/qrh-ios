@@ -15,11 +15,11 @@ class CardCell5: UITableViewCell {
     
     @IBOutlet weak var arrow: UIImageView!
     
-    @IBOutlet weak var sub8: NSLayoutConstraint!
+    @IBOutlet var sub8: NSLayoutConstraint!
     
-    @IBOutlet weak var sub0: NSLayoutConstraint!
+    @IBOutlet var sub0: NSLayoutConstraint!
     
-    @IBOutlet weak var subheight: NSLayoutConstraint!
+    @IBOutlet var subheight: NSLayoutConstraint!
     
     @IBOutlet weak var box: UIView!
     
