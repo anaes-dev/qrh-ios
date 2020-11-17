@@ -31,6 +31,43 @@ class CardCell5: UITableViewCell {
         body.isEditable = false
         body.isSelectable = true
         body.isScrollEnabled = false
+        
     }
+    
+    func boxCol(type: Int){
+        switch type {
+        case 5:
+            box.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.15)
+            button.backgroundColor = UIColor.systemOrange.withAlphaComponent(0)
+            head.textColor = UIColor.systemOrange
+            arrow.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.2)
+            arrow.tintColor = UIColor.systemOrange
+        case 6:
+            box.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.15)
+            button.backgroundColor = UIColor.systemBlue.withAlphaComponent(0)
+            head.textColor = UIColor.systemBlue
+            arrow.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.2)
+            arrow.tintColor = UIColor.systemBlue
+        case 7:
+            box.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.15)
+            button.backgroundColor = UIColor.systemGreen.withAlphaComponent(0)
+            head.textColor = UIColor.systemGreen
+            arrow.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.2)
+            arrow.tintColor = UIColor.systemGreen
+        case 9:
+            box.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.15)
+            button.backgroundColor = UIColor.systemPurple.withAlphaComponent(0)
+            head.textColor = UIColor.systemPurple
+            arrow.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.2)
+            arrow.tintColor = UIColor.systemPurple
+        default:
+            box.backgroundColor = UIColor.systemGray.withAlphaComponent(0.15)
+            button.backgroundColor = UIColor.systemGray.withAlphaComponent(0)
+            head.textColor = UIColor.label
+            arrow.backgroundColor = UIColor.systemGray.withAlphaComponent(0.2)
+            arrow.tintColor = UIColor.label
+        }
+    }
+
     
 }
