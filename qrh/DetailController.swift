@@ -464,10 +464,8 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                     cell.arrow.backgroundColor = UIColor.clear
                     cell.sub0.isActive = false
                     cell.sub8.isActive = true
-                    if cell.subheight?.isActive != nil {
-                        cell.subheight.isActive = false
-                    }
-                    
+                    cell.subheight.isActive = false
+                                        
                     return cell
                     
 
@@ -552,23 +550,19 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 cell.button.addGestureRecognizer(tapGesture)
                 
 //                Change view depending on expanded state
-
+                
                 if expandedIndexSet.contains(indexPath.row) {
                     cell.arrow.image = UIImage(systemName: "arrow.up")
                     cell.body.attributedText = bodyParsed[indexPath.row]
                     cell.sub0.isActive = false
                     cell.sub8.isActive = true
-                   if cell.subheight?.isActive != nil {
-                        cell.subheight.isActive = false
-                    }
+                    cell.subheight.isActive = false
                 } else {
                     cell.arrow.image = UIImage(systemName: "arrow.down")
                     cell.body.attributedText = nil
                     cell.sub8.isActive = false
                     cell.sub0.isActive = true
-                    if cell.subheight?.isActive != nil {
-                        cell.subheight.isActive = true
-                    }
+                    cell.subheight.isActive = true
                 }
                 return cell
                 
@@ -648,7 +642,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 //    Perform segue for links between guidelines
     
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
-        
+                
         scrubLink = URL.absoluteString
         let regex = try! NSRegularExpression(pattern: "[1-4][-][0-9]")
         let range = NSRange(location: 0, length: scrubLink.count)
@@ -656,7 +650,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 //        Perform segue only if link matches format for link to other guideline, otherwise fall back to default behaviour (for URLS & phone numbers)
         if regex.firstMatch(in: scrubLink, options: [], range: range) != nil {
             if let vcCount = self.navigationController?.viewControllers.count {
-                if(vcCount < 11) {
+                if(vcCount < 21) {
                     activitySpinner.startAnimating()
                     if(view.isUserInteractionEnabled == true) {
                         view.isUserInteractionEnabled = false
@@ -672,7 +666,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                         
                     }
                 } else {
-                    let alert = UIAlertController(title: "Too many guidelines open", message: "Please do not try to open more than 10 guidelines", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Too many guidelines open", message: "Please do not try to open more than 20 guidelines at once", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
                     self.present(alert, animated: true)
                 }
@@ -684,7 +678,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         }
     }
     
-
+    
 //    Parse strings to attributed text
 
     func parseHtmlAttributes(htmlText: String) -> NSMutableAttributedString {

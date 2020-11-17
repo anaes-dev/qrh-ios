@@ -24,7 +24,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
             
     var unfilteredGuidelines = [Guideline]()
     var filteredGuidelines = [Guideline]()
-    
+        
     
 //    Init variables
     
@@ -72,13 +72,15 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         self.navigationItem.searchController = searchController
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search"
+        searchController.searchBar.searchTextField.backgroundColor = UIColor.systemBackground
+        searchController.searchBar.searchTextField.tintColor = UIColor.systemTeal
+        searchController.searchBar.tintColor = UIColor.systemBackground
         definesPresentationContext = true
         searchController.hidesNavigationBarDuringPresentation = true
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController!.navigationBar.sizeToFit()
         navigationItem.hidesSearchBarWhenScrolling = false
         
-//        Hide empty cells at bottom of table
         
         tableView.tableFooterView = UIView()
         
@@ -116,24 +118,7 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
                 performSegue(withIdentifier: "LoadDisclaimer", sender: self)
             } else {
                 alreadyLaunched = true
-//                var toastStyle = ToastStyle()
-//                toastStyle.messageFont = UIFont.systemFont(ofSize: 10)
-//                toastStyle.backgroundColor = UIColor.label.withAlphaComponent(0.6)
-//                toastStyle.messageColor = UIColor.systemBackground
-//                toastStyle.displayShadow = true
-//                toastStyle.fadeDuration = 0.4
-//                toastStyle.maxWidthPercentage = 0.9
-//                toastStyle.shadowOpacity = 0.6
-//                toastStyle.shadowColor = UIColor.systemGray
-//                let toastMessage = """
-//                    Unofficial adaptation of Quick Reference Handbook
-//                    Not endorsed by the Association of Anaesthetists
-//                    Untested and unregulated; not recommended for clinical use
-//                    No guarantees of completeness, accuracy or performance
-//                    Should not override your own knowledge and judgement
-//                    """
-//                self.view.makeToast(toastMessage, duration: 5.0, position: .bottom, style: toastStyle)
-                
+
                 disclaimerMessage.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width - 32, height: disclaimerBackground.frame.size.height + 16)
                 disclaimerMessage.center = CGPoint(x: view.bounds.size.width / 2.0, y: (view.bounds.size.height - (disclaimerMessage.frame.size.height / 2.0)) - 64)
                 disclaimerMessage.alpha = 0.0
@@ -155,16 +140,17 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
                     })
                     
                 }
-              
             }
-            
         }
-        
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        disclaimerMessage.removeFromSuperview()
+        if disclaimerMessage != nil {
+            if self.view.subviews.contains(disclaimerMessage) {
+                self.disclaimerMessage.removeFromSuperview()
+            }
+        }
     }
     
     
@@ -244,6 +230,13 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
         }
         tableView.deselectRow(at: indexPath, animated: true)
         
+        if disclaimerMessage != nil {
+            if self.view.subviews.contains(disclaimerMessage) {
+                self.disclaimerMessage.removeFromSuperview()
+            }
+        }
+        
+
         activitySpinner.startAnimating()
         if(view.isUserInteractionEnabled == true) {
             view.isUserInteractionEnabled = false
