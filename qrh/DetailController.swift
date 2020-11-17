@@ -119,26 +119,33 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         let pdfButton = UIBarButtonItem(image: UIImage(systemName: "arrow.down.doc"), style: .plain, target: self, action: #selector(loadPDF))
         navigationItem.rightBarButtonItem = pdfButton
         
-//        Set title from title passed to view
+//        Set title & back button from title passed to view
         
         navigationItem.title = passedTitle
         navigationItem.backButtonTitle = passedTitle
        
-        
+//        Add breadcrumbs if more than 2 viewcontrollers deep in navigation stack
+
         if ((navigationController?.viewControllers.count)! > 2) {
             populateBreadCrumb()
         }
     
+//      Load table data
+        
         tableViewMain.reloadData()
-        if UIDevice.current.userInterfaceIdiom == .pad {
+        if (UIDevice.current.userInterfaceIdiom) == .pad {
             tableViewRight.reloadData()
         }
+        
+//      Stop loading spinner
               
         activitySpinner.stopAnimating()
     
     }
     
    
+//    Return to large title after rotation change back to portrait
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
             super.viewWillTransition(to: size, with: coordinator)
             if UIDevice.current.orientation == .portrait {
@@ -146,47 +153,40 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
             }
         }
     
-    func formatBc(button: UIButton) {
-        button.setTitleColor(UIColor.systemTeal, for: .normal)
-        button.setTitleColor(UIColor.systemTeal.withAlphaComponent(0.7), for: .highlighted)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 12)
-        button.imageView?.contentMode = .scaleAspectFit
-        button.contentEdgeInsets.right = 8
-        button.titleEdgeInsets.left = 4
-        button.titleEdgeInsets.right = -4
-        button.adjustsImageWhenHighlighted = false
-        button.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        button.contentVerticalAlignment = .center
-    }
+
+//    Setup breadcrumb
     
     func populateBreadCrumb() {
         if !breadcrumbPopulated {
             if var vcarray: Array<UIViewController> = self.navigationController?.viewControllers {
                 
-                let homeButton: UIButton = UIButton()
-                formatBc(button: homeButton)
-                homeButton.setTitle("Home", for: .normal)
-                homeButton.setImage(UIImage(systemName: "house"), for: .normal)
-                homeButton.setImage(UIImage(systemName: "house")?.withRenderingMode(.alwaysOriginal).withTintColor(UIColor.systemTeal.withAlphaComponent(0.7)), for: .highlighted)
+//                Add home button
+                
+                let homeButton = BreadcrumbButton()
+                homeButton.formatBc()
+                homeButton.homeBc()
                 homeButton.addTarget(self, action: #selector(homePop), for: .touchUpInside)
                 breadcrumbStack.addArrangedSubview(homeButton)
+                
+                
+//                Remove bottom viewcontroller (Home) then loop remaining in stack, add button for each
                 
                 vcarray.removeFirst()
                 
                 for (index, vc) in vcarray.enumerated() {
-                    let bcButton: UIButton = UIButton()
-                    formatBc(button: bcButton)
-                    let bcTitle = vc.navigationItem.title!
-                    bcButton.setTitle(bcTitle, for: .normal)
-                    bcButton.setImage(UIImage(systemName: "chevron.forward"), for: .normal)
-                    bcButton.tag = index + 1
+                    let bcButton = BreadcrumbButton()
+                    bcButton.formatBc()
+                    bcButton.chevronBc(title: vc.navigationItem.title!, index: index)
                     bcButton.addTarget(self, action: #selector(breadcrumbPop), for: .touchUpInside)
                     breadcrumbStack.addArrangedSubview(bcButton)
                 }
+                
+//                Breadcrumb frame size and constraints
 
                 breadcrumb.frame.size.height = 32
                 breadcrumbStack.layoutIfNeeded()
                 breadcrumbScroll.layoutIfNeeded()
+                
                 self.tableViewMain.tableHeaderView = breadcrumb
                 
                 breadcrumb.translatesAutoresizingMaskIntoConstraints = false
@@ -195,10 +195,25 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 breadcrumb.heightAnchor.constraint(equalToConstant: 32).isActive = true
                 
                 if UIDevice.current.userInterfaceIdiom == .pad {
-                    breadcrumb.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.6).isActive = true
+                    breadcrumb.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.6, constant: -8).isActive = true
                 } else {
                     breadcrumb.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor).isActive = true
                 }
+                
+                
+//                Scroll to right of scrollview to show nearest viewcontrollers
+                
+                if (breadcrumbScroll.contentSize.width) > breadcrumb.frame.width {
+                    if (UIDevice.current.userInterfaceIdiom == .pad) {
+                        let rightOffset = CGPoint(x: (breadcrumbScroll.contentSize.width) - (view.safeAreaLayoutGuide.layoutFrame.width * 0.6) + 8, y: 0);
+                        breadcrumbScroll.setContentOffset(rightOffset, animated: false)
+                    } else {
+                        let rightOffset = CGPoint(x: (breadcrumbScroll.contentSize.width) - view.safeAreaLayoutGuide.layoutFrame.width, y: 0);
+                        breadcrumbScroll.setContentOffset(rightOffset, animated: false)
+                    }
+                }
+                
+//                Add gradient overlays on either side of breadcrumb frame
                 
                 let gradLeft = CAGradientLayer()
                 gradLeft.frame.size = bcGradientLeft.frame.size
@@ -216,28 +231,10 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 
             }
             breadcrumbPopulated = true
-            }
+        }
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        if(breadcrumbPopulated) {
-            breadcrumbStack.layoutIfNeeded()
-            breadcrumbScroll.layoutIfNeeded()
-                        
-            if (breadcrumbScroll.contentSize.width + 32) > breadcrumb.frame.width {
-                if UIDevice.current.userInterfaceIdiom == .pad {
-                    let rightOffset = CGPoint(x: (breadcrumbScroll.contentSize.width) - (view.safeAreaLayoutGuide.layoutFrame.width * 0.6), y: 0);
-                    breadcrumbScroll.setContentOffset(rightOffset, animated: false)
-                } else {
-                    let rightOffset = CGPoint(x: (breadcrumbScroll.contentSize.width) - view.safeAreaLayoutGuide.layoutFrame.width, y: 0);
-                    breadcrumbScroll.setContentOffset(rightOffset, animated: false)
-
-                }
-            }
-        }
-        
-    }
+//    Breadcrumb button actions
     
     @objc func breadcrumbPop(sender: UIButton) {
         if let vcPop = self.navigationController?.viewControllers[sender.tag] {
@@ -398,7 +395,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                         cell.step.text = cardContent[indexPath.row].step
                         cell.body.delegate = self
                         // Fix for guideline 3-5 auto link misdetection
-                        if(passedCode == "3-5" && indexPath.row == 7) {
+                        if(passedCode == "3-5" && indexPath.row == 7 || passedCode == "3-9" && indexPath.row == 8) {
                             cell.body.linkTextAttributes = nil
                             cell.body.isSelectable = false
                         }
@@ -449,38 +446,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                                         
 //                    Adjust colors according to cell type
                     
-                    switch cardContent[indexPath.row].type {
-                    case 5:
-                        cell.box.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.15)
-                        cell.button.backgroundColor = UIColor.systemOrange.withAlphaComponent(0)
-                        cell.head.textColor = UIColor.systemOrange
-                        cell.arrow.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.2)
-                        cell.arrow.tintColor = UIColor.systemOrange
-                    case 6:
-                        cell.box.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.15)
-                        cell.button.backgroundColor = UIColor.systemBlue.withAlphaComponent(0)
-                        cell.head.textColor = UIColor.systemBlue
-                        cell.arrow.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.2)
-                        cell.arrow.tintColor = UIColor.systemBlue
-                    case 7:
-                        cell.box.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.15)
-                        cell.button.backgroundColor = UIColor.systemGreen.withAlphaComponent(0)
-                        cell.head.textColor = UIColor.systemGreen
-                        cell.arrow.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.2)
-                        cell.arrow.tintColor = UIColor.systemGreen
-                    case 9:
-                        cell.box.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.15)
-                        cell.button.backgroundColor = UIColor.systemPurple.withAlphaComponent(0)
-                        cell.head.textColor = UIColor.systemPurple
-                        cell.arrow.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.2)
-                        cell.arrow.tintColor = UIColor.systemPurple
-                    default:
-                        cell.box.backgroundColor = UIColor.systemGray.withAlphaComponent(0.15)
-                        cell.button.backgroundColor = UIColor.systemGray.withAlphaComponent(0)
-                        cell.head.textColor = UIColor.label
-                        cell.arrow.backgroundColor = UIColor.systemGray.withAlphaComponent(0.2)
-                        cell.arrow.tintColor = UIColor.label
-                    }
+                    cell.boxCol(type: cardContent[indexPath.row].type)
                     
                     cell.head.text = cardContent[indexPath.row].head
                     cell.body.delegate = self
@@ -557,7 +523,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 cell.step.text = cardContent[indexPath.row].step
                 cell.body.delegate = self
                 // Fix for guideline 3-5 auto link misdetection
-                if(passedCode == "3-5" && indexPath.row == 7) {
+                if(passedCode == "3-5" && indexPath.row == 7 || passedCode == "3-9" && indexPath.row == 8) {
                     cell.body.linkTextAttributes = nil
                     cell.body.isSelectable = false
                 }
@@ -567,39 +533,9 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell5") as! CardCell5
                 
 //                Set colors by card type
-                switch cardContent[indexPath.row].type {
-                    case 5:
-                        cell.box.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.15)
-                        cell.button.backgroundColor = UIColor.systemOrange.withAlphaComponent(0)
-                        cell.head.textColor = UIColor.systemOrange
-                        cell.arrow.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.2)
-                        cell.arrow.tintColor = UIColor.systemOrange
-                    case 6:
-                        cell.box.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.15)
-                        cell.button.backgroundColor = UIColor.systemBlue.withAlphaComponent(0)
-                        cell.head.textColor = UIColor.systemBlue
-                        cell.arrow.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.2)
-                        cell.arrow.tintColor = UIColor.systemBlue
-                    case 7:
-                        cell.box.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.15)
-                        cell.button.backgroundColor = UIColor.systemGreen.withAlphaComponent(0)
-                        cell.head.textColor = UIColor.systemGreen
-                        cell.arrow.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.2)
-                        cell.arrow.tintColor = UIColor.systemGreen
-                    case 9:
-                        cell.box.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.15)
-                        cell.button.backgroundColor = UIColor.systemPurple.withAlphaComponent(0)
-                        cell.head.textColor = UIColor.systemPurple
-                        cell.arrow.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.2)
-                        cell.arrow.tintColor = UIColor.systemPurple
-                    default:
-                        cell.box.backgroundColor = UIColor.systemGray.withAlphaComponent(0.15)
-                        cell.button.backgroundColor = UIColor.systemGray.withAlphaComponent(0)
-                        cell.head.textColor = UIColor.label
-                        cell.arrow.backgroundColor = UIColor.systemGray.withAlphaComponent(0.2)
-                        cell.arrow.tintColor = UIColor.label
-                }
                 
+                cell.boxCol(type: cardContent[indexPath.row].type)
+
                 cell.head.text = cardContent[indexPath.row].head
                 cell.body.delegate = self
                 

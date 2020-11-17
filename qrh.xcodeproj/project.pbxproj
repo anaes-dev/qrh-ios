@@ -30,7 +30,6 @@
 		824137EF2544A3DF004BFAF3 /* by_nc_sa.png in Resources */ = {isa = PBXBuildFile; fileRef = 824137EE2544A3DF004BFAF3 /* by_nc_sa.png */; };
 		8251661A25443B43002C87F5 /* CellEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251661825443B43002C87F5 /* CellEmpty.swift */; };
 		8251661B25443B43002C87F5 /* CellEmpty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8251661925443B43002C87F5 /* CellEmpty.xib */; };
-		826F1883255F358300443A19 /* BreadCrumb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826F1882255F358300443A19 /* BreadCrumb.swift */; };
 		8276D047253B14A400243AB3 /* CardCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8276D046253B14A400243AB3 /* CardCell4.xib */; };
 		8276D04A253B14B100243AB3 /* CardCell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276D049253B14B100243AB3 /* CardCell4.swift */; };
 		8277FCDD253B313F00E8158D /* CardCell5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8277FCDC253B313F00E8158D /* CardCell5.xib */; };
@@ -75,6 +74,7 @@
 		82A08AB42538E2E000F6BEA9 /* CardCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB22538E2E000F6BEA9 /* CardCell2.xib */; };
 		82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A08AB72538E96F00F6BEA9 /* CardCell1.swift */; };
 		82A08ABA2538E96F00F6BEA9 /* CardCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A08AB82538E96F00F6BEA9 /* CardCell1.xib */; };
+		82C8388F2563C55D0060A21B /* BreadcrumbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C8388E2563C55D0060A21B /* BreadcrumbButton.swift */; };
 		82ECD0572545DBDB0050EA14 /* Strings.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 82ECD0562545DBDB0050EA14 /* Strings.stringsdict */; };
 		82ECEC8E2545952C004DE2FD /* DisclaimersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ECEC8D2545952C004DE2FD /* DisclaimersController.swift */; };
 /* End PBXBuildFile section */
@@ -105,7 +105,6 @@
 		824137EE2544A3DF004BFAF3 /* by_nc_sa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = by_nc_sa.png; sourceTree = "<group>"; };
 		8251661825443B43002C87F5 /* CellEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEmpty.swift; sourceTree = "<group>"; };
 		8251661925443B43002C87F5 /* CellEmpty.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellEmpty.xib; sourceTree = "<group>"; };
-		826F1882255F358300443A19 /* BreadCrumb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadCrumb.swift; sourceTree = "<group>"; };
 		8276D046253B14A400243AB3 /* CardCell4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell4.xib; sourceTree = "<group>"; };
 		8276D049253B14B100243AB3 /* CardCell4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell4.swift; sourceTree = "<group>"; };
 		8277FCDC253B313F00E8158D /* CardCell5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell5.xib; sourceTree = "<group>"; };
@@ -150,6 +149,7 @@
 		82A08AB22538E2E000F6BEA9 /* CardCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell2.xib; sourceTree = "<group>"; };
 		82A08AB72538E96F00F6BEA9 /* CardCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell1.swift; sourceTree = "<group>"; };
 		82A08AB82538E96F00F6BEA9 /* CardCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell1.xib; sourceTree = "<group>"; };
+		82C8388E2563C55D0060A21B /* BreadcrumbButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadcrumbButton.swift; sourceTree = "<group>"; };
 		82ECD0562545DBDB0050EA14 /* Strings.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Strings.stringsdict; sourceTree = "<group>"; };
 		82ECEC8D2545952C004DE2FD /* DisclaimersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimersController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +187,7 @@
 				8292B30A2544E9CA005AEAD1 /* screenshots */,
 				8277FCE6253B42C500E8158D /* PDFNavController.swift */,
 				8277FCE3253B39D900E8158D /* PDFController.swift */,
+				82C8388E2563C55D0060A21B /* BreadcrumbButton.swift */,
 				820EB9772535C47600FAEDB0 /* guidelines.json */,
 				8230586625363D40002118DF /* 0-3.json */,
 				8279AF6F25365579003BF303 /* 1-1.json */,
@@ -245,7 +246,6 @@
 				820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */,
 				82ECEC8D2545952C004DE2FD /* DisclaimersController.swift */,
 				82A08AAB2538D72400F6BEA9 /* DetailController.swift */,
-				826F1882255F358300443A19 /* BreadCrumb.swift */,
 				820EB9912535E96200FAEDB0 /* GuidelinesCell.swift */,
 				820EB95E2535B51200FAEDB0 /* Assets.xcassets */,
 				820EB9602535B51200FAEDB0 /* LaunchScreen.storyboard */,
@@ -398,13 +398,13 @@
 				820EB9562535B51100FAEDB0 /* AppDelegate.swift in Sources */,
 				82011A31253B1797003DCBE2 /* CardCell12.swift in Sources */,
 				82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */,
+				82C8388F2563C55D0060A21B /* BreadcrumbButton.swift in Sources */,
 				8277FCE0253B326300E8158D /* CardCell5.swift in Sources */,
 				820EB9582535B51100FAEDB0 /* SceneDelegate.swift in Sources */,
 				8277FCE4253B39D900E8158D /* PDFController.swift in Sources */,
 				82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */,
 				820EB9922535E96200FAEDB0 /* GuidelinesCell.swift in Sources */,
 				820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */,
-				826F1883255F358300443A19 /* BreadCrumb.swift in Sources */,
 				8206BC012544930D00820D52 /* CardCell10.swift in Sources */,
 				82258AFB253B0DA500E0C180 /* CardCell3.swift in Sources */,
 				8292B3082544DF7D005AEAD1 /* About.swift in Sources */,
