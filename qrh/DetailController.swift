@@ -403,7 +403,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
 
                     case 11:
                         let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell11") as! CardCell11
-                        cell.label.text = cardContent[indexPath.row].body
+                        cell.label.text = "Adapted from QRH section " + cardContent[indexPath.row].body
                         return cell
                         
                     case 12:
@@ -581,7 +581,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
                 
             case 11:
                 let cell = tableViewMain.dequeueReusableCell(withIdentifier: "CardCell11") as! CardCell11
-                cell.label.text = cardContent[indexPath.row].body
+                cell.label.text = "Adapted from QRH section " + cardContent[indexPath.row].body
                 return cell
                 
             case 12:
