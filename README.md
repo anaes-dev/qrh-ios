@@ -66,17 +66,16 @@ Type integer value determines the appearance of the generated card:
 7. Green expanding box (head and body)
 8. Black expanding box (head and body)
 9. Purple expanding box (head and body)
-10. Image (path/URL in body, caption in head)
+10. Image (caption in head, path/URL in body)
 11. Version text (body only)
 12. Red disclaimer card (head only)  
 
 ### Card contents
 
-Basic HTML tags (B, U, I, LI, P) can be used within body sections for formatting where required.
+Basic HTML tags (B, U, I, LI) can be used within for formatting where required. All tags should be closed, otherwise may lead to parsing errors. 
 
-Unicode subscript and superscript characters are used rather than SUB and SUP spans.
+Unicode subscript and superscript characters are used rather than SUB and SUP spans due to line-height issues on earlier Android versions.
 
-Links are parsed as following:
 
 #### Guideline links
 Generated when the following regex is matched:  
@@ -88,3 +87,5 @@ Automatic link detection using dataDetectorTypes.
 
 #### Web links
 Automatic link detection using dataDetectorTypes.
+
+*iOS, iPhone, iPad and App Store are trademarks of Apple Inc.*
