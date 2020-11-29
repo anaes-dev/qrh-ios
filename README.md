@@ -11,7 +11,7 @@
 
 ## Features
 - Unofficial derivative of the Association of Anaesthetists Quick Reference Handbook (QRH): www.anaesthetists.org/qrh (CC BY-NC-SA 4.0)
-- iOS port of https://github.com/mttrnd/qrh_android
+- iOS port of <a href="http://github.com/anaes-dev/qrh-android">github.com/anaes-dev/qrh-android</a>
 - ***Not endorsed by the Association of Anaesthetists***
 - Rapidly searchable guideline list
 - Simple guideline layout echoing original handbook
