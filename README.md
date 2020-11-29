@@ -35,9 +35,12 @@ You may not use for commercial purposes.
 
 ## Download
 
-Currently under development - not ready for general release.
+Available on the App Store:
 
-Please build from source or contact for testing links.
+<a href='https://apps.apple.com/gb/app/quick-reference-handbook-qrh/id1537247898'><img alt='Get it on the App Store' src='https://anaes.dev/images/appstore.png' width="240px"/></a>
+
+Otherwise please build from source or download APK from releases:
+https://github.com/anaes-dev/qrh-ios/releases
 
 
 ## Technical
