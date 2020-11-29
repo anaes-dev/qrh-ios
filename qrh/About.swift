@@ -12,6 +12,7 @@ class About: UIViewController {
     
     @IBOutlet weak var ccImage: UIImageView!
     
+//    @IBOutlet weak var disableDarkMode: UISwitch!
     
     @IBOutlet weak var privacy: UIButton!
     
@@ -31,6 +32,9 @@ class About: UIViewController {
        }
         
         privacy.addTarget(self, action: #selector(openPrivacyLink), for: .touchUpInside)
+        
+        
+//        disableDarkMode.addTarget(self, action: #selector(darkModeSwitch), for: UIControl.Event.valueChanged)
          
     }
     
@@ -49,6 +53,14 @@ class About: UIViewController {
             UIApplication.shared.open(privacyUrl, options: [:], completionHandler: nil)
         }
     }
+    
+//    @objc func darkModeSwitch(darkSwitch: UISwitch) {
+//        if(darkSwitch.isOn) {
+//            UserDefaults.standard.set(true, forKey: "disableDarkMode")
+//        } else {
+//            UserDefaults.standard.set(false, forKey: "disableDarkMode")
+//        }
+//    }
 
    
 }

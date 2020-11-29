@@ -62,9 +62,10 @@ class GuidelinesController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
                
         activitySpinner.backgroundColor = UIColor.systemGray4.withAlphaComponent(0.6)
-        disclaimerBackground.backgroundColor = UIColor.label.withAlphaComponent(0.6)
+        disclaimerBackground.backgroundColor = UIColor.label.withAlphaComponent(0.8)
 
 //        Setup navbar & search
         
