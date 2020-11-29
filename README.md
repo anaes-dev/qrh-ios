@@ -42,9 +42,6 @@ Available on the App Store:
 
 <a href='https://apps.apple.com/gb/app/quick-reference-handbook-qrh/id1537247898'><img alt='Get it on the App Store' src='https://anaes.dev/images/appstore.png' width="240px"/></a>
 
-Otherwise please build from source or download APK from releases:
-https://github.com/anaes-dev/qrh-ios/releases
-
 
 ## Technical
 *(For any updates, modifications or derivatives)*
