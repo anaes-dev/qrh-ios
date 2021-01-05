@@ -75,7 +75,7 @@
     {
       "type": 9,
       "head": "Box B: TRANSFUSION GOALS",
-      "body": "<ul><li>Maintain Hb > 80 g.l⁻¹</li><li>Maintain platelet count > 75x10⁹.l⁻¹</li><li>Maintain PT and APTT <1.5 x mean control (FFP)</li><li>Maintain fibrinogen >1.0 g.l⁻¹ (cryoprecipitate)</li><li>Avoid DIC (maintain blood pressure, treat/prevent acidosis, avoid hypothermia, treat hypocalcaemia and hyperkalaemia)</li></ul>",
+      "body": "<ul><li>Maintain Hb &gt; 80 g.l⁻¹</li><li>Maintain platelet count > 75x10⁹.l⁻¹</li><li>Maintain PT and APTT <1.5 x mean control (FFP)</li><li>Maintain fibrinogen >1.0 g.l⁻¹ (cryoprecipitate)</li><li>Avoid DIC (maintain blood pressure, treat/prevent acidosis, avoid hypothermia, treat hypocalcaemia and hyperkalaemia)</li></ul>",
       "step": ""
     },
     {

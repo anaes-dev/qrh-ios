@@ -15,7 +15,7 @@
     {
       "type": 3,
       "head": "Immediate action",
-      "body": "Stop any stimulus, Check pulse, rhythm and blood pressure:<ul><li>If no pulse or impending arrest: use <b>Box A</b>.</li><li>If narrow complex AND <u>not</u> hypotensive first increase depth of anaesthesia/analgesia.</li></ul>",
+      "body": "<p>Stop any stimulus, Check pulse, rhythm and blood pressure:</p><ul><li>If no pulse or impending arrest: use <b>Box A</b>.</li><li>If narrow complex AND <u>not</u> hypotensive first increase depth of anaesthesia/analgesia.</li></ul>",
       "step": "1"
     },
     {

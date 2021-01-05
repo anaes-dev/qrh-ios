@@ -21,7 +21,7 @@
     {
       "type": 3,
       "head": "Adequate oxygen delivery",
-      "body": "<ul><li>Pause surgery if possible.</li><li>Consider surgery related cause.</li><li>Increase fresh gas flow AND give 100% oxygen AND check measured F<small>i</small>O₂.<li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li><li>Confirm increased airway pressure by switching to hand ventilation (&lt;3 breaths) <b>(Box B)</b>.</li></ul>",
+      "body": "<ul><li>Pause surgery if possible.</li><li>Consider surgery related cause.</li><li>Increase fresh gas flow AND give 100% oxygen AND check measured F<small>i</small>O₂.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li><li>Confirm increased airway pressure by switching to hand ventilation (&lt;3 breaths) <b>(Box B)</b>.</li></ul>",
       "step": "1"
     },
     {
@@ -39,7 +39,7 @@
     {
       "type": 8,
       "head": "Box C: EXCLUDE ANAESTHETIC MACHINE/BREATHING SYSTEM PROBLEM",
-      "body": "Ventilate lungs using self-inflating bag connected <b>DIRECTLY</b> to tracheal tube connector. <b>DO NOT</b> use HME filter, angle piece or catheter mount.<ul><li>If increased pressure manually confirmed, re-connect machine</li><li>If problem resolved, assume problem with machine, circuit, HME, filter, angle piece or catheter mount: check and replace.</li></ul>",
+      "body": "<p>Ventilate lungs using self-inflating bag connected <b>DIRECTLY</b> to tracheal tube connector. <b>DO NOT</b> use HME filter, angle piece or catheter mount.</p><ul><li>If increased pressure manually confirmed, re-connect machine</li><li>If problem resolved, assume problem with machine, circuit, HME, filter, angle piece or catheter mount: check and replace.</li></ul>",
       "step": ""
     },
     {

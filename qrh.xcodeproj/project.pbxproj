@@ -25,6 +25,7 @@
 		820EB9962535EBD900FAEDB0 /* GuidelinesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */; };
 		82258AFB253B0DA500E0C180 /* CardCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82258AFA253B0DA500E0C180 /* CardCell3.swift */; };
 		82258AFE253B0DB500E0C180 /* CardCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82258AFD253B0DB500E0C180 /* CardCell3.xib */; };
+		82301281258666E800CAD26E /* SwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82301280258666E800CAD26E /* SwipeController.swift */; };
 		8230586725363D40002118DF /* 0-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 8230586625363D40002118DF /* 0-3.json */; };
 		824137EC2544A055004BFAF3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 824137EB2544A055004BFAF3 /* logo.png */; };
 		824137EF2544A3DF004BFAF3 /* by_nc_sa.png in Resources */ = {isa = PBXBuildFile; fileRef = 824137EE2544A3DF004BFAF3 /* by_nc_sa.png */; };
@@ -100,6 +101,7 @@
 		820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesController.swift; sourceTree = "<group>"; };
 		82258AFA253B0DA500E0C180 /* CardCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell3.swift; sourceTree = "<group>"; };
 		82258AFD253B0DB500E0C180 /* CardCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell3.xib; sourceTree = "<group>"; };
+		82301280258666E800CAD26E /* SwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeController.swift; sourceTree = "<group>"; };
 		8230586625363D40002118DF /* 0-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "0-3.json"; sourceTree = "<group>"; };
 		824137EB2544A055004BFAF3 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		824137EE2544A3DF004BFAF3 /* by_nc_sa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = by_nc_sa.png; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				820EB9952535EBD900FAEDB0 /* GuidelinesController.swift */,
 				82ECEC8D2545952C004DE2FD /* DisclaimersController.swift */,
 				82A08AAB2538D72400F6BEA9 /* DetailController.swift */,
+				82301280258666E800CAD26E /* SwipeController.swift */,
 				820EB9912535E96200FAEDB0 /* GuidelinesCell.swift */,
 				820EB95E2535B51200FAEDB0 /* Assets.xcassets */,
 				820EB9602535B51200FAEDB0 /* LaunchScreen.storyboard */,
@@ -400,6 +403,7 @@
 				82A08AB92538E96F00F6BEA9 /* CardCell1.swift in Sources */,
 				82C8388F2563C55D0060A21B /* BreadcrumbButton.swift in Sources */,
 				8277FCE0253B326300E8158D /* CardCell5.swift in Sources */,
+				82301281258666E800CAD26E /* SwipeController.swift in Sources */,
 				820EB9582535B51100FAEDB0 /* SceneDelegate.swift in Sources */,
 				8277FCE4253B39D900E8158D /* PDFController.swift in Sources */,
 				82A08AB32538E2E000F6BEA9 /* CardCell2.swift in Sources */,
@@ -561,14 +565,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = K4AA5XW5PX;
 				INFOPLIST_FILE = qrh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.31;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.anaes.qrh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -584,14 +588,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = K4AA5XW5PX;
 				INFOPLIST_FILE = qrh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.31;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.anaes.qrh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

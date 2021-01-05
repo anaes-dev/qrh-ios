@@ -33,7 +33,7 @@
     {
       "type": 4,
       "head": "",
-      "body": "Stop surgery / other stimulation",
+      "body": "<p>Fully expose the chest and perform a rapid systematic examination:</p><ul><li>Inspect, percuss, palpate, auscultate.</li><li>Absence of wheeze may indicate severe bronchospasm with no air movement.</li></ul>",
       "step": "4"
     },
     {
