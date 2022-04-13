@@ -51,7 +51,7 @@
     {
       "type": 9,
       "head": "Box D: POTENTIAL CAUSES AND ACTIONS",
-      "body": "<ul><li>Inadequate neuromuscular blockade.</li><li>If laparoscopic surgery, consider releasing pneumoperitoneum and levelling patient position.</li><li>Consider potential causes:<br>- Laryngospasm and stridor <b>→3-6</b><br>- Bronchospasm <b>→3-4</b><br>- Anaphylaxis <b>→3-1</b><br>- Circulatory embolus <b>→3-5</b><br>- Aspiration, pulmonary oedema; bronchial intubation; foreign body; pneumothorax.</li><li>Consider potential actions: tracheal/bronchial suction; bronchodilator; PEEP; diuretic; bronchoscopy.</li></ul>",
+      "body": "<ul><li>Inadequate neuromuscular blockade.</li><li>If laparoscopic surgery, consider releasing pneumoperitoneum and levelling patient position.</li><li>Consider potential causes:<p>- Laryngospasm and stridor <b>→3-6</b></p><p>- Bronchospasm <b>→3-4</b></p><p>- Anaphylaxis <b>→3-1</b></p><p>- Circulatory embolus <b>→3-5</b></p><p>- Aspiration, pulmonary oedema; bronchial intubation; foreign body; pneumothorax.</p></li><li>Consider potential actions: tracheal/bronchial suction; bronchodilator; PEEP; diuretic; bronchoscopy.</li></ul>",
       "step": ""
     },
     {
@@ -82,6 +82,12 @@
       "type": 12,
       "head": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
       "body": "",
+      "step": ""
+    },
+    {
+      "type": 1,
+      "head": "",
+      "body": "<p><small><b>Association of Anaesthetists 2022. www.anaesthetists.org/qrh</b></small></p><p><small>Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original version or adapt for yourself and distribute with acknowledgement of source. You may not use for commercial purposes. Visit website for details.</small></p>",
       "step": ""
     }
   ]
