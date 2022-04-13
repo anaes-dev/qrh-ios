@@ -40,7 +40,7 @@ You may not use for commercial purposes.
 
 Available on the App Store:
 
-<a href='https://apps.apple.com/gb/app/quick-reference-handbook-qrh/id1537247898'><img alt='Get it on the App Store' src='https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1605744000&h=39b9465c7f7117e54e77a92b3fc75817' width="240px"/></a>
+<a href='https://apps.apple.com/gb/app/quick-reference-handbook-qrh/id1537247898'><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1605744000&h=39b9465c7f7117e54e77a92b3fc75817" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
 
 
 ## Technical
