@@ -39,7 +39,7 @@
     {
       "type": 4,
       "head": "",
-      "body": "Elevate patient’s legs if there is hypotension. ",
+      "body": "Elevate patient’s legs if there is hypotension.",
       "step": "5"
     },
     {
@@ -50,86 +50,80 @@
     },
     {
       "type": 5,
-      "head": "Box C: CRITICAL CHANGES",
+      "head": "Box B: CRITICAL CHANGES",
       "body": "<b>CARDIAC ARREST →2-1</b>",
       "step": ""
     },
     {
       "type": 4,
       "head": "",
-      "body": "<p>Give drugs to treat hypotension <b>(Box A)</b>:</p><ul><li><b>Hypotension may be resistant and may require prolonged treatment.</b></li><li>Give adrenaline bolus and repeat as necessary.</li><li>Consider starting an adrenaline infusion after three boluses.</li><li>If hypotension resistant, give alternate vasopressor (e.g. metaraminol, noradrenaline infusion +/- vasopressin)</li><li>Give glucagon in ß-blocked patient unresponsive to adrenaline.</li></ul>",
+      "body": "<p>Give drugs to treat hypotension (Box A):</p><ul><li><b>Hypotension may be resistant and may require prolonged treatment.</b></li><li>Give adrenaline bolus and repeat as necessary.</li><li>Consider starting an adrenaline infusion after three boluses.</li><li>If hypotension resistant, give alternate vasopressor (e.g. metaraminol, noradrenaline infusion +/- vasopressin)</li><li>Give glucagon in ß-blocked patient unresponsive to adrenaline.</li><li>Hydrocortisone and chlorphenamine are no longer part of acute treatment (Box C)</li></ul>",
       "step": "7"
     },
     {
       "type": 6,
       "head": "Box A: DRUGS TO TREAT HYPOTENSION",
-      "body": "<p><b>IF CARDIAC ARREST →2-1</b></p><ul><li>Adult adrenaline:<br>Intra<b>VENOUS</b> 50 μg <small>(= 0.5 ml of <b>1:10 000</b>)</small><br>Intra<b>MUSCULAR</b> 0.5 mg <small>(= 0.5 ml of <b>1:1000</b>) <i>if IV not possible</i></small></li><li>Paediatric adrenaline: intraVENOUS 1.0 μg.kg⁻¹ <small>(0.1 ml.kg⁻¹ of <b>1:100 000</b>)<br>[<b>1:100 000</b> solution made by diluting 1 ml of <b>1:10 000</b> up to 10 ml]</small></li><li>If no IV access, intraosseous adrenaline dose same as IV</li><li>Suggested adrenaline infusion regimes (adult):<br>5 mg in 500 mL dextrose = <b>1:100 000</b>, titrate to effect<br>3 mg in 50 mL saline. Start at 3 ml.h-1 (= 3 μg.min⁻¹), titrate to maximum 40 ml.h⁻¹1 (= 40 μg.min⁻¹)</li><li>Glucagon (adult): 1 mg, <small>repeat as necessary</small></li><li>Vasopressin (adult): 2 units, <small>repeat necessary (consider infusion)</small></li></ul>",
+      "body": "<p><b>IF CARDIAC ARREST →2-1</b></p><ul><li>Adult adrenaline:<br>intra<b>VENOUS</b> 50 μg <small>(= 0.5 ml of 1:<b>10 000</b>)</small><br>intra<b>MUSCULAR</b> 0.5 mg <small>(= 0.5 ml of 1:<b>1000</b>) <i>if IV not possible</i></small></li><li>Paediatric adrenaline:<br>intraVENOUS 1.0 μg.kg⁻¹ <small>(0.1 ml.kg⁻¹ of 1:<b>100 000</b>)<br>[1:<b>100 000</b> solution made by diluting 1 ml of 1:<b>10 000</b> up to 10 ml]</small></li><li>If no IV access, intraosseous adrenaline dose same as IV</li><li>Suggested adrenaline infusion regimes (adult):<br>5 mg in 500 mL dextrose = 1:<b>100 000</b>, titrate to effect<br>3 mg in 50 mL saline. Start at 3 ml.h-1 (= 3 μg.min⁻¹), titrate to maximum 40 ml.h⁻¹1 (= 40 μg.min⁻¹)</li><li>Glucagon (adult): 1 mg, <small>repeat as necessary</small></li><li>Vasopressin (adult): 2 units, <small>repeat necessary (consider infusion)</small></li></ul>",
+      "step": "7"
+    },
+    {
+      "type": 6,
+      "head": "Box C: HYDROCORTISONE and CHLORPHENAMINE CHANGES",
+      "body": "<p><b>AFTER</b> initial resuscitation:</p><ul><li>Consider steroids for refractory reactions or ongoing asthma/shock.</li><li>Antihistamines (preferably oral, non-sedating) can be given for skin symptoms.</li></ul>",
       "step": "7"
     },
     {
       "type": 4,
       "head": "",
-      "body": "Give rapid IV crystalloid: 20 ml.kg⁻¹ initial bolus, repeated until hypotension resolved.",
+      "body": "<p>Give rapid IV crystalloid:</p><ul><li>20 ml.kg⁻¹ initial bolus, repeated until hypotension resolved.</li><li>Fluid requirements may be significant</li></ul>",
       "step": "8"
     },
     {
       "type": 4,
       "head": "",
-      "body": "Give hydrocortisone as part of resuscitation <b>(Box B)</b>.",
+      "body": "If bronchospasm is persistent, consider <b>→3-4</b>",
       "step": "9"
-    },
-    {
-      "type": 6,
-      "head": "Box B: OTHER DRUGS",
-      "body": "<p><b>Hydrocortisone i.v. doses:</b></p><ul><li>Adult: 200 mg</li><li>Child 6-12 years: 100 mg</li><li>Child 6 months-6 years: 50 mg</li><li>Child &lt;6 months: 25 mg </li></ul><p><b>Chlorphenamine i.v. doses:</b></p><ul><li>Adult: 10 mg</li><li>Child 6-12 years: 5 mg</li><li>Child 6 months-6 years: 2.5 mg</li><li>Child &lt;6 months: 250 μg.kg⁻¹</li></ul>",
-      "step": ""
     },
     {
       "type": 4,
       "head": "",
-      "body": "If bronchospasm is persistent, consider <b>→3-4</b>",
+      "body": "<p>Take 5-10 ml clotted blood sample for <b>serum tryptase</b> as soon as patient is stable.</p><ul><li>Plan for repeat sample at 1-2 hours and >24 hours.</li></ul>",
       "step": "10"
     },
     {
       "type": 4,
       "head": "",
-      "body": "Take 5-10 ml clotted blood sample for <b>serum tryptase</b> as soon as patient is stable. Plan for repeat sample at 1-2 hours and >24 hours.",
+      "body": "Plan transfer of the patient to an appropriate critical care area. Note tasks in Box D.",
       "step": "11"
-    },
-    {
-      "type": 4,
-      "head": "",
-      "body": "Give chlorphenamine when feasible <b>(Box B)</b>.",
-      "step": "12"
-    },
-    {
-      "type": 4,
-      "head": "",
-      "body": "Plan transfer of the patient to an appropriate critical care area. Note tasks in <b>Box D</b>.",
-      "step": "13"
     },
     {
       "type": 9,
       "head": "Box D: DON’T FORGET",
-      "body": "<ul><li>Repeat testing for serum tryptase at 1-2 hours and >24 hours</li><li>Liaise with hospital laboratory about analysis of samples</li><li>Liaise with department anaphylaxis lead regarding referral to a specialist allergy or immunology centre to identify the causative agent (see www.bsaci.org for details</li><li>Inform the patient, surgeon and general practitioner</li><li>Report to MHRA: www.mhra.gov.uk/yellowcard</li><li>NAP6 online resource: www.nationalauditprojects.org.uk/NAP6-Resources#pt</li></ul>",
+      "body": "<ul><li>Repeat testing for serum tryptase at 1-2 hours and >24 hours.</li><li>Liaise with hospital laboratory about analysis of samples.</li><li>Liaise with department anaphylaxis lead regarding referral to a specialist allergy or immunology centre to identify the causative agent (see www.bsaci.org for details).</li><li>Inform the patient, surgeon and general practitioner</li><li>Report to MHRA: yellowcard.mhra.gov.uk</li><li>NAP6 online resource <b>including anaphylaxis follow-up packs</b>: www.nationalauditprojects.org.uk/NAP6-Resources#pt  </li></ul>",
       "step": ""
     },
     {
       "type": 4,
       "head": "",
-      "body": "Prevent re-administration of possible trigger agents (allergy band, annotate notes/drug chart.",
-      "step": "14"
+      "body": "Prevent re-administration of possible trigger agents (allergy band, annotate notes/drug chart)",
+      "step": "12"
     },
     {
       "type": 11,
       "head": "",
-      "body": "v.3",
+      "body": "v.5",
       "step": ""
     },
     {
       "type": 12,
       "head": "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available.",
       "body": "",
+      "step": ""
+    },
+    {
+      "type": 1,
+      "head": "",
+      "body": "<p><small><b>Association of Anaesthetists 2022. www.anaesthetists.org/qrh</b></small></p><p><small>Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original version or adapt for yourself and distribute with acknowledgement of source. You may not use for commercial purposes. Visit website for details.</small></p>",
       "step": ""
     }
   ]
