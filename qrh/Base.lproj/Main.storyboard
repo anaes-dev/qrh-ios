@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nHu-Uq-TsV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nHu-Uq-TsV">
     <device id="retina6_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +15,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dte-aI-K03"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="3c3-wh-Hlg">
-                        <rect key="frame" x="0.0" y="44" width="428" height="96"/>
+                        <rect key="frame" x="0.0" y="47" width="428" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" systemColor="linkColor"/>
                         <color key="barTintColor" systemColor="systemRedColor"/>
@@ -51,11 +51,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lxr-97-Vo6">
-                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <rect key="frame" x="0.0" y="91" width="428" height="801"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GuidelinesCell" rowHeight="60" id="jWL-Md-bGG" customClass="GuidelinesCell" customModule="qrh" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="60"/>
+                                        <rect key="frame" x="0.0" y="50" width="428" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jWL-Md-bGG" id="nru-4d-Pmk">
                                             <rect key="frame" x="0.0" y="0.0" width="428" height="60"/>
@@ -231,14 +231,14 @@ Should not override your own knowledge and judgement</string>
                         <viewControllerLayoutGuide type="bottom" id="Lrr-8X-IOp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NWL-dv-2qQ">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5P-dv-VIP">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="838"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdF-kV-cU9" userLabel="Container View">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="2363.6666666666665"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="2389.3333333333335"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="aii-Pk-Ep4">
                                                 <rect key="frame" x="8" y="16" width="50" height="50"/>
@@ -259,19 +259,19 @@ Should not override your own knowledge and judgement</string>
                                                 <rect key="frame" x="16" y="74" width="396" height="18"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTb-gW-2Qo">
-                                                        <rect key="frame" x="0.0" y="0.0" width="39.666666666666664" height="18"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSX-9Q-3Ce">
-                                                        <rect key="frame" x="39.666666666666671" y="0.0" width="136.66666666666663" height="18"/>
+                                                        <rect key="frame" x="39.333333333333329" y="0.0" width="135.33333333333337" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated April 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5m-MR-c2B">
-                                                        <rect key="frame" x="176.33333333333337" y="0.0" width="219.66666666666663" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated June 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5m-MR-c2B">
+                                                        <rect key="frame" x="174.66666666666663" y="0.0" width="221.33333333333337" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
@@ -279,7 +279,7 @@ Should not override your own knowledge and judgement</string>
                                                 </subviews>
                                             </stackView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="github.com/anaes-dev/qrh-ios" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a0f-wT-ee0" userLabel="Github link">
-                                                <rect key="frame" x="16" y="100" width="396" height="35"/>
+                                                <rect key="frame" x="16" y="100" width="396" height="38"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -287,16 +287,16 @@ Should not override your own knowledge and judgement</string>
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eAF-80-20C" userLabel="Unofficial adaptation">
-                                                <rect key="frame" x="16" y="167" width="396" height="83"/>
+                                                <rect key="frame" x="16" y="170" width="396" height="66.333333333333314"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <string key="text">Unofficial open-source adaptation of the Association of Anaesthetists Quick Reference Handbook (QRH) April 2022 version. www.anaesthetists.org/Quick-Reference-Handbook</string>
+                                                <string key="text">Unofficial open-source adaptation of the Association of Anaesthetists Quick Reference Handbook (QRH) June 2023 version. www.anaesthetists.org/qrh</string>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="CC" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0r-dT-mrB" userLabel="CC text">
-                                                <rect key="frame" x="16" y="324" width="396" height="102"/>
+                                                <rect key="frame" x="16" y="310.33333333333331" width="396" height="102"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">This material is a derivative of the "Quick Reference Handbook" (www.anaesthetists.org/qrh) by The Association of Anaesthetists (www.anaesthetists.org), used under Creative Commons license CC BY-NC-SA 4.0 (www.creativecommons.org/licenses/by-nc-sa/4.0).
 
@@ -307,20 +307,20 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                             </textView>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="747" verticalCompressionResistancePriority="747" image="by_nc_sa.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Eo-Ah-vb4">
-                                                <rect key="frame" x="20" y="282" width="100" height="34"/>
+                                                <rect key="frame" x="20" y="268.33333333333331" width="100" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="9I5-Sp-oXy"/>
                                                     <constraint firstAttribute="width" constant="100" id="DJz-xI-8gK"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="As this is your first launch, please read and consider all of the following:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHK-jw-0UB" userLabel="First Launch">
-                                                <rect key="frame" x="16" y="458" width="396" height="33.666666666666686"/>
+                                                <rect key="frame" x="16" y="444.33333333333331" width="396" height="33.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZ3-Mh-0DN" userLabel="Step 1">
-                                                <rect key="frame" x="16" y="507.66666666666674" width="32" height="32"/>
+                                                <rect key="frame" x="16" y="494" width="32" height="32"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YfF-a1-jp1">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -345,14 +345,14 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcM-Ic-bWL">
-                                                <rect key="frame" x="64" y="515.66666666666663" width="348" height="65.666666666666629"/>
+                                                <rect key="frame" x="64" y="502.00000000000006" width="348" height="65.666666666666686"/>
                                                 <string key="text">This application is an unofficial open-source adaptation of the Association of Anaesthetists Quick Reference Handbook (QRH); a collection of guidelines for unexpected or uncommon anaesthesia-related emergencies. As per the original accompanying guidance:</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WH1-qw-Dur">
-                                                <rect key="frame" x="64" y="589.33333333333337" width="348" height="275.66666666666663"/>
+                                                <rect key="frame" x="64" y="575.66666666666663" width="348" height="275.66666666666663"/>
                                                 <string key="text">"The QRH is not a substitute for learning and practising clinical skills. Nor is it a substitute for being familiar with more detailed guidelines and algorithms, such as those for managing cardiac arrest or difficult airway.
 
 It's essential that clinicians learn about these and practice their implementation elsewhere. For example, it's expected that in using the QRH guideline for managing cardiac arrest, clinicians will already have underlying knowledge of conditions causing cardiac arrest and will be competent in providing advanced life support.
@@ -363,7 +363,7 @@ The QRH is also not intended to be used as a rule book every single time one of 
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlS-Ak-Jde">
-                                                <rect key="frame" x="64" y="873" width="348" height="95"/>
+                                                <rect key="frame" x="64" y="859.33333333333337" width="348" height="95"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zao-zB-sMj">
                                                         <rect key="frame" x="0.0" y="0.0" width="348" height="95"/>
@@ -408,7 +408,7 @@ The QRH is also not intended to be used as a rule book every single time one of 
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3V-eX-2uN" userLabel="Step 2">
-                                                <rect key="frame" x="16" y="1000" width="32" height="32"/>
+                                                <rect key="frame" x="16" y="986.33333333333337" width="32" height="32"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oI4-dP-Rv7">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -433,19 +433,19 @@ The QRH is also not intended to be used as a rule book every single time one of 
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYH-rQ-ViB">
-                                                <rect key="frame" x="64" y="1008" width="348" height="512"/>
-                                                <string key="text">This application is intended for use only by healthcare professionals in the United Kingdom who are already familiar with the QRH. It is intended to complement and improve access to, but not replace, the original QRH. This application has not been professionally developed nor tested. You must evaluate the application and its content, and exercise your own discretionary judgement about its appropriate use. The developer accepts no responsibility for or liability arising from any decision to use in a clinical setting despite this warning. You should consider the advice of your employer, regulatory and professional bodies regarding the use of software applications, and always exercise professional judgement before relying on information from any source.
+                                                <rect key="frame" x="64" y="994.33333333333326" width="348" height="551.33333333333326"/>
+                                                <mutableString key="text">This application is intended for use only by healthcare professionals in the United Kingdom who are already familiar with the QRH. It is intended to complement and improve access to, but not replace, the original QRH. This application has not been professionally developed nor tested. You must evaluate the application and its content, and exercise your own discretionary judgement about its appropriate use. The developer accepts no responsibility for or liability arising from any decision to use in a clinical setting despite this warning. You should consider the advice of your employer, regulatory and professional bodies regarding the use of software applications, and always exercise professional judgement before relying on information from any source.
 
-This application is not presented as a medical device in the United Kingdom. It carries no certification markings, regulatory approvals or technical assessment appraisals. According to the latest Medicines and Healthcare products Regulatory Agency guidance "Medical device stand-alone software including apps" (Published 8 August 2014, last updated 8 July 2021) at the time of this release; software is unlikely to be a device if it just reproduces a paper document in digital format, provides reference information to follow the path of a procedure/treatment, or it has decision points but the healthcare professional decides which path to take (as they ultimately rely on their own knowledge). This application does not perform any automated reasoning or calculations.
+This application is not presented as a medical device in the United Kingdom. It carries no certification markings, regulatory approvals or technical assessment appraisals. According to the latest Medicines and Healthcare products Regulatory Agency guidance "Medical device stand-alone software including apps" (Published 8 August 2014, last updated 16 May 2023) at the time of this release; software has no medical purpose if it only provides reference information to help a Healthcare Professional to use their knowledge to make a clinical decision, and is unlikely to be a medical device if it just reproduces a paper document in digital format, provides reference information to follow the path of a procedure/treatment, or it has decision points (options may be explaned) but the healthcare professional decides which path to take. This application does not perform any automated reasoning or calculations.
 
 Regulations may change with time. Distribution by the developer will be ceased if advised to do so or if this application subsequently becomes subject to regulatory approval. Please periodically check whether regulations have changed, and stop using this application if you are unsure about its status. Due to the offline and open-source nature of the application, however, the developer cannot be held responsible for ongoing use and distribution of the application or its source code by other parties beyond such a time.
 
-For more information please see: https://www.gov.uk/government/publications/medical-devices-software-applications-apps</string>
+For more information please see: https://www.gov.uk/government/publications/medical-devices-software-applications-apps</mutableString>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFX-NH-b7x" userLabel="Step 3">
-                                                <rect key="frame" x="16" y="1552" width="32" height="32"/>
+                                                <rect key="frame" x="16" y="1577.6666666666667" width="32" height="32"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mAv-QK-0fQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -470,16 +470,16 @@ For more information please see: https://www.gov.uk/government/publications/medi
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLF-aA-xiS">
-                                                <rect key="frame" x="64" y="1560" width="348" height="472.66666666666674"/>
-                                                <string key="text">This application reproduces the April 2022 version of the QRH, adapted to fit the mobile application format. Content has largely been transcribed verbatim, except for minor formatting, punctuation and structure tweaks that do not meaningfully alter the guidelines, and the introduction of TALLman Lettering to improve the readability of certain words. The developer assumes no responsibility or liability for any errors or omissions in the content. The information is provided on an "as is" basis with no guarantees of completeness, accuracy, usefulness or timeliness. Drug indications and doses may be incorrect, and do not take into account individual circumstances such as comorbidities, interactions, renal and hepatic function. Likewise, the application is provided on an "as is" basis with no guarantees of usefulness, performance or reliability. A copy of the original QRH should always be retained for reference and backup. The developer, original QRH authors, or anyone else connected in any way with the QRH or application, cannot be held responsible for your use of the information contained in or linked from this application. Links to external websites and telephone numbers are provided for convenience and informational purposes only; they do not constitute an endorsement and the developer is not responsible for any third-party content accessed through them.
+                                                <rect key="frame" x="64" y="1585.6666666666667" width="348" height="472.66666666666674"/>
+                                                <mutableString key="text">This application reproduces the June 2023 version of the QRH, adapted to fit the mobile application format. Content has largely been transcribed verbatim, except for minor formatting, punctuation and structure tweaks that do not meaningfully alter the guidelines, and the introduction of TALLman Lettering to improve the readability of certain words. The developer assumes no responsibility or liability for any errors or omissions in the content. The information is provided on an "as is" basis with no guarantees of completeness, accuracy, usefulness or timeliness. Drug indications and doses may be incorrect, and do not take into account individual circumstances such as comorbidities, interactions, renal and hepatic function. Likewise, the application is provided on an "as is" basis with no guarantees of usefulness, performance or reliability. A copy of the original QRH should always be retained for reference and backup. The developer, original QRH authors, or anyone else connected in any way with the QRH or application, cannot be held responsible for your use of the information contained in or linked from this application. Links to external websites and telephone numbers are provided for convenience and informational purposes only; they do not constitute an endorsement and the developer is not responsible for any third-party content accessed through them.
 
-The QRH is updated from time to time. A version number is displayed next to each guideline in the list view, and in the guideline footer when opened; these correspond with the Association of Anaesthetists guideline versioning. You must check that the guidelines you are using are up to date. The developer will endeavour to keep the application updated with any new QRH revision, but there will be a delay between release from the Association of Anaesthetists and release of an application update. If any guidelines contained within the application become superseded, please revert to using the latest version from the Association of Anaesthetists. Alternatively, the source code could be obtained from github.com/anaes-dev/qrh-ios and updated by the end-user.</string>
+The QRH is updated from time to time. A version number is displayed next to each guideline in the list view, and in the guideline footer when opened; these correspond with the Association of Anaesthetists guideline versioning. You must check that the guidelines you are using are up to date. The developer will endeavour to keep the application updated with any new QRH revision, but there will be a delay between release from the Association of Anaesthetists and release of an application update. If any guidelines contained within the application become superseded, please revert to using the latest version from the Association of Anaesthetists. Alternatively, the source code could be obtained from github.com/anaes-dev/qrh-ios and updated by the end-user.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qpo-ti-i9I" userLabel="Step 4">
-                                                <rect key="frame" x="16" y="2064.6666666666665" width="32" height="32"/>
+                                                <rect key="frame" x="16" y="2090.3333333333335" width="32" height="32"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l3o-XD-bUU">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -504,14 +504,14 @@ The QRH is updated from time to time. A version number is displayed next to each
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H91-4v-E4L">
-                                                <rect key="frame" x="64" y="2072.6666666666665" width="348" height="92"/>
+                                                <rect key="frame" x="64" y="2098.3333333333335" width="348" height="92"/>
                                                 <string key="text">The privacy policy for this application is available at anaes.dev/privacy. This application does not itself collect, access, use, store, transmit or sell any personal data. Basic de-identified data may be collected by the iOS operating system and/or the App Store - as governed by their respective privacy policies - unless you have opted-out of providing these; we may access these anonymised statistics to help improve future versions of the application.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tae-Cm-NsM" userLabel="Step 5">
-                                                <rect key="frame" x="16" y="2196.6666666666665" width="32" height="32"/>
+                                                <rect key="frame" x="16" y="2222.3333333333335" width="32" height="32"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lof-NM-n8Q">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -536,14 +536,14 @@ The QRH is updated from time to time. A version number is displayed next to each
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXd-Z5-KKw">
-                                                <rect key="frame" x="64" y="2204.6666666666665" width="348" height="79"/>
+                                                <rect key="frame" x="64" y="2230.3333333333335" width="348" height="79"/>
                                                 <string key="text">If you disagree with any of the above, please click the 'Disagree' button below and proceed to uninstall the application. If you agree, please click the 'Agree' button to launch the application. This disclaimer can be accessed at any time from the About page by clicking the icon at the top-right corner of the main application screen. A small popup reminder will be displayed at each launch.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZN-wK-kV7" userLabel="Buttons">
-                                                <rect key="frame" x="16" y="2299.6666666666665" width="396" height="48"/>
+                                                <rect key="frame" x="16" y="2325.3333333333335" width="396" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="747" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lF0-Mw-k57">
                                                         <rect key="frame" x="8" y="8" width="161.66666666666666" height="32"/>
@@ -727,14 +727,14 @@ The QRH is updated from time to time. A version number is displayed next to each
                         <viewControllerLayoutGuide type="bottom" id="vqj-v3-gRL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bel-r0-qo8">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjb-VO-VlR">
-                                <rect key="frame" x="0.0" y="56" width="428" height="733"/>
+                                <rect key="frame" x="0.0" y="56" width="428" height="811"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BG4-Fe-Pfb" userLabel="Container View">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="654.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="640.66666666666663"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="040-Ad-Vmc">
                                                 <rect key="frame" x="8" y="16" width="50" height="50"/>
@@ -755,19 +755,19 @@ The QRH is updated from time to time. A version number is displayed next to each
                                                 <rect key="frame" x="16" y="74" width="396" height="18"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGP-gc-Sbp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="39.666666666666664" height="18"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.42" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCp-g5-YDE">
-                                                        <rect key="frame" x="39.666666666666671" y="0.0" width="136.66666666666663" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCp-g5-YDE">
+                                                        <rect key="frame" x="39.333333333333329" y="0.0" width="135.33333333333337" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated April 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvV-46-5u8">
-                                                        <rect key="frame" x="176.33333333333337" y="0.0" width="219.66666666666663" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated June 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvV-46-5u8">
+                                                        <rect key="frame" x="174.66666666666663" y="0.0" width="221.33333333333337" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
@@ -775,7 +775,7 @@ The QRH is updated from time to time. A version number is displayed next to each
                                                 </subviews>
                                             </stackView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="github.com/anaes-dev/qrh-ios" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DpY-GV-96m" userLabel="Github link">
-                                                <rect key="frame" x="16" y="100" width="396" height="35"/>
+                                                <rect key="frame" x="16" y="100" width="396" height="38"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -783,16 +783,16 @@ The QRH is updated from time to time. A version number is displayed next to each
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PLx-kJ-aUo" userLabel="Unofficial adaptation">
-                                                <rect key="frame" x="16" y="167" width="396" height="83"/>
+                                                <rect key="frame" x="16" y="170" width="396" height="66.333333333333314"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <string key="text">Unofficial open-source adaptation of the Association of Anaesthetists Quick Reference Handbook (QRH) April 2022 version. www.anaesthetists.org/Quick-Reference-Handbook</string>
+                                                <string key="text">Unofficial open-source adaptation of the Association of Anaesthetists Quick Reference Handbook (QRH) June 2023 version. www.anaesthetists.org/qrh</string>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="CC" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-bs-Hjz" userLabel="CC text">
-                                                <rect key="frame" x="16" y="324" width="396" height="102"/>
+                                                <rect key="frame" x="16" y="310.33333333333331" width="396" height="102"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">This material is a derivative of the "Quick Reference Handbook" (www.anaesthetists.org/Quick-Reference-Handbook) by The Association of Anaesthetists (www.anaesthetists.org), used under Creative Commons license CC BY-NC-SA 4.0 (www.creativecommons.org/licenses/by-nc-sa/4.0).
 
@@ -803,14 +803,14 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                             </textView>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="747" verticalCompressionResistancePriority="747" image="by_nc_sa.png" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-lv-6ei">
-                                                <rect key="frame" x="20" y="282" width="100" height="34"/>
+                                                <rect key="frame" x="20" y="268.33333333333331" width="100" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="9b5-et-hLz"/>
                                                     <constraint firstAttribute="width" constant="100" id="G6P-aL-sbI"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down.doc" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Ky-yp-99u">
-                                                <rect key="frame" x="16" y="442.33333333333331" width="32" height="31.666666666666686"/>
+                                                <rect key="frame" x="16" y="428.66666666666663" width="32" height="31.666666666666686"/>
                                                 <color key="tintColor" systemColor="systemGrayColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="LNU-ZP-Fsj"/>
@@ -820,13 +820,13 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDd-Nq-zHv">
-                                                <rect key="frame" x="56" y="442" width="356" height="50.333333333333314"/>
+                                                <rect key="frame" x="56" y="428.33333333333331" width="356" height="50.333333333333314"/>
                                                 <string key="text">Click this icon at the top-right of each guideline to access the original PDF file from the Association of Anaesthetists website.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oTA-zG-hWK">
-                                                <rect key="frame" x="16" y="511.33333333333331" width="32" height="26.333333333333371"/>
+                                                <rect key="frame" x="16" y="497.66666666666663" width="32" height="26.333333333333371"/>
                                                 <color key="tintColor" systemColor="systemGrayColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="32" id="Pyn-mx-4WI"/>
@@ -834,19 +834,19 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click highlighted links to jump to related guidelines." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iO5-l7-Tbh">
-                                                <rect key="frame" x="56" y="508.33333333333337" width="356" height="17"/>
+                                                <rect key="frame" x="56" y="494.66666666666663" width="356" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please report any bugs via the github page." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdL-pe-cDf">
-                                                <rect key="frame" x="16" y="557.33333333333337" width="396" height="17"/>
+                                                <rect key="frame" x="16" y="543.66666666666663" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPj-sB-dQ5" userLabel="Buttons">
-                                                <rect key="frame" x="32" y="590.33333333333337" width="364" height="48"/>
+                                                <rect key="frame" x="32" y="576.66666666666663" width="364" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjf-Nh-62z">
                                                         <rect key="frame" x="8" y="8" width="166" height="32"/>
@@ -1009,7 +1009,7 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="73I-s3-MOL">
-                                <rect key="frame" x="0.0" y="140" width="428" height="752"/>
+                                <rect key="frame" x="0.0" y="143" width="428" height="749"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <connections>
                                     <outlet property="dataSource" destination="gGv-fq-olE" id="Uoz-9h-vUX"/>
@@ -1120,7 +1120,7 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                         <viewControllerLayoutGuide type="bottom" id="9CL-kl-OFT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Sc5-EU-Nsg">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -1169,7 +1169,7 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V0I-VX-9Vm">
-                                <rect key="frame" x="0.0" y="140" width="256.66666666666669" height="752"/>
+                                <rect key="frame" x="0.0" y="143" width="256.66666666666669" height="749"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <connections>
                                     <outlet property="dataSource" destination="pFN-c1-UtQ" id="pVg-nL-iCG"/>
@@ -1177,7 +1177,7 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
                                 </connections>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="soV-aX-dYB">
-                                <rect key="frame" x="256.66666666666669" y="140" width="171.33333333333331" height="752"/>
+                                <rect key="frame" x="256.66666666666669" y="143" width="171.33333333333331" height="749"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <connections>
                                     <outlet property="dataSource" destination="pFN-c1-UtQ" id="gM2-t7-MHr"/>
@@ -1295,13 +1295,13 @@ Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original
     <color key="tintColor" systemColor="systemTealColor"/>
     <resources>
         <image name="arrow.down.doc" catalog="system" width="115" height="128"/>
-        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
         <image name="by_nc_sa.png" width="96.720001220703125" height="33.840000152587891"/>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
         <image name="logo.png" width="192" height="192"/>
         <image name="xmark.square" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

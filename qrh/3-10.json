@@ -33,7 +33,7 @@
     {
       "type": 4,
       "head": "",
-      "body": "<p>Give 100% oxygen and ensure adequate lung ventilation:</p><ul><li>Maintain the airway and if necessary secure it with a tracheal tube</li><li>Hyperventilation may help reduce acidosis</li></ul>",
+      "body": "<p>Give 100% oxygen and ensure adequate lung ventilation:</p><ul><li>Maintain the airway and if necessary secure it with a tracheal tube.</li><li>Avoid hypercarbia - consider mild hyperventilation.</li></ul>",
       "step": "4"
     },
     {
@@ -51,7 +51,7 @@
     {
       "type": 4,
       "head": "",
-      "body": "<ul><li>Start continuous CPR using standard protocols</li><li>Give intravenous lipid emulsion <b>(Box A)</b></li><li>Recovery may take >1 hour</li><li>Consider the use of cardiopulmonary bypass if available</li></ul>",
+      "body": "<ul><li>Start continuous CPR using standard protocols <b>(→2-1) but:</b></li><li><b>Give</b> intravenous lipid emulsion <b>(Box A)</b>.</li><li><b>Use smaller adrenaline dose</b> (≤ 1µg.kg⁻¹ instead of 1 mg).</li><li>Avoid vasopressin.</li><li>Recovery may take >1 hour.</li><li>Consider the use of cardiopulmonary bypass if available.</li></ul>",
       "step": "6"
     },
     {
@@ -69,31 +69,37 @@
     {
       "type": 4,
       "head": "",
-      "body": "<ul><li>Conventional therapies to treat hypotension, brady- and tachyarrhythmia</li><li><i>Consider</i> intravenous lipid emulsion <b>(Box A)</b></li></ul>",
+      "body": "<ul><li>Conventional therapies to treat hypotension, brady- and tachyarrhythmia.</li><li><b><i>Consider</i></b> intravenous lipid emulsion <b>(Box A)</b>.</li></ul>",
       "step": "6"
+    },
+    {
+      "type": 6,
+      "head": "Box A: LIPID EMULSION REGIME",
+      "body": "<p><b>USE 20% Intralipid® <small>(propofol is not a suitable substitute)</small></b></p><p><b>Immediately:</b></p><ul><li>Give an initial intraVENOUS bolus of lipid emulsion 1.5 ml.kg⁻¹ over 1 min (~100 ml for a 70 kg adult)</li><li>Start an intraVENOUS infusion of lipid emulsion at 15 ml.kg⁻¹.h⁻¹ (17.5 ml.min⁻¹ for a 70 kg adult)</li></ul><p><b>At 5 and 10 minutes:</b></p><ul><li>Give a repeat bolus (same dose) if: cardiovascular stability has not been restored or; an adequate circulation deteriorates.</li></ul><p><b>At any time after 5 minutes:</b></p><ul><li>Double the rate to 30 ml.kg⁻¹.h⁻¹ if: cardiovascular stability has not been restored or; an adequate circulation deteriorates</li><p><b>Do not exceed maximum cumulative dose 12 ml.kg⁻¹ (70kg: 840 ml)</b></ul>",
+      "step": ""
     },
     {
       "type": 4,
       "head": "",
-      "body": "Control seizures with small incremental dose of benzodiazepine, thiopental or propofol.",
+      "body": "<p>Control seizures:</p><ul><li>Small incremental dose of benzodiazepine is drug of choice.</li><li>Thiopental or propofol can be used, but be aware of negative inotropic effect.</li><li>Consider neuromuscular blockade if seizures cannot be controlled.</li>",
       "step": "7"
     },
     {
       "type": 5,
       "head": "Box B: CRITICAL CHANGES",
-      "body": "<b>CARDIAC ARREST →2-1</b>",
+      "body": "<p><b>CARDIAC ARREST →2-1</b></p><p>Check already done steps 1 to 5, then 6.</p>",
       "step": ""
     },
     {
       "type": 9,
       "head": "Box C: AFTER THE EVENT",
-      "body": "<p>Arrange safe transfer to appropriate clinical area</p><p>Exclude pancreatitis: regular clinical review, daily amylase or lipase</p><p>Report cases to MHRA: yellowcard.mhra.gov.uk</p>",
+      "body": "<p>Arrange safe transfer to appropriate clinical area</p><p>Exclude pancreatitis: regular clinical review, daily amylase or lipase</p><p>Report case on your local critical incident system and to the relevant national system (these vary between each devolved nation and in Ireland)</p>",
       "step": ""
     },
     {
       "type": 11,
       "head": "",
-      "body": "v.1",
+      "body": "v.2",
       "step": ""
     },
     {
@@ -105,7 +111,7 @@
     {
       "type": 1,
       "head": "",
-      "body": "<p><small><b>Association of Anaesthetists 2022. www.anaesthetists.org/qrh</b></small></p><p><small>Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original version or adapt for yourself and distribute with acknowledgement of source. You may not use for commercial purposes. Visit website for details.</small></p>",
+      "body": "<p><small><b>Association of Anaesthetists 2023. www.anaesthetists.org/qrh</b></small></p><p><small>Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original version or adapt for yourself and distribute with acknowledgement of source. You may not use for commercial purposes. Visit website for details.</small></p>",
       "step": ""
     }
   ]
