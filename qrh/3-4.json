@@ -39,43 +39,37 @@
     {
       "type": 4,
       "head": "",
-      "body": "<p>Deepen anaesthesia:</p><ul><li>Bronchospasm may be a consequence of light anaesthesia</li><li>Inhalational anaesthetic agents are bronchodilators</li><li>Avoid isoflurane or desflurane if possible – airway irritant if increased rapidly</li></ul>",
+      "body": "<p>Deepen anaesthesia:</p><ul><li>Inhalational anaesthetic agents are bronchodilators AND bronchospasm may be a consequence of light anaesthesia.</li><li>Avoid isoflurane or desflurane if possible – airway irritant if increased rapidly.</li></ul>",
       "step": "5"
     },
     {
       "type": 4,
       "head": "",
-      "body": "Exclude malpositioned or obstructed tracheal tube or supraglottic airway. Consider whether there could be endobronchial or oesophageal intubation.",
+      "body": "<p>Exclude conditions that may be misinterpreted as bronchospasm:</p><ul><li>Mispositioned or occluded airway device.</li><li>Endobronchial or oesophageal intubation.</li><li>Occlusion of breathing system - check all hoses.</li><li>Consider other conditions mimicking bronchospasm <b>(Box A)</b>.</li></ul>",
       "step": "6"
     },
     {
-      "type": 4,
-      "head": "",
-      "body": "If anaphylaxis suspected <b>→3-1</b>",
-      "step": "7"
-    },
-    {
-      "type": 4,
-      "head": "",
-      "body": "If airway soiling/aspiration suspected airway see <b>Box A</b>",
-      "step": "8"
-    },
-    {
       "type": 9,
-      "head": "Box A: ACTIONS IF AIRWAY SOILING/ASPIRATION",
-      "body": "<p>Consider tracheal intubation and tracheal toilet</p><p>Use nasogastric tube to aspirate gastric contents</p><p>Chest X-ray</p><p>Consider post op level of care and follow-up</p>",
+      "head": "Box A: ALTERNATES and MIMICS",
+      "body": "<p><b>Wheeze:</b> pulmonary oedema; ARDS; laryngospasm.</p><p><b>Raised airway pressure:</b> obstruction of larynx, trachea or bronchi; decreased lung compliance; pneumothorax.</p>",
       "step": ""
     },
     {
       "type": 4,
       "head": "",
-      "body": "Treat bronchospasm <b>(Box B)</b>. First line is salbutamol by metered dose inhaler or by nebuliser; i.v. route is second line. Other drugs at clinician discretion.",
-      "step": "9"
+      "body": "Consider anaphylaxis; if suspected <b>→3-1</b>",
+      "step": "7"
+    },
+    {
+      "type": 4,
+      "head": "",
+      "body": "Treat bronchospasm <b>(Box B)</b>. First line is salbutamol by metered dose inhaler or by nebuliser (remove HME filter or nebulise downstream); intraVENOUS route is second line. Other drugs at clinician discretion.",
+      "step": "8"
     },
     {
       "type": 6,
       "head": "Box B: SALBUTAMOL",
-      "body": "<p><b>Salbutamol</b></p><ul><li>Nebuliser:<br>Child &lt;5 yr, 2.5 mg<br>Adult and &gt;5 yr 5 mg</li><li>IntraVENOUS bolus:<br>Adult 250 µg diluted, slowly<br>Child 1-23 months 5 µg.kg⁻¹ <small>once over 5 mins</small><br>Child 2-17 years 15 µg.kg⁻¹ <small>once over 5 mins (max. 250 µg)</small></li><li>Adult intraVENOUS infusion:<br>5-20 µg.min⁻¹</li><li>Child intraVENOUS infusion:<br>0.5-1 µg.kg⁻¹.min⁻¹ <small>(max. 20 µg.min⁻¹)</small></li></ul>",
+      "body": "<p><b>Salbutamol</b></p><ul><li>Nebuliser:<br>Child &lt;5 yr, 2.5 mg<br>Adult and &gt;5 yr 5 mg<br><b>(Remove HME filter OR nebulise downstream)</b></li><li>IntraVENOUS bolus:<br>Adult 250 µg diluted, slowly<br>Child 1-23 months 5 µg.kg⁻¹ <small>once over 5 mins</small><br>Child 2-17 years 15 µg.kg⁻¹ <small>once over 5 mins (max. 250 µg)</small></li><li>Adult intraVENOUS infusion:<br>5-20 µg.min⁻¹</li><li>Child intraVENOUS infusion:<br>0.5-1 µg.kg⁻¹.min⁻¹ <small>(max. 20 µg.min⁻¹)</small></li></ul>",
       "step": ""
     },
     {
@@ -99,20 +93,20 @@
     {
       "type": 4,
       "head": "",
-      "body": "Consider alternate diagnoses causing or mimicking bronchospasm <b>(Box C)</b>",
-      "step": "10"
+      "body": "If airway soiling/aspiration suspected airway see <b>Box C</b>",
+      "step": "9"
     },
     {
       "type": 9,
-      "head": "Box C: ALTERNATES and MIMICS",
-      "body": "<p><b>Wheeze:</b> pulmonary oedema; misplaced airway device; ARDS; laryngospasm</p><p><b>Raised airway pressure:</b> obstruction of larynx, trachea or bronchi; obstruction of breathing system (any part); decreased lung compliance; pneumothorax</p>",
+      "head": "Box C: ACTIONS IF AIRWAY SOILING/ASPIRATION",
+      "body": "<p>Consider tracheal intubation and tracheal toilet</p><p>Use nasogastric tube to aspirate gastric contents</p>",
       "step": ""
     },
     {
       "type": 4,
       "head": "",
       "body": "Use appropriate ventilation strategy <b>(Box D)</b>",
-      "step": "11"
+      "step": "10"
     },
     {
       "type": 8,
@@ -124,24 +118,24 @@
       "type": 4,
       "head": "",
       "body": "If raised airway pressure and/or desaturation persists, consider <b>→2-2 (Hypoxia/desaturation/cyanosis)</b>",
-      "step": "12"
+      "step": "11"
     },
     {
       "type": 4,
       "head": "",
       "body": "Obtain a chest X-ray as soon as clinically safe to do so",
-      "step": "13"
+      "step": "12"
     },
     {
       "type": 4,
       "head": "",
       "body": "Plan appropriate placement for post-procedure care",
-      "step": "14"
+      "step": "13"
     },
     {
       "type": 11,
       "head": "",
-      "body": "v.2",
+      "body": "v.3",
       "step": ""
     },
     {
@@ -153,7 +147,7 @@
     {
       "type": 1,
       "head": "",
-      "body": "<p><small><b>Association of Anaesthetists 2022. www.anaesthetists.org/qrh</b></small></p><p><small>Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original version or adapt for yourself and distribute with acknowledgement of source. You may not use for commercial purposes. Visit website for details.</small></p>",
+      "body": "<p><small><b>Association of Anaesthetists 2023. www.anaesthetists.org/qrh</b></small></p><p><small>Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original version or adapt for yourself and distribute with acknowledgement of source. You may not use for commercial purposes. Visit website for details.</small></p>",
       "step": ""
     }
   ]
