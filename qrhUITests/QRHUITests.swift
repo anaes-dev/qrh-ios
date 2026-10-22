@@ -25,13 +25,15 @@ final class QRHUITests: XCTestCase {
 
 //    accepted: nil leaves the stored value alone; true/false overrides it for
 //    this launch only (argument domain)
-    func launch(accepted: Bool? = true, reset: Bool = false) {
+    func launch(accepted: Bool? = true, reset: Bool = false, expandingDisabled: Bool = false) {
         var arguments = [String]()
         if reset { arguments.append("-resetDisclaimer") }
         if let accepted {
 //            A build far ahead of the app's, so the update disclaimer doesn't show
             arguments += ["-hasAcceptedDisclaimer", accepted ? "YES" : "NO", "-acceptedDisclaimerBuild", "999999"]
         }
+//        Boxes collapse on iPhone unless a test says otherwise
+        arguments += ["-expandingDisabled", expandingDisabled ? "YES" : "NO"]
         app.launchArguments = arguments
         app.launch()
     }
@@ -232,6 +234,24 @@ final class QRHUITests: XCTestCase {
         scrollTo(blue)
         XCTAssertEqual(orange.value as? String, "Expanded")
         XCTAssertEqual(blue.value as? String, "Collapsed")
+    }
+
+//    The About setting opens every box (set by launch argument here, so it
+//    doesn't persist into other tests)
+    func testExpandingDisabledOpensEveryBox() {
+        launch(expandingDisabled: true)
+        XCTAssertTrue(list.waitForExistence(timeout: 15))
+        app.buttons["About"].tap()
+        let toggle = app.switches["Disable expanding boxes"]
+        scrollTo(toggle)
+        XCTAssertTrue(toggle.waitForExistence(timeout: 5))
+        XCTAssertEqual(toggle.value as? String, "1")
+        app.buttons["Close"].firstMatch.tap()
+
+        open("Hypertension")
+//        Box A's link shows without tapping the box
+        XCTAssertTrue(link("1-1").waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons.matching(NSPredicate(format: "label CONTAINS 'Box A: CRITICAL CHANGES'")).firstMatch.exists)
     }
 
     func testPDFSheetOpensAndCloses() {

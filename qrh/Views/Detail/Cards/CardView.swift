@@ -14,6 +14,9 @@ struct CardView: View {
     var expanded = false
     var toggle: () -> Void = {}
 
+//    Setting in About: boxes always open, as on iPad
+    @AppStorage("expandingDisabled") private var expandingDisabled = false
+
     var body: some View {
         switch card.kind {
         case .intro:
@@ -27,7 +30,7 @@ struct CardView: View {
             StepCard(step: card.card.step, blocks: card.blocks)
         case .callout(let color):
             CalloutBox(color: color, head: card.card.head, blocks: card.blocks,
-                       collapsible: !isPad, expanded: expanded, toggle: toggle)
+                       collapsible: !isPad && !expandingDisabled, expanded: expanded, toggle: toggle)
         case .image:
             ImageCard(head: card.card.head, imageName: card.card.body)
         case .version:

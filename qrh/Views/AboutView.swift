@@ -17,6 +17,7 @@ struct AboutView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.openURL) private var openURL
     @State private var showDisclaimer = false
+    @AppStorage("expandingDisabled") private var expandingDisabled = false
 
     @ScaledMetric(relativeTo: .subheadline) private var textSize: CGFloat = 14
     @ScaledMetric(relativeTo: .title2) private var iconSize: CGFloat = 26
@@ -35,6 +36,18 @@ struct AboutView: View {
                                   text: "Click this icon at the top-right of each guideline to view it in a large-format card view - swipe horizontally through the steps.")
                         explainer(icon: "arrow.right",
                                   text: "Click highlighted links to jump to related guidelines.")
+                    }
+                    .padding(.top, 24)
+
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Expanding boxes")
+                            .font(.system(size: textSize, weight: .semibold))
+                            .accessibilityAddTraits(.isHeader)
+                        Text("If you would like all content boxes to be expanded by default, please change this setting:")
+                            .font(.system(size: textSize))
+                            .fixedSize(horizontal: false, vertical: true)
+                        Toggle("Disable expanding boxes", isOn: $expandingDisabled)
+                            .font(.system(size: textSize))
                     }
                     .padding(.top, 24)
 
