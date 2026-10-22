@@ -12,7 +12,7 @@ struct AboutView: View {
 
         Subject to Creative Commons license CC BY-NC-SA 4.0. You may distribute original version or adapt for yourself and distribute with acknowledgement of source. You may not use for commercial purposes.
         """
-    static let privacyURL = URL(string: "http://qrh.anaes.dev/privacy")!
+    static let privacyURL = URL(string: "https://qrh.anaes.dev/privacy")!
 
     @Environment(\.dismiss) private var dismiss
     @Environment(\.openURL) private var openURL
