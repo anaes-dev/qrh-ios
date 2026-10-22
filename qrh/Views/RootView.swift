@@ -13,16 +13,15 @@ import UIKit
 struct RootView: View {
     @State private var store = GuidelineStore()
     @State private var router = Router()
-    @AppStorage("hasAcceptedDisclaimer") private var hasAcceptedDisclaimer = false
-    @State private var showDisclaimer = false
+    @State private var disclaimer: DisclaimerView.Mode?
     @State private var reminder: ReminderState
     @State private var requests = OpenRequests.shared
     @Environment(\.scenePhase) private var scenePhase
     @State private var columns = NavigationSplitViewVisibility.all
 
     init() {
-        let accepted = UserDefaults.standard.bool(forKey: "hasAcceptedDisclaimer")
-        _reminder = State(initialValue: accepted ? .pending : .done)
+//        The launch reminder only follows a disclaimer agreed before this launch
+        _reminder = State(initialValue: DisclaimerStatus.current() == .accepted ? .pending : .done)
     }
 
     var body: some View {
@@ -44,12 +43,14 @@ struct RootView: View {
         } message: {
             Text("Please do not try to open more than 20 guidelines at once")
         }
-        .sheet(isPresented: $showDisclaimer) {
-            DisclaimerView()
+        .sheet(item: $disclaimer) { mode in
+            DisclaimerView(mode: mode)
         }
         .onAppear {
-            if !hasAcceptedDisclaimer {
-                showDisclaimer = true
+            switch DisclaimerStatus.current() {
+            case .accepted: break
+            case .firstRun: disclaimer = .firstRun
+            case .updated: disclaimer = .updated
             }
 #if DEBUG
 //            UI tests: start with these guidelines open (-uiTestPath 3-8,2-8,...)

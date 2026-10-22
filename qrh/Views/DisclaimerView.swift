@@ -2,13 +2,23 @@
 //  DisclaimerView.swift
 //  qrh
 //
-//  Shown on first launch (and from About). Agree records acceptance and
-//  dismisses; Disagree leaves the user at a dead end, as before.
+//  Shown on first launch, after each app update, and from About. Agree
+//  records acceptance for this build and dismisses; Disagree leaves the
+//  user at a dead end, as before.
 //
 
 import SwiftUI
 
 struct DisclaimerView: View {
+
+    enum Mode {
+        case firstRun
+        case updated
+//        Opened from About: no intro line
+        case review
+    }
+
+    let mode: Mode
 
     static let licence = """
         This material is a derivative of the "Quick Reference Handbook" (www.anaesthetists.org/qrh) by The Association of Anaesthetists (www.anaesthetists.org), used under Creative Commons license CC BY-NC-SA 4.0 (www.creativecommons.org/licenses/by-nc-sa/4.0).
@@ -49,7 +59,6 @@ struct DisclaimerView: View {
 
     static let section5 = "If you disagree with any of the above, please click the 'Disagree' button below and uninstall the application. If you agree, please click the 'Agree' button to launch the application. This disclaimer can be accessed at any time from the About page by clicking the icon at the top-right corner of the main application screen. A small popup reminder will be displayed at each launch."
 
-    @AppStorage("hasAcceptedDisclaimer") private var hasAcceptedDisclaimer = false
     @Environment(\.dismiss) private var dismiss
     @State private var disagreed = false
 
@@ -62,9 +71,11 @@ struct DisclaimerView: View {
             VStack(alignment: .leading, spacing: 0) {
                 AppInfoHeader(licenceText: Self.licence)
 
-                Text("As this is your first launch, please read and consider all of the following:")
-                    .font(.system(size: introSize))
-                    .padding(.top, 52)
+                if let intro {
+                    Text(intro)
+                        .font(.system(size: introSize))
+                        .padding(.top, 52)
+                }
 
                 VStack(alignment: .leading, spacing: 40) {
                     section(1) {
@@ -86,7 +97,7 @@ struct DisclaimerView: View {
                     section(4) { Text(Self.linked(Self.section4)) }
                     section(5) { Text(Self.linked(Self.section5)) }
                 }
-                .padding(.top, 24)
+                .padding(.top, mode == .review ? 52 : 24)
 
                 HStack {
                     Button {
@@ -99,7 +110,7 @@ struct DisclaimerView: View {
                     .frame(maxWidth: .infinity)
 
                     Button {
-                        hasAcceptedDisclaimer = true
+                        DisclaimerStatus.recordAcceptance()
                         dismiss()
                     } label: {
                         Label("Agree", systemImage: "checkmark.square")
@@ -148,6 +159,14 @@ struct DisclaimerView: View {
         return text
     }
 
+    private var intro: String? {
+        switch mode {
+        case .firstRun: "As this is your first launch, please read and consider all of the following:"
+        case .updated: "Please check for any changes to the disclaimers with this update:"
+        case .review: nil
+        }
+    }
+
     private func section(_ number: Int, @ViewBuilder content: () -> some View) -> some View {
         HStack(alignment: .top, spacing: 16) {
             StepBadge(step: "\(number)", spokenAs: "Section \(number)")
@@ -187,11 +206,15 @@ struct DisagreedOverlay: View {
 
 #if DEBUG
 #Preview("Disclaimer") {
-    DisclaimerView()
+    DisclaimerView(mode: .firstRun)
+}
+
+#Preview("Disclaimer after update") {
+    DisclaimerView(mode: .updated)
 }
 
 #Preview("Disclaimer dark") {
-    DisclaimerView()
+    DisclaimerView(mode: .review)
         .preferredColorScheme(.dark)
 }
 
@@ -200,3 +223,7 @@ struct DisagreedOverlay: View {
         .frame(height: 300)
 }
 #endif
+
+extension DisclaimerView.Mode: Identifiable {
+    var id: Self { self }
+}

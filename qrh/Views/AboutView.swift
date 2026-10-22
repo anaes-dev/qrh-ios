@@ -65,7 +65,7 @@ struct AboutView: View {
                 }
             }
             .sheet(isPresented: $showDisclaimer) {
-                DisclaimerView()
+                DisclaimerView(mode: .review)
             }
         }
     }

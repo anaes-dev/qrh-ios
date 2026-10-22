@@ -13,7 +13,8 @@ struct QRHApp: App {
 #if DEBUG
 //        UI tests: start as a fresh install
         if ProcessInfo.processInfo.arguments.contains("-resetDisclaimer") {
-            UserDefaults.standard.removeObject(forKey: "hasAcceptedDisclaimer")
+            UserDefaults.standard.removeObject(forKey: DisclaimerStatus.hasAcceptedKey)
+            UserDefaults.standard.removeObject(forKey: DisclaimerStatus.acceptedBuildKey)
         }
 #endif
         Appearance.configure()

@@ -28,7 +28,10 @@ final class QRHUITests: XCTestCase {
     func launch(accepted: Bool? = true, reset: Bool = false) {
         var arguments = [String]()
         if reset { arguments.append("-resetDisclaimer") }
-        if let accepted { arguments += ["-hasAcceptedDisclaimer", accepted ? "YES" : "NO"] }
+        if let accepted {
+//            A build far ahead of the app's, so the update disclaimer doesn't show
+            arguments += ["-hasAcceptedDisclaimer", accepted ? "YES" : "NO", "-acceptedDisclaimerBuild", "999999"]
+        }
         app.launchArguments = arguments
         app.launch()
     }
@@ -69,6 +72,7 @@ final class QRHUITests: XCTestCase {
         launch(accepted: false)
         let agree = app.buttons["Agree"]
         XCTAssertTrue(agree.waitForExistence(timeout: 15))
+        XCTAssertTrue(app.staticTexts["As this is your first launch, please read and consider all of the following:"].exists)
 
         app.swipeDown(velocity: .fast)
         XCTAssertTrue(agree.waitForExistence(timeout: 2), "Disclaimer was swiped away")
@@ -79,6 +83,19 @@ final class QRHUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Thank you for your time"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["Please close and uninstall the app"].exists)
         XCTAssertFalse(agree.isHittable, "Can still continue after Disagree")
+    }
+
+//    Agreed for an older build: the disclaimer shows again with the update line
+    func testUpdateShowsDisclaimerAgain() {
+        app.launchArguments = ["-hasAcceptedDisclaimer", "YES", "-acceptedDisclaimerBuild", "0"]
+        app.launch()
+        XCTAssertTrue(app.staticTexts["Please check for any changes to the disclaimers with this update:"].waitForExistence(timeout: 15))
+        XCTAssertFalse(app.staticTexts["As this is your first launch, please read and consider all of the following:"].exists)
+        let agree = app.buttons["Agree"]
+        scrollTo(agree)
+        XCTAssertTrue(agree.isHittable)
+        agree.tap()
+        XCTAssertTrue(list.waitForExistence(timeout: 5))
     }
 
     func testAgreeThenRelaunchShowsReminderNotDisclaimer() {
@@ -220,7 +237,8 @@ final class QRHUITests: XCTestCase {
 //        Start 19 deep (3-8 and 2-8 link to each other), follow one link to
 //        reach the limit of 20, then one more
         let path = (0..<19).map { $0.isMultiple(of: 2) ? "3-8" : "2-8" }
-        app.launchArguments = ["-hasAcceptedDisclaimer", "YES", "-uiTestPath", path.joined(separator: ",")]
+        app.launchArguments = ["-hasAcceptedDisclaimer", "YES", "-acceptedDisclaimerBuild", "999999",
+                               "-uiTestPath", path.joined(separator: ",")]
         app.launch()
         XCTAssertTrue(app.navigationBars["Malignant hyperthermia crisis"].waitForExistence(timeout: 20))
 
