@@ -3,11 +3,11 @@
 ## Screenshots
 
 ### iPhone
-<img src="./qrh/screenshots/Simulator Screen Shot - iPhone 11 - 2020-10-25 at 00.05.59.png" width="200px"> | <img src="./qrh/screenshots/Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.44.png" width="200px"> | <img src="./qrh/screenshots/Simulator Screen Shot - iPhone 11 - 2020-10-25 at 00.00.45.png" width="200px"> | <img src="./qrh/screenshots/Simulator Screen Shot - iPhone 11 - 2020-10-24 at 23.58.17.png" width="200px">
+<img src="./docs/screenshots/iphone-list.png" width="200px"> | <img src="./docs/screenshots/iphone-guideline.png" width="200px"> | <img src="./docs/screenshots/iphone-callout.png" width="200px"> | <img src="./docs/screenshots/iphone-dark-breadcrumb.png" width="200px">
 
 ### iPad
 
-<img src="./qrh/screenshots/Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.58.01.png" width="400px"> | <img src="./qrh/screenshots/Simulator Screen Shot - iPad Pro (11-inch) (2nd generation) - 2020-10-24 at 23.57.40.png" width="400px">
+<img src="./docs/screenshots/ipad-guideline.png" width="400px"> | <img src="./docs/screenshots/ipad-landscape.png" width="400px">
 
 ## Features
 - Unofficial derivative of the Association of Anaesthetists Quick Reference Handbook (QRH): www.anaesthetists.org/Quick-Reference-Handbook (CC BY-NC-SA 4.0)
@@ -46,13 +46,15 @@ Available on the App Store:
 ## Technical
 *(For any updates, modifications or derivatives)*
 
-The guideline list is generated from '/guidelines.json'. 
+All guidelines are stored in a single file, '/data.json', shared with the Android app.
 
-Guidelines are stored as JSON objects with guideline code as their filename, e.g. '3-5.json'.
+Each guideline has 'code', 'title', 'version', 'url', 'copyright' and 'content' keys.
 
-Each array contains 'type', 'head', 'body' and 'step' keys.
+Each 'content' array contains 'type', 'head', 'body' and 'step' keys.
 
 These populate different styled cards for each guideline page.
+
+The version line, disclaimer and licence footer at the end of each guideline are added by the app. The licence footer names the guideline's publisher and year from its 'copyright' key ('holder' refers to an entry in 'copyrightHolders').
 
 ### Card views
 
@@ -66,9 +68,9 @@ Type integer value determines the appearance of the generated card:
 7. Green expanding box (head and body)
 8. Black expanding box (head and body)
 9. Purple expanding box (head and body)
-10. Image (caption in head, path/URL in body)
-11. Version text (body only)
-12. Red disclaimer card (head only)  
+10. Image (caption in head, image name in body)
+11. Version text (body only; added by the app)
+12. Red disclaimer card (head only; added by the app)  
 
 ### Card contents
 
@@ -83,9 +85,9 @@ Generated when the following regex is matched:
 Therefore can have with or without parentheses, and is insensitive to space between → and guideline code.
 
 #### Phone links
-Automatic link detection using dataDetectorTypes.
+Automatic link detection using NSDataDetector.
 
 #### Web links
-Automatic link detection using dataDetectorTypes.
+Automatic link detection using NSDataDetector.
 
 *iOS, iPhone, iPad and App Store are trademarks of Apple Inc.*
