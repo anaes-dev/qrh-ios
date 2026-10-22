@@ -102,8 +102,10 @@ struct RootView: View {
                 NavigationStack(path: detailPath) {
                     Group {
                         if let code = router.path.first {
+//                            Rebuilt when reopened from the sidebar, even
+//                            if it's the guideline already open
                             GuidelineDetailView(code: code)
-                                .id(code)
+                                .id("\(router.openCount) \(code)")
                         } else {
                             ContentUnavailableView("No Guideline Selected", systemImage: "list.bullet",
                                                    description: Text("Choose a guideline from the list."))

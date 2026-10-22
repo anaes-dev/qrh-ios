@@ -1744,40 +1744,46 @@
           "step": "1"
         },
         {
-          "type": 2,
+          "type": 13,
           "head": "",
           "body": "<b>If <u>AIRWAY</u> fire:</b>",
-          "step": ""
+          "step": "",
+          "branch": "airway"
         },
         {
           "type": 3,
           "head": "Extinguish fire:",
           "body": "<ul><li>Stop laser or diathermy</li><li>Discontinue ventilation AND fresh gas flow</li><li>Remove tracheal tube if on fire</li><li>Remove flammable material from airway</li><li>Flood airway with 0.9% saline</li></ul>",
-          "step": "2"
+          "step": "2",
+          "branch": "airway"
         },
         {
           "type": 3,
           "head": "After fire extinguished:",
           "body": "<ul><li>Re-establish ventilation </li><li>Minimise O₂, avoid N₂O</li><li>Check airway for damage and debris</li><li>Consider bronchoscopy</li><li>Re-intubate</li></ul>",
-          "step": "3"
+          "step": "3",
+          "branch": "airway"
         },
         {
-          "type": 2,
+          "type": 13,
           "head": "",
           "body": "<b>If <u>NON-AIRWAY</u> fire:</b>",
-          "step": ""
+          "step": "",
+          "branch": "non-airway"
         },
         {
           "type": 3,
           "head": "Extinguish fire:",
           "body": "<ul><li>Stop laser or diathermy</li><li>Remove all drapes and burning material</li><li>Flood fire with 0.9% saline or saline soaked gauze</li><li>Use CO₂ extinguisher</li></ul>",
-          "step": "2"
+          "step": "2",
+          "branch": "non-airway"
         },
         {
           "type": 3,
           "head": "After fire extinguished:",
           "body": "<ul><li>Re-establish ventilation </li><li>Minimise O₂, avoid N₂O</li><li>Assess damage</li><li>Consider inhalational injury if not intubated</li><li>Consider intubation depending on degree of injury</li></ul>",
-          "step": "3"
+          "step": "3",
+          "branch": "non-airway"
         },
         {
           "type": 2,
@@ -2104,40 +2110,46 @@
           "step": "5"
         },
         {
-          "type": 2,
+          "type": 13,
           "head": "",
           "body": "<b>If circulatory arrest:</b>",
-          "step": ""
+          "step": "",
+          "branch": "arrest"
         },
         {
           "type": 4,
           "head": "",
           "body": "<ul><li>Start continuous CPR using standard protocols <b>(→2-1) but:</b></li><li><b>Give</b> intravenous lipid emulsion <b>(Box A)</b>.</li><li><b>Use smaller adrenaline dose</b> (≤ 1µg.kg⁻¹ instead of 1 mg).</li><li>Avoid vasopressin.</li><li>Recovery may take >1 hour.</li><li>Consider the use of cardiopulmonary bypass if available.</li></ul>",
-          "step": "6"
+          "step": "6",
+          "branch": "arrest"
         },
         {
           "type": 6,
           "head": "Box A: LIPID EMULSION REGIME",
           "body": "<p><b>USE 20% Intralipid® <small>(propofol is not a suitable substitute)</small></b></p><p><b>Immediately:</b></p><ul><li>Give an initial intraVENOUS bolus of lipid emulsion 1.5 ml.kg⁻¹ over 2-3 min (~100 ml for a 70 kg adult)</li><li>Start an intraVENOUS infusion of lipid emulsion at 15 ml.kg⁻¹.h⁻¹ (17.5 ml.min⁻¹ for a 70 kg adult)</li></ul><p><b>At 5 and 10 minutes:</b></p><ul><li>Give a repeat bolus (same dose) if: cardiovascular stability has not been restored or; an adequate circulation deteriorates.</li></ul><p><b>At any time after 5 minutes:</b></p><ul><li>Double the rate to 30 ml.kg⁻¹.h⁻¹ if: cardiovascular stability has not been restored or; an adequate circulation deteriorates</li></ul><p><b>Do not exceed maximum cumulative dose 12 ml.kg⁻¹ (70kg: 840 ml)</b></p>",
-          "step": ""
+          "step": "",
+          "branch": "arrest"
         },
         {
-          "type": 2,
+          "type": 13,
           "head": "",
           "body": "<b>If no circulatory arrest:</b>",
-          "step": ""
+          "step": "",
+          "branch": "no-arrest"
         },
         {
           "type": 4,
           "head": "",
           "body": "<ul><li>Conventional therapies to treat hypotension, brady- and tachyarrhythmia.</li><li><b><i>Consider</i></b> intravenous lipid emulsion <b>(Box A)</b>.</li></ul>",
-          "step": "6"
+          "step": "6",
+          "branch": "no-arrest"
         },
         {
           "type": 6,
           "head": "Box A: LIPID EMULSION REGIME",
           "body": "<p><b>USE 20% Intralipid® <small>(propofol is not a suitable substitute)</small></b></p><p><b>Immediately:</b></p><ul><li>Give an initial intraVENOUS bolus of lipid emulsion 1.5 ml.kg⁻¹ over 2-3 min (~100 ml for a 70 kg adult)</li><li>Start an intraVENOUS infusion of lipid emulsion at 15 ml.kg⁻¹.h⁻¹ (17.5 ml.min⁻¹ for a 70 kg adult)</li></ul><p><b>At 5 and 10 minutes:</b></p><ul><li>Give a repeat bolus (same dose) if: cardiovascular stability has not been restored or; an adequate circulation deteriorates.</li></ul><p><b>At any time after 5 minutes:</b></p><ul><li>Double the rate to 30 ml.kg⁻¹.h⁻¹ if: cardiovascular stability has not been restored or; an adequate circulation deteriorates</li></ul><p><b>Do not exceed maximum cumulative dose 12 ml.kg⁻¹ (70kg: 840 ml)</b></p>",
-          "step": ""
+          "step": "",
+          "branch": "no-arrest"
         },
         {
           "type": 4,

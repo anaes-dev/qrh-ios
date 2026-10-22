@@ -36,12 +36,16 @@ struct StepBadge: View {
 
     @ScaledMetric(relativeTo: .body) private var size: CGFloat = 32
 
+//    Grows with longer text or large Dynamic Type sizes rather than clipping
     var body: some View {
         Text(step)
             .font(.body.bold())
+            .lineLimit(1)
+            .fixedSize()
             .foregroundStyle(Color(.systemBackground))
-            .frame(width: size, height: size)
-            .background(Circle().fill(Color(.label)))
+            .padding(.horizontal, 4)
+            .frame(minWidth: size, minHeight: size)
+            .background(Capsule().fill(Color(.label)))
             .accessibilityLabel(spokenAs ?? "Step \(step)")
     }
 }

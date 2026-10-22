@@ -95,13 +95,18 @@ struct SearchText: Sendable {
         return origins[offset].lowerBound..<origins[offset + term.scalars.count - 1].upperBound
     }
 
+//    Words shorter than this only match at the start of a word, so "o2"
+//    finds "O₂ flush" but not "CO₂"
+    static let minimumInfixLength = 3
+
     private func firstOffset(of term: SearchTerm, from start: Int) -> Int? {
         let needle = term.scalars
         guard let first = needle.first, needle.count <= scalars.count else { return nil }
+        let wordStartOnly = needle.count < Self.minimumInfixLength
         var i = start
         let last = scalars.count - needle.count
         while i <= last {
-            if scalars[i] == first {
+            if scalars[i] == first && (!wordStartOnly || i == 0 || scalars[i - 1] == " ") {
                 var j = 1
                 while j < needle.count && scalars[i + j] == needle[j] { j += 1 }
                 if j == needle.count { return i }

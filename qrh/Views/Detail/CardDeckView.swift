@@ -5,7 +5,8 @@
 //  Full-screen card view (as in qrh-android): one card per page with larger
 //  text, swiped left and right, with page dots that can be tapped or
 //  scrubbed. Boxes are always open. Boilerplate (START, version, the
-//  disclaimer and the copyright footer) is left out.
+//  disclaimer and the copyright footer) is left out. A card in a branch
+//  shows the branch's condition, so 3-10's two step 6s can be told apart.
 //
 //  Guideline links close the deck and open the linked guideline in the
 //  normal view, so going back returns to this guideline's normal view.
@@ -28,7 +29,7 @@ struct CardDeckView: View {
     static func deckCards(_ cards: [RenderedCard]) -> [RenderedCard] {
         cards.prefix { $0.kind != .warning }.filter { card in
             switch card.kind {
-            case .start, .version, .warning, .unknown: false
+            case .start, .version, .warning, .branch: false
             default: true
             }
         }
@@ -36,10 +37,11 @@ struct CardDeckView: View {
 
     var body: some View {
         let deck = Self.deckCards(cards)
+        let headers = cards.branchHeaders
         NavigationStack {
             TabView(selection: $page) {
                 ForEach(Array(deck.enumerated()), id: \.element.id) { offset, card in
-                    cardPage(card)
+                    cardPage(card, branch: headers[card.card.branch])
                         .tag(offset)
                 }
             }
@@ -83,10 +85,10 @@ struct CardDeckView: View {
 //    A card, centred when it's short, scrolling when it's long. The bottom
 //    inset keeps it clear of the page dots.
 
-    private func cardPage(_ card: RenderedCard) -> some View {
+    private func cardPage(_ card: RenderedCard, branch: RenderedCard?) -> some View {
         GeometryReader { geometry in
             ScrollView {
-                CardView(card: card, code: code, isPad: true)
+                CardView(card: card, code: code, isPad: true, branch: branch, showsCondition: true)
 //                    Readable line lengths on iPad
                     .frame(maxWidth: 720)
                     .padding(.horizontal, 20)

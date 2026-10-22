@@ -59,8 +59,18 @@ struct GuidelineRow: View {
     }
 
     static func highlighted(_ string: String, terms: [SearchTerm]) -> AttributedString {
-        var text = AttributedString(string)
-        guard !terms.isEmpty else { return text }
+        AttributedString(string).highlighting(terms)
+    }
+}
+
+extension AttributedString {
+
+//    Copy with the search words given a yellow background
+
+    func highlighting(_ terms: [SearchTerm]) -> AttributedString {
+        guard !terms.isEmpty else { return self }
+        var text = self
+        let string = String(characters)
         let search = SearchText(string)
         for term in terms {
             for range in search.ranges(of: term) {

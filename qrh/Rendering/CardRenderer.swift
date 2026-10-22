@@ -24,13 +24,13 @@ enum CardRenderer {
         case .intro, .step, .stepBodyOnly, .callout:
             let types = LinkDetector.dataDetectorTypes(for: kind, code: code, row: row)
             return HTMLRenderer.render(card.body).map { LinkDetector.addLinks(to: $0, detecting: types) }
-        case .start:
+        case .start, .branch:
             return HTMLRenderer.render(card.body)
         case .unknown:
-//            Shown as plain body text, as before
-            var text = AttributedString(card.body)
-            text.swiftUI.font = HTMLRenderer.font()
-            return [.paragraph(text)]
+//            A type this version doesn't know: its head and body as plain
+//            cards, so nothing is lost
+            let head = card.head.isEmpty ? [] : HTMLRenderer.render("<b>\(card.head)</b>")
+            return head + HTMLRenderer.render(card.body)
         case .image, .version, .warning:
             return []
         }

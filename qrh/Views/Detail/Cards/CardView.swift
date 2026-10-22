@@ -11,6 +11,10 @@ struct CardView: View {
     let card: RenderedCard
     let code: String
     var isPad = false
+//    The header of the branch the card is in, if any
+    var branch: RenderedCard?
+//    Card view: show that branch's condition above the card
+    var showsCondition = false
     var expanded = false
     var toggle: () -> Void = {}
 
@@ -18,6 +22,18 @@ struct CardView: View {
     @AppStorage("expandingDisabled") private var expandingDisabled = false
 
     var body: some View {
+        if showsCondition, let branch {
+            VStack(alignment: .leading, spacing: 8) {
+                BranchHeading(header: branch)
+                content
+            }
+        } else {
+            content
+        }
+    }
+
+    @ViewBuilder
+    private var content: some View {
         switch card.kind {
         case .intro:
 //            Some guidelines have more than one intro card; only the first shows the code
@@ -25,9 +41,10 @@ struct CardView: View {
         case .start:
             StartCard(blocks: card.blocks)
         case .step:
-            StepCard(step: card.card.step, head: card.card.head, blocks: card.blocks)
+            StepCard(step: card.card.step, head: card.card.head, blocks: card.blocks,
+                     condition: branch?.spokenCondition)
         case .stepBodyOnly:
-            StepCard(step: card.card.step, blocks: card.blocks)
+            StepCard(step: card.card.step, blocks: card.blocks, condition: branch?.spokenCondition)
         case .callout(let color):
             CalloutBox(color: color, head: card.card.head, blocks: card.blocks,
                        collapsible: !isPad && !expandingDisabled, expanded: expanded, toggle: toggle)
@@ -37,11 +54,11 @@ struct CardView: View {
             VersionFooter(version: card.card.body)
         case .warning:
             WarningCard(text: card.card.head)
+        case .branch:
+            BranchHeading(header: card)
         case .unknown:
-//            Plain body on iPhone, hidden on iPad
-            if !isPad {
-                IntroCard(blocks: card.blocks)
-            }
+//            A newer card type: its text as a plain card
+            IntroCard(blocks: card.blocks)
         }
     }
 }

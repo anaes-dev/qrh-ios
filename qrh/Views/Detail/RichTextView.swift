@@ -27,6 +27,16 @@ struct RichTextView: View {
         SelectableText(content: .init(blocks: blocks, typeSize: typeSize, highlight: highlight),
                        openURL: openURL)
             .frame(maxWidth: .infinity, alignment: .leading)
+//            The text view has no baselines SwiftUI can see; the first line's
+//            is the base font's ascent below the top
+            .alignmentGuide(.firstTextBaseline) { _ in
+                Self.firstBaseline(typeSize: typeSize)
+            }
+    }
+
+    static func firstBaseline(typeSize: DynamicTypeSize) -> CGFloat {
+        let traits = UITraitCollection(preferredContentSizeCategory: UIContentSizeCategory(typeSize))
+        return UIFont.preferredFont(forTextStyle: .subheadline, compatibleWith: traits).ascender
     }
 
 

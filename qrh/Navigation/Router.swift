@@ -15,8 +15,14 @@ final class Router {
 
     static let maxDepth = 20
 
-    var path = [String]()
+    var path = [String]() {
+        didSet { prunePages() }
+    }
     var showDepthAlert = false
+
+//    Bumped each time the sidebar (or the system) opens a guideline, so
+//    reopening the one already open starts it afresh
+    private(set) var openCount = 0
 
 //    Where a search result should open its guideline: the card to scroll to
 //    and the words to highlight. Taken by the guideline's view when it appears.
@@ -54,6 +60,8 @@ final class Router {
 
     func open(_ code: String, focus: Focus? = nil) {
         pendingFocus = focus
+        pages.removeAll()
+        openCount += 1
         path = [code]
         compactColumn = .detail
     }
@@ -69,4 +77,40 @@ final class Router {
         path.removeAll()
         compactColumn = .sidebar
     }
+
+
+//    Each open guideline's view state, by its position in the path, so it
+//    survives the view being rebuilt (rotation, Split View and Stage Manager
+//    resizing, the sidebar collapsing)
+
+    @ObservationIgnored private var pages = [Int: (code: String, state: PageState)]()
+
+    func pageState(depth: Int, code: String) -> PageState {
+        if let page = pages[depth], page.code == code {
+            return page.state
+        }
+        let state = PageState()
+        pages[depth] = (code, state)
+        return state
+    }
+
+//    Pushing a guideline over a closed one starts it afresh
+    private func prunePages() {
+        pages = pages.filter { depth, page in
+            depth < path.count && path[depth] == page.code
+        }
+    }
+}
+
+//    What a guideline's view remembers: open boxes, the search that opened it
+//    and where it's scrolled to
+
+@Observable
+@MainActor
+final class PageState {
+    var expanded = Set<Int>()
+    var scrollPosition: RowID?
+    var focus: Router.Focus?
+    var tookFocus = false
+    var openedFirstBox = false
 }

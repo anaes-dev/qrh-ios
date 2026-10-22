@@ -166,6 +166,27 @@ final class QRHUITests: XCTestCase {
         XCTAssertTrue(text.isHittable, "Didn't scroll to the match")
     }
 
+//    A match in the second branch of a fork scrolls to that branch's
+//    condition, not the top of the fork
+    func testSearchOpensAtMatchInBranch() {
+        launch()
+        XCTAssertTrue(list.waitForExistence(timeout: 15))
+        let search = app.searchFields["Search guidelines"]
+        XCTAssertTrue(search.waitForExistence(timeout: 5))
+        search.tap()
+        search.typeText("no circulatory arrest")
+//        Other guidelines mention these words too, so the result can be below
+//        the keyboard
+        XCTAssertTrue(app.cells.firstMatch.waitForExistence(timeout: 10))
+        let result = row("Local anaesthetic toxicity")
+        scrollTo(result)
+        result.tap()
+        XCTAssertTrue(app.navigationBars["Local anaesthetic toxicity"].waitForExistence(timeout: 10))
+        let condition = app.descendants(matching: .any).matching(NSPredicate(format: "label == 'If no circulatory arrest:'")).firstMatch
+        XCTAssertTrue(condition.waitForExistence(timeout: 5))
+        XCTAssertTrue(condition.isHittable, "Didn't scroll to the branch")
+    }
+
 
 //    Guideline detail
 
@@ -252,6 +273,29 @@ final class QRHUITests: XCTestCase {
 //        Box A's link shows without tapping the box
         XCTAssertTrue(link("1-1").waitForExistence(timeout: 5))
         XCTAssertFalse(app.buttons.matching(NSPredicate(format: "label CONTAINS 'Box A: CRITICAL CHANGES'")).firstMatch.exists)
+    }
+
+//    Steps in a branch say which, after their number
+    func testBranchesReadTheirConditions() {
+        app.launchArguments = ["-hasAcceptedDisclaimer", "YES", "-acceptedDisclaimerBuild", "999999",
+                               "-uiTestPath", "3-10"]
+        app.launch()
+        XCTAssertTrue(app.navigationBars["Local anaesthetic toxicity"].waitForExistence(timeout: 20))
+        let any = app.descendants(matching: .any)
+        for condition in ["If circulatory arrest:", "If no circulatory arrest:"] {
+            let heading = any.matching(NSPredicate(format: "label == %@", condition)).firstMatch
+            scrollTo(heading)
+            XCTAssertTrue(heading.exists, condition)
+        }
+        for step in ["Step 6, if circulatory arrest", "Step 6, if no circulatory arrest"] {
+            let badge = any.matching(NSPredicate(format: "label == %@", step)).firstMatch
+            scrollTo(badge)
+            XCTAssertTrue(badge.exists, step)
+        }
+//        Steps outside the fork are read as before
+        let seven = any.matching(NSPredicate(format: "label == 'Step 7'")).firstMatch
+        scrollTo(seven)
+        XCTAssertTrue(seven.exists)
     }
 
     func testPDFSheetOpensAndCloses() {

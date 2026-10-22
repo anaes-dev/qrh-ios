@@ -50,7 +50,7 @@ All guidelines are stored in a single file, '/data.json', shared with the Androi
 
 Each guideline has 'code', 'title', 'version', 'url', 'copyright' and 'content' keys.
 
-Each 'content' array contains 'type', 'head', 'body' and 'step' keys.
+Each 'content' array contains 'type', 'head', 'body' and 'step' keys, and optionally 'branch'.
 
 These populate different styled cards for each guideline page.
 
@@ -71,6 +71,12 @@ Type integer value determines the appearance of the generated card:
 10. Image (caption in head, image name in body)
 11. Version text (body only; added by the app)
 12. Red disclaimer card (head only; added by the app)  
+13. Branch condition, e.g. "If circulatory arrest:" (body and branch)
+
+#### Branches
+Where a guideline splits into alternative paths that share step numbers (3-7, 3-10), each path starts with a type 13 card, and that card and every card in the path have the same 'branch' id (e.g. "arrest" and "no-arrest"). Cards outside a branch have no 'branch' key. A run of consecutive branches is shown as one fork: side by side when there's room (600 pt), otherwise stacked, each with its condition as a heading and a rail beside its cards. A branch ends at the next type 13 card or the first card with a different 'branch'.
+
+On iPad, a box repeated in every branch (identical apart from 'branch') appears once in the side column.
 
 ### Card contents
 

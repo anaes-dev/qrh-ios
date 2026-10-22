@@ -44,7 +44,7 @@ struct ParityTests {
 
     static func isHTML(_ card: Card) -> Bool {
         switch CardKind(type: card.type) {
-        case .intro, .start, .step, .stepBodyOnly, .callout: true
+        case .intro, .start, .branch, .step, .stepBodyOnly, .callout: true
         default: false
         }
     }

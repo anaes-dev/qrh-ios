@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 //    The launch reminder runs once per launch, and only if the disclaimer was
 //    already accepted at launch
@@ -24,6 +25,10 @@ struct GuidelineListView: View {
     @Environment(Router.self) private var router
 
     @State private var query = ""
+//    The query, kept across relaunches. (Binding the search field straight
+//    to it lost keystrokes typed quickly.)
+    @SceneStorage("searchQuery") private var savedQuery = ""
+    @State private var restoredQuery = false
     @State private var showAbout = false
     @State private var listWidth: CGFloat?
 
@@ -89,6 +94,19 @@ struct GuidelineListView: View {
             }
             listWidth = width
         }
+//        Restored once, when the scene's saved state arrives
+        .onChange(of: savedQuery, initial: true) {
+            if !restoredQuery && !savedQuery.isEmpty {
+                restoredQuery = true
+                if query.isEmpty {
+                    query = savedQuery
+                }
+            }
+        }
+        .onChange(of: query) {
+            restoredQuery = true
+            savedQuery = query
+        }
         .task {
             await runReminder()
         }
@@ -108,9 +126,18 @@ struct GuidelineListView: View {
         }
         .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 8))
         .alignmentGuide(.listRowSeparatorLeading) { _ in 0 }
-        .listRowBackground(isSidebar && router.path.first == guideline.code ? Color(.systemGray5) : nil)
+        .listRowBackground(isSidebar && router.path.first == guideline.code ? Self.selection : nil)
         .accessibilityAddTraits(isSidebar && router.path.first == guideline.code ? .isSelected : [])
     }
+
+//    The open guideline's row in the sidebar: a pale tint of the bar red in
+//    light mode, a lifted grey in dark mode
+
+    static let selection = Color(UIColor { traits in
+        traits.userInterfaceStyle == .dark
+            ? UIColor(red: 0x3A / 255, green: 0x3A / 255, blue: 0x3A / 255, alpha: 1)
+            : UIColor(red: 0xFF / 255, green: 0xDA / 255, blue: 0xD6 / 255, alpha: 1)
+    })
 
 //    A match inside a guideline opens it at the matching card, with the
 //    search words highlighted

@@ -26,7 +26,15 @@ struct SearchTextTests {
     }
 
     @Test func findsEveryOccurrence() {
-        #expect(matches("ab", in: "ab xab ab") == ["ab", "ab", "ab"])
+        #expect(matches("abc", in: "abc xabc abc") == ["abc", "abc", "abc"])
+    }
+
+//    Under three characters, only at the start of a word
+    @Test func shortWordsMatchWordStarts() {
+        #expect(matches("ab", in: "ab xab ab") == ["ab", "ab"])
+        #expect(matches("o2", in: "Give O₂, not CO₂") == ["O₂"])
+        #expect(matches("co2", in: "Give O₂, not CO₂") == ["CO₂"])
+        #expect(matches("ig", in: "Big") == [])
     }
 
     @Test func termsAreFoldedWordsWithoutDuplicates() {
@@ -96,6 +104,17 @@ struct SearchIndexTests {
         #expect(results.contains {
             if case .content = $0.match { $0.guideline.code == "3-8" } else { false }
         })
+    }
+
+    @Test func branchConditionsAreSearched() async throws {
+        let results = await index().search("circulatory arrest")
+        let result = try #require(results.first { $0.guideline.code == "3-10" })
+        guard case .content(let card, _) = result.match else {
+            Issue.record("Expected a content match")
+            return
+        }
+        let cards = await Self.store.cards(for: "3-10")
+        #expect(cards[card].kind == .branch)
     }
 
     @Test func boilerplateCardsAreNotSearched() async {
