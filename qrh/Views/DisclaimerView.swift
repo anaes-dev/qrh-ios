@@ -28,10 +28,11 @@ struct DisclaimerView: View {
 
     static let section1Warning = "The guidelines in this handbook are not intended to be standards of medical care. The ultimate judgement with regard to a particular clinical procedure or treatment plan must be made by the clinician in the light of the clinical data presented and the diagnostic and treatment options available."
 
+//    Inline markdown for the bold and italic parts, as the Android app has
     static let section2 = """
-        This application is intended for use only by healthcare professionals in the United Kingdom who are already familiar with the QRH. It is intended to complement and improve access to, but not replace, the original QRH. This application has not been professionally developed nor tested. You must evaluate the application and its content, and exercise your own discretionary judgement about its appropriate use. The developer accepts no responsibility for or liability arising from any decision to use in a clinical setting despite this warning. You should consider the advice of your employer, regulatory and professional bodies regarding the use of software applications, and always exercise professional judgement before relying on information from any source.
+        This application is intended for use only by healthcare professionals in the United Kingdom who are already familiar with the QRH. It is intended to complement and improve access to, but not replace, the original QRH. **This application has not been professionally developed nor tested. You must evaluate the application and its content, and exercise your own discretionary judgement about its appropriate use.** The developer accepts no responsibility for or liability arising from any decision to use in a clinical setting despite this warning. You should consider the advice of your employer, regulatory and professional bodies regarding the use of software applications, and always exercise professional judgement before relying on information from any source.
 
-        This application is not presented as a medical device in the United Kingdom. It carries no certification markings, regulatory approvals or technical assessment appraisals. According to the latest Medicines and Healthcare products Regulatory Agency guidance "Medical device stand-alone software including apps" (Published 8 August 2014, last updated 1 July 2023) at the time of this release; software has no medical purpose if it only provides reference information to help a Healthcare Professional to use their knowledge to make a clinical decision, and is unlikely to be a medical device if it just reproduces a paper document in digital format, provides reference information to follow the path of a procedure/treatment, or it has decision points (options may be explained) but the healthcare professional decides which path to take. This application does not perform any automated reasoning or calculations.
+        This application is not presented as a medical device in the United Kingdom. **It carries no certification markings, regulatory approvals or technical assessment appraisals.** According to the latest Medicines and Healthcare products Regulatory Agency guidance *"Medical device stand-alone software including apps"* (Published 8 August 2014, last updated 1 July 2023) at the time of this release; software has no medical purpose if it only provides reference information to help a Healthcare Professional to use their knowledge to make a clinical decision, and is unlikely to be a medical device if it just reproduces a paper document in digital format, provides reference information to follow the path of a procedure/treatment, or it has decision points (options may be explained) but the healthcare professional decides which path to take. This application does not perform any automated reasoning or calculations.
 
         Regulations may change with time. Distribution by the developer will be ceased if advised to do so or if this application subsequently becomes subject to regulatory approval. Please periodically check whether regulations have changed, and stop using this application if you are unsure about its status. Due to the offline and open-source nature of the application, however, the developer cannot be held responsible for ongoing use and distribution of the application or its source code by other parties beyond such a time.
 
@@ -68,8 +69,8 @@ struct DisclaimerView: View {
                 VStack(alignment: .leading, spacing: 40) {
                     section(1) {
                         VStack(alignment: .leading, spacing: 12) {
-                            Text(Self.section1)
-                            Text(Self.section1Quote).italic()
+                            Text(Self.linked(Self.section1))
+                            Text(Self.linked(Self.section1Quote)).italic()
                             Text(Self.section1Warning)
                                 .fontWeight(.semibold)
                                 .foregroundStyle(Color(.systemRed))
@@ -80,10 +81,10 @@ struct DisclaimerView: View {
                                 .padding(.top, 8)
                         }
                     }
-                    section(2) { Text(Self.section2) }
-                    section(3) { Text(Self.section3) }
-                    section(4) { Text(Self.section4) }
-                    section(5) { Text(Self.section5) }
+                    section(2) { Text(Self.section2Text) }
+                    section(3) { Text(Self.linked(Self.section3)) }
+                    section(4) { Text(Self.linked(Self.section4)) }
+                    section(5) { Text(Self.linked(Self.section5)) }
                 }
                 .padding(.top, 24)
 
@@ -123,6 +124,28 @@ struct DisclaimerView: View {
                 DisagreedOverlay()
             }
         }
+    }
+
+//    Section 2 with its markdown applied and "not" underlined in "is not
+//    presented as a medical device"
+
+    static var section2Text: AttributedString {
+        var text = (try? AttributedString(markdown: section2, options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)))
+            ?? AttributedString(section2)
+        if let phrase = text.range(of: "is not presented as a medical device"),
+           let not = text[phrase].range(of: "not") {
+            text[not].swiftUI.underlineStyle = .single
+        }
+        LinkDetector.addLinks(to: &text, detecting: .link)
+        return text
+    }
+
+//    Web links tappable, as in AppInfoHeader (the section's font applies)
+
+    static func linked(_ string: String) -> AttributedString {
+        var text = AttributedString(string)
+        LinkDetector.addLinks(to: &text, detecting: .link)
+        return text
     }
 
     private func section(_ number: Int, @ViewBuilder content: () -> some View) -> some View {
