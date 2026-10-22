@@ -31,6 +31,8 @@ struct AboutView: View {
                     VStack(alignment: .leading, spacing: 16) {
                         explainer(icon: "arrow.down.doc",
                                   text: "Click this icon at the top-right of each guideline to access the original PDF file from the Association of Anaesthetists website.")
+                        explainer(icon: "rectangle.portrait.on.rectangle.portrait",
+                                  text: "Click this icon at the top-right of each guideline to view it in a large-format card view - swipe horizontally through the steps.")
                         explainer(icon: "arrow.right",
                                   text: "Click highlighted links to jump to related guidelines.")
                     }
