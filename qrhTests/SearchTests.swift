@@ -83,9 +83,19 @@ struct SearchIndexTests {
         #expect(index.search("dantrolene zzzz").isEmpty)
     }
 
-    @Test func singleLetterOnlySearchesTitles() async {
-        let results = await index().search("x")
-        #expect(results.allSatisfy { $0.match == .title })
+    @Test func shortQueriesOnlySearchTitles() async {
+        let index = await index()
+        for query in ["x", "hy", "o2", "h-y"] {
+            #expect(index.search(query).allSatisfy { $0.match == .title }, "\(query)")
+        }
+        #expect(index.search("hy").contains { $0.guideline.code == "2-5" })
+    }
+
+    @Test func threeCharactersSearchText() async {
+        let results = await index().search("dan")
+        #expect(results.contains {
+            if case .content = $0.match { $0.guideline.code == "3-8" } else { false }
+        })
     }
 
     @Test func boilerplateCardsAreNotSearched() async {

@@ -38,8 +38,9 @@ struct SearchIndex: Sendable {
         let cards: [CardText]
     }
 
-//    Queries shorter than this (once folded) only search titles
-    static let minimumContentLength = 2
+//    Queries shorter than this (letters and digits) only search titles and
+//    codes, so the first keystrokes don't match text throughout the handbook
+    static let minimumContentLength = 3
 
     let entries: [Entry]
 
