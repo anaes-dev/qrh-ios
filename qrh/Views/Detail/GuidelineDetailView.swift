@@ -25,6 +25,7 @@ struct GuidelineDetailView: View {
     @State private var deckLink: String?
     @State private var focus: Router.Focus?
     @State private var scrolledToFocus = false
+    @State private var openedFirstBox = false
 
     private var guideline: Guideline? { store.guideline(code: code) }
     //    Two columns on iPad only, as before; large iPhones in landscape keep one
@@ -50,6 +51,9 @@ struct GuidelineDetailView: View {
             .task {
                 if cards == nil {
                     cards = await store.cards(for: code)
+                }
+                if let cards {
+                    openFirstBox(cards)
                 }
                 await scrollToFocus(proxy)
             }
@@ -99,6 +103,21 @@ struct GuidelineDetailView: View {
             if depth == nil {
                 depth = router.path.count - 1
             }
+            if let cached = store.cachedCards(for: code) {
+                openFirstBox(cached)
+            }
+        }
+    }
+
+
+//    Instructions for use (0-3) opens with its first box expanded, as on
+//    Android. Once only, so the user's own toggles are kept.
+
+    private func openFirstBox(_ cards: [RenderedCard]) {
+        guard !openedFirstBox else { return }
+        openedFirstBox = true
+        if code == "0-3", let box = cards.first(where: { $0.card.type == 5 }) {
+            expanded.insert(box.index)
         }
     }
 

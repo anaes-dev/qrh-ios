@@ -221,6 +221,19 @@ final class QRHUITests: XCTestCase {
         XCTAssertFalse(second.exists)
     }
 
+//    As on Android, 0-3's first box (orange) starts open; the rest don't
+    func testInstructionsOpenWithFirstBoxExpanded() throws {
+        try XCTSkipIf(UIDevice.current.userInterfaceIdiom == .pad, "Boxes are always open on iPad")
+        launch()
+        XCTAssertTrue(list.waitForExistence(timeout: 15))
+        open("Instructions for use")
+        let orange = app.buttons.matching(NSPredicate(format: "label CONTAINS 'Orange = critical changes'")).firstMatch
+        let blue = app.buttons.matching(NSPredicate(format: "label CONTAINS 'Blue = drug doses'")).firstMatch
+        scrollTo(blue)
+        XCTAssertEqual(orange.value as? String, "Expanded")
+        XCTAssertEqual(blue.value as? String, "Collapsed")
+    }
+
     func testPDFSheetOpensAndCloses() {
         launch()
         XCTAssertTrue(list.waitForExistence(timeout: 15))
