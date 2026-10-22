@@ -41,4 +41,12 @@ struct DisclaimerTextTests {
         #expect(links.contains("https://www.gov.uk/government/publications/medical-devices-software-applications-apps"))
         #expect(DisclaimerView.linked(DisclaimerView.section3).runs.contains { $0.link?.absoluteString.contains("github.com/anaes-dev/qrh-ios") == true })
     }
+
+//    The privacy policy is PRIVACY.md in this repository, as in the About screen
+    @Test func privacyPolicyLinksToRepository() {
+        let links = DisclaimerView.linked(DisclaimerView.section4).runs.compactMap(\.link)
+        #expect(links.map(\.host) == ["github.com"])
+        #expect(links.first?.path == AboutView.privacyURL.path)
+        #expect(AboutView.privacyURL.absoluteString == "https://github.com/anaes-dev/qrh-ios/blob/main/PRIVACY.md")
+    }
 }
