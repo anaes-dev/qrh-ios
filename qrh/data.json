@@ -1,0 +1,2936 @@
+{
+  "version": "3.00",
+  "copyrightHolders": {
+    "aagbi": {
+      "name": "The Association of Anaesthetists of Great Britain & Ireland",
+      "website": "www.aagbi.org/qrh"
+    },
+    "aoa": {
+      "name": "Association of Anaesthetists",
+      "website": "www.anaesthetists.org/qrh"
+    }
+  },
+  "data": [
+    {
+      "code": "0-3",
+      "title": "Instructions for use",
+      "version": 2,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_0-3_Instructions_for_use_v2.pdf",
+      "copyright": {
+        "holder": "aoa",
+        "year": 2021
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "<p>The QRH is intended for use by individuals who are familiar with it and who are practised in its use.</p><p>See http://anaesthetists.org/Quick-Reference-Handbook for further details on implementation.</p>",
+          "step": ""
+        },
+        {
+          "type": 1,
+          "head": "",
+          "body": "Each guideline follows the same format:",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Guideline number, name and version number",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "A brief description of the clinical situation for which the guideline is written",
+          "step": "2"
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "The body of the guideline with steps",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call out boxes, which may be referred to in the steps",
+          "step": "4"
+        },
+        {
+          "type": 5,
+          "head": "Orange = critical changes",
+          "body": "Boxes expand on clicking",
+          "step": ""
+        },
+        {
+          "type": 6,
+          "head": "Blue = drug doses",
+          "body": "Boxes expand on clicking",
+          "step": ""
+        },
+        {
+          "type": 7,
+          "head": "Green = CPR information",
+          "body": "Boxes expand on clicking",
+          "step": ""
+        },
+        {
+          "type": 8,
+          "head": "Black = equipment instructions",
+          "body": "Boxes expand on clicking",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Purple = other reference information",
+          "body": "Boxes expand on clicking",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "A guideline may suggest changing to one of the other guidelines, like this: <b>(→2-1)</b>",
+          "step": "5"
+        },
+        {
+          "type": 1,
+          "head": "",
+          "body": "<p>Each guideline should be used in the same simple way.</p><ul><li>Start at <strong>START</strong></li><li>Work through the numbered bullet points in order.</li><li>Where indicated, refer to the call out boxes on the right.</li><li>Where indicated, move to another guideline.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 1,
+          "head": "",
+          "body": "<p>We recommend:</p><ul><li>One person should read the guideline aloud; they should NOT also be the person performing the actions.</li><li>The reader should ensure that the guideline is followed systematically, thoroughly and completely and that steps are not omitted.</li><li>Whenever experienced help arrives, consider delegating leadership to them: they have a fresh pair of eyes and may be able to make a more clear-headed assessment.</li></ul>",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "The original handbook PDF for each section can be downloaded by clicking the button at the top-right of the screen.",
+          "step": "!"
+        }
+      ]
+    },
+    {
+      "code": "1-1",
+      "title": "Key basic plan",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_1-1_Key_basic_plan_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "This Key Basic Plan will detect and identify almost all initial problems, allowing you to fix or temporise. There are specific drills for specific problems later on in the QRH.",
+          "step": ""
+        },
+        {
+          "type": 1,
+          "head": "",
+          "body": "<p>Using the same systematic approach:</p><ul><li>Increases the chance of identifying the problem.</li><li>Reduces the risk of missing the problem</li><li>Limits fixing attention inappropriately.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 5,
+          "head": "Box A: CRITICAL CHANGES",
+          "body": "If problem worsens significantly or a new problem arises, call for <b>help</b> and go back to <b>START</b> of <b>key basic plan →1-1</b>",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Adequate oxygen delivery",
+          "body": "<ul><li>Pause surgery if possible.</li><li>Check fresh gas flow for circuit in use AND check measured F<small>i</small>O₂ <b>(Box B)</b>.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li></ul>",
+          "step": "1"
+        },
+        {
+          "type": 8,
+          "head": "Box B: ADEQUATE OXYGEN DELIVERY",
+          "body": "Altering fresh gas flow may require change of vaporiser setting.",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Airway",
+          "body": "<ul><li>Check position of airway device and listen for noise (including larynx and stomach). <b>(Box C)</b></li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter).</li><li>Consider whether you need to isolate equipment <b>(Box D)</b>.</li></ul>",
+          "step": "2"
+        },
+        {
+          "type": 8,
+          "head": "Box C: AIRWAY",
+          "body": "<p>Noise: Listen over the larynx with a stethoscope to get more information (e.g. leak / obstruction).</p><p>Tracheal tube: You can pass a suction catheter to check patency.</p>",
+          "step": ""
+        },
+        {
+          "type": 8,
+          "head": "Box D: ISOLATE EQUIPMENT",
+          "body": "<p>Ventilate lungs using self-inflating bag connected <b>DIRECTLY</b> to tracheal tube connector. <b>DO NOT</b> use the HME filter, angle piece or catheter mount.</p><ul><li>If increased pressure manually confirmed, re-connect machine.</li><li>If increased pressure NOT manually confirmed, assume problem with machine/circuit/HME/filter/angle piece/catheter mount:  check and replace as indicated.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Breathing",
+          "body": "<ul><li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve <b>(Box E)</b> &lt;3 breaths.</li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 8,
+          "head": "Box E: BREATHING",
+          "body": "Remember that airway ‘feel’ depends on your APL valve setting and fresh gas flow. You can only “feel” a maximum of what the APL valve is set to. Measured expired tidal volume gives additional information.",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Circulation",
+          "body": "Check rate, rhythm, perfusion, re-check BP.",
+          "step": "4"
+        },
+        {
+          "type": 3,
+          "head": "Depth",
+          "body": "Ensure appropriate depth of anaesthesia, analgesia and neuromuscular blockade.",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider surgical problem.",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help if problem not resolving quickly.",
+          "step": "7"
+        }
+      ]
+    },
+    {
+      "code": "2-1",
+      "title": "Cardiac arrest",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-1_Cardiac_arrest_Revised_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "The probable cause is one or more of: something related to surgery or anaesthesia; the patient’s underlying medical condition; the reason for surgery; equipment failure. The first priority is to start chest compressions, then get help, then find and treat the cause using the guideline.",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "IMMEDIATE ACTION",
+          "body": "<ul><li><b>Declare “cardiac arrest”</b> to the theatre team AND note time.</li><li>Delegate one person (minimum) to chest compressions 100 min⁻¹, depth 5 cm.</li><li>Call for help: nearby theatres / emergency bell / senior on-call / dial emergency number.</li><li>Call for cardiac arrest trolley.</li><li>As soon as possible, delegate task of evaluating potential causes <b>(Box A)</b>.</li></ul>",
+          "step": "1"
+        },
+        {
+          "type": 9,
+          "head": "Box A: POTENTIAL CAUSES",
+          "body": "<p><b>4 H's, 4 T's</b></p><ul><li>Hypoxia <b>→2-2</b></li><li>Hypovolaemia</li><li>Hypo/hyperkalaemia</li><li>Hypothermia</li><li>Tamponade <b>→3-9</b></li><li>Thrombosis <b>→3-5</b></li><li>Toxins</li><li>Tension pneumothorax</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Specific peri-operative problems:",
+          "body": "<ul><li>Vagal tone</li><li>Drug error</li><li>Local anaesthetic toxicity <b>→3-10</b></li><li>Acidosis</li><li>Anaphylaxis <b>→3-1</b></li><li>Embolism, gas/fat/amniotic <b>→3-5</b></li><li>Massive blood loss <b>→3-2</b></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Adequate oxygen delivery",
+          "body": "<ul><li>Increase fresh gas flow, give 100% oxygen AND check measured F<small>i</small>O₂.</li><li>Turn off anaesthetic (inhalational or intravenous).</li><li>Check breathing system valves working and system connections intact.</li><li>Rapidly confirm ventilator bellows moving or provide manual ventilation.</li></ul>",
+          "step": "2"
+        },
+        {
+          "type": 3,
+          "head": "Airway",
+          "body": "<ul><li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Confirm airway device is patent (consider passing suction catheter).</li><li><b>If expired CO₂ is absent, presume oesophageal intubation until absolutely excluded.</b></li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 3,
+          "head": "Breathing",
+          "body": "<ul><li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured expired volume, ETCO₂.</li><li>Evaluate the airway pressure using reservoir bag and APL valve.</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 3,
+          "head": "Circulation",
+          "body": "<ul><li>Check rate and adequacy of chest compressions (visual and ETCO₂).</li><li>Encourage rotation of personnel performing compressions.</li><li>If IV access fails or impossible use intraosseous (IO) route.</li><li>Check ECG rhythm for no more than 5 seconds.</li><li>Follow Resuscitation Council (UK) and ERC Guidelines.</li><li>See <b>Boxes B and C</b> for reminders about drugs and defibrillation.</li></ul>",
+          "step": "5"
+        },
+        {
+          "type": 6,
+          "head": "Box B: DRUGS FOR PERI-OPERATIVE CARDIAC ARREST",
+          "body": "<ul><li>Fluid bolus 20 ml.kg⁻¹ <small>(adult 500 ml)</small></li><li>Adrenaline 10 µg.kg⁻¹ <small>(adult 1000 µg – may be given in increments)</small></li><li>Atropine 10 µg.kg⁻¹ <small>(adult 0.5-1 mg) if vagal tone likely cause</small></li><li>Amiodarone 5 mg.kg⁻¹ <small>(adult 300 mg) after 3rd shock</small></li><li>Magnesium 50 mg.kg⁻¹ <small>(adult 2 g) for polymorphic VT/hypomagnesaemia.</small></li><li>Calcium chloride 10% 0.2 ml.kg⁻¹ <small>(adult 10 ml) for magnesium overdose, hypocalcaemia or hyperkalaemia</small></li><li>Thrombolysis <small>for suspected massive pulmonary embolus</small></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 8,
+          "head": "Box C: DEFIBRILLATION",
+          "body": "<p>Continue compressions while charging</p><p>Biphasic 4 J.kg⁻¹ <small>(adult 150-200 J)</small></p><p>DO NOT check pulse after defibrillation</p><p>Use 3 stacked shocks in cardiac catheterisation lab</p>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Systematically evaluate potential underlying problems and act accordingly <b>(Box A)</b>",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If there is return of spontaneous circulation, re-establish anaesthesia.",
+          "step": "7"
+        },
+        {
+          "type": 8,
+          "head": "Box D: DON'T FORGET!",
+          "body": "<ul><li><b>Use waveform capnography. No expired CO₂ = lungs not being ventilated (assume and exclude oesophageal intubation). Very rarely, absent/minimal expired CO₂ = CPR not occurring OR pulmonary circulation disconnected from systemic (e.g. in major trauma).</b> Sudden increase in ETCO₂ usually signals return of spontaneous circulation</li><li>Optimise position for chest compressions (use overhead for bariatric patients)</li><li>Uterine displacement in pregnant patients.</li><li>Ventilator can free up hands but remember to set to volume control. Minimise intrathoracic pressure: avoid excessive tidal volume and hyperventilation.</li></ul>",
+          "step": ""
+        }
+      ]
+    },
+    {
+      "code": "2-2",
+      "title": "Hypoxia / desaturation / cyanosis",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-2_Hypoxia-desaturation-cyanosis_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "<p>Using these steps from start to end should identify any cause of unexpected hypoxia in theatre.</p><p>Avoid spending excessive time and attention on one aspect until you have run through the whole drill.</p>",
+          "step": ""
+        },
+        {
+          "type": 5,
+          "head": "Box A: CRITICAL CHANGES",
+          "body": "If problem worsens significantly or a new problem arises, call for <b>help</b> and go back to <b>START</b> of <b>key basic plan →1-1</b>",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Adequate oxygen delivery",
+          "body": "<ul><li>Pause surgery if possible.</li><li>Increase fresh gas flow AND give 100% oxygen AND check measured F<small>i</small>O₂.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li><li>If S<small>p</small>O₂ low, is it accurate? Consider whether poor perfusion could be the problem.</li></ul>",
+          "step": "1"
+        },
+        {
+          "type": 3,
+          "head": "Airway",
+          "body": "<ul><li>Check position of airway device and listen for noise (including over larynx and stomach).</li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter).</li><li>Isolate patient from anaesthetic machine and breathing system <b>(Box B)</b>.</li><li>Once machine/breathing system problem excluded, consider whether airway device should be replaced or its type changed.</li></ul>",
+          "step": "2"
+        },
+        {
+          "type": 8,
+          "head": "Box B: ISOLATE EQUIPMENT",
+          "body": "<p>Ventilate lungs using self-inflating bag connected <b>DIRECTLY</b> to tracheal tube connector. <b>DO NOT</b> use the HME filter, angle piece or catheter mount.</p><ul><li>If problem resolves: assume problem with machine, circuit, HME, filter, angle piece or catheter mount: check and replace.</li><li>If increased pressure manually confirmed: re-connect machine.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Breathing",
+          "body": "<ul><li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve <b>(Box C)</b> &lt;3 breaths.</li><li>Consider potential causes and actions <b>(Box D)</b>.</li><li>Consider muscle relaxation to optimise ventilation.</li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 8,
+          "head": "Box C: AIRWAY PRESSURE",
+          "body": "Remember that airway “feel” depends on your APL valve setting.  You can only “feel” a maximum of what the APL valve is set to.  Measured expired tidal volume gives additional information.",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Box D: POTENTIAL CAUSES AND ACTIONS",
+          "body": "<ul><li>Hypoxia with increased airway pressure <b>→2-3</b></li><li>Inadequate movement or expired volume: assist/increase ventilation</li><li>Asymmetrical chest expansion: exclude bronchial intubation/foreign body/pneumothorax</li><li>Consider potential actions: tracheal/bronchial suction; bronchodilator; PEEP; diuretic; bronchoscopy.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Consider potential causes:",
+          "body": "<ul><li>Laryngospasm and stridor <b>→3-6</b></li><li>Bronchospasm <b>→3-4</b></li><li>Anaphylaxis <b>→3-1</b></li><li>Circulatory embolism <b>→3-5</b></li><li>Cardiac ischaemia (or infarction) <b>→3-12</b></li><li>Cardiac tamponade <b>→3-9</b></li><li>Sepsis <b>→3-14</b></li><li>Malignant hyperthermia crisis <b>→3-8</b></li><li>Aspiration, pulmonary oedema, congenital heart disease</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Circulation",
+          "body": "<ul><li>Check heart rate, rhythm, perfusion, recheck blood pressure.</li><li>If circulation unstable, consider if this is secondary to hypoxia.</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 3,
+          "head": "Depth",
+          "body": "Ensure adequate depth of anaesthesia and analgesia.",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If not resolving call for help AND check arterial blood gas, 12-lead ECG, chest X-ray",
+          "step": "6"
+        }
+      ]
+    },
+    {
+      "code": "2-3",
+      "title": "Increased airway pressure",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-3_Increased_airway_pressure_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Using these steps from start to end should identify any cause of increased airway pressure in theatre. Avoid spending excessive time and attention on one aspect until you have run through the whole guideline.",
+          "step": ""
+        },
+        {
+          "type": 5,
+          "head": "Box A: CRITICAL CHANGES",
+          "body": "If problem worsens significantly or a new problem arises, call for <b>help</b> and go back to <b>START</b> of <b>key basic plan →1-1</b>",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Adequate oxygen delivery",
+          "body": "<ul><li>Pause surgery if possible.</li><li>Consider surgery related cause.</li><li>Increase fresh gas flow AND give 100% oxygen AND check measured F<small>i</small>O₂.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li><li>Confirm increased airway pressure by switching to hand ventilation (&lt;3 breaths) <b>(Box B)</b>.</li></ul>",
+          "step": "1"
+        },
+        {
+          "type": 8,
+          "head": "Box B: FEEL THE AIRWAY PRESSURE",
+          "body": "Remember that airway “feel” depends on your APL valve setting.  You can only “feel” a maximum of what the APL valve is set to.  Measured expired tidal volume gives additional information.",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Airway",
+          "body": "<ul><li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter)</li><li>Isolate patient from anaesthetic machine and breathing system <b>(Box C)</b>.</li><li>If machine/breathing system problem excluded, consider whether airway device should be replaced or its type changed.</li></ul>",
+          "step": "2"
+        },
+        {
+          "type": 8,
+          "head": "Box C: EXCLUDE ANAESTHETIC MACHINE/BREATHING SYSTEM PROBLEM",
+          "body": "<p>Ventilate lungs using self-inflating bag connected <b>DIRECTLY</b> to tracheal tube connector. <b>DO NOT</b> use HME filter, angle piece or catheter mount.</p><ul><li>If increased pressure manually confirmed, re-connect machine</li><li>If problem resolved, assume problem with machine, circuit, HME, filter, angle piece or catheter mount: check and replace.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Breathing",
+          "body": "<ul><li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve <b>(Box B)</b>.</li><li>Consider potential causes and actions <b>(Box D)</b>.</li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 9,
+          "head": "Box D: POTENTIAL CAUSES AND ACTIONS",
+          "body": "<ul><li>Inadequate neuromuscular blockade.</li><li>If laparoscopic surgery, consider releasing pneumoperitoneum and levelling patient position.</li><li>Consider potential causes:<p>- Laryngospasm and stridor <b>→3-6</b></p><p>- Bronchospasm <b>→3-4</b></p><p>- Anaphylaxis <b>→3-1</b></p><p>- Circulatory embolus <b>→3-5</b></p><p>- Aspiration, pulmonary oedema; bronchial intubation; foreign body; pneumothorax.</p></li><li>Consider potential actions: tracheal/bronchial suction; bronchodilator; PEEP; diuretic; bronchoscopy.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Circulation",
+          "body": "<ul><li>Check heart rate, rhythm, perfusion, recheck blood pressure.</li><li>If circulation unstable, consider if it is due to high airway pressure gas trapping</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 3,
+          "head": "Depth",
+          "body": "Ensure adequate depth of anaesthesia and analgesia.",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If not resolving, call for help AND check arterial blood gas, 12-lead ECG, chest X-ray",
+          "step": "6"
+        }
+      ]
+    },
+    {
+      "code": "2-4",
+      "title": "Hypotension",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-4_Hypotension_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Hypotension is commonly due to unnecessarily deep anaesthesia, the autonomic effects of neuraxial block, hypovolaemia or combined causes. You should rapidly exclude a problem in adequate oxygen delivery, airway and breathing first.",
+          "step": ""
+        },
+        {
+          "type": 5,
+          "head": "Box A: CRITICAL CHANGES",
+          "body": "If problem worsens significantly or a new problem arises, call for <b>help</b> and go back to <b>START</b> of <b>key basic plan →1-1</b>",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Adequate oxygen delivery",
+          "body": "<ul><li>Pause surgery if possible.</li><li>Increase fresh gas flow AND give 100% oxygen AND check measured F<small>i</small>O₂.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li></ul>",
+          "step": "1"
+        },
+        {
+          "type": 3,
+          "head": "Airway",
+          "body": "<ul><li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Check capnogram shape compatible with patent airway.</li><li>Check airway AND airway device are patent (consider passing suction catheter).</li></ul>",
+          "step": "2"
+        },
+        {
+          "type": 3,
+          "head": "Breathing",
+          "body": "<ul><li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve &lt;3 breaths.</li><li>Exclude high intrathoracic pressure as a cause.</li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 3,
+          "head": "Circulation",
+          "body": "<ul><li>Check heart rate, rhythm, perfusion, recheck blood pressure.</li><li>If heart rate &lt;60 bpm consider giving anticholinergic drug <b>(Box B)</b>.</li><li>Consider giving vasopressor <b>(Box C)</b> and positioning (e.g. move head down).</li><li>Consider fluid boluses (250 ml adult, 10 ml.kg⁻¹ paediatric).</li><li>If heart rate &gt;100 bpm sinus rhythm, treat as hypovolaemia: give IV fluid bolus.</li><li>If heart rate &gt;100 bpm and non-sinus: <b>→2-7</b></li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 6,
+          "head": "Box B: ANTICHOLINERGIC DRUGS",
+          "body": "<ul><li>Glycopyrrolate 5 μg.kg⁻¹ <small>(adult 200-400 μg)</small></li><li>Atropine 5 μg.kg⁻¹ <small>(adult 300-600 μg)</small></li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 6,
+          "head": "Box C: VASOPRESSOR DRUGS",
+          "body": "<ul><li>ePHEDrine 100 μg.kg⁻¹ <small>(adult 3-12 mg)</small></li><li>Phenylephrine 5 μg.kg⁻¹ <small>(adult 100 μg)</small></li><li>Metaraminol 5 μg.kg⁻¹ <small>(adult 500 μg)</small></li><li>Adrenaline 1 μg.kg⁻¹ <small>(adult 10-100 μg) in emergency only</small></li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 3,
+          "head": "Depth",
+          "body": "Ensure correct depth of anaesthesia AND analgesia (consider risk of awareness).",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Exclude potential surgical causes <b>(Box D)</b> – discuss with surgical team.",
+          "step": "6"
+        },
+        {
+          "type": 8,
+          "head": "Box D: SURGICAL CAUSES",
+          "body": "<ul><li>Decreased venous return (e.g. vena cava compression / pneumoperitoneum)</li><li>Blood loss (unrecognised / undeclared / occult)</li><li>Vagal reaction to surgical stimulation</li><li>Embolism (gas / fat / blood / cement reaction)</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider causes in <b>Box E</b> and call for help if problem not resolving quickly.",
+          "step": "7"
+        },
+        {
+          "type": 9,
+          "head": "Box E: DON'T FORGET!",
+          "body": "<ul><li>Consider whether you could have made a drug error</li><li>Pneumothorax and/or high intrathoracic pressure can cause hypotension</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Also consider:",
+          "body": "<ul><li>Cardiac ischaemia <b>→3-12</b></li><li>Anaphylaxis <b>→3-1</b></li><li>Cardiac tamponade <b>→3-9</b></li><li>Local anaesthetic toxicity <b>→3-10</b></li><li>Sepsis <b>→3-14</b></li><li>Cardiac valvular problem</li><li>Endocrine cause (e.g. steroid dependency)</li></ul>",
+          "step": ""
+        }
+      ]
+    },
+    {
+      "code": "2-5",
+      "title": "Hypertension",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-5_Hypertension_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Hypertension is most commonly due to inappropriate depth of anaesthesia or inadequate analgesia. You should rapidly exclude a problem in adequate oxygen delivery, airway and breathing first.",
+          "step": ""
+        },
+        {
+          "type": 5,
+          "head": "Box A: CRITICAL CHANGES",
+          "body": "If problem worsens significantly or a new problem arises, call for <b>help</b> and go back to <b>START</b> of <b>key basic plan →1-1</b>",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Immediate actions",
+          "body": "Recheck blood pressure AND increase anaesthesia AND reduce stimulus.",
+          "step": "1"
+        },
+        {
+          "type": 3,
+          "head": "Adequate oxygen delivery",
+          "body": "<ul><li>Check fresh gas flow for circuit in use AND check measured F<small>i</small>O₂.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li></ul>",
+          "step": "2"
+        },
+        {
+          "type": 3,
+          "head": "Airway",
+          "body": "<ul><li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter).</li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 3,
+          "head": "Breathing",
+          "body": "<ul><li>Exclude <b>hypoxia</b> and <b>hypercarbia</b> as causes</li><li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve &lt;3 breaths.</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 3,
+          "head": "Circulation",
+          "body": "<ul><li>Check rate, rhythm, perfusion; increase frequency of BP check.</li><li>Check cuff size and location, consider intra-arterial monitoring</li></ul>",
+          "step": "5"
+        },
+        {
+          "type": 3,
+          "head": "Depth",
+          "body": "Ensure adequate depth of anaesthesia and analgesia.",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider underlying problem <b>(Box B)</b>.",
+          "step": "7"
+        },
+        {
+          "type": 9,
+          "head": "Box B: POTENTIAL UNDERLYING PROBLEM",
+          "body": "<ul><li>Inadequate anaesthesia / analgesia (alfentanil can be diagnostic – see Box C for dose)</li><li>Inadequate neuromuscular blockade</li><li>Consider whether you could have made a drug error</li><li>Omission of usual antihypertensives</li><li>Distended bladder</li><li>Vasopressor administered by surgeon</li><li>Surgical tourniquet</li><li>Excess fluid (over-administration / overload / TURP syndrome)</li><li>Medical causes: drug interaction, renal failure, raised intracranial pressure, seizure, thyrotoxicosis, phaeochromocytoma</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help and consider temporising drug <b>(Box C)</b> if problem not resolving.",
+          "step": "8"
+        },
+        {
+          "type": 6,
+          "head": "Box C: TEMPORISING DRUGS FOR HYPERTENSION",
+          "body": "<ul><li>Alfentanil 10 µg.kg⁻¹ <small>(adult 0.5-1 mg)</small></li><li>Propofol 1 mg.kg⁻¹ <small>(adult 50-100 mg)</small></li><li>Labetolol 0.5 mg.kg⁻¹ <small>(adult 25-50mg) repeat as necessary</small></li><li>Esmolol 0.5 mg.kg⁻¹ <small>(adult 25-50mg) follow with infusion</small></li><li>hydrALAZINE 0.1 mg.kg⁻¹ <small>(adult 5-10mg)</small></li><li>Glyceryl trinitrate 0.5-5 µg.kg.min⁻¹ infusion <small>(adult 2-20 ml.hr⁻¹ of 1 mg.ml⁻¹ solution)</small></li></ul>",
+          "step": ""
+        }
+      ]
+    },
+    {
+      "code": "2-6",
+      "title": "Bradycardia",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-6_Bradycardia_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Bradycardia in theatre should not be treated as an isolated variable: remember to tailor treatment to the patient and the situation. Follow the full steps to exclude a serious underlying problem.",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Immediate action",
+          "body": "<p>Stop any stimulus, check pulse, rhythm and blood pressure:</p><ul><li>If no pulse OR <u>not</u> sinus bradycardia OR severe hypotension: use <b>Box A</b>.</li><li>If pulse present AND sinus bradycardia: use <b>Box B</b>.</li></ul>",
+          "step": "1"
+        },
+        {
+          "type": 5,
+          "head": "Box A: CRITICAL BRADYCARDIA",
+          "body": "<p>Give atropine 20 µg.kg⁻¹ (adult 0.5-1 mg) with fluid flush.</p><p>If no pulse: (or heart rate &lt;60 bpm infant or neonate):</p><p>Delegate (minimum) 1 person to chest compressions</p><p><b>→2-1 (Cardiac arrest)</b></p>",
+          "step": ""
+        },
+        {
+          "type": 6,
+          "head": "Box B: DRUGS FOR BRADYCARDIA",
+          "body": "<ul><li>Glycopyrrolate 5 µg.kg⁻¹ <small>(adult 200-400 µg)</small></li><li>Ephedrine 100 µg.kg⁻¹ <small>(adult 3-12 mg)</small></li><li>Atropine 10 µg.kg⁻¹ <small>(adult 300-600 µg)</small></li><li>Isoprenaline 0.5 µg.kg.min⁻¹ <small>(adult 5 µg.min⁻¹)</small></li><li>Adrenaline 1 µg.kg⁻¹ <small>(adult 10-100 µg) in emergency only</small></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Adequate oxygen delivery",
+          "body": "<ul><li>Check fresh gas flow for circuit in use AND check measured F<small>i</small>O₂.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li></ul>",
+          "step": "2"
+        },
+        {
+          "type": 3,
+          "head": "Airway",
+          "body": "<ul><li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter).</li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 3,
+          "head": "Breathing",
+          "body": "<ul><li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve &lt;3 breaths.</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 3,
+          "head": "Circulation",
+          "body": "Check rate, rhythm, perfusion, recheck blood pressure.",
+          "step": "5"
+        },
+        {
+          "type": 3,
+          "head": "Depth",
+          "body": "Consider current depth of anaesthesia AND adequacy of analgesia.",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider underlying problem <b>(Box C)</b>.",
+          "step": "7"
+        },
+        {
+          "type": 9,
+          "head": "Box C: POTENTIAL UNDERLYING PROBLEMS",
+          "body": "<ul><li>Consider whether you could have made a drug error</li><li>Consider known drug causes (eg. remifentanil, digoxin etc)</li><li>Surgical stimulation with inadequate depth</li><li>Also consider: high intrathoracic pressure; pneumoperitoneum; local anaesthetic toxicity <b>→3-10</b>; beta-blocker; digoxin; calcium channel blocker; myocardial infarction, hyperkalaemia, hypothermia, raised intra-cranial pressure</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help if problem not resolving quickly.",
+          "step": "8"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider transcutaneous pacing <b>(Box D)</b>.",
+          "step": "9"
+        },
+        {
+          "type": 8,
+          "head": "Box D: TRANSCUTANEOUS PACING",
+          "body": "<ul><li>Attach pads and ECG leads from pacing defibrillator</li><li>Set to PACING MODE</li><li>Set PACER RATE</li><li>Increase PACER OUTPUT from 60 mA until capture (spikes align QRS)</li><li>Confirm capture: electrical AND mechanical (femoral pulse)</li><li>Set PACER OUTPUT 10 mA above capture</li></ul>",
+          "step": ""
+        }
+      ]
+    },
+    {
+      "code": "2-7",
+      "title": "Tachycardia",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-7_Tachycardia_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Tachycardia in theatre is often due to inadequate depth of anaesthesia / analgesia or alternatively a reflex to hypotension. Tachycardia should not be treated as an isolated variable: remember to tailor treatment to the patient and the situation. Follow the full steps to exclude a serious underlying problem.",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Immediate action",
+          "body": "<p>Stop any stimulus, Check pulse, rhythm and blood pressure:</p><ul><li>If no pulse or impending arrest: use <b>Box A</b>.</li><li>If narrow complex AND <u>not</u> hypotensive first increase depth of anaesthesia/analgesia.</li></ul>",
+          "step": "1"
+        },
+        {
+          "type": 5,
+          "head": "Box A: CRITICAL TACHYCARDIA",
+          "body": "<p>If no pulse, delegate one person (minimum) to chest compressions <b>→2-1 (Cardiac arrest)</b></p><p>If hypotension worsening or impending arrest, consider electrical cardioversion <b>(Box D)</b></p>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Adequate oxygen delivery",
+          "body": "<ul><li>Check fresh gas flow for circuit in use AND check measured F<small>i</small>O₂.</li><li>Visual inspection of entire breathing system including valves and connections.</li><li>Rapidly confirm reservoir bag moving OR ventilator bellows moving.</li></ul>",
+          "step": "2"
+        },
+        {
+          "type": 3,
+          "head": "Airway",
+          "body": "<ul><li>Check position of airway device and listen for noise (including larynx and stomach).</li><li>Check capnogram shape compatible with patent airway.</li><li>Confirm airway device is patent (consider passing suction catheter).</li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 3,
+          "head": "Breathing",
+          "body": "<ul><li>Check chest symmetry, rate, breath sounds, S<small>p</small>O₂, measured VT<small>exp</small>, ETCO₂.</li><li>Feel the airway pressure using reservoir bag and APL valve <3 breaths.</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 3,
+          "head": "Circulation",
+          "body": "Check rate, rhythm, perfusion, recheck blood pressure, obtain 12-lead ECG if possible.",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider underlying problem <b>(Box B)</b>.",
+          "step": "6"
+        },
+        {
+          "type": 9,
+          "head": "Box B: POTENTIAL UNDERLYING PROBLEMS",
+          "body": "<ul><li>Stimulation with inadequate depth</li><li>Consider drug error</li><li>Also consider: central line/wire; hypovolaemia; primary cardiac arrhythmia; myocardial infarction; electrolyte disturbance; local anaesthetic toxicity <b>→3-10</b>; sepsis <b>→3-14</b>; circulatory embolus, gas/fat/amniotic <b>→3-5</b>; anaphylaxis <b>→3-1</b>; malignant hyperthermia crisis <b>→3-8</b></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider rate control <b>(Box C)</b>.",
+          "step": "7"
+        },
+        {
+          "type": 6,
+          "head": "Box C: DRUGS FOR TACHYCARDIA",
+          "body": "<ul><li>Fluid bolus 10 ml.kg⁻¹ <small>(adult 250 ml)</small></li><li>Magnesium 50 mg.kg⁻¹ <small>(adult 2 g) over >10 min, max conc. 200 mg.ml⁻¹</small></li><li>Amiodarone 5 mg.kg⁻¹ <small>(adult 300 mg) over >3 min, NOT in polymorphic VT</small></li><li>Labetalol 0.5 mg.kg⁻¹ <small>(adult 25-50 mg), repeat when necessary</small></li><li>Esmolol 0.5 mg.kg⁻¹ <small>(adult 25-50 mg)</small></li><li>Adenosine 0.1 to 0.5 mg.kg⁻¹ <small>(Adult 3 to 18 mg) – for SVT</small></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Call for help",
+          "body": "Consider electrical cardioversion <b>(Box D)</b> if problem not resolving quickly.",
+          "step": "8"
+        },
+        {
+          "type": 8,
+          "head": "Box D: ELECTRICAL CARDIOVERSION",
+          "body": "<ul><li>Attach pads and ECG from defibrillator</li><li>Ensure adequate depth / sedation / analgesia for cardioversion</li><li>Engage synchronisation and check for sync spikes on R-waves</li><li>Start with 1 Jkg⁻¹ (adult 50-100 J) biphasic</li><li>Remember to hold shock button until sync shock delivered</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Depth",
+          "body": "Consider current depth of anaesthesia AND adequacy of analgesia.",
+          "step": "9"
+        }
+      ]
+    },
+    {
+      "code": "2-8",
+      "title": "Peri-operative hyperthermia",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_2-8_Perioperative_hyperthermia_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "If prolonged or ≥ 39°C this is a clinical emergency: permanent organ dysfunction and death can result. Treatment depends on the aetiology.",
+          "step": ""
+        },
+        {
+          "type": 1,
+          "head": "",
+          "body": "<p>Distinguish early between:</p><ul><li>Excessive heating (most common)</li><li>Inadequate dissipation of metabolic heat</li><li>Excessive heat production</li><li>Actively maintained fever</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help. Inform theatre team of problem. Measure and record <u>core</u> temperature.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Remove cause of hyperthermia including any insulation and heating devices.",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Make an initial diagnosis of the cause as this affects further management <b>(Box A)</b>:</p><ul><li>Actively maintained fever (typically cold peripheries, vasoconstricted) OR</li><li>Non-febrile hyperthermia (typically warm peripheries, vasodilated)</li><li>Suspect malignant hyperthermia crisis or neuroleptic malignant syndrome? <b>→3-8</b></li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 9,
+          "head": "Box A: COMMON CAUSES",
+          "body": "<ul><li>Excessive insulation, high ambient temperature, external warming devices, especially infants and children (most common)</li><li>Surgical devices, e.g. HIFU, diathermy, radiotherapy</li><li>Prolonged epidural anaesthesia</li><li>Sepsis <b>→3-14</b> e.g. during manipulation of a urological device</li><li>Blood transfusion</li><li>Allergic reaction / anaphylaxis <b>→3-1</b></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Box A: DRUG CAUSES",
+          "body": "<ul><li>Neuroleptic malignant syndrome (e.g. haloperidol and other antipsychotics)</li><li>Malignant hyperthermia crisis (late sign) <b>→3-8</b></li><li>Serotonin syndrome (cocaine, amphetamine, phencyclidine, MDMA)</li><li>Anticholinergic syndrome (tricyclic antidepressants, antipsychotics, antihistamines)</li><li>Sympathomimetic syndrome (cocaine, MDMA, amphetamines)</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Box A: TOXIC CAUSES",
+          "body": "<ul><li>Radiologic contrast neurotoxicity</li><li>Alcohol withdrawal</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Box A: ENDOCRINE CAUSES",
+          "body": "<ul><li>Thyrotoxicosis</li><li>Phaeochromocytoma</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Box A: NEUROLOGICAL CAUSES",
+          "body": "<ul><li>Meningitis</li><li>Intracranial blood</li><li>Hypoxic encephalopathy</li><li>Traumatic brain injury</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Start active cooling WITH CAUTION if core temp ≥ 39°C (stop once below):</p><ul><li>Reduce the operating room ambient temperature.</li><li>Cooling jackets or blankets.</li><li>Ice packing in groin, axillae and anterior neck.</li><li>Bladder, gastric or peritoneal lavage with boluses 10 ml.kg⁻¹ iced water.</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Give benzodiazepines to treat shivering and consider tracheal intubation and muscle paralysis if core temperature ≥ 40°C.",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If fever, give antipyretics such as paracetamol and treat underlying cause if known.",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Give chlorpromazine if serotonin syndrome is suspected <b>(Box B)</b>",
+          "step": "7"
+        },
+        {
+          "type": 6,
+          "head": "Box B: CHLORPROMAZINE DOSE",
+          "body": "chlorproMAZINE (Largactil) 25-50 mg intraMUSCULAR 6-8 hourly. Caution in elderly.",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Monitor and manage life-threatening complications especially:</p><ul><li>Hyperkalaemia, hypoglycaemia, acidosis</li><li>Hypotension <b>→2-4</b>, malignant hypertension</li><li>Altered conscious level, convulsions</li><li>Coagulopathy and disseminated intravascular coagulation</li></ul>",
+          "step": "8"
+        }
+      ]
+    },
+    {
+      "code": "3-1",
+      "title": "Anaphylaxis",
+      "version": 5,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-1_Anaphylaxis_v5.pdf",
+      "copyright": {
+        "holder": "aoa",
+        "year": 2022
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "<ul><li>Unexplained hypotension</li><li>Unexplained bronchospasm <i>(wheeze may be absent if severe)</i></li><li>Unexplained tachycardia or bradycardia</li><li>Angioedema <i>(often absent in severe cases)</i></li><li>Unexpected cardiac arrest where other causes are excluded</li><li>Cutaneous flushing in association with one of more of the signs above <i>(often absent in severe cases)</i></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help. Note the time. Stop or do not start non-essential surgery.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for cardiac arrest trolley, anaphylaxis treatment pack and investigation pack.",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Remove all potential causative agents and maintain anaesthesia.</p><ul><li>Important culprits: antibiotics, neuromuscular blocking agents, patent blue.</li><li>Consider chlorhexidine as cause (impregnated catheters, lubricants, cleansing agents)</li><li>Consider i.v. colloids as a possible cause.</li><li>Change to inhalational anaesthetic agent (if not already).</li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Give 100% oxygen and ensure adequate ventilation:</p><ul><li>Maintain the airway and, if necessary, secure it with tracheal tube.</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Elevate patient’s legs if there is hypotension.",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If systolic blood pressure < 50 mmHg or cardiac arrest, start CPR immediately.",
+          "step": "6"
+        },
+        {
+          "type": 5,
+          "head": "Box B: CRITICAL CHANGES",
+          "body": "<b>CARDIAC ARREST →2-1</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Give drugs to treat hypotension (Box A):</p><ul><li><b>Hypotension may be resistant and may require prolonged treatment.</b></li><li>Give adrenaline bolus and repeat as necessary.</li><li>Consider starting an adrenaline infusion after three boluses.</li><li>If hypotension resistant, give alternate vasopressor (e.g. metaraminol, noradrenaline infusion +/- vasopressin)</li><li>Give glucagon in ß-blocked patient unresponsive to adrenaline.</li><li>Hydrocortisone and chlorphenamine are no longer part of acute treatment (Box C)</li></ul>",
+          "step": "7"
+        },
+        {
+          "type": 6,
+          "head": "Box A: DRUGS TO TREAT HYPOTENSION",
+          "body": "<p><b>IF CARDIAC ARREST →2-1</b></p><ul><li>Adult adrenaline:<br>intra<b>VENOUS</b> 50 μg <small>(= 0.5 ml of 1:<b>10 000</b>)</small><br>intra<b>MUSCULAR</b> 0.5 mg <small>(= 0.5 ml of 1:<b>1000</b>) <i>if IV not possible</i></small></li><li>Paediatric adrenaline:<br>intraVENOUS 1.0 μg.kg⁻¹ <small>(0.1 ml.kg⁻¹ of 1:<b>100 000</b>)<br>[1:<b>100 000</b> solution made by diluting 1 ml of 1:<b>10 000</b> up to 10 ml]</small></li><li>If no IV access, intraosseous adrenaline dose same as IV</li><li>Suggested adrenaline infusion regimes (adult):<br>5 mg in 500 mL dextrose = 1:<b>100 000</b>, titrate to effect<br>3 mg in 50 mL saline. Start at 3 ml.h-1 (= 3 μg.min⁻¹), titrate to maximum 40 ml.h⁻¹ (= 40 μg.min⁻¹)</li><li>Glucagon (adult): 1 mg, <small>repeat as necessary</small></li><li>Vasopressin (adult): 2 units, <small>repeat as necessary (consider infusion)</small></li></ul>",
+          "step": "7"
+        },
+        {
+          "type": 6,
+          "head": "Box C: HYDROCORTISONE and CHLORPHENAMINE CHANGES",
+          "body": "<p><b>AFTER</b> initial resuscitation:</p><ul><li>Consider steroids for refractory reactions or ongoing asthma/shock.</li><li>Antihistamines (preferably oral, non-sedating) can be given for skin symptoms.</li></ul>",
+          "step": "7"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Give rapid IV crystalloid:</p><ul><li>20 ml.kg⁻¹ initial bolus, repeated until hypotension resolved.</li><li>Fluid requirements may be significant</li></ul>",
+          "step": "8"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If bronchospasm is persistent, consider <b>→3-4</b>",
+          "step": "9"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Take 5-10 ml clotted blood sample for <b>serum tryptase</b> as soon as patient is stable.</p><ul><li>Plan for repeat sample at 1-2 hours and >24 hours.</li></ul>",
+          "step": "10"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Plan transfer of the patient to an appropriate critical care area. Note tasks in Box D.",
+          "step": "11"
+        },
+        {
+          "type": 9,
+          "head": "Box D: DON’T FORGET",
+          "body": "<ul><li>Repeat testing for serum tryptase at 1-2 hours and >24 hours.</li><li>Liaise with hospital laboratory about analysis of samples.</li><li>Liaise with department anaphylaxis lead regarding referral to a specialist allergy or immunology centre to identify the causative agent (see www.bsaci.org for details).</li><li>Inform the patient, surgeon and general practitioner</li><li>Report to MHRA: yellowcard.mhra.gov.uk</li><li>NAP6 online resource <b>including anaphylaxis follow-up packs</b>: www.nationalauditprojects.org.uk/NAP6-Resources#pt  </li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Prevent re-administration of possible trigger agents (allergy band, annotate notes/drug chart)",
+          "step": "12"
+        }
+      ]
+    },
+    {
+      "code": "3-2",
+      "title": "Massive blood loss",
+      "version": 2,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-2_Massive_blood_loss_v2.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Expected or unexpected major haemorrhage.",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help, inform theatre team of problem and note the time.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Increase F<small>i</small>O₂ and consider cautiously reducing inhalational/intravenous anaesthetics.",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Check and expose intravenous access.",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Control any obvious bleeding (pressure, uterotonics, tourniquet, haemostatic dressings).",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Call blood bank (and assign one person in theatre to liase with them):</p><ul><li>Activate major haemorrhage protocol</li><li>Communicate how quickly blood is required</li><li>Communicate how much blood and blood product is required</li></ul>",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Begin active patient warming",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Use rapid infusion and fluid warming equipment",
+          "step": "7"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Discuss management plan between surgical, anaesthetic and nursing teams:</p><ul><li>Liaise with haematologist if necessary <b>(Box A)</b></li><li>Consider interventional radiology</li><li>Consider use of cell salvage equipment</li></ul>",
+          "step": "8"
+        },
+        {
+          "type": 8,
+          "head": "Box A: SPECIAL CASES",
+          "body": "<p>Seek advice from haematologist if:</p><ul><li>Non-surgical uncontrolled bleeding despite PRBCs/FFP/platelets</li><li>Warfarin overdose</li><li>Newer oral anticoagulants (eg dabigatran/rivaroxaban)</li><li>Inherited bleeding disorder (eg haemophilia, von Willebrand disease)</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Monitor progress:</p><ul><li>Use point of care testing: Hb, lactate, coagulation, etc.</li><li>Use lab testing: including calcium and fibrinogen</li></ul>",
+          "step": "9"
+        },
+        {
+          "type": 9,
+          "head": "Box B: TRANSFUSION GOALS",
+          "body": "<ul><li>Maintain Hb &gt;80 g.l⁻¹</li><li>Maintain platelet count &gt;75x10⁹.l⁻¹</li><li>Maintain PT and APTT &lt;1.5 x mean control (FFP)</li><li>Maintain fibrinogen &gt;1.0 g.l⁻¹ (cryoprecipitate)</li><li>Avoid DIC (maintain blood pressure, treat/prevent acidosis, avoid hypothermia, treat hypocalcaemia and hyperkalaemia)</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Replace calcium and consider giving tranexamic acid <b>(Box C)</b>.",
+          "step": "10"
+        },
+        {
+          "type": 6,
+          "head": "Box C: DRUG DOSES",
+          "body": "<p><b>CALCIUM:</b> (use either the chloride or gluconate)</p><ul><li>Adult: 10 ml of 10% calcium chloride intraVENOUS</li><li>Adult: 20 ml of 10% calcium gluconate intraVENOUS</li><li>Child: 0.2 ml.kg⁻¹ of 10% calcium chloride intraVENOUS</li><li>Child: 0.5 ml.kg⁻¹ of 10% calcium gluconate intraVENOUS </li></ul><p><b>TRANEXAMIC ACID:</b></p><ul><li>Child: 15 mg.kg⁻¹ intraVENOUS bolus then 2 mg.kg⁻¹.h⁻¹ until bleeding stops</li><li>Adult: 1 g intraVENOUS bolus, then:<br><small>Obstetric haemorrhage, repeat dose 30 mins later</small><br><small>Non-obstetric haemorrhage, 1 g intraVENOUS infusion over next 8 h</small></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If bleeding continues consider giving recombinant factor VIIa: liase with haematologist.",
+          "step": "11"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Plan ongoing care in an appropriate clinical area.",
+          "step": "12"
+        }
+      ]
+    },
+    {
+      "code": "3-3",
+      "title": "Can't intubate, can't oxygenate (CICO)",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-3_Cant_intubate_cant_oxygenate_CICO_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "This is the last resort when all other attempts to oxygenate have failed.",
+          "step": ""
+        },
+        {
+          "type": 5,
+          "head": "Box A: CRITICAL CHANGES",
+          "body": "<b>CARDIAC ARREST →2-1</b>",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Check optimal airway management is in place and maintain anaesthesia: supply 100% oxygen either by tightly fitting facemask, supraglottic airway device or nasal high flow",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider ONE final attempt at rescue oxygenation via upper airway if not already done",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Declare CICO and call for help (additional staff and surgical airway expertise e.g. ENT, ICU)",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for airway rescue trolley and then cardiac arrest trolley",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Give neuromuscular blocking drug now",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Prepare for Front of Neck Access – FoNA <b>(Box B)</b>",
+          "step": "6"
+        },
+        {
+          "type": 8,
+          "head": "Box B: EQUIPMENT INSTRUCTIONS",
+          "body": "<p>Airway rescue trolley, FoNA drawer:</p><ul><li>Scalpel with number 10 blade</li><li>Bougie with coudé (angled) tip</li><li>Tracheal tube, cuffed, 6 mm</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Check that the patient is positioned with full neck extension",
+          "step": "7"
+        },
+        {
+          "type": 3,
+          "head": "Operator position:",
+          "body": "<ul><li><b>Right-handed</b> operator stands on patient’s <b>left</b> hand side</li><li><b>Left-handed</b> operator stands on patient’s <b>right</b> hand side</li></ul>",
+          "step": "8"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Perform a ‘laryngeal handshake’ to identify the laryngeal anatomy",
+          "step": "9"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Perform FoNA using technique in <b>Box C</b> to intubate trachea via cricothyroid membrane</p><p><b><i>(If cricothyroid membrane cannot be identified, use technique in Box D)</i></b></p>",
+          "step": "10"
+        },
+        {
+          "type": 8,
+          "head": "Box C: (STAB, TWIST, BOUGIE, TUBE TECHNIQUE)",
+          "body": "<ul><li>Identify the cricothyroid membrane <i><b>(If unable, go to Box D)</b></i></li><li>Single transverse incision through skin and membrane</li><li>Rotate scalpel 90° with sharp edge facing caudally</li><li>Slide angled tip of bougie past the scalpel into the trachea</li><li>Railroad tube over bougie</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 8,
+          "head": "Box D: IF BOX C FAILS (SCALPEL, FINGER, BOUGIE TECHNIQUE)",
+          "body": "<ul><li>Make an 8-10 cm vertical incision head to toe orientation</li><li>Use blunt dissection to retract tissue to identify trachea</li><li>Stabilise the trachea and proceed as in <b>Box C</b> through the cricothyroid membrane</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Secure tube, continue to oxygenate patient and ensure adequate depth of anaesthesia",
+          "step": "11"
+        }
+      ]
+    },
+    {
+      "code": "3-4",
+      "title": "Bronchospasm",
+      "version": 3,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-4_Bronchospasm_v3_June%202023.pdf",
+      "copyright": {
+        "holder": "aoa",
+        "year": 2023
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Signs and symptoms include: expiratory wheeze, prolonged expiration, increased inflation pressures, desaturation, hypercapnia, upsloping capnograph trace, silent chest. Can occur alone or as part of another problem.",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help and inform theatre team of problem",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Give 100% oxygen",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Stop surgery / other stimulation",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Fully expose the chest and perform a rapid systematic examination:</p><ul><li>Inspect, percuss, palpate, auscultate.</li><li>Absence of wheeze may indicate severe bronchospasm with no air movement.</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Deepen anaesthesia:</p><ul><li>Inhalational anaesthetic agents are bronchodilators AND bronchospasm may be a consequence of light anaesthesia.</li><li>Avoid isoflurane or desflurane if possible – airway irritant if increased rapidly.</li></ul>",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Exclude conditions that may be misinterpreted as bronchospasm:</p><ul><li>Mispositioned or occluded airway device.</li><li>Endobronchial or oesophageal intubation.</li><li>Occlusion of breathing system - check all hoses.</li><li>Consider other conditions mimicking bronchospasm <b>(Box A)</b>.</li></ul>",
+          "step": "6"
+        },
+        {
+          "type": 9,
+          "head": "Box A: ALTERNATES and MIMICS",
+          "body": "<p><b>Wheeze:</b> pulmonary oedema; ARDS; laryngospasm.</p><p><b>Raised airway pressure:</b> obstruction of larynx, trachea or bronchi; decreased lung compliance; pneumothorax.</p>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider anaphylaxis; if suspected <b>→3-1</b>",
+          "step": "7"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Treat bronchospasm <b>(Box B)</b>. First line is salbutamol by metered dose inhaler or by nebuliser (remove HME filter or nebulise downstream); intraVENOUS route is second line. Other drugs at clinician discretion.",
+          "step": "8"
+        },
+        {
+          "type": 6,
+          "head": "Box B: SALBUTAMOL",
+          "body": "<p><b>Salbutamol</b></p><ul><li>Nebuliser:<br>Child &lt;5 yr, 2.5 mg<br>Adult and &gt;5 yr 5 mg<br><b>(Remove HME filter OR nebulise downstream)</b></li><li>IntraVENOUS bolus:<br>Adult 250 µg diluted, slowly<br>Child 1-23 months 5 µg.kg⁻¹ <small>once over 5 mins</small><br>Child 2-17 years 15 µg.kg⁻¹ <small>once over 5 mins (max. 250 µg)</small></li><li>Adult intraVENOUS infusion:<br>5-20 µg.min⁻¹</li><li>Child intraVENOUS infusion:<br>0.5-1 µg.kg⁻¹.min⁻¹ <small>(max. 20 µg.min⁻¹)</small></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 6,
+          "head": "Box B: IPRATROPIUM",
+          "body": "<p><b>Ipratropium</b></p><ul><li>Nebuliser:<br>2-12 yr 0.25 mg<br>Adult 0.5 mg</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 6,
+          "head": "Box B: ADRENALINE",
+          "body": "<p><B>Adrenaline</b></p><ul><li>Nebuliser:<br>Child 0.5 ml of 1:1000<br>Adult 5 ml of 1:1000</li><li>IntraMUSCULAR:<br>&lt;6 mo 50 µg<br>&lt;6 yr 120 µg<br>&lt;12 yr 250 µg<br>Adult 500 µg</li><li>Slow intraVENOUS bolus:<br>0.1 - 1 µg.kg⁻¹ (Adult 10-100 µg)</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 6,
+          "head": "Box B: OTHER DRUG DOSES",
+          "body": "<ul><li><b>Magnesium</b><br>IntraVENOUS over 20 mins: 50 mg.kg⁻¹ (Adult 2 g)</li><li><b>Ketamine</b><br>IntraVENOUS bolus: Adult 20mg<br>IntraVENOUS infusion: 1-3 mg.kg⁻¹.hr⁻¹</li><li><b>Aminophylline</b><br>IntraVENOUS over 20 mins: 5 mg.kg⁻¹ <small>(omit if already on theophylline)</small><br>IntraVENOUS infusion:<br>&lt;9 yr 1 mg.kg⁻¹.hr⁻¹<br>&lt;16 yr 0.8 mg.kg⁻¹.h⁻¹<br>Adult 0.5 mg.kg⁻¹.h⁻¹</li><li><b>Hydrocortisone:</b><br>IntraVENOUS: 4 mg.kg⁻¹ (Adult 200 mg)</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If airway soiling/aspiration suspected airway see <b>Box C</b>",
+          "step": "9"
+        },
+        {
+          "type": 9,
+          "head": "Box C: ACTIONS IF AIRWAY SOILING/ASPIRATION",
+          "body": "<p>Consider tracheal intubation and tracheal toilet</p><p>Use nasogastric tube to aspirate gastric contents</p>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Use appropriate ventilation strategy <b>(Box D)</b>",
+          "step": "10"
+        },
+        {
+          "type": 8,
+          "head": "Box D: VENTILATION STRATEGIES",
+          "body": "<p>Increase expiratory time to allow complete expiration</p><p>Pressure control ventilation may be better</p><p>Be alert to ‘breath stacking’</p><p>Permissive hypercapnia may be appropriate</p>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If raised airway pressure and/or desaturation persists, consider <b>→2-2 (Hypoxia/desaturation/cyanosis)</b>",
+          "step": "11"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Obtain a chest X-ray as soon as clinically safe to do so",
+          "step": "12"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Plan appropriate placement for post-procedure care",
+          "step": "13"
+        }
+      ]
+    },
+    {
+      "code": "3-5",
+      "title": "Circulatory embolus",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-5_Circulatory_embolus_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "<p><b>Causes:</b> thrombus, fat, amniotic fluid, air/gas</p><p><b>Signs:</b> hypotension, tachycardia, hypoxemia, decreased ETCO₂</p><p><b>Symptoms:</b> dyspnoea, anxiety, tachypnoea. Also consider if sudden unexplained loss of cardiac output</p>",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help and inform theatre team of problem. Note the time.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for cardiac arrest trolley.",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Stop all potential triggers. Stop surgery.",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Give 100% oxygen and ensure adequate ventilation: maintain the airway and, if necessary, secure it with tracheal tube.",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If indicated start CPR immediately (CPR can help disperse air emboli and large thrombi).",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Give IV crystalloid at a high infusion rate. (Adult: 500-1000 ml, Child: 20 ml.kg⁻¹). Inotropes may be required to support circulation.",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Treat according to suspected embolus type <b>(see Boxes A-D)</b> whilst considering alternative diagnoses <b>(Box E)</b>.",
+          "step": "7"
+        },
+        {
+          "type": 8,
+          "head": "Box A: THROMBOEMBOLISM",
+          "body": "<ul><li>Consider thrombolysis e.g. alteplase 10 mg intraVENOUS then 90 mg over 2 h (>65 kg)</li><li>Consider surgical removal – consult vascular surgeon</li><li>Consider percutaneous removal – consult radiologist</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 8,
+          "head": "Box B: FAT EMBOLISM",
+          "body": "<ul><li>Petechial rash, desaturation, confusion/irritability if patient conscious</li><li>Supportive measures are mainstay of initial management</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 8,
+          "head": "Box C: AMNIOTIC FLUID EMBOLISM",
+          "body": "<ul><li>Supportive measures are mainstay of initial management</li><li>Monitor the fetus, if undelivered</li><li>Treat coagulopathy (fresh frozen plasma, cryoprecipitate and/or platelets)</li><li>Consider plasmaphoresis</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 8,
+          "head": "Box D: AIR/GAS EMBOLISM",
+          "body": "<ul><li>“Mill wheel” murmur may be present</li><li>Discontinue source of air/gas if applicable and discontinue N₂O</li><li>Tell surgeon to flood wound with saline and cover with wet packs</li><li>Lower surgical field to below level of heart if possible</li><li>Place patient in left lateral position if possible</li><li>If central venous catheter in situ, attempt to aspirate air</li><li>Volume loading and Valsalva manoeuvre may help</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 8,
+          "head": "Box E: ALTERNATIVE DIAGNOSES",
+          "body": "<ul><li>Pneumothorax (+/- tension)</li><li>Bronchospasm <b>→3-4</b></li><li>Pulmonary oedema</li><li>Cardiogenic shock</li><li>Hypovolaemia</li><li>Myocardial failure</li><li>Sepsis <b>→3-14</b></li><li>Bone cement implantation syndrome</li><li>Anaphylaxis <b>→3-1</b></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Consider investigations to help confirm diagnosis:</p><ul><li>Arterial blood gases (increased PaCO₂-ETCO₂ gradient)</li><li>Transoesophageal echocardiography (right heart strain, pulmonary arterial emboli)</li><li>Computerised tomography</li></ul>",
+          "step": "8"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If cardiovascular collapse refractory to treatment, consider extra-corporeal membrane oxygenation (ECMO) or intra-aortic balloon counter-pulsation.",
+          "step": "9"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Plan transfer of the patient to an appropriate critical care area.",
+          "step": "10"
+        }
+      ]
+    },
+    {
+      "code": "3-6",
+      "title": "Laryngospasm and stridor",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-6_Laryngospasm_and_stridor_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "<p>Laryngospasm usually occurs when a patient is in a light plane of anaesthesia and their airway is stimulated in some way.</p><p>Stridor is a sign and associated with laryngospasm (although it can have other causes).</p>",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help and inform theatre team of problem.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Perform jaw thrust and stop any other stimulation.",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Remove airway devices and anything else that may be stimulating or obstructing the airway, e.g. suction catheters, blood or vomit (direct visualisation and suction if in doubt).</p><ul><li>A correctly positioned tracheal tube rules out laryngospasm.</li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Give CPAP with 100% oxygen and face mask:</p><ul><li>Avoid over-vigorous attempts at lung inflation, as this may inflate the stomach.</li><li>Insert an oro-pharyngeal and/or nasal airway if you are not sure that the airway is clear above the larynx.</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>If problem persists:</p><ul><li>Continue CPAP</li><li>Deepen anaesthesia</li><li>Give a neuromuscular blocker <b>(See Box A)</b></li></ul>",
+          "step": "5"
+        },
+        {
+          "type": 6,
+          "head": "Box A: DRUG DOSES FOR TREATMENT OF LARYNGOSPASM",
+          "body": "<p>0.25-0.5 mg.kg⁻¹ intraVENOUS:</p><ul><li>Propofol</li><li>Rocuronium</li><li>Atracurium</li><li>Suxamethonium<br><small>(also intraMUSCULAR including tongue 4.0 mg.kg⁻¹)</small></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider tracheal intubation particularly if likely to recur.",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Use nasogastric tube to decompress the stomach.",
+          "step": "7"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider other causes <b>(Box B)</b>",
+          "step": "8"
+        },
+        {
+          "type": 9,
+          "head": "Box B: ALTERNATIVES and MIMICS",
+          "body": "<p>Foreign body</p><p>Infection of larynx/upper</p><p>respiratory tract</p><p>Anaphylaxis</p><p>Airway tumour</p><p>Vocal cord paralysis</p><p>Intrinsic laryngeal or tracheal obstruction</p><p>Extrinsic laryngeal or tracheal</p><p>compression</p><p>Sub-glottic stenosis</p><p>Laryngo/tracheomalacia</p>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider whether guideline <b>→2-3 Increased airway pressure</b> may help.",
+          "step": "9"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider the appropriate strategy, location and support needed for waking the patient.",
+          "step": "10"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Continued airway and ventilation support may be necessary if aspiration has occurred or if the patient has developed negative-pressure pulmonary oedema.",
+          "step": "11"
+        },
+        {
+          "type": 5,
+          "head": "Box C: CRITICAL CHANGES",
+          "body": "<ul><li>Cardiac arrest <b>→2-1</b></li><li>Hypoxia/desaturation/cyanosis <b>→2-2</b></li><li>Increased airway pressure <b>→2-3</b></li><li>Hypotension <b>→2-4</b></li><li>Bradycardia <b>→2-6</b></li></ul>",
+          "step": ""
+        }
+      ]
+    },
+    {
+      "code": "3-7",
+      "title": "Patient fire",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-7_Patient_fire_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Evidence of fire (smoke, heat, odour, flash, flame) on patient or drapes, or in patient’s airway",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Call for help and inform theatre team:",
+          "body": "<ul><li>Activate fire alarm</li><li>Dial hospital fire emergency number and report location and nature of fire</li><li>Bring CO2 fire extinguisher into theatre</li></ul>",
+          "step": "1"
+        },
+        {
+          "type": 13,
+          "head": "",
+          "body": "<b>If <u>AIRWAY</u> fire:</b>",
+          "step": "",
+          "branch": "airway"
+        },
+        {
+          "type": 3,
+          "head": "Extinguish fire:",
+          "body": "<ul><li>Stop laser or diathermy</li><li>Discontinue ventilation AND fresh gas flow</li><li>Remove tracheal tube if on fire</li><li>Remove flammable material from airway</li><li>Flood airway with 0.9% saline</li></ul>",
+          "step": "2",
+          "branch": "airway"
+        },
+        {
+          "type": 3,
+          "head": "After fire extinguished:",
+          "body": "<ul><li>Re-establish ventilation </li><li>Minimise O₂, avoid N₂O</li><li>Check airway for damage and debris</li><li>Consider bronchoscopy</li><li>Re-intubate</li></ul>",
+          "step": "3",
+          "branch": "airway"
+        },
+        {
+          "type": 13,
+          "head": "",
+          "body": "<b>If <u>NON-AIRWAY</u> fire:</b>",
+          "step": "",
+          "branch": "non-airway"
+        },
+        {
+          "type": 3,
+          "head": "Extinguish fire:",
+          "body": "<ul><li>Stop laser or diathermy</li><li>Remove all drapes and burning material</li><li>Flood fire with 0.9% saline or saline soaked gauze</li><li>Use CO₂ extinguisher</li></ul>",
+          "step": "2",
+          "branch": "non-airway"
+        },
+        {
+          "type": 3,
+          "head": "After fire extinguished:",
+          "body": "<ul><li>Re-establish ventilation </li><li>Minimise O₂, avoid N₂O</li><li>Assess damage</li><li>Consider inhalational injury if not intubated</li><li>Consider intubation depending on degree of injury</li></ul>",
+          "step": "3",
+          "branch": "non-airway"
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>ONGOING MANAGEMENT:</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Assess patient and devise ongoing management plan. Confirm no secondary fire, assess smoke risk to patient, consider intensive care.",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Keep involved materials or devices for inspection and report to the MHRA.",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If secondary non-patient fire occurs, or concerned about smoke/fire risk to staff, follow local fire procedures.",
+          "step": "6"
+        }
+      ]
+    },
+    {
+      "code": "3-8",
+      "title": "Malignant hyperthermia crisis",
+      "version": 2,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-8_Malignant_hyperthermia_crisis_v2.pdf",
+      "copyright": {
+        "holder": "aoa",
+        "year": 2021
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Unexplained increase in ETCO₂ AND tachycardia AND increased oxygen consumption. Temperature rise is a late sign.",
+          "step": ""
+        },
+        {
+          "type": 1,
+          "head": "",
+          "body": "MH is rare. Always consider other, more common causes: <b>→2-8</b> (Peri-operative hyperthermia).",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "EMERGENCY HELP",
+          "body": "<p>Emergency hotline 07947609601 or 01132433144</p><p>UK MH Registry website: www.ukmhr.ac.uk</p>",
+          "step": "10"
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help and inform theatre team of problem, note the time.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Aim to abandon or finish surgery as soon as possible.",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for MH treatment pack/dantrolene and cardiac arrest trolley.",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Maintain anaesthesia with TIVA, neuromuscular block with non-depolarising drug.",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<u><i>Allocate enough team members to perform </i>❻<i>, </i>❼<i> and </i>❽<i> simultaneously:</i></u>",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<b>Eliminate trigger drug (Box A)</b>",
+          "step": "6"
+        },
+        {
+          "type": 6,
+          "head": "Box A: ELIMINATE TRIGGER DRUG",
+          "body": "<ul><li>Turn off vaporisers and remove from anaesthesia workstation</li><li>Set fresh gas flow to 100% oxygen, maximum flow</li><li>Hyperventilate (2-3 x normal minute ventilation)</li><li>Place activated charcoal filters on both limbs of the breathing circuit</li><li>Change soda lime and breathing circuit if/when feasible (not a priority)</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<b>Give dantrolene (Box B)</b>",
+          "step": "7"
+        },
+        {
+          "type": 6,
+          "head": "Box B: DANTROLENE",
+          "body": "<ul><li>Delegate mixing – it is time and labour intensive</li><li>2-3 mg.kg⁻¹ immediate intraVENOUS bolus (Adult approx. 200 mg)</li><li>Repeat 1 mg.kg⁻¹ every 5 mins, until ETCO₂ &lt;6 kPa and temp &lt;38.5°C</li><li>Pause and observe</li><li>Repeat 1 mg.kg⁻¹ to maintain ETCO₂ &lt;6 kPa and temp &lt;38.5°C, even if exceeds ‘maximum’ dose 10 mg.kg⁻¹</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<b>Begin active body cooling (Box C)</b>",
+          "step": "8"
+        },
+        {
+          "type": 6,
+          "head": "Box C: ACTIVE COOLING",
+          "body": "<ul><li>Turn off active warming</li><li>Apply ice to axillae and groins</li><li>Use cold i.v. fluids</li><li>Consider cold peritoneal lavage</li><li>Other cooling methods according to need and availability: surface cooling devices, intravascular devices, extracorporeal heat exchange</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Additional monitoring: invasive BP, CVP, core and peripheral temp, urine output",
+          "step": "9"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Send urgent samples for arterial blood gases, U&E, glucose, FBC, coagulation, urinary pH, creatine kinase (peak 12-24h) and repeat as indicated.",
+          "step": "10"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Seek and treat complications (Box D).",
+          "step": "11"
+        },
+        {
+          "type": 7,
+          "head": "Box D: COMPLICATIONS AND OUTLINE TREATMENTS",
+          "body": "<p><b>Metabolic acidosis: </b>Sodium bicarbonate 50 mmol (50 mL of 8.4% solution) if pH &lt;7.2 despite hyperventilation</p><p><b>Hyperkalaemia: </b>Sodium bicarbonate 50 mmol (50 mL of 8.4% solution); Glucose (50 mL of 50%) with insulin 10 international units (IU); Calcium 0.1 mmol.kg⁻¹ (in extremis)</p><p><b>Myoglobinuria: </b>Forced alkaline diuresis (aim UOP &gt;2mL.kg⁻¹; urine pH &gt;7)</p><p><b>DIC: </b>FFP, cryoprecipitate, platelets</p><p><b>Tachyarrhythmias: </b>Amiodarone, β-blockers</p><p><b>Compartment syndrome: </b>surgical decompression</p><p><b>AVOID Calcium channel blockers </b>(interaction with dantrolene)</p>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Continue ventilation and plan admission to critical care. Further dantrolene may be needed. (Ensure plan exists to counsel patient and family and refer Leeds MH Unit)",
+          "step": "12"
+        },
+        {
+          "type": 9,
+          "head": "EMERGENCY HELP",
+          "body": "<p>Emergency hotline 07947609601 or 01132433144</p><p>UK MH Registry website: www.ukmhr.ac.uk</p>",
+          "step": "10"
+        }
+      ]
+    },
+    {
+      "code": "3-9",
+      "title": "Cardiac tamponade",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-9_Cardiac_tamponade_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Caused by an accumulation of blood, pus, effusion fluid or air. Most commonly seen in context of cardiothoracic surgery, trauma or iatrogenic causes, e.g. central line placement.",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help and inform clinical team of problem. Note the time.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If indicated, start CPR immediately.",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Give 100% oxygen, ventilate and exclude tension pneumothorax: maintain the airway and, if necessary, secure it with tracheal tube.",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Rapid diagnosis and rapid drainage are vital, so:</p><ul><li>Call for ultrasound machine</li><li>Call for pericardiocentesis kit (eg 18G Luer spinal needle + 3-way tap + 20 ml syringe or a purpose made kit)</li><li>Call for cardiac arrest trolley</li><li>Diagnostic features are shown in <b>Box A</b></li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 9,
+          "head": "Box A: DIAGNOSTIC FEATURES",
+          "body": "<p><b>ULTRASOUND DIAGNOSIS IS THE PREFERRED TECHNIQUE</b></p><ul><li>Unexplained dyspnoea/tachypnoea and agitation if conscious</li><li>At least one of ‘Beck’s Triad’: jugular venous distension; muffled heart sounds; hypotension</li><li>Other signs: Pulsus paradoxus; ECG → low voltage QRS / electrical alternans / pulseless electrical activity; chest X-ray → enlarged cardiac silhouette</li></ul>",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider whether there is time to wait for someone with expertise in pericaridiocentesis, or whether thoracotomy is a better treatment option.",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Consider the following temporising measures:</p><ul><li>Fluid bolus (Adult: 500 - 1000 ml, Child: 20 ml.kg⁻¹)</li><li>Inotropic drugs</li><li>Low tidal volume, low/no PEEP ventilation strategy</li></ul>",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If clinically indicated, perform pericardiocentesis <b>(Box B)</b>.",
+          "step": "7"
+        },
+        {
+          "type": 6,
+          "head": "Box B: EMERGENCY PERICARDIOCENTESIS (sub-xiphoid approach)",
+          "body": "<p><b><u>ULTRASOUND GUIDANCE IS THE PREFERRED TECHNIQUE</u></b></p><p><b>WARNING: Myocardial rupture, aortic dissection and severe bleeding disorder are <i>relative</i> contraindications</b></p><ul><li>Identify tip of xiphoid</li><li>Prep and drape overlying skin</li><li>Infiltrate local anaesthetic (if necessary and if time)</li><li>Ideally use ultrasound to identify pericardial fluid</li><li>Insert pericardiocentesis needle immediately to left of tip of xiphoid</li><li>Attach 3-way tap and 20 ml syringe</li><li>Direct needle generally toward left shoulder but using ultrasound to direct needle toward the largest pericardial collection</li><li>Aspirate and drain – aspiration of a small volume may cause a dramatic clinical improvement</li></ul>",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "After pericardiocentesis, re-assess using ultrasound examination and vital signs.",
+          "step": "8"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Reassess continually in case tamponade recurs.",
+          "step": "9"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Plan definitive management of underlying cause, including specialist referral",
+          "step": "10"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Plan transfer of the patient to an appropriate critical care area.",
+          "step": "11"
+        },
+        {
+          "type": 5,
+          "head": "Box C: CRITICAL CHANGES",
+          "body": "<b>CARDIAC ARREST →2-1</b>",
+          "step": ""
+        }
+      ]
+    },
+    {
+      "code": "3-10",
+      "title": "Local anaesthetic toxicity",
+      "version": 2,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-10_Local_anaesthetic_toxicity_v2_June%202023.pdf",
+      "copyright": {
+        "holder": "aoa",
+        "year": 2023
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "<p>Signs of severe toxicity:</p><ul><li>Sudden alteration in mental status, severe agitation or loss of consciousness, with or without tonic-clonic convulsions.</li><li>Cardiovascular collapse: sinus bradycardia, conduction blocks, asystole and ventricular tachyarrhythmias may all occur.</li><li> Local anaesthetic toxicity may occur some time after an initial injection.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Stop injecting the local anaesthetic (remember infusion pumps).",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help and inform immediate clinical team of problem.",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for cardiac arrest trolley and lipid rescue pack.",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Give 100% oxygen and ensure adequate lung ventilation:</p><ul><li>Maintain the airway and if necessary secure it with a tracheal tube.</li><li>Avoid hypercarbia - consider mild hyperventilation.</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Confirm or establish intravenous access.",
+          "step": "5"
+        },
+        {
+          "type": 13,
+          "head": "",
+          "body": "<b>If circulatory arrest:</b>",
+          "step": "",
+          "branch": "arrest"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<ul><li>Start continuous CPR using standard protocols <b>(→2-1) but:</b></li><li><b>Give</b> intravenous lipid emulsion <b>(Box A)</b>.</li><li><b>Use smaller adrenaline dose</b> (≤ 1µg.kg⁻¹ instead of 1 mg).</li><li>Avoid vasopressin.</li><li>Recovery may take >1 hour.</li><li>Consider the use of cardiopulmonary bypass if available.</li></ul>",
+          "step": "6",
+          "branch": "arrest"
+        },
+        {
+          "type": 6,
+          "head": "Box A: LIPID EMULSION REGIME",
+          "body": "<p><b>USE 20% Intralipid® <small>(propofol is not a suitable substitute)</small></b></p><p><b>Immediately:</b></p><ul><li>Give an initial intraVENOUS bolus of lipid emulsion 1.5 ml.kg⁻¹ over 2-3 min (~100 ml for a 70 kg adult)</li><li>Start an intraVENOUS infusion of lipid emulsion at 15 ml.kg⁻¹.h⁻¹ (17.5 ml.min⁻¹ for a 70 kg adult)</li></ul><p><b>At 5 and 10 minutes:</b></p><ul><li>Give a repeat bolus (same dose) if: cardiovascular stability has not been restored or; an adequate circulation deteriorates.</li></ul><p><b>At any time after 5 minutes:</b></p><ul><li>Double the rate to 30 ml.kg⁻¹.h⁻¹ if: cardiovascular stability has not been restored or; an adequate circulation deteriorates</li></ul><p><b>Do not exceed maximum cumulative dose 12 ml.kg⁻¹ (70kg: 840 ml)</b></p>",
+          "step": "",
+          "branch": "arrest"
+        },
+        {
+          "type": 13,
+          "head": "",
+          "body": "<b>If no circulatory arrest:</b>",
+          "step": "",
+          "branch": "no-arrest"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<ul><li>Conventional therapies to treat hypotension, brady- and tachyarrhythmia.</li><li><b><i>Consider</i></b> intravenous lipid emulsion <b>(Box A)</b>.</li></ul>",
+          "step": "6",
+          "branch": "no-arrest"
+        },
+        {
+          "type": 6,
+          "head": "Box A: LIPID EMULSION REGIME",
+          "body": "<p><b>USE 20% Intralipid® <small>(propofol is not a suitable substitute)</small></b></p><p><b>Immediately:</b></p><ul><li>Give an initial intraVENOUS bolus of lipid emulsion 1.5 ml.kg⁻¹ over 2-3 min (~100 ml for a 70 kg adult)</li><li>Start an intraVENOUS infusion of lipid emulsion at 15 ml.kg⁻¹.h⁻¹ (17.5 ml.min⁻¹ for a 70 kg adult)</li></ul><p><b>At 5 and 10 minutes:</b></p><ul><li>Give a repeat bolus (same dose) if: cardiovascular stability has not been restored or; an adequate circulation deteriorates.</li></ul><p><b>At any time after 5 minutes:</b></p><ul><li>Double the rate to 30 ml.kg⁻¹.h⁻¹ if: cardiovascular stability has not been restored or; an adequate circulation deteriorates</li></ul><p><b>Do not exceed maximum cumulative dose 12 ml.kg⁻¹ (70kg: 840 ml)</b></p>",
+          "step": "",
+          "branch": "no-arrest"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Control seizures:</p><ul><li>Small incremental dose of benzodiazepine is drug of choice.</li><li>Thiopental or propofol can be used, but be aware of negative inotropic effect.</li><li>Consider neuromuscular blockade if seizures cannot be controlled.</li></ul>",
+          "step": "7"
+        },
+        {
+          "type": 5,
+          "head": "Box B: CRITICAL CHANGES",
+          "body": "<p><b>CARDIAC ARREST →2-1</b></p><p>Check already done steps 1 to 5, then 6.</p>",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Box C: AFTER THE EVENT",
+          "body": "<p>Arrange safe transfer to appropriate clinical area</p><p>Exclude pancreatitis: regular clinical review, daily amylase or lipase</p><p>Report case on your local critical incident system and to the relevant national system (these vary between each devolved nation and in Ireland)</p>",
+          "step": ""
+        }
+      ]
+    },
+    {
+      "code": "3-11",
+      "title": "High central neuraxial block",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-11_High_central_neuraxial_block_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Can occur with deliberate or accidental injection of local anaesthetic drugs into the subarachnoid space.",
+          "step": ""
+        },
+        {
+          "type": 1,
+          "head": "",
+          "body": "Symptoms are – in sequence – hypotension and bradycardia – difficulty breathing – paralysis of the arms – impaired consciousness – apnoea and unconsciousness. Progression through this sequence can be slow or fast.",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Reassure the patient – remember that they may be fully aware. Plan to ensure hypnosis as soon as clinical situation permits.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help and inform theatre team of the problem.",
+          "step": "2"
+        },
+        {
+          "type": 3,
+          "head": "Treat airway and breathing:",
+          "body": "<ul><li>Give 100% oxygen</li><li>Chin lift / jaw thrust may suffice</li><li>Consider supraglottic airway or tracheal intubation <b>(Box A)</b></li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 9,
+          "head": "Box A: INDUCING ANAESTHESIA",
+          "body": "<ul><li>Consider reduced dose of hypnotic drug to avoid further hypotension. A full induction dose will not be necessary if the patient’s consciousness is already impaired.</li><li>Neuromuscular blockade may not be necessary for tracheal intubation if the patient is unconscious, paralysed and apnoeic.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Treat circulatory insufficiency:",
+          "body": "<ul><li>Give IV fluid by rapid infusion</li><li>Elevate the legs; do not use head-down tilt</li><li>In obstetrics, relieve aorto-caval compression</li><li>Bradycardia: give atropine or glycopyrrolate <b>(Box B)</b></li><li>Hypotension: give metaraminol, phenylephrine or ephedrine <b>(Box B)</b></li><li>CPR may be necessary to circulate drugs</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 6,
+          "head": "Box B: DRUG DOSES",
+          "body": "<p><b>Bradycardia:</b></p><ul><li>Atropine: 0.6-1.2 mg</li><li>Glycopyrrolate: 0.2-0.4 mg</li></ul><p><b>Hypotension:</b></p><ul><li>Metaraminol: 1-2 mg boluses repeated</li><li>PHENYLephrine: 50-100 μg boluses repeated <small>or by infusion</small></li><li>ePHEDrine: 6-12 mg boluses repeated up to max 30 mg <small>(tachyphylaxis limits further usefulness)</small></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>If the case is obstetric, consider expedited delivery of the baby to manage:</p><ul><li>Risk to mother of unrelieved aorto-caval compression</li><li>Risk to fetus of impaired feto-placental oxygen delivery</li></ul>",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Consider other causes that may mimic signs and symptoms, including <b>(Box C)</b>:</p><ul><li>Obstetric aorto-caval compression</li><li>Local anaesthetic toxicity</li><li>Embolism</li><li>Vasovagal event</li><li>Haemorrhage</li></ul>",
+          "step": "6"
+        },
+        {
+          "type": 5,
+          "head": "Box C: CRITICAL CHANGES",
+          "body": "<ul><li>Cardiac arrest <b>→2-1</b></li><li>Hypotension <b>→2-4</b></li><li>Bradycardia <b>→2-6</b></li><li>Local anaesthetic toxicity <b>→3-10</b></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Plan ongoing care in a suitable location.",
+          "step": "7"
+        }
+      ]
+    },
+    {
+      "code": "3-12",
+      "title": "Cardiac ischaemia",
+      "version": 2,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-12_Cardiac_ischaemia_v2.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2019
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "<p>If the patient is unconscious, signs of cardiac ischaemia primarily include:</p><ul><li>ST elevation or depression</li><li>T wave flattening or inversion</li><li>Arrhythmias, particularly ventricular</li><li>Other haemodynamic abnormalities (hypo- or hypertension, tachy- or bradycardia)</li><li>New or evolving regional wall motion abnormalities if echocardiography is used</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 1,
+          "head": "",
+          "body": "If the patient is conscious, symptoms may include chest pain, breathlessness, dizziness, nausea and vomiting. Have a high index of suspicion in patients with a pre-existing history or risk factors for cardiac ischaemia.",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for cardiac arrest trolley and 12-lead ECG machine.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Ensure adequate oxygenation and anaesthesia/analgesia.",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Treat haemodynamic instability <b>(Box A)</b>.",
+          "step": "3"
+        },
+        {
+          "type": 5,
+          "head": "Box A: HAEMODYNAMIC INSTABILITY",
+          "body": "<ul><li>Cardiac arrest <b>→2-1</b></li><li>Hypotension <b>→2-4</b></li><li>Hypertension <b>→2-5</b></li><li>Bradycardia <b>→2-6</b></li><li>Tachycardia <b>→2-7</b></li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Apply CM5 continuous ECG monitoring <b>(Box B)</b>. Obtain a 12-lead ECG as soon as possible.",
+          "step": "4"
+        },
+        {
+          "type": 8,
+          "head": "Box B: CM5 ECG CONFIGURATION",
+          "body": "<ul><li>Right arm (red) lead over upper right sternum</li><li>Left arm (yellow) lead 5th intercostal space under left nipple</li><li>Indifferent (green or black) lead on left shoulder</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "If ischaemia does not resolve:",
+          "body": "<ul><li>Call for help. Inform theatre team of problem. Stop or rapidly complete the surgery.</li><li>Start glyceryl trinitrate (GTN) <b>(Box C)</b>.</li><li>EXTREME CAUTION with GTN if the patient is hypotensive.</li></ul>",
+          "step": "5"
+        },
+        {
+          "type": 6,
+          "head": "Box C: GLYCERYL TRINITRATE (GTN) DOSE",
+          "body": "<ul><li>Consider sublingual administration</li><li>IntraVENOUS: 1 mg.ml-1 solution – start at 0.1ml.kg⁻¹.hr⁻¹, titrate against response</li><li>NOT RECOMMENDED IN CHILDREN</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider invasive arterial blood pressure monitoring.",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Treat electrolyte abnormalities particularly potassium, magnesium and calcium.",
+          "step": "7"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Treat anaemia aiming for haematocrit >30%.</p><ul><li>CAUTION – beware volume overload especially in heart failure.</li></ul>",
+          "step": "8"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If persistent ST elevation is present, consider need for anticoagulation, anti-platelet therapy and revascularisation in consultation with cardiology and surgical teams.",
+          "step": "9"
+        },
+        {
+          "type": 9,
+          "head": "Box D: AFTER THE EVENT",
+          "body": "<p>Admit to critical care environment and consult cardiology</p><p>Maintain head up position if practicable</p><p>Obtain serial 12-lead ECGs and cardiac enzymes</p>",
+          "step": ""
+        }
+      ]
+    },
+    {
+      "code": "3-13",
+      "title": "Neuroprotection following cardiac arrest",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-13_Neuroprotection_cardiac_arrest_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Outcome from cardiac arrest is determined by the severity of any supervening neurological or cardiac dysfunction / instability which results from poor vital organ perfusion. Following return of spontaneous circulation (ROSC), inability of the patient to obey commands indicates that neuroprotection techniques should be considered.",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Prepare the cardiac arrest trolley for any further events.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Use positive pressure ventilation, aiming for:</p><ul><li>S<small>p</small>O₂ > 94% and < 98%.</li><li>PCO₂ > 4.5 kPa and < 5.5 kPa</li></ul>",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Give sedation and neuromuscular blocking drugs to reduce thermogenesis from shivering.",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Insert intra-arterial blood pressure monitoring. Consider vasopressor/inotrope to maintain systolic blood pressure, target SBP > 100 mmHg.",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Obtain 12-lead ECG and discuss with cardiology if percutaneous coronary intervention is possible or appropriate.",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Check blood glucose. Start glycaemic control therapies if above 10 mmol.l⁻¹.",
+          "step": "6"
+        },
+        {
+          "type": 3,
+          "head": "Check core temperature",
+          "body": "<p>Target temperature is a constant temperature in the range of 32 – 36°C (precise target determined by local policy):</p><ul><li>Temperature usually decreases without intervention in the immediate postarrest period</li><li>Start cooling strategies if indicated <b>(Box A)</b></li><li>Avoid hyperthermia &gt; 37.5°C</li></ul>",
+          "step": "7"
+        },
+        {
+          "type": 8,
+          "head": "Box A: COOLING STRATEGIES",
+          "body": "<p><b>Intravenous fluid bolus:</b> if not contraindicated give 30 ml.kg⁻¹ of cold (4°C) non glucose-containing solutions</p><p><b>External:</b> simple ice packs and/or wet towels; cooling blankets or pads; water or air circulating blankets; water circulating gel-coated pads</p><p><b>Internal:</b> intravascular heat exchanger; cardiopulmonary bypass</p>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Give antiepileptic drugs if seizures develop <b>(Box B)</b>.",
+          "step": "8"
+        },
+        {
+          "type": 6,
+          "head": "Box B: DRUGS TO CONTROL/PREVENT SEIZURES",
+          "body": "<ul><li>Benzodiazepines or propofol are likely to be closest to hand in the operating theatre.</li><li>Sodium valproate, levetiracetam, phenytoin or a barbiturate can also be used.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Plan further management in critical care area. Call for extra help as necessary.",
+          "step": "9"
+        },
+        {
+          "type": 5,
+          "head": "Box C: CRITICAL CHANGES",
+          "body": "<b>CARDIAC ARREST →2-1</b>",
+          "step": ""
+        }
+      ]
+    },
+    {
+      "code": "3-14",
+      "title": "Sepsis",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_3-14_Sepsis_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Severe sepsis (hypotension persisting after initial fluid challenge of 30ml.kg⁻¹ or blood lactate concentration ≥ 4mmol.l⁻¹ if infection most likely underlying cause) or septic shock (sepsis with end organ dysfunction).",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help and inform theatre team of problem.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Increase F<small>i</small>O₂, consider reducing anaesthetic agent and intubate patient.",
+          "step": "2"
+        },
+        {
+          "type": 3,
+          "head": "Give crystalloid IV:",
+          "body": "<ul><li>Adult: at least 30 ml.kg⁻¹ <b>(Boxes A, B)</b></li><li>Child: at least 20 ml.kg⁻¹ <b>(Box C)</b></li></ul>",
+          "step": "3"
+        },
+        {
+          "type": 6,
+          "head": "Box A: FLUID THERAPY",
+          "body": "<ul><li>Crystalloids initial fluid of choice in severe sepsis and septic shock</li><li>Greater than 30 ml.kg⁻¹ of crystalloid may be required in some patients</li><li>Continue fluid challenge if haemodynamic improvement</li><li>Hydroxyethyl starches should not be used</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 7,
+          "head": "Box B: SET PHYSIOLOGICAL GOALS",
+          "body": "<ul><li>Central venous pressure</li><li>Mean arterial pressure</li><li>Urine output</li><li>Central venous (superior vena cava) or mixed venous saturation</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Box C: PAEDIATRIC CONSIDERATIONS",
+          "body": "<ul><li>Goals: capillary refill time (CRT) ≤ 2 secs, normal BP for age, normal peripheral pulses, warm extremities, urine &gt;1 ml.kg⁻¹.hr⁻¹, SCVO2 &gt;70%.</li><li>Give 20 ml.kg⁻¹ initially up to or over 60 ml.kg⁻¹ fluid until goals or unless rales or hepatomegaly develops.</li><li>Begin peripheral inotropic support pending central/intraosseous access.</li><li>If warm shock (↑HR, ↓BP) start NORadrenaline.</li><li>If cold shock (↑HR, ↓CRT) start dopamine and, if resistant,adrenaline.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Take bloods including blood gas, lactate, FBC, U&Es, coagulation and cultures.",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Give empiric intravenous antimicrobials within 1 h (seek microbiology advice).",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider whether indwelling devices could have caused a septic shower.",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If patient is not improving proceed to the next steps.",
+          "step": "7"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Insert central and arterial access lines. Check serial lactates.",
+          "step": "8"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Start NORadrenaline to achieve mean arterial pressure ≥ 65 mmHg <b>(Box D)</b>",
+          "step": "9"
+        },
+        {
+          "type": 6,
+          "head": "Box D: DRUG THERAPY",
+          "body": "<ul><li><b>NORadrenaline (NA)</b> as first choice vasopressor.</li><li><b>Adrenaline</b> added to noradrenaline when additional agent needed.</li><li><b>Vasopressin</b> 0.03 units.min⁻¹ added to ↑MAP or ↓noradrenaline need.</li><li><b>DOBUTamine</b> up to 20 µg.kg⁻¹.min⁻¹ if evidence of myocardial dysfunction or ongoing signs of hypoperfusion despite adequate MAP and adequate intravascular volume.</li><li><b>Hydrocortisone</b> if unable to restore haemodynamic stability.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Insert urinary catheter and record hourly urine output.",
+          "step": "10"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider monitoring cardiac output to further aid fluid and vasopressor therapy.",
+          "step": "11"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Identify source of sepsis, consider source control and send source cultures if possible (eg. surgical site, urine, broncho-alveolar lavage).",
+          "step": "12"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Discuss whether appropriate to abandon or limit surgery.",
+          "step": "13"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Discuss ongoing management plan with intensive care team.",
+          "step": "14"
+        }
+      ]
+    },
+    {
+      "code": "4-1",
+      "title": "Mains oxygen failure",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_4-1_Mains_oxygen_failure_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Complete failure of wall or pendant oxygen supply. Failure may be theatre-specific, zone-specific or hospital-wide.",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Inform the theatre team of the problem, including theatre coordinator <b>(Box A)</b>.",
+          "step": "1"
+        },
+        {
+          "type": 9,
+          "head": "Box A: ORGANISATIONAL ISSUES",
+          "body": "<p>Theatre coordinator or equivalent should:</p><ul><li>Ensure no new case is started unless clinical priority absolutely requires it</li><li>Ascertain the extent of the failure throughout the hospital</li><li>Ascertain the reserve supplies of oxygen</li><li>Evaluate implications for ongoing supply</li><li>Ensure any other relevant emergency plans are initiated</li><li>Coordinate delivery of further oxygen cylinders in good time</li><li>Ensure individual theatres are kept informed</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help, but be aware failure may be widespread.",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Switch to cylinder oxygen supply.",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Check remaining cylinder content <b>(Box B)</b>: ensure at least one further cylinder always available.",
+          "step": "4"
+        },
+        {
+          "type": 8,
+          "head": "Box B: OXYGEN CYLINDER REMAINING CONTENTS",
+          "body": "<p>Contents by cylinder size and how full it is:</p><ul><li><b>C:</b> 43 L at 25% (34 bar), 85 L at 50% (69 bar), 170 L at 100% (137 bar)</li><li><b>D:</b> 85 L at 25% (34 bar), 170 L at 50% (69 bar), 340 L at 100% (137 bar)</li><li><b>E:</b> 170 L at 25% (34 bar), 340 L at 50% (69 bar), 680 L at 100% (137 bar)</li><li><b>F:</b> 340 L at 25% (34 bar), 680 L at 50% (69 bar), 1360 L at 100% (137 bar)</li><li><b>G:</b> 850 L at 25% (34 bar), 1700 L at 50% (69 bar), 3400 L at 100% (137 bar)</li><li><b>J:</b> 1700 L at 25% (34 bar), 3400 L at 50% (69 bar), 6800 L at 100% (137 bar)</li></ul>",
+          "step": "",
+          "table": {
+            "columns": ["Size", "25% full (34 bar)", "50% full (69 bar)", "100% full (137 bar)"],
+            "rows": [
+              ["C", "43 L", "85 L", "170 L"],
+              ["D", "85 L", "170 L", "340 L"],
+              ["E", "170 L", "340 L", "680 L"],
+              ["F", "340 L", "680 L", "1360 L"],
+              ["G", "850 L", "1700 L", "3400 L"],
+              ["J", "1700 L", "3400 L", "6800 L"]
+            ]
+          }
+        },
+        {
+          "type": 4,
+          "head": "Prolong duration of cylinder oxygen supply:",
+          "body": "<ul><li>Use circle system</li><li>Use lowest possible fresh gas flow</li><li>Use lowest possible F<small>i</small>O₂</li><li>Check F<small>i</small>O₂ alarms</li></ul>",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Minimise auxiliary gas usage:</p><p>Some ventilator systems are gas-driven. If so, switching to manual ventilation will prolong oxygen cylinder supply.</p>",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Evaluate moving to nearby area if oxygen supply there preserved.",
+          "step": "7"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Continue to monitor and ensure adequacy of inspired oxygen and volatile agent.",
+          "step": "8"
+        },
+        {
+          "type": 3,
+          "head": "Workflow:",
+          "body": "<ul><li>Do not start any new case unless clinical priority absolutely requires it</li><li>Expedite conclusion of current case if clinically appropriate</li><li>Consider recovering the patient in theatre if recovery also affected <b>(Box C)</b></li></ul>",
+          "step": "9"
+        },
+        {
+          "type": 9,
+          "head": "Box C: RECOVERY",
+          "body": "Recovery area must be appropriately supplied with cylinder oxygen if also affected. Identify patients who do not require supplemental oxygen.",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Disconnect from failed outlets and do not re-connect until safe to do so <b>(Box D)</b>.",
+          "step": "10"
+        },
+        {
+          "type": 8,
+          "head": "Box D: RE-ESTABLISHMENT OF SERVICES",
+          "body": "<ul><li>Disconnect equipment from failed wall/pendant outlets</li><li>When re-established, output may not initially be 100% oxygen</li><li>Do not re-use outlet until gas composition and quality satisfactorily confirmed by a competent authority</li></ul>",
+          "step": ""
+        }
+      ]
+    },
+    {
+      "code": "4-2",
+      "title": "Mains electricity failure",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_4-2_Mains_electricity_failure_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Unexpected total power failure is rare and unpredictable. Ability to safely deliver and maintain anaesthesia is immediately compromised.",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Call for help – extra staff to monitor patient and source additional equipment.",
+          "step": "1"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Liaise with local coordinator to activate appropriate local plan <b>(Box A)</b>:</p><p>If immediate evacuation necessary <b>→4-3</b></p>",
+          "step": "2"
+        },
+        {
+          "type": 9,
+          "head": "Box A: ACTION FROM LOCAL COORDINATOR",
+          "body": "<p>Local coordinator should activate any local incident plan and urgently establish and brief teams on:</p><ul><li>Extent of failure</li><li>Likely duration of failure</li><li>Interruption to other services (eg oxygen, water)</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Get additional light into theatre <b>(Box B)</b>.",
+          "step": "3"
+        },
+        {
+          "type": 8,
+          "head": "Box B: SOURCES OF ADDITIONAL LIGHT",
+          "body": "<ul><li>Open doors and blinds</li><li>Hand torches, portable lights, mobile phones, laryngoscopes</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 3,
+          "head": "Ensure ventilation continues:",
+          "body": "<ul><li>Manual ventilation if required</li><li>Consider moving to spontaneous ventilation</li><li>Maintain anaesthesia</li></ul>",
+          "step": "4"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Check the pulse and blood pressure manually if monitors have failed.",
+          "step": "5"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Check mains oxygen supply intact. If failed <b>→4-1</b>",
+          "step": "6"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Unplug unnecessary equipment. Use correct socket for essential equipment <b>(Box C)</b>.",
+          "step": "7"
+        },
+        {
+          "type": 9,
+          "head": "Box C: TYPES OF POWER SUPPLY",
+          "body": "<ul><li>Standard power socket: not protected.</li><li>SPS: Secondary supply (red socket) for devices that can sustain brief periods of loss of power (eg those with internal battery back-up).</li><li>UPS: Uninterrupted supply (blue socket) for instantaneous and continuous protection. This supply is limited therefore avoid using UPS sockets unless absolutely necessary.</li><li>Devices’ internal battery backup: this may not supply all functions of the device and duration may be variable.</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "<p>Assess reliability of power supply, duration of surgery and patient condition:</p><ul><li>Consider stopping surgery immediately</li><li>Consider continuing surgery until patient is stable and wound is closed (may be temporary closure)</li><li>Consider evacuation to theatre with intact mains supply <b>→ 4-3</b></li></ul>",
+          "step": "8"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Prepare recovery facilities. Consider theatres, recovery, ICU.",
+          "step": "9"
+        },
+        {
+          "type": 5,
+          "head": "Box D: CRITICAL CHANGES",
+          "body": "<p>Mains oxygen failure <b>→4-1</b></p><p>Emergency evacuation <b>→4-3</b></p>",
+          "step": ""
+        }
+      ]
+    },
+    {
+      "code": "4-3",
+      "title": "Emergency evacuation",
+      "version": 1,
+      "url": "https://anaesthetists.org/Portals/0/PDFs/QRH/QRH_4-3_Emergency_evacuation_v1.pdf",
+      "copyright": {
+        "holder": "aagbi",
+        "year": 2018
+      },
+      "content": [
+        {
+          "type": 1,
+          "head": "",
+          "body": "Anaesthetised or sedated patient requires unplanned transfer because of environmental hazard (e.g. flood, fire, smoke, structural collapse, noxious gas).",
+          "step": ""
+        },
+        {
+          "type": 2,
+          "head": "",
+          "body": "<b>START</b>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Consider if patient can be safely moved: if not see <b>Box A</b>.",
+          "step": "1"
+        },
+        {
+          "type": 9,
+          "head": "Box A: UNABLE TO MOVE PATIENT",
+          "body": "<ul><li>Ensure adequate depth of anaesthesia</li><li>Ensure adequate reserve: 100% oxygen, low flow, fill vaporiser</li><li>Ensure adequate neuromuscular blockade if relevant</li><li>Evacuate all staff, including anaesthetist when indicated</li><li>Inform rescue services and theatre coordinator</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Stop any operative procedure as soon as safe. Pack and cover wounds.",
+          "step": "2"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Transfer patient to bed or trolley. Transfer on operating table in extremis.",
+          "step": "3"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Evacuate non-essential staff. Consider calling for help but be aware their own safety may preclude their attendance.",
+          "step": "4"
+        },
+        {
+          "type": 3,
+          "head": "Airway",
+          "body": "Consider tracheal intubation to improve airway security if time allows",
+          "step": "5"
+        },
+        {
+          "type": 3,
+          "head": "Breathing/ventilation options:",
+          "body": "<ul><li>Minimise oxygen usage: lowest flows possible</li><li>Self-inflating bag +/- supplemental oxygen</li><li>Mechanical ventilator or C-circuit require higher flows</li></ul>",
+          "step": "6"
+        },
+        {
+          "type": 3,
+          "head": "Circulation:",
+          "body": "<ul><li>Ensure adequacy and security of IV access</li><li>Take adequate supplies of fluid ± infusion sets</li><li>Take vasopressor(s) and/or resuscitation drug box</li></ul>",
+          "step": "7"
+        },
+        {
+          "type": 3,
+          "head": "Maintenance of anaesthesia:",
+          "body": "<ul><li>Intermittent bolus propofol simplest and quickest</li><li>Infusion if time allows – remember mains cable for pump if available</li><li>Consider taking stocks and pump to make infusion later</li><li>Take blankets and/or warming devices if possible</li></ul>",
+          "step": "8"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "If time allows, assemble adequate supply of drugs <b>(Box B)</b>.",
+          "step": "9"
+        },
+        {
+          "type": 6,
+          "head": "Box B: DRUGS",
+          "body": "<p>Drugs may not be readily available at muster point. Aim to take:</p><ul><li>Oxygen</li><li>Propofol /other hypnotic</li><li>Neuromuscular blockade</li><li>Vasopressor(s)</li><li>Analgesics</li><li>IV fluids</li><li>Neuromuscular reversal if extubation anticipated</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Take existing monitoring and mains cabling.",
+          "step": "10"
+        },
+        {
+          "type": 4,
+          "head": "",
+          "body": "Agree and communicate staff and patient muster points <b>(Box C)</b>.",
+          "step": "11"
+        },
+        {
+          "type": 9,
+          "head": "Box C: MUSTER POINT",
+          "body": "<ul><li>Able bodied → adjacent safe zone</li><li>Anaesthetised/sedated patient → area with appropriate access to oxygen and medications, e.g. theatre, recovery or critical care area in a safe zone</li><li>Inform rescue services and relevant coordinator of location</li></ul>",
+          "step": ""
+        },
+        {
+          "type": 9,
+          "head": "Box D: ROUTE",
+          "body": "Ensure route avoids original hazard and any consequent ones. Caution using lifts, especially in fire.",
+          "step": ""
+        }
+      ]
+    }
+  ]
+}
